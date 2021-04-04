@@ -1,0 +1,194 @@
+$nav-background: #1a2431;
+
+// Fonts
+@font-face {
+  font-family: "display-text";
+  src: url("./assets/fonts/Mukta_Mahee/MuktaMahee-Regular.ttf");
+}
+@font-face {
+  font-family: "display-text-light";
+  src: url("./assets/fonts/Mukta_Mahee/MuktaMahee-Light.ttf");
+}
+@font-face {
+  font-family: "display-text-extralight";
+  src: url("./assets/fonts/Mukta_Mahee/MuktaMahee-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "display-text-medium";
+  src: local("SF Pro Display")
+    url("./assets/fonts/Mukta_Mahee/MuktaMahee-Medium.ttf");
+}
+
+nav {
+  background-color: #ffffffa9;
+  height: 6vh;
+  position: fixed;
+  width: 100%;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  font-family: "display-text", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #1c2128;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-align: left;
+  padding: 0, 0;
+  margin: 0, 0;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  font-family: "display-text-light", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #1c2128;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-align: left;
+  padding: 0, 0;
+  margin: 0, 0;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  min-height: 900vh;
+}
+
+.grid-1 {
+  background-color: #ffffff;
+}
+.grid-2 {
+  background-color: #ffffff;
+  z-index: 10000;
+  margin-top: 6vh;
+}
+
+small {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0rem;
+  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #999999;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-align: left;
+  padding: 0, 0;
+  margin: 0, 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-family: "display-text-medium", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #0f62fe;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-align: left;
+  padding: 0 0;
+  margin: 0 0;
+  line-height: 1;
+}
+
+// Dark Theme
+
+// .grid-1-dark {
+//   background-color: #1c2128;
+// }
+
+// .grid-2-dark {
+//   background-color: #22272e;
+// }
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 100%;
+  }
+  .nav {
+    height: 8vh;
+  }
+  .grid-2 {
+    display: none;
+    margin-top: 1vh;
+  }
+  .grid-1 {
+    margin-top: 0vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  .blog-content {
+    max-width: 90%;
+    margin: auto;
+    background-color: #ffffff;
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 70% 30%;
+  }
+  .grid-1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+  }
+
+  .grid-2 {
+    position: fixed;
+    height: 100vh;
+    margin-left: 70%;
+    width: 30%;
+    // background-color: #1a2431;
+  }
+  .grid-2-content {
+    width: 70%;
+    margin: auto;
+    margin-top: 6rem;
+  }
+  .blog-content {
+    max-width: 90%;
+    margin: auto;
+    background-color: #ffffff;
+    min-height: 100vh;
+  }
+}
+
+// carbon overrides
+
+.bx--accordion__title {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  font-family: "display-text", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #1c2128;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-align: left;
+  padding: 0, 0;
+  margin: 0, 0;
+  margin-left: 1rem;
+}
+
+.bx--accordion__item:last-child {
+  border-bottom: none;
+}
