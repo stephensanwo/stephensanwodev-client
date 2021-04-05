@@ -1,0 +1,32 @@
+.side-nav {
+  background-color: #0053d6;
+  min-height: 100vh;
+  width: 120px;
+}
+
+.side-nav-content {
+  margin: 0rem;
+  padding: 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.side-nav-item {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .side-nav {
+    display: none;
+  }
+}

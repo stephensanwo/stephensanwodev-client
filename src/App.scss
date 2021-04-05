@@ -21,9 +21,19 @@ $nav-background: #1a2431;
 
 nav {
   background-color: #ffffffa9;
+  position: fixed;
+  width: 100%;
+}
+
+.transparent-nav {
+  background-color: transparent;
   height: 6vh;
   position: fixed;
   width: 100%;
+  color: #ffffff;
+}
+.transparent-nav h4 {
+  color: #ffffff;
 }
 
 h4 {
@@ -67,7 +77,7 @@ p {
 .grid-2 {
   background-color: #ffffff;
   z-index: 10000;
-  margin-top: 6vh;
+  margin-top: 5vh;
 }
 
 small {
@@ -157,7 +167,7 @@ h1 {
     height: 100vh;
     margin-left: 70%;
     width: 30%;
-    // background-color: #1a2431;
+    background-color: #ffffff;
   }
   .grid-2-content {
     width: 70%;
