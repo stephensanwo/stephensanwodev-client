@@ -8,7 +8,6 @@ const Blog = () => {
   const { path } = useRouteMatch();
   return (
     <Fragment>
-      <Navbar />
       <Switch>
         <Route path={`${path}/blog-post`} component={BlogPost} />
         <Route path={`${path}/`} component={BlogList} />

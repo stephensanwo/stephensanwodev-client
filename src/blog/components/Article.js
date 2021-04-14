@@ -26,7 +26,7 @@ const Article = () => {
               justifyContent: "left",
             }}
           >
-            <h1>Structuring Python Software Development Projects</h1>
+            <h2>Structuring Python Software Development Projects</h2>
             <h4>Understanding python modules and building software packages</h4>
           </div>
           <div>

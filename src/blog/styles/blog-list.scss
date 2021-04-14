@@ -1,0 +1,125 @@
+.home-grid-2-content {
+  padding-left: 100px;
+  background-color: #ffffff;
+}
+
+.home-grid-2-content-header {
+  height: 5vh;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  transform: translate(-2%, -2%);
+}
+
+.logo-content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.featured-article {
+  height: 600px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.featured-article-image {
+  background-color: #f0f5f5;
+  position: relative;
+}
+
+.featured-article-description {
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.featured-article-description h4 {
+  color: #ffffff;
+}
+
+.featured-article-description h3 {
+  background: linear-gradient(150deg, #fef9e7 0%, #e8f8f5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog-nav {
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.nav-tabs {
+  flex-basis: 60%;
+  border-right: 1px solid black;
+}
+.nav-search {
+  flex-basis: 20%;
+  border-right: 1px solid black;
+}
+.nav-actions {
+  flex-basis: 20%;
+}
+
+.nav-tabs-content {
+  display: flex;
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.nav-tab-0,
+.nav-tab-1,
+.nav-tab-2,
+.nav-tab-3,
+.nav-tab-4 {
+  min-width: 100px;
+}
+
+.nav-tab-0:hover,
+.nav-tab-1:hover,
+.nav-tab-2:hover,
+.nav-tab-3:hover,
+.nav-tab-4:hover {
+  border-bottom: 4px solid #0f62fe;
+}
+
+.blog-grid {
+  min-height: 100vh;
+  background-color: #f0f5f5;
+  padding-top: 4rem;
+  display: none;
+}
+
+.blog-item {
+  background-color: #ffffff;
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.blog-item:hover {
+  background-color: #f0f5f5;
+}
+
+.blog-grid.selected {
+  display: block;
+}
