@@ -1,51 +1,129 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useRouteMatch } from "react-router-dom";
 import "../styles/sidenav.scss";
-import {
-  Dashboard24,
-  ToolBox24,
-  CrossTab24,
-  CertificateCheck24,
-  Settings24,
-} from "@carbon/icons-react";
-import { Switcher32 } from "@carbon/icons-react";
+import { motion, AnimatePresence } from "framer-motion";
 
-const SideNav = () => {
+import { Close32, Switcher32 } from "@carbon/icons-react";
+
+const SideNav = ({ isNavOpen, setIsNavOpen }) => {
   const { path } = useRouteMatch();
+  const handleClick = () => {
+    if (isNavOpen === "") {
+      setIsNavOpen("open");
+    } else if (isNavOpen === "open") {
+      setIsNavOpen("closed");
+    } else if (isNavOpen === "closed") {
+      setIsNavOpen("open");
+    }
+  };
 
   return (
-    <div className="side-nav">
-      <div className="bx--row" style={{ margin: "0rem", padding: "0rem" }}>
-        <div className="bx--col side-nav-content">
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <Switcher32 style={{ color: "#ffffff" }} />
+    <Fragment>
+      <div className="mobile-nav">
+        <div
+          className="bx--row"
+          style={{ display: "flex", margin: "0rem", padding: "0rem" }}
+        >
+          <div className="mobile-nav-content">
+            <motion.div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                cursor: "pointer",
+              }}
+              onClick={handleClick}
+            >
+              {isNavOpen === "open" ? (
+                <Close32 style={{ color: "#ffffff" }} />
+              ) : isNavOpen === "closed" ? (
+                <Switcher32 style={{ color: "#ffffff" }} />
+              ) : (
+                <Switcher32 style={{ color: "#ffffff" }} />
+              )}
+            </motion.div>
           </div>
-          <a style={{ marginTop: "2rem" }}>
-            <div className="side-nav-item">Discover</div>
-          </a>
-          <div
-            style={{
-              borderBottom: "0.5px solid #ffffff",
-              marginLeft: "2.5rem",
-              marginRight: "2.5rem",
-            }}
-          ></div>
-          <a>
-            <div className="side-nav-item">Blog</div>
-          </a>
-          <div
-            style={{
-              borderBottom: "0.5px solid #ffffff",
-              marginLeft: "2.5rem",
-              marginRight: "2.5rem",
-            }}
-          ></div>
-          <a>
-            <div className="side-nav-item">About </div>
-          </a>
         </div>
       </div>
-    </div>
+      <div className="side-nav">
+        <div className="bx--row" style={{ margin: "0rem", padding: "0rem" }}>
+          <div className="side-nav-content">
+            <motion.div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                cursor: "pointer",
+              }}
+              onClick={handleClick}
+            >
+              {isNavOpen === "open" ? (
+                <Close32 style={{ color: "#ffffff" }} />
+              ) : isNavOpen === "closed" ? (
+                <Switcher32 style={{ color: "#ffffff" }} />
+              ) : (
+                <Switcher32 style={{ color: "#ffffff" }} />
+              )}
+            </motion.div>
+            {isNavOpen === "open" ? (
+              <Fragment></Fragment>
+            ) : isNavOpen === "closed" ? (
+              <Fragment>
+                <a style={{ marginTop: "4rem" }}>
+                  <div className="side-nav-item">Discover</div>
+                </a>
+                <hr
+                  style={{
+                    width: "25px",
+                    height: "0.5px",
+                    color: "white",
+                  }}
+                />
+
+                <a>
+                  <div className="side-nav-item">Blog</div>
+                </a>
+                <hr
+                  style={{
+                    width: "25px",
+                    height: "0.5px",
+                    color: "white",
+                  }}
+                />
+
+                <a>
+                  <div className="side-nav-item">About</div>
+                </a>
+              </Fragment>
+            ) : (
+              <Fragment>
+                <a style={{ marginTop: "2rem" }}>
+                  <div className="side-nav-item">Discover</div>
+                </a>
+                <hr
+                  style={{
+                    width: "25px",
+                    height: "0.5px",
+                    color: "white",
+                  }}
+                />
+                <a>
+                  <div className="side-nav-item">Blog</div>
+                </a>
+                <hr
+                  style={{
+                    width: "25px",
+                    height: "0.5px",
+                    color: "white",
+                  }}
+                />
+                <a>
+                  <div className="side-nav-item">About </div>
+                </a>
+              </Fragment>
+            )}
+          </div>
+        </div>
+      </div>
+    </Fragment>
   );
 };
 

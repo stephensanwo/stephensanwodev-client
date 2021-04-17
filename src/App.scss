@@ -3,20 +3,23 @@ $nav-background: #1a2431;
 // Fonts
 @font-face {
   font-family: "display-text";
-  src: url("./assets/fonts/Mukta_Mahee/MuktaMahee-Regular.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
 }
 @font-face {
   font-family: "display-text-light";
-  src: url("./assets/fonts/Mukta_Mahee/MuktaMahee-Light.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-Light.ttf");
 }
 @font-face {
   font-family: "display-text-extralight";
-  src: url("./assets/fonts/Mukta_Mahee/MuktaMahee-ExtraLight.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "display-text-semibold";
+  src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf");
 }
 @font-face {
   font-family: "display-text-medium";
-  src: local("SF Pro Display")
-    url("./assets/fonts/Mukta_Mahee/MuktaMahee-Medium.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
 }
 
 nav {
@@ -36,34 +39,6 @@ nav {
   color: #ffffff;
 }
 
-h4 {
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0rem;
-  font-family: "display-text", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
-  color: #1c2128;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
-  text-align: left;
-  padding: 0, 0;
-  margin: 0, 0;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0rem;
-  font-family: "display-text-light", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
-  color: #1c2128;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
-  text-align: left;
-  padding: 0, 0;
-  margin: 0, 0;
-}
-
 .container {
   margin: 0 auto;
   display: grid;
@@ -80,40 +55,8 @@ p {
   margin-top: 5vh;
 }
 
-small {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0rem;
-  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
-  color: #999999;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
-  text-align: left;
-  padding: 0, 0;
-  margin: 0, 0;
-  line-height: normal;
-  text-decoration: none;
-}
-
-h2 {
-  font-size: 5rem;
-  font-weight: 500;
-  letter-spacing: normal;
-  font-family: "display-text-medium", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
-  color: #0f62fe;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
-  text-align: left;
-  padding: 0 0;
-  margin: 0 0;
-  line-height: 1;
-}
-
-h3 {
-  font-size: 4rem;
-  font-weight: 600;
+// Text
+h1 {
   letter-spacing: normal;
   font-family: "display-text-medium", "Helvetica Neue", "Helvetica", "Arial",
     "sans-serif";
@@ -123,14 +66,27 @@ h3 {
   text-align: left;
   padding: 0 0;
   margin: 0 0;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 h4 {
+  letter-spacing: normal;
+  font-family: "display-text", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-align: left;
+  padding: 0 0;
+  margin: 0 0;
+  line-height: 1;
+}
+
+p {
   font-size: 1em;
   font-weight: 400;
   letter-spacing: normal;
-  font-family: "display-text-medium", "Helvetica Neue", "Helvetica", "Arial",
+  font-family: "display-text-light", "Helvetica Neue", "Helvetica", "Arial",
     "sans-serif";
   color: black;
   -webkit-font-smoothing: antialiased;
@@ -139,6 +95,20 @@ h4 {
   padding: 0 0;
   margin: 0 0;
   line-height: normal;
+}
+
+small {
+  letter-spacing: normal;
+  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #999999;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-align: left;
+  padding: 0, 0;
+  margin: 0, 0;
+  line-height: 1;
+  text-decoration: none;
 }
 
 // Dark Theme
@@ -166,13 +136,6 @@ h4 {
     margin-top: 0vh;
   }
 
-  h1 {
-    font-size: 2rem;
-    font-weight: 800;
-  }
-  h4 {
-    font-size: 1rem;
-  }
   .blog-content {
     max-width: 90%;
     margin: auto;
@@ -231,4 +194,107 @@ h4 {
 
 .bx--accordion__item:last-child {
   border-bottom: none;
+}
+
+// Small Mobile devices
+@media (max-width: 320px) {
+  // Text
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 0.8em;
+    font-weight: 200;
+  }
+  small {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+// Small - Medium devices
+@media (min-width: 320px) and (max-width: 480px) {
+  // Text
+  h1 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 0.8em;
+    font-weight: 200;
+  }
+  small {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+// Big phones and Small Tablets
+@media (min-width: 481px) and (max-width: 768px) {
+  // Text
+  h1 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 0.8em;
+    font-weight: 200;
+  }
+  small {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+// Tablets  and small screens
+@media (min-width: 769px) and (max-width: 1024px) {
+  // Text
+  h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1em;
+    font-weight: 200;
+  }
+  small {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+// Tablets Landscape and Medium  Screens
+@media (min-width: 1025px) and (max-width: 1200px) {
+  // Text
+  h1 {
+    font-size: 3em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1em;
+    font-weight: 200;
+  }
+  small {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+// Large - Extra Large Screens
+
+@media (min-width: 1201px) {
+  // Text
+  h1 {
+    font-size: 4em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1em;
+    font-weight: 200;
+  }
+  small {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
 }

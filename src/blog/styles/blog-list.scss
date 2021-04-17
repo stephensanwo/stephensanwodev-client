@@ -1,12 +1,19 @@
+.home-grid-header {
+  padding-left: 100px;
+  background: hsl(222, 20%, 8%);
+  padding-top: auto;
+  padding-bottom: auto;
+  height: 100px;
+  display: flex;
+}
+
 .home-grid-2-content {
   padding-left: 100px;
-  background-color: #ffffff;
+  background: hsl(222, 20%, 8%);
 }
 
 .home-grid-2-content-header {
-  height: 5vh;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-top: 1.2rem;
   width: 100%;
   position: absolute;
   top: 2%;
@@ -23,7 +30,7 @@
 }
 
 .featured-article {
-  height: 600px;
+  height: 500px;
   display: flex;
   width: 100%;
   margin: auto;
@@ -31,7 +38,7 @@
 }
 
 .featured-article-image {
-  background-color: #f0f5f5;
+  background: hsl(222, 20%, 8%);
   position: relative;
 }
 
@@ -39,30 +46,24 @@
   position: absolute;
   width: 80%;
   margin: auto;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
 }
 
 .featured-article-description h4 {
   color: #ffffff;
 }
 
-.featured-article-description h3 {
-  background: linear-gradient(150deg, #fef9e7 0%, #e8f8f5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .blog-nav {
   height: 80px;
-  background-color: #ffffff;
+  background-color: #ffffffe1;
   display: flex;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
+
 .nav-tabs {
   flex-basis: 60%;
   border-right: 1px solid black;
@@ -89,7 +90,8 @@
 .nav-tab-2,
 .nav-tab-3,
 .nav-tab-4 {
-  min-width: 100px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .nav-tab-0:hover,
@@ -122,4 +124,59 @@
 
 .blog-grid.selected {
   display: block;
+}
+
+// Small Mobile devices
+@media (max-width: 320px) {
+  .home-grid-2-content {
+    padding-left: 0px;
+  }
+  .blog-nav {
+    display: none;
+  }
+  .home-grid-header {
+    padding-left: 0px;
+  }
+}
+
+// Small - Medium devices
+@media (min-width: 320px) and (max-width: 480px) {
+  .home-grid-2-content {
+    padding-left: 0px;
+  }
+  .blog-nav {
+    display: none;
+  }
+  .home-grid-header {
+    padding-left: 0px;
+  }
+}
+
+// Big phones and Small Tablets
+@media (min-width: 481px) and (max-width: 768px) {
+  .home-grid-2-content {
+    padding-left: 0px;
+  }
+  .blog-nav {
+    display: none;
+  }
+  .home-grid-header {
+    padding-left: 0px;
+  }
+}
+
+// Tablets  and small screens
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blog-nav {
+    display: none;
+  }
+}
+
+// Tablets Landscape and Medium  Screens
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+
+// Large - Extra Large Screens
+
+@media (min-width: 1201px) {
 }
