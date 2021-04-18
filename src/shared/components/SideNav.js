@@ -20,10 +20,7 @@ const SideNav = ({ isNavOpen, setIsNavOpen }) => {
   return (
     <Fragment>
       <div className="mobile-nav">
-        <div
-          className="bx--row"
-          style={{ display: "flex", margin: "0rem", padding: "0rem" }}
-        >
+        <div className="bx--row" style={{ margin: "0rem", padding: "0rem" }}>
           <div className="mobile-nav-content">
             <motion.div
               style={{
@@ -67,7 +64,7 @@ const SideNav = ({ isNavOpen, setIsNavOpen }) => {
               <Fragment></Fragment>
             ) : isNavOpen === "closed" ? (
               <Fragment>
-                <a style={{ marginTop: "4rem" }}>
+                <a style={{ marginTop: "2rem" }}>
                   <div className="side-nav-item">Discover</div>
                 </a>
                 <hr

@@ -11,7 +11,9 @@ const SliderMenu = ({ isNavOpen }) => {
           animate={{ width: "100%", speed: "100ms" }}
           transition={{ ease: "easeOut", duration: 0.3 }}
           className={"slider-menu slider-menu-open"}
-        ></motion.div>
+        >
+          <h1>Slider Menu</h1>
+        </motion.div>
       ) : isNavOpen === "closed" ? (
         <motion.div
           initial={{ width: "100%" }}

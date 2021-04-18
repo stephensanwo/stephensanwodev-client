@@ -8,6 +8,7 @@ import { NextFilled32 } from "@carbon/icons-react";
 import { Tag } from "carbon-components-react";
 const BlogList = () => {
   const [selectedTab, setSelectedTab] = useState("tab_0");
+  const [isNavOpen, setIsNavOpen] = useState("");
 
   const handleTabChange = (e) => {
     e.preventDefault();
@@ -21,7 +22,7 @@ const BlogList = () => {
     <Fragment>
       <div className="home-container">
         <div className="home-grid-1">
-          <SideNav />
+          <SideNav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </div>
         <div className="home-grid-2">
           <div className="home-grid-header">

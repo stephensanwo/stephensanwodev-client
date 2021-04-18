@@ -7,10 +7,10 @@
   display: flex;
 }
 
-.home-grid-2-content {
-  padding-left: 100px;
-  background: hsl(222, 20%, 8%);
-}
+// .home-grid-2-content {
+//   padding-left: 100px;
+//   background: hsl(222, 20%, 8%);
+// }
 
 .home-grid-2-content-header {
   padding-top: 1.2rem;
@@ -35,6 +35,7 @@
   width: 100%;
   margin: auto;
   position: relative;
+  background: hsl(222, 20%, 8%);
 }
 
 .featured-article-image {

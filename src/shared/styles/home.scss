@@ -12,6 +12,36 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
+  background: hsl(222, 20%, 8%);
+}
+
+.home-grid-2-content {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+// Home Content
+
+.home-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  width: 80%;
+  height: 30vh;
+  margin: auto;
+  padding-top: 7rem;
+  background-color: #101318;
+}
+
+.home-body {
+  height: 50vh;
+  width: 80%;
+  margin: auto;
+}
+.home-bottom {
+  height: 20vh;
+  background: url("../../assets/svg/home-page-geometric.svg") no-repeat bottom;
 }
 
 // Small Mobile devices
@@ -37,13 +67,22 @@
 
 // Tablets  and small screens
 @media (min-width: 769px) and (max-width: 1024px) {
+  .home-grid-2-content {
+    padding-left: 100px;
+  }
 }
 
 // Tablets Landscape and Medium  Screens
 @media (min-width: 1025px) and (max-width: 1200px) {
+  .home-grid-2-content {
+    padding-left: 100px;
+  }
 }
 
 // Large - Extra Large Screens
 
 @media (min-width: 1201px) {
+  .home-grid-2-content {
+    padding-left: 100px;
+  }
 }
