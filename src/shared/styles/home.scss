@@ -19,6 +19,7 @@
   width: 100%;
   position: absolute;
   z-index: 1;
+  background: url("../../assets/svg/home-page-geometric.svg") repeat center;
 }
 
 // Home Content
@@ -28,20 +29,93 @@
   align-items: baseline;
   justify-content: flex-start;
   width: 80%;
-  height: 30vh;
+  min-height: 30vh;
   margin: auto;
   padding-top: 7rem;
-  background-color: #101318;
+  background-color: transparent;
 }
 
 .home-body {
-  height: 50vh;
+  min-height: 50vh;
   width: 80%;
   margin: auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
 }
+.intro-text {
+  max-width: 800px;
+}
+
+.tools-accordion {
+  background-color: transparent;
+}
+
 .home-bottom {
-  height: 20vh;
-  background: url("../../assets/svg/home-page-geometric.svg") no-repeat bottom;
+  min-height: 20vh;
+  // background: url("../../assets/svg/home-page-geometric.svg") no-repeat bottom;
+}
+
+// Accordion
+
+.tools-accordion {
+  width: 500px;
+}
+
+.bx--accordion__heading:hover::before {
+  background-color: transparent;
+}
+
+.bx--accordion__content {
+  width: 500px;
+  padding-right: 0;
+}
+
+// Discover
+
+.home-grid-2-discover {
+  margin-top: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #ffffff;
+}
+
+// Carbon Overrides
+
+.bx--accordion__title {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  font-family: "display-text-light", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-align: left;
+  padding: 0, 0;
+  margin: 0, 0;
+  margin-left: 1rem;
+}
+
+.bx--accordion__item:last-child {
+  border-bottom: none;
+  border-top: none;
+}
+
+.bx--accordion__item--active .bx--accordion__arrow {
+  fill: #ffffff;
+}
+.bx--accordion__arrow {
+  fill: #ffffff;
+}
+
+.bx--accordion__heading::before {
+  background-color: transparent;
+}
+.bx--accordion:hover {
+  background-color: transparent;
 }
 
 // Small Mobile devices

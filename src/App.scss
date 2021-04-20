@@ -175,26 +175,26 @@ small {
   }
 }
 
-// carbon overrides
+// // carbon overrides
 
-.bx--accordion__title {
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0rem;
-  font-family: "display-text", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
-  color: #1c2128;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
-  text-align: left;
-  padding: 0, 0;
-  margin: 0, 0;
-  margin-left: 1rem;
-}
+// .bx--accordion__title {
+//   font-size: 1rem;
+//   font-weight: 400;
+//   letter-spacing: 0rem;
+//   font-family: "display-text", "Helvetica Neue", "Helvetica", "Arial",
+//     "sans-serif";
+//   color: #1c2128;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: auto;
+//   text-align: left;
+//   padding: 0, 0;
+//   margin: 0, 0;
+//   margin-left: 1rem;
+// }
 
-.bx--accordion__item:last-child {
-  border-bottom: none;
-}
+// .bx--accordion__item:last-child {
+//   border-bottom: none;
+// }
 
 // Small Mobile devices
 @media (max-width: 320px) {

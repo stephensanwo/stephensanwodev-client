@@ -5,6 +5,7 @@
   padding-bottom: auto;
   height: 100px;
   display: flex;
+  // background: url("../../assets/svg/home-page-geometric.svg") no-repeat;
 }
 
 // .home-grid-2-content {
@@ -35,11 +36,11 @@
   width: 100%;
   margin: auto;
   position: relative;
-  background: hsl(222, 20%, 8%);
+  background: transparent;
 }
 
 .featured-article-image {
-  background: hsl(222, 20%, 8%);
+  background-color: hsl(222, 20%, 8%);
   position: relative;
 }
 
