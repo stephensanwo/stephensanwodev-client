@@ -12,7 +12,7 @@ import {
 const Banner = ({ isNavOpen }) => {
   return (
     <Fragment>
-      <div className="home-grid-2-content">
+      <section className="home-grid-2-content">
         <div className="home-header">
           <h4
             style={{
@@ -89,7 +89,7 @@ const Banner = ({ isNavOpen }) => {
           </div>
         </div>
         <div className="home-bottom"></div>
-      </div>
+      </section>
       {isNavOpen === "open" ? (
         <SliderMenu isNavOpen={isNavOpen} />
       ) : isNavOpen === "closed" ? (
