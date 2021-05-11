@@ -79,7 +79,7 @@
   padding-left: 100px;
   position: absolute;
   z-index: 1;
-  background: #f1f4f7;
+  background: #f5f5f7;
 }
 
 .home-discover-content {
@@ -105,11 +105,10 @@
 }
 
 .home-discover-content-2 h1 {
-  color: #465a69;
+  color: #19646e;
   font-size: 6rem;
 }
 .home-discover-content-2 h4 {
-  color: #465a69;
   font-size: 1rem;
 }
 
@@ -120,13 +119,15 @@
   justify-content: space-between;
 }
 .discover-app-box {
-  min-width: 500px;
-  max-width: 500px;
-  height: 400px;
+  min-width: 380px;
+  max-width: 380px;
+  height: 380px;
   padding: 1rem;
+  border-radius: 7px;
 }
 
 .app-box-1 {
+  // background: linear-gradient(180deg, #20252d 0%, #040508 100%);
   background-color: #15bda5;
 }
 .app-box-2 {
@@ -135,6 +136,60 @@
 .app-box-3 {
   background-color: #fa4d56;
 }
+
+// Blog
+
+.home-grid-2-blog {
+  margin-top: 200vh;
+  min-height: 100vh;
+  width: 100%;
+  padding-left: 100px;
+  position: absolute;
+  z-index: 1;
+  background: #f5f5f7;
+}
+
+.home-blog-content {
+  width: 80%;
+  min-height: 30vh;
+  margin: auto;
+  padding-top: 7rem;
+  // background-color: green;
+}
+.home-blog-content-1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.home-blog-content-2 {
+  margin-top: 7rem;
+  width: 100%;
+  background-color: #ffffff;
+  height: 400px;
+  border-radius: 7px;
+  display: flex;
+}
+.blog-featured-article-image {
+  max-width: 60%;
+  height: 100%;
+  border-radius: 7px 0px 0px 7px;
+  overflow: hidden;
+  flex-basis: 60%;
+}
+.blog-featured-article-image img {
+  object-fit: cover;
+}
+
+.blog-featured-article-text {
+  flex-basis: 40%;
+  height: 100%;
+  border-radius: 0px 7px 7px 0px;
+  padding: 2rem;
+}
+
 // Carbon Overrides
 
 .bx--accordion__title {

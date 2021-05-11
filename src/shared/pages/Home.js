@@ -1,7 +1,8 @@
 import React, { Fragment, useState } from "react";
-import Banner from "../components/Banner";
-import Discover from "../components/Discover";
+import Banner from "./Banner";
+import Discover from "./Discover";
 import SideNav from "../components/SideNav";
+import Blog from "./Blog";
 import "../styles/home.scss";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
         <div className="home-grid-2">
           <Banner isNavOpen={isNavOpen} />
           <Discover />
+          <Blog />
         </div>
       </div>
     </Fragment>
