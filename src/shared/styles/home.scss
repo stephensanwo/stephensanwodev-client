@@ -118,24 +118,6 @@
   display: flex;
   justify-content: space-between;
 }
-.discover-app-box {
-  min-width: 380px;
-  max-width: 380px;
-  height: 380px;
-  padding: 1rem;
-  border-radius: 7px;
-}
-
-.app-box-1 {
-  // background: linear-gradient(180deg, #20252d 0%, #040508 100%);
-  background-color: #15bda5;
-}
-.app-box-2 {
-  background-color: #20252d;
-}
-.app-box-3 {
-  background-color: #fa4d56;
-}
 
 // Blog
 
@@ -171,6 +153,7 @@
   height: 400px;
   border-radius: 7px;
   display: flex;
+  cursor: pointer;
 }
 .blog-featured-article-image {
   max-width: 60%;
@@ -188,6 +171,15 @@
   height: 100%;
   border-radius: 0px 7px 7px 0px;
   padding: 2rem;
+}
+
+.home-blog-content-3 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 2rem;
 }
 
 // Carbon Overrides

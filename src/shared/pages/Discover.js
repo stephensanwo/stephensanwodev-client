@@ -2,7 +2,7 @@ import React from "react";
 import { Tag } from "carbon-components-react";
 import { Launch24 } from "@carbon/icons-react";
 import "../styles/home.scss";
-import { motion, AnimatePresence } from "framer-motion";
+import SlideTile from "../components/SlideTile";
 
 const Discover = () => {
   return (
@@ -75,32 +75,7 @@ const Discover = () => {
           </div>
         </div>
         <div className="home-discover-content-3">
-          <motion.div
-            className="discover-app-box app-box-1"
-            whileHover={{ scale: 1.05 }}
-            transition={{ ease: "easeOut", duration: 0.1 }}
-          >
-            <div
-              style={{
-                padding: "1rem",
-                display: " flex",
-                justifyContent: "flex-end",
-              }}
-            >
-              <Launch24 fill={"#fff"} />
-            </div>
-            <div
-              style={{
-                marginTop: "10rem",
-                marginLeft: "2rem",
-              }}
-            >
-              <h4 style={{ color: "#fff", fontSize: "2rem" }}>Citadel</h4>
-              <p style={{ color: "#fff", fontSize: "1rem", marginTop: "1rem" }}>
-                Find and download any book
-              </p>
-            </div>
-          </motion.div>
+          <SlideTile />
         </div>
       </div>
     </section>

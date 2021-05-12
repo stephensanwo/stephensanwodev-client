@@ -2,8 +2,10 @@ import React from "react";
 import { Tag } from "carbon-components-react";
 import { Launch24 } from "@carbon/icons-react";
 import "../styles/home.scss";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import BlogImage from "../../assets/img/derek-thomson-NqJYQ3m_rVA-unsplash.jpg";
+import { blog_categories } from "../../data/blog_categories";
+import Tile from "../components/Tile";
 
 const Blog = () => {
   return (
@@ -36,22 +38,22 @@ const Blog = () => {
             <h4>Featured Article</h4>
             <h4
               style={{
-                fontSize: "3.2rem",
+                fontSize: "2.2rem",
                 textAlign: "left",
-                fontWeight: 800,
-                color: "#19646E",
+                color: "#0d1116",
                 marginTop: "2rem",
                 marginBottom: "2rem",
                 lineHeight: 1.2,
               }}
             >
-              Structuring your python projects
+              Structuring your python software development projects
             </h4>
-            <p>
+            <p style={{ marginBottom: "1rem" }}>
               From predicting user growth to revenue forecasts, Non-technical
               users across several functions can now leverage the powerful
               facebook prophet analytics engine without having to write code.
             </p>
+            <a href="">Read More</a>
             <div
               style={{
                 display: "flex",
@@ -79,33 +81,10 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="home-discover-content-3">
-          <motion.div
-            className="discover-app-box app-box-1"
-            whileHover={{ scale: 1.05 }}
-            transition={{ ease: "easeOut", duration: 0.1 }}
-          >
-            <div
-              style={{
-                padding: "1rem",
-                display: " flex",
-                justifyContent: "flex-end",
-              }}
-            >
-              <Launch24 fill={"#fff"} />
-            </div>
-            <div
-              style={{
-                marginTop: "10rem",
-                marginLeft: "2rem",
-              }}
-            >
-              <h4 style={{ color: "#fff", fontSize: "2rem" }}>Citadel</h4>
-              <p style={{ color: "#fff", fontSize: "1rem", marginTop: "1rem" }}>
-                Find and download any book
-              </p>
-            </div>
-          </motion.div>
+        <div className="home-blog-content-3">
+          {blog_categories.map((data, index) => {
+            return <Tile data={data} key={index} />;
+          })}
         </div>
       </div>
     </section>
