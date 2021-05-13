@@ -9,7 +9,7 @@
   z-index: 10;
 }
 .home-grid-2 {
-  min-height: 100vh;
+  height: 1240px;
   width: 100%;
   position: relative;
   background: #0d1116;
@@ -17,6 +17,7 @@
 
 .home-grid-2-content {
   width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 1;
   background: url("../../assets/svg/home-page-background.svg") no-repeat right;
@@ -73,8 +74,8 @@
 // Discover
 
 .home-grid-2-discover {
-  margin-top: 100vh;
-  min-height: 100vh;
+  margin-top: 1240px;
+  min-height: 1240px;
   width: 100%;
   padding-left: 100px;
   position: absolute;
@@ -84,7 +85,7 @@
 
 .home-discover-content {
   width: 80%;
-  min-height: 30vh;
+  height: 100%;
   margin: auto;
   padding-top: 7rem;
   // background-color: green;
@@ -113,7 +114,7 @@
 }
 
 .home-discover-content-3 {
-  margin-top: 4rem;
+  margin-top: 7rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -122,8 +123,8 @@
 // Blog
 
 .home-grid-2-blog {
-  margin-top: 200vh;
-  min-height: 100vh;
+  margin-top: 2480px;
+  min-height: 1240px;
   width: 100%;
   padding-left: 100px;
   position: absolute;
@@ -133,7 +134,7 @@
 
 .home-blog-content {
   width: 80%;
-  min-height: 30vh;
+  height: 100%;
   margin: auto;
   padding-top: 7rem;
   // background-color: green;
@@ -179,7 +180,27 @@
   width: 100%;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 2rem;
+  margin-top: 5rem;
+}
+
+// About
+
+.home-grid-2-about {
+  margin-top: 3720px;
+  min-height: 1240px;
+  width: 100%;
+  padding-left: 100px;
+  position: absolute;
+  z-index: 1;
+  background: #0d1116;
+}
+
+.home-about-content {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding-top: 7rem;
+  // background-color: green;
 }
 
 // Carbon Overrides

@@ -2,7 +2,8 @@ import React from "react";
 import { Tag } from "carbon-components-react";
 import { Launch24 } from "@carbon/icons-react";
 import "../styles/home.scss";
-import SlideTile from "../components/SlideTile";
+import FlatTile from "../components/FlatTile";
+import { apps_data } from "../../data/apps";
 
 const Discover = () => {
   return (
@@ -75,7 +76,9 @@ const Discover = () => {
           </div>
         </div>
         <div className="home-discover-content-3">
-          <SlideTile />
+          {apps_data.map((data, index) => {
+            return <FlatTile data={data} key={index} />;
+          })}
         </div>
       </div>
     </section>

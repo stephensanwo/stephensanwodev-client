@@ -4,8 +4,8 @@ import BlogImage3 from "../assets/img/Screenshot 2021-05-11 at 23.41.25.png";
 import BlogImage4 from "../assets/img/Screenshot 2021-05-11 at 23.39.05.png";
 
 export const blog_categories = [
-  { title: "APIs & Microservices", image: BlogImage1 },
-  { title: "AI & Deep Learning", image: BlogImage2 },
-  { title: "Frontend Development", image: BlogImage3 },
-  { title: "Python", image: BlogImage4 },
+  { id: 1, title: "APIs & Microservices" },
+  { id: 2, title: "AI & Deep Learning" },
+  { id: 3, title: "Frontend Development" },
+  { id: 4, title: "Python" },
 ];

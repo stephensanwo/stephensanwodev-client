@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Discover from "./Discover";
 import SideNav from "../components/SideNav";
 import Blog from "./Blog";
+import About from "./About";
 import "../styles/home.scss";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
           <Banner isNavOpen={isNavOpen} />
           <Discover />
           <Blog />
+          <About />
         </div>
       </div>
     </Fragment>

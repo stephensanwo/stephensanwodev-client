@@ -3,8 +3,8 @@ import { Tag } from "carbon-components-react";
 import { Launch24 } from "@carbon/icons-react";
 import "../styles/home.scss";
 import { motion } from "framer-motion";
-import BlogImage from "../../assets/img/derek-thomson-NqJYQ3m_rVA-unsplash.jpg";
-import { blog_categories } from "../../data/blog_categories";
+import BlogImage from "../../assets/svg/article.svg";
+import { blog_categories } from "../../data/blog";
 import Tile from "../components/Tile";
 
 const Blog = () => {
@@ -30,7 +30,7 @@ const Blog = () => {
               alt=""
               width="100%"
               height="100%"
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, filter: "brightness(50%)" }}
               transition={{ ease: "easeOut", duration: 0.5 }}
             />
           </div>

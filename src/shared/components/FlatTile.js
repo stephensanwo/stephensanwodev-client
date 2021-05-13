@@ -3,12 +3,13 @@ import { Launch24 } from "@carbon/icons-react";
 import "../styles/components.scss";
 import { motion, AnimatePresence } from "framer-motion";
 
-const SlideTile = () => {
+const FlatTile = ({ data }) => {
   return (
     <motion.div
-      className="discover-app-box app-box-1"
-      whileHover={{ scale: 1.05 }}
-      transition={{ ease: "easeOut", duration: 0.1 }}
+      className={`discover-app-box app-box-${data.id}`}
+      id="slide"
+      whileHover={{ y: -20, filter: "brightness(50%)" }}
+      transition={{ ease: "easeOut", duration: 0.3 }}
     >
       <div
         style={{
@@ -25,13 +26,13 @@ const SlideTile = () => {
           marginLeft: "2rem",
         }}
       >
-        <h4 style={{ color: "#fff", fontSize: "2rem" }}>Citadel</h4>
-        <p style={{ color: "#fff", fontSize: "1rem", marginTop: "1rem" }}>
-          Find and download any book
+        <h4 style={{ color: "#fff", fontSize: "1.5rem" }}>{data.name}</h4>
+        <p style={{ color: "#fff", fontSize: "0.8rem", marginTop: "1rem" }}>
+          {data.desc}
         </p>
       </div>
     </motion.div>
   );
 };
 
-export default SlideTile;
+export default FlatTile;
