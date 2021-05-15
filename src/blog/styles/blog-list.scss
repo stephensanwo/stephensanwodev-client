@@ -144,11 +144,17 @@
 
 .nav-actions {
   flex-basis: 20%;
+  display: flex;
+}
+
+.nav-action-1,
+.nav-action-2 {
+  border-right: 1px solid #e8e8e8;
+  width: 100px;
 }
 
 .nav-tabs h4 {
   color: #0d1116;
-  font-weight: 200;
   font-family: "display-text-light";
   font-size: 0.8rem;
 }
@@ -167,12 +173,10 @@
 .nav-tab-2,
 .nav-tab-3,
 .nav-tab-4 {
-  width: 150px;
+  width: 130px;
   height: 50px;
   padding-left: 1rem;
   padding-right: 1rem;
-  transition: transform 0.2s ease-in-out;
-  // background-color: green;
 }
 
 .nav-tab-0:hover,
@@ -181,12 +185,10 @@
 .nav-tab-3:hover,
 .nav-tab-4:hover {
   border-bottom: 4px solid #0f62fe;
-  transform: scale(1.1);
 }
 
 .nav-tab-clicked {
   border-bottom: 4px solid #0f62fe;
-  transform: scale(1.1);
 }
 
 // Blog Grid

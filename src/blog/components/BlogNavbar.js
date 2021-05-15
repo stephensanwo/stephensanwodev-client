@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import SearchBox from "../../shared/components/SearchBox";
+import Filter from "../../shared/components/Filter";
+import Sort from "../../shared/components/Sort";
 
 const BlogNavbar = ({ selectedTab, setSelectedTab }) => {
   const [searchData, setSearchData] = useState("");
@@ -102,7 +104,14 @@ const BlogNavbar = ({ selectedTab, setSelectedTab }) => {
           onInput={handleSearch}
         />
       </div>
-      <div className="nav-actions">Actions</div>
+      <div className="nav-actions">
+        <div className="nav-action-1">
+          <Filter />
+        </div>
+        <div className="nav-action-2">
+          <Sort />
+        </div>
+      </div>
     </div>
   );
 };
