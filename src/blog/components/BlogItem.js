@@ -1,10 +1,14 @@
 import React, { Fragment } from "react";
 import { LogoPython24, NextFilled24, CopyLink24 } from "@carbon/icons-react";
-
-const BlogItem = () => {
+import { motion } from "framer-motion";
+const BlogItem = ({ data }) => {
   return (
     <Fragment>
-      <div className="blog-item">
+      <motion.div
+        className="blog-item"
+        whileHover={{ y: -10, backgroundColor: "#f5f5f7" }}
+        transition={{ ease: "easeOut", duration: 0.3 }}
+      >
         <div
           style={{
             display: "flex",
@@ -18,7 +22,8 @@ const BlogItem = () => {
                 <LogoPython24 color="#0f62fe" />
               </div>
               <div style={{ flexBasis: "80%" }}>
-                <small>Python Development - From Scripting to Software </small>
+                <small>{data.category}</small> <br />
+                <small>{data.sub_category}</small>
               </div>
             </div>
           </div>
@@ -29,14 +34,8 @@ const BlogItem = () => {
               paddingLeft: "2rem",
             }}
           >
-            <h4>The Import Module, Python's Import System</h4>
-            <p>
-              BLog Item Many people get introduced to Python firstly as a
-              scripting language, I first started out doing analytics with
-              python, and the nature of those projects involved writing single
-              file scripts, or using jupyter notebooks perform analysis in
-              python.
-            </p>
+            <h4>{data.title}</h4>
+            <p>{data.description}</p>
           </div>
           <div
             style={{
@@ -51,7 +50,7 @@ const BlogItem = () => {
             <NextFilled24 fill="#0f62fe" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </Fragment>
   );
 };

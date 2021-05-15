@@ -1,9 +1,8 @@
 import React from "react";
-import { Tag } from "carbon-components-react";
-import { Launch24 } from "@carbon/icons-react";
+
 import "../styles/home.scss";
 import { motion } from "framer-motion";
-import BlogImage from "../../assets/img/derek-thomson-NqJYQ3m_rVA-unsplash.jpg";
+import ProfileImage from "../../assets/img/profile-picture-transparent.png";
 import { blog_categories } from "../../data/blog";
 import Tile from "../components/Tile";
 
@@ -16,13 +15,24 @@ const About = () => {
             style={{
               fontSize: "2rem",
               textAlign: "center",
-              color: "#A2FACF",
+              color: "#19646E",
             }}
           >
             About
           </h4>
         </div>
-        <div className="home-about-content-2"></div>
+        <div className="home-about-content-2">
+          <div className="profile-image">
+            <motion.img
+              src={ProfileImage}
+              alt=""
+              width="100%"
+              height="100%"
+              whileHover={{ scale: 1.05, filter: "brightness(50%)" }}
+              transition={{ ease: "easeOut", duration: 0.5 }}
+            />
+          </div>
+        </div>
         <div className="home-about-content-3"></div>
       </div>
     </section>
