@@ -17,6 +17,7 @@ const BlogNavbar = ({ selectedTab, setSelectedTab }) => {
     e.preventDefault();
     setSearchData(e.target.value);
   };
+
   return (
     <div className="blog-nav">
       <div className="nav-tabs">

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { LogoPython24, ArrowRight24, CopyLink24 } from "@carbon/icons-react";
+import { ArrowRight24 } from "@carbon/icons-react";
 import { motion } from "framer-motion";
 import { Tag } from "carbon-components-react";
 import "../styles/blog-list.scss";
@@ -74,7 +74,22 @@ const BlogItem = ({ data }) => {
             >
               {data.tags.map((tag, index) => {
                 return (
-                  <Tag key={index} type={"cyan"} title={data.id}>
+                  <Tag
+                    size="sm"
+                    key={index}
+                    type={
+                      data.id === "python"
+                        ? "cyan"
+                        : data.id === "javasctipt"
+                        ? "red"
+                        : data.id === "react"
+                        ? "magenta"
+                        : data.id === "tensorflow"
+                        ? "teal"
+                        : "cool-gray"
+                    }
+                    title={data.id}
+                  >
                     {tag}
                   </Tag>
                 );

@@ -38,7 +38,7 @@ const ToolsAccordion = () => {
               }}
             >
               <h4 style={{ fontSize: "1rem", color: "#A2FACF", width: "100%" }}>
-                Python, Javascript, C
+                Python, Javascript, Go, Typescript
               </h4>
             </div>
           </AccordionItem>

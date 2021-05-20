@@ -65,55 +65,59 @@ const SideNav = ({ isNavOpen, setIsNavOpen }) => {
             ) : isNavOpen === "closed" ? (
               <Fragment>
                 <a style={{ marginTop: "2rem" }}>
-                  <div className="side-nav-item">Discover</div>
+                  <div className="side-nav-item">
+                    <h4 style={{ fontSize: "0.7rem", color: "#ffffff" }}>
+                      Home
+                    </h4>
+                  </div>
                 </a>
-                <hr
-                  style={{
-                    width: "25px",
-                    height: "0.5px",
-                    color: "white",
-                  }}
-                />
 
                 <a>
-                  <div className="side-nav-item">Blog</div>
+                  <div className="side-nav-item">
+                    <h4 style={{ fontSize: "0.7rem", color: "#ffffff" }}>
+                      Apps
+                    </h4>
+                  </div>
                 </a>
-                <hr
-                  style={{
-                    width: "25px",
-                    height: "0.5px",
-                    color: "white",
-                  }}
-                />
 
                 <a>
-                  <div className="side-nav-item">About</div>
+                  <div
+                    className="side-nav-item "
+                    style={{ borderBottom: "none" }}
+                  >
+                    <h4 style={{ fontSize: "0.7rem", color: "#ffffff" }}>
+                      Blog
+                    </h4>
+                  </div>
                 </a>
               </Fragment>
             ) : (
               <Fragment>
                 <a style={{ marginTop: "2rem" }}>
-                  <div className="side-nav-item">Discover</div>
+                  <div className="side-nav-item">
+                    <h4 style={{ fontSize: "0.7rem", color: "#ffffff" }}>
+                      Home
+                    </h4>
+                  </div>
                 </a>
-                <hr
-                  style={{
-                    width: "25px",
-                    height: "0.5px",
-                    color: "white",
-                  }}
-                />
+
                 <a>
-                  <div className="side-nav-item">Blog</div>
+                  <div className="side-nav-item">
+                    <h4 style={{ fontSize: "0.7rem", color: "#ffffff" }}>
+                      Apps
+                    </h4>
+                  </div>
                 </a>
-                <hr
-                  style={{
-                    width: "25px",
-                    height: "0.5px",
-                    color: "white",
-                  }}
-                />
+
                 <a>
-                  <div className="side-nav-item">About </div>
+                  <div
+                    className="side-nav-item"
+                    style={{ borderBottom: "none" }}
+                  >
+                    <h4 style={{ fontSize: "0.7rem", color: "#ffffff" }}>
+                      Blog
+                    </h4>{" "}
+                  </div>
                 </a>
               </Fragment>
             )}

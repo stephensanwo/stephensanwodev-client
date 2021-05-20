@@ -29,7 +29,7 @@ const SearchBox = ({
 
       {searchData.length === 0 ? (
         <div className={`search-icon-${size}`}>
-          {size === "small" ? (
+          {size === "small" || size === "small-long" ? (
             <Search16 fill="#0f62fe" />
           ) : size === "medium" ? (
             <Search24 fill="#0f62fe" />
@@ -43,12 +43,12 @@ const SearchBox = ({
           onClick={() => setSearchData("")}
         >
           {" "}
-          {size === "small" ? (
-            <Close16 fill="#ffffff" />
+          {size === "small" || size === "small-long" ? (
+            <Close24 fill="#fa4d56" />
           ) : size === "medium" ? (
-            <Close24 fill="#ffffff" />
+            <Close24 fill="#fa4d56" />
           ) : (
-            <Close32 fill="#ffffff" />
+            <Close32 fill="#fa4d56" />
           )}
         </div>
       )}
