@@ -35,7 +35,7 @@ const FeaturedApp = ({ isNavOpen }) => {
             </div>
           </div>
 
-          <img src={Image} alt="" width="100%" height="100%" />
+          {/* <img src={Image} alt="" width="100%" height="100%" /> */}
         </div>
       </section>
       {isNavOpen === "open" ? (

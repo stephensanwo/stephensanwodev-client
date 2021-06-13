@@ -8,6 +8,7 @@ import ReactLogo from "../../assets/logos/reactjs-ar21.svg";
 import Tensorflow from "../../assets/logos/tensorflow-ar21.svg";
 import Lottie from "react-lottie";
 import analyticsLottie from "../assets/lottie/analytics-lottie.json";
+import readingLottie from "../assets/lottie/reading-lottie.json";
 
 const AppItem = ({ data }) => {
   const [lottieState, setLottieState] = useState(true);
@@ -15,6 +16,8 @@ const AppItem = ({ data }) => {
 
   if (data.image === "analyticsLottie") {
     lottieData = analyticsLottie;
+  } else if (data.image === "readingLottie") {
+    lottieData = readingLottie;
   } else {
     lottieData = analyticsLottie;
   }

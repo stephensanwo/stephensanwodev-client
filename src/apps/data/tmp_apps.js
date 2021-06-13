@@ -11,8 +11,8 @@ export const all = [
   {
     id: "all",
     category: "Software",
-    image: "diamondLottie",
-    short_desc: "Find and Download any Book",
+    image: "readingLottie",
+    short_desc: "Download any Book",
     name: "Citadel",
     desc: "Run accurate forecasts, with AI tools, without writing code!.",
     tags: ["Finance", "Marketing", "Forecasting", "Analytics"],

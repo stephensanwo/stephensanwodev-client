@@ -21,6 +21,8 @@
   position: absolute;
   z-index: 1;
   // background: url("../../assets/svg/home-page-background.svg") no-repeat right;
+
+  // background: radial-gradient(68.13% 100% at 100% 0,#dd5ce5 0,rgba(221,92,229,0) 100%),linear-gradient(95.52deg,#2e95d3,rgba(46,149,211,0)),linear-gradient(0deg,#5436da,#5436da),#6e6e80;
   background-color: green;
   padding-left: 100px;
 }
@@ -162,7 +164,6 @@
   height: 500px;
   cursor: pointer;
   justify-self: center;
-
   padding: 1rem;
 }
 
