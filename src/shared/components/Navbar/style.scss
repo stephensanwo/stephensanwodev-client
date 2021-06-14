@@ -1,0 +1,66 @@
+// App Navbar
+.app-nav {
+  height: 50px;
+  background: #23272d;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-left: 100px;
+  border-bottom: 1px solid #444c56;
+}
+
+.app-nav .nav-tabs {
+  flex-basis: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.app-nav .nav-actions {
+  flex-basis: 20%;
+  display: flex;
+}
+
+.app-nav .nav-action-1,
+.app-nav .nav-action-2,
+.app-nav .nav-action-3 {
+  width: 80px;
+}
+.app-nav .nav-tabs h4 {
+  color: #cdd9e5;
+  color: #a2facf;
+  font-size: 0.8rem;
+  font-family: "display-text-light";
+  cursor: pointer;
+}
+
+// Options
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  cursor: pointer;
+}
+
+.options-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.options-container h4 {
+  color: #cdd9e5;
+  font-size: 0.7rem;
+  font-family: "display-text-light";
+  cursor: pointer;
+}
+
+.options-container:hover,
+.options-container:hover h4 {
+  color: #a2facf;
+}
