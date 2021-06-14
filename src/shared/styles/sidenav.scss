@@ -1,120 +1,120 @@
-.side-nav {
-  background: #0d1116;
-  height: 100vh;
-}
+// .side-nav {
+//   background: #0d1116;
+//   height: 100vh;
+// }
 
-.side-nav-content {
-  margin: auto;
-  padding: 0rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
+// .side-nav-content {
+//   margin: auto;
+//   padding: 0rem;
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   gap: 1rem;
+//   justify-content: center;
+//   margin-top: 1rem;
+// }
 
-.side-nav-item {
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid white;
-  margin-bottom: 1rem;
-}
+// .side-nav-item {
+//   width: 100%;
+//   text-align: center;
+//   cursor: pointer;
+//   height: 20px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: #ffffff;
+//   padding-bottom: 1.5rem;
+//   border-bottom: 1px solid white;
+//   margin-bottom: 1rem;
+// }
 
-.side-nav-item a {
-  font-size: 0.7rem;
-  color: #ffffff;
-}
+// .side-nav-item a {
+//   font-size: 0.7rem;
+//   color: #ffffff;
+// }
 
-.mobile-nav {
-  height: 80px;
-  width: 50px;
-}
+// .mobile-nav {
+//   height: 80px;
+//   width: 50px;
+// }
 
-.mobile-nav-content {
-  margin: auto;
-  padding: auto;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
-}
+// .mobile-nav-content {
+//   margin: auto;
+//   padding: auto;
+//   display: grid;
+//   align-items: center;
+//   justify-content: center;
+//   padding-top: 1rem;
+// }
 
-// Small Mobile devices
-@media (max-width: 320px) {
-  .side-nav {
-    display: none;
-  }
-  .mobile-nav {
-    display: block;
-  }
-}
+// // Small Mobile devices
+// @media (max-width: 320px) {
+//   .side-nav {
+//     display: none;
+//   }
+//   .mobile-nav {
+//     display: block;
+//   }
+// }
 
-// Small - Medium devices
-@media (min-width: 320px) and (max-width: 480px) {
-  .side-nav {
-    display: none;
-  }
-  .mobile-nav {
-    display: block;
-  }
-}
+// // Small - Medium devices
+// @media (min-width: 320px) and (max-width: 480px) {
+//   .side-nav {
+//     display: none;
+//   }
+//   .mobile-nav {
+//     display: block;
+//   }
+// }
 
-// Big phones and Small Tablets
-@media (min-width: 481px) and (max-width: 768px) {
-  .side-nav {
-    display: none;
-  }
-  .mobile-nav {
-    display: block;
-  }
-}
+// // Big phones and Small Tablets
+// @media (min-width: 481px) and (max-width: 768px) {
+//   .side-nav {
+//     display: none;
+//   }
+//   .mobile-nav {
+//     display: block;
+//   }
+// }
 
-// Tablets  and small screens
-@media (min-width: 769px) and (max-width: 1024px) {
-  .mobile-nav {
-    display: none;
-  }
-}
+// // Tablets  and small screens
+// @media (min-width: 769px) and (max-width: 1024px) {
+//   .mobile-nav {
+//     display: none;
+//   }
+// }
 
-// Tablets Landscape and Medium  Screens
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .mobile-nav {
-    display: none;
-  }
-}
+// // Tablets Landscape and Medium  Screens
+// @media (min-width: 1025px) and (max-width: 1200px) {
+//   .mobile-nav {
+//     display: none;
+//   }
+// }
 
-// Large - Extra Large Screens
+// // Large - Extra Large Screens
 
-@media (min-width: 1201px) {
-  .mobile-nav {
-    display: none;
-  }
-}
+// @media (min-width: 1201px) {
+//   .mobile-nav {
+//     display: none;
+//   }
+// }
 
-// Slider Menu
+// // Slider Menu
 
-.slider-menu {
-  height: 100vh;
-  width: 100%;
-  background: #0bbba9;
-  // background: rgba(0, 128, 0, 0.295);
-  position: absolute;
-  z-index: 2;
-}
+// .slider-menu {
+//   height: 100vh;
+//   width: 100%;
+//   background: #0bbba9;
+//   // background: rgba(0, 128, 0, 0.295);
+//   position: absolute;
+//   z-index: 2;
+// }
 
-.slider-menu-open {
-  position: fixed;
-  height: 100vh;
-}
+// .slider-menu-open {
+//   position: fixed;
+//   height: 100vh;
+// }
 
-.slider-menu-closed {
-  position: fixed;
-  height: 100vh;
-}
+// .slider-menu-closed {
+//   position: fixed;
+//   height: 100vh;
+// }
