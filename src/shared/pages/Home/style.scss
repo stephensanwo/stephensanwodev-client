@@ -1,0 +1,119 @@
+// Home Page
+
+.home-container {
+  width: 100vw;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+// Landing Page
+
+.landing-container {
+  flex-basis: 100%;
+  height: 95vh;
+  //   background-color: red;
+  border-left: 1px solid #444c56;
+  border-right: 1px solid #444c56;
+  padding: 10rem;
+}
+
+.landing-content {
+  width: 60%;
+  margin: auto;
+}
+
+.landing-content h1 {
+  font-size: 6rem;
+  font-family: "display-text-light";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.landing-content h4 {
+  font-size: 1.2rem;
+  color: #a2facf;
+  margin-bottom: 1rem;
+}
+
+.landing-content p {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-button h4 {
+  font-family: "display-text-light";
+  font-size: 1.2rem;
+  color: #a2facf;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
+// Accordion
+
+.tools-accordion {
+  width: 500px;
+}
+
+.bx--accordion__heading:hover::before {
+  background-color: transparent;
+}
+
+.bx--accordion__content {
+  width: 500px;
+  padding-right: 0;
+  padding-left: 0rem;
+}
+.tools-accordion p {
+  font-family: "display-text-light";
+  color: #a2facf;
+  font-size: 0.8rem;
+}
+
+// Carbon Overrides
+
+.bx--accordion__title {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  font-family: "display-text-light", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-align: left;
+  padding: 0, 0;
+  margin: 0, 0;
+  margin-left: 0rem;
+}
+
+.bx--accordion__item:last-child {
+  border-bottom: none;
+  border-top: none;
+}
+
+.bx--accordion__item--active .bx--accordion__arrow {
+  fill: #ffffff;
+}
+.bx--accordion__arrow {
+  fill: #ffffff;
+}
+
+.bx--accordion__heading::before {
+  background-color: transparent;
+}
+.bx--accordion:hover {
+  background-color: transparent;
+}
+
+.bx--accordion__heading {
+  min-height: 0rem;
+  height: 2rem;
+  //   padding-top: 0;
+  background-color: green;
+}
