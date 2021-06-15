@@ -13,23 +13,41 @@ const Landing = () => {
           I solve complex problems with Software and Artificial Intelligence
         </h4>
         <p>
-          A software and analytics enabled solutions developer, who is
-          enthusiastic about architecting solutions in complex data-oriented
-          environments, and building models that cut through the complexities of
-          business problems. I am energized by highly academic, competitive and
-          collaborative environments, with continuously evolving challenges that
-          fuel a desire to improve my understanding on how to develop solutions
-          that work. While this excites me, what also drives my motivation to
-          work continues to be the opportunity to be in an environment, where
-          learning, personal, and professional development spontaneously align
-          with organizational goals.
+          I translate problem statements into solutions that solve the problems;
+          building and shipping APIs and Micro-services for internal and client
+          projects, developing custom algorithms to tackle domain problems, and
+          developing custom analytics solutions for automating client processes.
+          I currently lead the digital solutions development project team for
+          the GRC Unit at KPMG, developing and maintaining scalable and quality
+          software and analytics solutions for clients and internal use cases.
         </p>
         <div className="contact-button">
           <h4>Get in touch</h4>
           <ArrowRight24 fill="#A2FACF" />
         </div>
-        <div className="tools-accordion">
-          <ToolsAccordion />
+        <div className="about-container">
+          <div className="section-divider">
+            <div className="section-title">
+              <h4>About Me</h4>
+            </div>
+            <div className="section-divider-line"></div>
+          </div>
+
+          <div className="about-content">
+            <p>
+              I am full-stack software, and analytics driven solutions
+              developer, who is skilled in architecting solutions in complex
+              data-oriented environments and building models that cut through
+              the complexities of business problems. I am energised by
+              technically challenging, competitive and collaborative
+              environments, where learning, personal and technical development,
+              spontaneously align with organisational goals.
+            </p>
+            <div className="tools-accordion">
+              <p>Tools & Technologies I use</p>
+              <ToolsAccordion />
+            </div>
+          </div>
         </div>
       </div>
     </div>
