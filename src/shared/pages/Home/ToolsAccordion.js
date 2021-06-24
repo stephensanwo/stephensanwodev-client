@@ -37,7 +37,9 @@ const ToolsAccordion = () => {
                 gap: "1.5rem",
               }}
             >
-              <p>Python, Javascript, Go, Typescript</p>
+              <h4 style={{ fontSize: "1rem", color: "#A2FACF", width: "100%" }}>
+                Python, Javascript, Go, Typescript
+              </h4>
             </div>
           </AccordionItem>
         </Accordion>
@@ -45,42 +47,84 @@ const ToolsAccordion = () => {
       <div>
         <Accordion>
           <AccordionItem title="APIs & Microservices" closed>
-            <p>Flask, Redis-Queue, GraphQL, NodeJs, Express</p>
+            <h4
+              style={{
+                fontSize: "1rem",
+                color: "#A2FACF",
+              }}
+            >
+              Flask, Redis-Queue, GraphQL, NodeJs, Express
+            </h4>
           </AccordionItem>
         </Accordion>
       </div>
       <div>
         <Accordion>
           <AccordionItem title="Database, Storage & Caching" closed>
-            <p>MongoDB, Redis, AWS DynamoDB, AWS S3</p>
+            <h4
+              style={{
+                fontSize: "1rem",
+                color: "#A2FACF",
+              }}
+            >
+              MongoDB, Redis, AWS DynamoDB, AWS S3
+            </h4>
           </AccordionItem>
         </Accordion>
       </div>
       <div>
         <Accordion>
           <AccordionItem title="Frontend Technologies" closed>
-            <p>ReactJs, HTML, CSS</p>
+            <h4
+              style={{
+                fontSize: "1rem",
+                color: "#A2FACF",
+              }}
+            >
+              ReactJs, HTML, CSS
+            </h4>
           </AccordionItem>
         </Accordion>
       </div>
       <div>
         <Accordion>
           <AccordionItem title="Mobile Development Technologies" closed>
-            <p>React Native</p>
+            <h4
+              style={{
+                fontSize: "1rem",
+                color: "#A2FACF",
+              }}
+            >
+              React Native
+            </h4>
           </AccordionItem>
         </Accordion>
       </div>
       <div>
         <Accordion>
           <AccordionItem title="Human Interaction Design" closed>
-            <p>Sketch</p>
+            <h4
+              style={{
+                fontSize: "1rem",
+                color: "#A2FACF",
+              }}
+            >
+              Sketch
+            </h4>
           </AccordionItem>
         </Accordion>
       </div>
       <div>
         <Accordion>
           <AccordionItem title="Deep Learning & AI" closed>
-            <p>Tensorflow</p>
+            <h4
+              style={{
+                fontSize: "1rem",
+                color: "#A2FACF",
+              }}
+            >
+              Tensorflow
+            </h4>
           </AccordionItem>
         </Accordion>
       </div>
@@ -88,14 +132,28 @@ const ToolsAccordion = () => {
       <div>
         <Accordion>
           <AccordionItem title="DevOps & CI" closed>
-            <p>Docker, GitHub</p>
+            <h4
+              style={{
+                fontSize: "1rem",
+                color: "#A2FACF",
+              }}
+            >
+              Docker, GitHub
+            </h4>
           </AccordionItem>
         </Accordion>
       </div>
       <div>
         <Accordion>
           <AccordionItem title="Cloud Native" closed>
-            <p>AWS, MongoDB Atlas</p>
+            <h4
+              style={{
+                fontSize: "1rem",
+                color: "#A2FACF",
+              }}
+            >
+              AWS, MongoDB Atlas
+            </h4>
           </AccordionItem>
         </Accordion>
       </div>
