@@ -8,6 +8,7 @@
   top: 0;
   padding-left: 100px;
   border-bottom: 1px solid #444c56;
+  z-index: 1000;
 }
 
 .app-nav .nav-tabs {
@@ -30,7 +31,7 @@
   color: #cdd9e5;
   color: #a2facf;
   font-size: 0.8rem;
-  font-family: "display-text-light";
+  font-family: "display-text-medium";
   cursor: pointer;
 }
 
@@ -56,7 +57,7 @@
 .options-container h4 {
   color: #cdd9e5;
   font-size: 0.7rem;
-  font-family: "display-text-light";
+  font-family: "display-text-medium";
   cursor: pointer;
 }
 

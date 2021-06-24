@@ -61,7 +61,7 @@ const About = () => {
                   <h2
                     style={{
                       color: "#ffffff",
-                      fontFamily: "display-text-medium",
+                      fontFamily: "display-text-semibold",
                       fontSize: "0.8rem",
                       marginLeft: "1.5rem",
                     }}

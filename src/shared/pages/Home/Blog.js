@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Launch16, Share16, MachineLearningModel24 } from "@carbon/icons-react";
+import { Launch16, Share16, ArrowRight16 } from "@carbon/icons-react";
 
 import BlogImage from "../../../assets/svg/article.svg";
 import { blog_categories } from "../../../data/blog";
@@ -55,10 +55,10 @@ const Blog = () => {
                 <div className="blog-content-featured-description">
                   <h4
                     style={{
-                      fontFamily: "display-text-medium",
+                      fontFamily: "display-text-semibold",
                       fontSize: "0.7rem",
                       color: "#a2facf",
-                      marginBottom: "0.5rem",
+                      marginBottom: "1rem",
                     }}
                   >
                     {article.category}
@@ -66,9 +66,10 @@ const Blog = () => {
                   <h2
                     style={{
                       color: "#ffffff",
-                      fontFamily: "display-text-medium",
+                      fontFamily: "display-text-semibold",
                       fontSize: "1rem",
                       marginBottom: "0.5rem",
+                      lineHeight: 1.2,
                     }}
                   >
                     {article.title}
@@ -91,6 +92,7 @@ const Blog = () => {
                         width: "30%",
                         display: "flex",
                         cursor: "pointer",
+                        alignItems: "center",
                       }}
                     >
                       <Launch16 color="#A2FACF" />
@@ -110,6 +112,7 @@ const Blog = () => {
                         width: "30%",
                         display: "flex",
                         cursor: "pointer",
+                        alignItems: "center",
                       }}
                     >
                       <Share16 color="#A2FACF" />
@@ -128,10 +131,14 @@ const Blog = () => {
                 </div>
               </div>
             ))}
+            <div className="see-all-container">
+              <h4>Read All Posts</h4>
+              <ArrowRight16 fill="#a2facf" />
+            </div>
           </div>
         </div>
         <div className="blog-categories">
-          <div className="blog-categories-featured-title">
+          <div className="blog-categories-title">
             <h4
               style={{
                 fontSize: "0.8rem",
@@ -142,7 +149,7 @@ const Blog = () => {
               Topics
             </h4>
           </div>
-          <div className="blog-categories-featured-container">
+          <div className="blog-categories-container">
             {blog_categories.map((blog_item) => (
               <div className="blog-category-item">
                 {blog_item.logo}
@@ -152,27 +159,6 @@ const Blog = () => {
           </div>
         </div>
       </div>
-
-      <img
-        width="230px"
-        height="230px"
-        style={{ marginRight: "0.2rem" }}
-        border="0"
-        src="https://tpc.googlesyndication.com/simgad/11207024840964040035?"
-      ></img>
-      <img
-        width="230px"
-        height="230px"
-        border="0"
-        src="https://tpc.googlesyndication.com/simgad/11701369496399836607?"
-      ></img>
-      <img
-        width="230px"
-        height="230px"
-        border="0"
-        style={{ marginRight: "0.2rem" }}
-        src="https://tpc.googlesyndication.com/simgad/11207024840964040035?"
-      ></img>
     </div>
   );
 };
