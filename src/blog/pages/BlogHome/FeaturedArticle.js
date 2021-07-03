@@ -1,5 +1,5 @@
 import React from "react";
-import { featured_article } from "../../data/tmp_blog";
+import { featured_article } from "../../../data/tmp_blog";
 import { Launch16, Share16, ArrowRight16 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 
@@ -33,7 +33,7 @@ const FeaturedArticle = () => {
         </h2>
         <p
           style={{
-            fontFamily: "display-text",
+            fontFamily: "display-text-medium",
             fontWeight: "400",
             fontSize: "1em",
             color: "#768390",

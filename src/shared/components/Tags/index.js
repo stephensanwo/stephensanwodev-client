@@ -10,7 +10,7 @@ const Tags = ({ title, color, type, app_title }) => {
           <a
             className={`tag-color-${color}`}
             style={{
-              fontFamily: "display-text",
+              fontFamily: "display-text-medium",
               fontSize: "0.8em",
             }}
           >

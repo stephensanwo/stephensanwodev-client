@@ -3,13 +3,6 @@
   display: flex;
 }
 
-// SideNav
-.blog-home-sidenav {
-  width: 300px;
-  border-right: 1px solid #444c56;
-  min-height: 100vh;
-}
-
 .blog-home-content-container {
   width: 100%;
   padding-top: 4rem;
@@ -51,8 +44,8 @@
 }
 
 .blog-content-featured-tags {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
   display: flex;
 }
 
@@ -64,9 +57,9 @@
 }
 
 .blog-home-articles-image {
-  width: 400px;
+  width: 450px;
   overflow: hidden;
-  height: 170px;
+  height: 190px;
 }
 
 .blog-home-articles-container img {
@@ -84,11 +77,17 @@
 // Options Nav
 
 .blog-home-options {
-  width: 800px;
+  width: 700px;
 }
 
 .blog-home-options-container {
   margin-top: 6rem;
-  border-top: 1px solid #444c56;
   width: 70%;
+}
+
+// SideNav
+.blog-home-sidenav {
+  width: 300px;
+  border-right: 1px solid #444c56;
+  min-height: 100vh;
 }

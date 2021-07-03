@@ -197,7 +197,7 @@ export const all = [
     id: "python",
     category: "Python Development",
     sub_category: "From Scripting to Software",
-    title: "The Import Module, Python's Import System",
+    title: "The Import Module, Python's Import System In Software Development",
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
@@ -403,3 +403,33 @@ export const featured_article = {
     "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics engine without having to write code. Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
   image_url: featured_image,
 };
+
+export const top_articles = [
+  {
+    id: "python",
+    category: "Software Development",
+    sub_category: "Data Structures",
+    title: "Learn how to use Data Structure & Algorithms",
+    description:
+      "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
+    tags: ["Software"],
+  },
+  {
+    id: "javascript",
+    category: "Software Development",
+    sub_category: "Data Structures",
+    title: "Learn how to use Data Structure & Algorithms",
+    description:
+      "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
+    tags: ["Software"],
+  },
+  {
+    id: "python",
+    category: "Software Development",
+    sub_category: "Data Structures",
+    title: "Learn how to use Data Structure & Algorithms",
+    description:
+      "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
+    tags: ["Software"],
+  },
+];

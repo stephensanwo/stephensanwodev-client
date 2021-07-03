@@ -4,11 +4,14 @@ import "./style.scss";
 import FeaturedArticle from "./FeaturedArticle";
 import ArticleList from "./ArticleList";
 import Options from "./Options";
+import SideNavOptions from "./SideNavOptions";
 
 const BlogHome = () => {
   return (
     <div className="blog-home-container">
-      <div className="blog-home-sidenav"></div>
+      <div className="blog-home-sidenav">
+        <SideNavOptions />
+      </div>
       <div className="blog-home-content-container">
         <div className="blog-home-content">
           <div className="blog-home-content-items">

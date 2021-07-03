@@ -1,6 +1,7 @@
 import React from "react";
-import { all } from "../../data/tmp_blog";
+import { all } from "../../../data/tmp_blog";
 import { Launch16, Share16, ArrowRight16 } from "@carbon/icons-react";
+import Tags from "../../../shared/components/Tags";
 
 const ArticleList = () => {
   return (
@@ -27,23 +28,30 @@ const ArticleList = () => {
                 fontFamily: "display-text-bold",
                 fontSize: "1.2em",
                 marginBottom: "0.4em",
-                lineHeight: 1.5,
-              }}
-            >
-              {article.title}
-            </h2>
-            <p
-              style={{
-                fontFamily: "display-text",
-                fontSize: "1em",
-                color: "#768390",
-                marginBottom: "0.5rem",
                 lineHeight: 1.4,
               }}
             >
-              {article.description}
+              {`${article.title}`.slice(0, 80)}
+              {article.title.length > 80 ? "..." : ""}
+            </h2>
+            <p
+              style={{
+                fontFamily: "display-text-medium",
+                fontSize: "1em",
+                color: "#768390",
+                marginBottom: "0.4em",
+                lineHeight: 1.4,
+              }}
+            >
+              {`${article.description}`.slice(0, 200)}
+              {article.description.length > 200 ? "..." : ""}
             </p>
-            <div className="blog-content-featured-logo">
+            <div className="blog-content-featured-tags">
+              {article.tags.map((tag, index) => (
+                <Tags key={index} type="blog" title={tag} color={"green"} />
+              ))}
+            </div>
+            <div style={{ display: "flex" }}>
               <div
                 style={{
                   width: "20%",
