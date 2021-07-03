@@ -27,12 +27,12 @@
 .app-nav .nav-action-3 {
   width: 80px;
 }
-.app-nav .nav-tabs h4 {
-  color: #cdd9e5;
-  color: #a2facf;
-  font-size: 0.8rem;
+.app-nav .nav-tabs a {
+  color: #ffffff;
+  font-size: 0.9rem;
   font-family: "display-text-medium";
   cursor: pointer;
+  text-decoration: none;
 }
 
 // Options
@@ -54,14 +54,15 @@
   justify-content: center;
 }
 
-.options-container h4 {
-  color: #cdd9e5;
+.options-container a {
+  color: #ffffff;
   font-size: 0.7rem;
   font-family: "display-text-medium";
   cursor: pointer;
+  text-decoration: none;
 }
 
 .options-container:hover,
-.options-container:hover h4 {
-  color: #a2facf;
+.options-container:hover a {
+  color: #539bf5;
 }

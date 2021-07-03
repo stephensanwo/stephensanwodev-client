@@ -19,12 +19,12 @@ const Footer = () => {
                 marginRight: "2rem",
               }}
             >
-              <Email16 color="#A2FACF" />
+              <Email16 color="#768390" />
               <small
                 style={{
                   fontFamily: "display-text-medium",
                   fontSize: "0.6rem",
-                  color: "#a2facf",
+                  color: "#768390",
                   marginLeft: "0.5rem",
                 }}
               >
@@ -38,12 +38,12 @@ const Footer = () => {
                 marginRight: "2rem",
               }}
             >
-              <LogoGithub16 color="#A2FACF" />
+              <LogoGithub16 color="#768390" />
               <small
                 style={{
                   fontFamily: "display-text-medium",
                   fontSize: "0.6rem",
-                  color: "#a2facf",
+                  color: "#768390",
                   marginLeft: "0.5rem",
                 }}
               >
@@ -57,12 +57,12 @@ const Footer = () => {
                 marginRight: "2rem",
               }}
             >
-              <LogoLinkedin16 color="#A2FACF" />
+              <LogoLinkedin16 color="#768390" />
               <small
                 style={{
                   fontFamily: "display-text-medium",
                   fontSize: "0.6rem",
-                  color: "#a2facf",
+                  color: "#768390",
                   marginLeft: "0.5rem",
                 }}
               >
@@ -76,12 +76,12 @@ const Footer = () => {
                 marginRight: "2rem",
               }}
             >
-              <LogoTwitter16 color="#A2FACF" />
+              <LogoTwitter16 color="#768390" />
               <small
                 style={{
                   fontFamily: "display-text-medium",
                   fontSize: "0.6rem",
-                  color: "#a2facf",
+                  color: "#768390",
                   marginLeft: "0.5rem",
                 }}
               >

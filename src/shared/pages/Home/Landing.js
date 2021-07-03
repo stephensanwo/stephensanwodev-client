@@ -28,8 +28,8 @@ const Landing = () => {
       <div className="contact-section">
         <h4>Get in touch</h4>
         <div className="contact-section-logo">
-          <Email24 color="#A2FACF" /> <LogoGithub24 color="#A2FACF" />{" "}
-          <LogoLinkedin24 color="#A2FACF" /> <LogoTwitter24 color="#A2FACF" />
+          <Email24 color="#768390" /> <LogoGithub24 color="#768390" />{" "}
+          <LogoLinkedin24 color="#768390" /> <LogoTwitter24 color="#768390" />
         </div>
       </div>
     </div>

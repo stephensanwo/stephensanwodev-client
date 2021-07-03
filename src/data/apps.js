@@ -12,12 +12,12 @@ export const featured_apps_data = [
     desc: " An enterprise solution that analyses ATM activities in real-time to improve the ATM reconciliation efficiency and actively monitor ATM risks and identify areas for performance improvement.",
     image_url: atm_recon,
     built_with: [
-      "Python, ",
-      "SQL, ",
-      "React, ",
-      "RQ, ",
-      "Javascript, ",
-      "Docker,",
+      "Python",
+      "Javascript",
+      "SQL",
+      "React",
+      "RQ",
+      "Docker",
       "MongoDB",
     ],
   },
@@ -27,14 +27,7 @@ export const featured_apps_data = [
     title: "Urban Development Tracking App",
     desc: "An app that uses weekly satellite imagery and computer vision algorithms, to track urbanization, and provide accurate recommendations to govt agencies.",
     image_url: corpenicus_image,
-    built_with: [
-      "Python, ",
-      "OpenCV, ",
-      "GraphQL, ",
-      "NodeJs, ",
-      "React, ",
-      "MongoDB",
-    ],
+    built_with: ["Python", "OpenCV", "GraphQL", "NodeJs", "React", "MongoDB"],
   },
   {
     id: 3,
@@ -42,7 +35,7 @@ export const featured_apps_data = [
     title: "No-code forecasting at scale",
     desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
     image_url: gallium_image,
-    built_with: ["Python, ", "PostgresSQL, ", "Redis, ", "React"],
+    built_with: ["Python", "PostgresSQL", "Redis", "React"],
   },
   {
     id: 4,
@@ -50,7 +43,7 @@ export const featured_apps_data = [
     title: "IOS and Android Fashion Ecommerce App",
     desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
     image_url: tomori_mobile,
-    built_with: ["React Native, ", "AWS"],
+    built_with: ["React Native", "AWS"],
   },
 ];
 
