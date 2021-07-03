@@ -40,9 +40,10 @@ const Options = () => {
               width: "100%",
             }}
           >
-            {article.description}
+            {`${article.description}`.slice(0, 160)}
+            {article.description.length > 160 ? "..." : ""}
           </p>
-          <div style={{ marginTop: "0.5rem" }}>
+          <div style={{ marginTop: "0.5rem", display: "flex" }}>
             {article.tags.map((tag, index) => (
               <Tags key={index} type="blog" title={tag} color={"green"} />
             ))}

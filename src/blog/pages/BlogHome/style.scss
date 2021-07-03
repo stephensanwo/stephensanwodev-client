@@ -7,6 +7,7 @@
   width: 100%;
   padding-top: 4rem;
   display: flex;
+  margin-left: 350px;
 }
 
 // Blog Content
@@ -87,7 +88,46 @@
 
 // SideNav
 .blog-home-sidenav {
-  width: 300px;
+  width: 350px;
   border-right: 1px solid #444c56;
   min-height: 100vh;
+  position: fixed;
+  padding-top: 2rem;
+}
+
+.blog-home-sidenav-container {
+  width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+  border-bottom: 1px solid #444c56;
+}
+
+.blog-last {
+  border-bottom: none;
+}
+
+.blog-home-sidenav-content {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.blog-sidenav-category-item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.blog-sidenav-category-item a {
+  color: #adbac7;
+  margin-left: 0.5rem;
+}
+
+.blog-sidenav-category-item a:hover {
+  color: #539bf5;
+}
+
+.blog-sidenav-filters {
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -424,12 +424,13 @@ export const top_articles = [
     tags: ["Software"],
   },
   {
-    id: "python",
-    category: "Software Development",
-    sub_category: "Data Structures",
-    title: "Learn how to use Data Structure & Algorithms",
+    id: "tensorflow",
+    category: "Deep Learning & AI",
+    sub_category: "Tensorflow Basics",
+    title: "Learn how to use Tensorflow for basic Neural Networks",
     description:
-      "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
-    tags: ["Software"],
+      "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
+    tags: ["AI", "ML"],
+    image_url: featured_image,
   },
 ];
