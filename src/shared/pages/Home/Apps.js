@@ -41,7 +41,7 @@ const Apps = () => {
                     style={{
                       fontFamily: "display-text-medium",
                       fontSize: "0.7rem",
-                      color: "#a2facf",
+                      color: "#539bf5",
                       marginBottom: "1rem",
                     }}
                   >
@@ -61,8 +61,9 @@ const Apps = () => {
                   <p
                     style={{
                       fontFamily: "display-text",
+                      fontWeight: "400",
                       fontSize: "0.8rem",
-                      color: "#adbac7",
+                      color: "#768390",
                       marginBottom: "0.5rem",
                     }}
                   >
@@ -82,7 +83,7 @@ const Apps = () => {
                         style={{
                           fontFamily: "display-text-medium",
                           fontSize: "0.7rem",
-                          color: "#a2facf",
+                          color: "#768390",
                         }}
                       >
                         Built With:
@@ -92,7 +93,6 @@ const Apps = () => {
                       style={{
                         width: "85%",
                         display: "flex",
-
                         alignItems: "center",
                       }}
                     >
@@ -101,7 +101,7 @@ const Apps = () => {
                           style={{
                             fontFamily: "display-text-medium",
                             fontSize: "0.6rem",
-                            color: "#ffffff",
+                            color: "#768390",
                             marginRight: "0.2rem",
                           }}
                           key={index}
@@ -117,7 +117,7 @@ const Apps = () => {
             ))}
             <div className="see-all-container">
               <h4>Discover All Apps</h4>
-              <ArrowRight16 fill="#a2facf" />
+              <ArrowRight16 fill="#539bf5" />
             </div>
           </div>
         </div>

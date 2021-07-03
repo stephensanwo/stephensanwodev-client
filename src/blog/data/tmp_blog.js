@@ -1,3 +1,5 @@
+import featured_image from "../assets/img/Jun21_16_1249103806.jpg";
+
 export const api_microservice = [
   {
     id: "python",
@@ -199,6 +201,7 @@ export const all = [
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
+    image_url: featured_image,
   },
   {
     id: "python",
@@ -208,6 +211,7 @@ export const all = [
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
+    image_url: featured_image,
   },
   {
     id: "python",
@@ -217,6 +221,7 @@ export const all = [
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
+    image_url: featured_image,
   },
   {
     id: "python",
@@ -226,6 +231,7 @@ export const all = [
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
+    image_url: featured_image,
   },
   {
     id: "python",
@@ -235,6 +241,7 @@ export const all = [
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
+    image_url: featured_image,
   },
   {
     id: "tensorflow",
@@ -244,6 +251,7 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
+    image_url: featured_image,
   },
   {
     id: "tensorflow",
@@ -253,6 +261,7 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
+    image_url: featured_image,
   },
   {
     id: "tensorflow",
@@ -262,6 +271,7 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
+    image_url: featured_image,
   },
   {
     id: "tensorflow",
@@ -271,6 +281,7 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
+    image_url: featured_image,
   },
   {
     id: "tensorflow",
@@ -280,6 +291,7 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
+    image_url: featured_image,
   },
   {
     id: "python",
@@ -289,6 +301,7 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
+    image_url: featured_image,
   },
   {
     id: "javascript",
@@ -298,6 +311,7 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
+    image_url: featured_image,
   },
   {
     id: "python",
@@ -307,6 +321,7 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
+    image_url: featured_image,
   },
   {
     id: "python",
@@ -316,6 +331,7 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
+    image_url: featured_image,
   },
   {
     id: "python",
@@ -325,6 +341,7 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
+    image_url: featured_image,
   },
   {
     id: "react",
@@ -334,6 +351,7 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
+    image_url: featured_image,
   },
   {
     id: "javascript",
@@ -343,6 +361,7 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
+    image_url: featured_image,
   },
   {
     id: "javascript",
@@ -352,6 +371,7 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
+    image_url: featured_image,
   },
   {
     id: "react",
@@ -361,6 +381,7 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
+    image_url: featured_image,
   },
   {
     id: "react",
@@ -370,5 +391,15 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
+    image_url: featured_image,
   },
 ];
+
+export const featured_article = {
+  id: 1,
+  category: "Python",
+  title: "Structuring your python software development projects",
+  description:
+    "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics engine without having to write code. Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
+  image_url: featured_image,
+};

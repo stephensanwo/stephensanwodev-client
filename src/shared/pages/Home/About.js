@@ -71,7 +71,7 @@ const About = () => {
                 </div>
                 <div className="about-technologies-list">
                   {tech_item.tools.map((tool, index) => (
-                    <small key={index} style={{ color: "#adbac7" }}>
+                    <small key={index} style={{ color: "#768390" }}>
                       {tool}
                     </small>
                   ))}

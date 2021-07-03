@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./style.scss";
+import { Link } from "react-router-dom";
 
 const Options = ({ data }) => {
   return (
@@ -10,7 +11,9 @@ const Options = ({ data }) => {
       transition={{ ease: "easeOut", duration: 0.1 }}
     >
       <div className="options-text">
-        <h4>{data.name}</h4>
+        <Link to={data.link}>
+          <a>{data.name}</a>
+        </Link>
       </div>
     </motion.div>
   );

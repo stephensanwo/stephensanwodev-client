@@ -57,7 +57,7 @@ const Blog = () => {
                     style={{
                       fontFamily: "display-text-semibold",
                       fontSize: "0.7rem",
-                      color: "#a2facf",
+                      color: "#539bf5",
                       marginBottom: "1rem",
                     }}
                   >
@@ -77,8 +77,9 @@ const Blog = () => {
                   <p
                     style={{
                       fontFamily: "display-text",
+                      fontWeight: "400",
                       fontSize: "0.8rem",
-                      color: "#adbac7",
+                      color: "#768390",
                       marginBottom: "0.5rem",
                     }}
                   >
@@ -95,12 +96,12 @@ const Blog = () => {
                         alignItems: "center",
                       }}
                     >
-                      <Launch16 color="#A2FACF" />
+                      <Launch16 color="#539bf5" />
                       <h4
                         style={{
                           fontFamily: "display-text-medium",
                           fontSize: "0.7rem",
-                          color: "#a2facf",
+                          color: "#539bf5",
                           marginLeft: "0.5rem",
                         }}
                       >
@@ -115,12 +116,12 @@ const Blog = () => {
                         alignItems: "center",
                       }}
                     >
-                      <Share16 color="#A2FACF" />
+                      <Share16 color="#539bf5" />
                       <h4
                         style={{
                           fontFamily: "display-text-medium",
                           fontSize: "0.7rem",
-                          color: "#a2facf",
+                          color: "#539bf5",
                           marginLeft: "0.5rem",
                         }}
                       >
@@ -133,7 +134,7 @@ const Blog = () => {
             ))}
             <div className="see-all-container">
               <h4>Read All Posts</h4>
-              <ArrowRight16 fill="#a2facf" />
+              <ArrowRight16 fill="#539bf5" />
             </div>
           </div>
         </div>
