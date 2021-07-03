@@ -1,0 +1,142 @@
+.app-home-container {
+  width: 100vw;
+  display: flex;
+}
+
+.app-home-content-container {
+  width: 100%;
+  padding-top: 4rem;
+  display: flex;
+  margin-left: 350px;
+}
+
+// App Content
+
+.app-home-content {
+  width: 100%;
+}
+
+.app-home-content-items {
+  width: 800px;
+  margin: auto;
+}
+
+.app-home-featured-container {
+  margin-top: 4rem;
+  height: 600px;
+}
+
+.app-home-featured-image {
+  // min-width: 200px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.app-home-featured-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-home-featured-description {
+  width: 100%;
+  height: 300px;
+  margin-top: 2rem;
+}
+
+.app-content-featured-tags {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+}
+
+// Articles
+
+.app-home-articles-container {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.app-home-articles-image {
+  width: 450px;
+  overflow: hidden;
+  height: 190px;
+}
+
+.app-home-articles-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-home-articles-description {
+  width: 100%;
+  height: 170px;
+  margin-left: 2rem;
+}
+
+// Options Nav
+
+.app-home-options {
+  width: 700px;
+}
+
+.blog-home-options-container {
+  margin-top: 6rem;
+  width: 70%;
+}
+
+// SideNav
+.app-home-sidenav {
+  width: 350px;
+  border-right: 1px solid #444c56;
+  min-height: 100vh;
+  position: fixed;
+  padding-top: 2rem;
+}
+
+.app-home-sidenav-container {
+  width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+  border-bottom: 1px solid #444c56;
+}
+
+.app-last {
+  border-bottom: none;
+}
+
+.app-home-sidenav-content {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.app-sidenav-category-item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.app-sidenav-category-item a {
+  color: #adbac7;
+  margin-left: 0.5rem;
+}
+
+.app-sidenav-category-item a:hover {
+  color: #539bf5;
+}
+
+.app-sidenav-filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.see-all-apps {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

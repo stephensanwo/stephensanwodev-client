@@ -20,7 +20,7 @@ const Navbar = () => {
           <Options data={{ name: "Blog", link: "/blog" }} />
         </div>
         <div className="nav-action-3">
-          <Options data={{ name: "Apps", link: "/app" }} />
+          <Options data={{ name: "Apps", link: "/apps" }} />
         </div>
       </div>
       <div className="div"></div>
