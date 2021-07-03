@@ -5,6 +5,7 @@ import FeaturedArticle from "./FeaturedArticle";
 import ArticleList from "./ArticleList";
 import Options from "./Options";
 import SideNavOptions from "./SideNavOptions";
+import Footer from "../../../shared/components/Footer";
 
 const BlogHome = () => {
   return (
@@ -31,6 +32,7 @@ const BlogHome = () => {
             ></div>
             <ArticleList />
           </div>
+          <Footer />
         </div>
         <div className="blog-home-options">
           <Options />

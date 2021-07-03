@@ -1,0 +1,38 @@
+// Footer
+
+.footer-component-container {
+  margin-top: 6rem;
+  height: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer-component-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-component-contact-section {
+  margin-top: 2rem;
+  justify-content: center;
+  width: 20%;
+  margin: auto;
+}
+.footer-component-contact-section-logo {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.footer-component-contact-section h4 {
+  font-family: "display-text";
+  font-size: 0.8rem;
+  color: #539bf5;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  text-align: center;
+}

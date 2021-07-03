@@ -1,6 +1,6 @@
 import React from "react";
 import { all } from "../../../data/tmp_blog";
-import { Launch16, Share16, ArrowRight16 } from "@carbon/icons-react";
+import { Launch16, Share16, ArrowRight24 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 
 const ArticleList = () => {
@@ -96,6 +96,20 @@ const ArticleList = () => {
           </div>
         </div>
       ))}
+
+      <div className="see-all-blog">
+        <a
+          style={{
+            fontFamily: "display-text-bold",
+            fontSize: "1em",
+            color: "#539bf5",
+            marginRight: "0.5rem",
+          }}
+        >
+          More Posts
+        </a>
+        <ArrowRight24 fill="#539bf5" />
+      </div>
     </div>
   );
 };

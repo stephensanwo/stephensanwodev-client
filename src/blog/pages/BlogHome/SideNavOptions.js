@@ -76,7 +76,7 @@ const SideNavOptions = () => {
                 marginBottom: "2em",
               }}
             >
-              Query Options
+              Sort By
             </h4>
             <div>
               <div className="blog-sidenav-filters">

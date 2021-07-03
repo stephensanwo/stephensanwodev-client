@@ -92,4 +92,4 @@ export const blog_filters = [
   "IOS",
 ];
 
-export const blog_sort = ["latest posts", "most viewed"];
+export const blog_sort = ["latest posts", "most popular"];
