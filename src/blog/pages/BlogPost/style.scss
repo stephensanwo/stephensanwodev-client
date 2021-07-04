@@ -1,0 +1,41 @@
+// Blog Content
+
+.blog-post-content-container {
+  width: 100%;
+  padding-top: 4rem;
+  display: flex;
+  margin-left: 350px;
+}
+
+.blog-post-content {
+  width: 100%;
+}
+
+.blog-post-content-items {
+  width: 800px;
+  margin: auto;
+}
+
+// Blog Post
+.blog-post-container {
+  //   margin-top: 4rem;
+  //   height: 600px;
+}
+
+.blog-post-image {
+  //   min-width: 200px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.blog-post-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-post-detail {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
