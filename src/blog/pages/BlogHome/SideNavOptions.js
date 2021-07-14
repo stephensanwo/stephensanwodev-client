@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { ArrowLeft24 } from "@carbon/icons-react";
 import {
   blog_categories_small,
   blog_filters,
@@ -9,6 +10,26 @@ import Tags from "../../../shared/components/Tags";
 const SideNavOptions = () => {
   return (
     <Fragment>
+      <div className="blog-home-sidenav-container">
+        <div className="blog-home-sidenav-content">
+          <div>
+            <a
+              style={{
+                fontFamily: "display-text-bold",
+                fontSize: "1em",
+                color: "#539bf5",
+                marginBottom: "2em",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <ArrowLeft24 fill="#539bf5" style={{ marginRight: "0.5em" }} />{" "}
+              Home
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="blog-home-sidenav-container">
         <div className="blog-home-sidenav-content">
           <div>
@@ -30,6 +51,7 @@ const SideNavOptions = () => {
                     style={{
                       fontFamily: "display-text-medium",
                       fontSize: "0.85em",
+                      lineHeight: 1.5,
                     }}
                   >
                     {blog_item.title}

@@ -1,4 +1,5 @@
 $nav-background: #1a2431;
+$text-color-light: #adbac7;
 
 // Fonts
 @font-face {
@@ -24,6 +25,11 @@ $nav-background: #1a2431;
 @font-face {
   font-family: "display-text-medium";
   src: url("./assets/fonts/sf/SF-Pro-Text-Medium.otf");
+}
+
+@font-face {
+  font-family: "display-text-medium-italic";
+  src: url("./assets/fonts/sf/SF-Pro-Text-MediumItalic.otf");
 }
 
 nav {
@@ -62,7 +68,7 @@ nav {
 // Text
 h1 {
   letter-spacing: normal;
-  font-family: "display-text-medium", "Helvetica Neue", "Helvetica", "Arial",
+  font-family: "display-text-bold", "Helvetica Neue", "Helvetica", "Arial",
     "sans-serif";
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
@@ -70,7 +76,7 @@ h1 {
   text-align: left;
   padding: 0 0;
   margin: 0 0;
-  line-height: 1.2;
+  // line-height: 1.2;
 }
 
 h2 {
@@ -119,7 +125,7 @@ a {
   letter-spacing: normal;
   font-family: "display-text-light", "Helvetica Neue", "Helvetica", "Arial",
     "sans-serif";
-  color: #0f62fe;
+  color: #adbac7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   text-align: left;
@@ -129,6 +135,7 @@ a {
   text-decoration: none;
 }
 a:hover {
+  color: #539bf5;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -148,7 +155,7 @@ small {
 }
 
 body {
-  background-color: #23272d;
+  background-color: #1e2329;
 }
 
 // Dark Theme
@@ -161,180 +168,191 @@ body {
 //   background-color: #22272e;
 // }
 
-@media (max-width: 1024px) {
-  .container {
-    grid-template-columns: 100%;
-  }
-  .nav {
-    height: 8vh;
-  }
-  .grid-2 {
-    display: none;
-    margin-top: 1vh;
-  }
-  .grid-1 {
-    margin-top: 0vh;
-  }
+// @media (max-width: 1024px) {
+//   .container {
+//     grid-template-columns: 100%;
+//   }
+//   .nav {
+//     height: 8vh;
+//   }
+//   .grid-2 {
+//     display: none;
+//     margin-top: 1vh;
+//   }
+//   .grid-1 {
+//     margin-top: 0vh;
+//   }
 
-  // .blog-content {
-  //   max-width: 90%;
-  //   margin: auto;
-  //   background-color: #ffffff;
-  //   min-height: 100vh;
-  // }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    grid-template-columns: 70% 30%;
-  }
-  .grid-1 {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff;
-  }
-
-  .grid-2 {
-    position: fixed;
-    height: 100vh;
-    margin-left: 70%;
-    width: 30%;
-    background-color: #ffffff;
-  }
-  .grid-2-content {
-    width: 70%;
-    margin: auto;
-    margin-top: 6rem;
-  }
-  // .blog-content {
-  //   max-width: 90%;
-  //   margin: auto;
-  //   background-color: #ffffff;
-  //   min-height: 100vh;
-  // }
-}
-
-// // carbon overrides
-
-// .bx--accordion__title {
-//   font-size: 1rem;
-//   font-weight: 400;
-//   letter-spacing: 0rem;
-//   font-family: "display-text", "Helvetica Neue", "Helvetica", "Arial",
-//     "sans-serif";
-//   color: #1c2128;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: auto;
-//   text-align: left;
-//   padding: 0, 0;
-//   margin: 0, 0;
-//   margin-left: 1rem;
+//   // .blog-content {
+//   //   max-width: 90%;
+//   //   margin: auto;
+//   //   background-color: #ffffff;
+//   //   min-height: 100vh;
+//   // }
 // }
 
-// .bx--accordion__item:last-child {
-//   border-bottom: none;
+// @media (min-width: 1024px) {
+//   .container {
+//     grid-template-columns: 70% 30%;
+//   }
+//   .grid-1 {
+//     width: 100%;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-color: #ffffff;
+//   }
+
+//   .grid-2 {
+//     position: fixed;
+//     height: 100vh;
+//     margin-left: 70%;
+//     width: 30%;
+//     background-color: #ffffff;
+//   }
+//   .grid-2-content {
+//     width: 70%;
+//     margin: auto;
+//     margin-top: 6rem;
+//   }
+
+// // Small Mobile devices
+// @media (max-width: 320px) {
+//   // Text
+//   h1 {
+//     font-size: 2rem;
+//     font-weight: 400;
+//   }
+//   h4 {
+//     font-size: 0.8em;
+//     font-weight: 200;
+//   }
+//   small {
+//     font-size: 0.8rem;
+//     font-weight: 400;
+//   }
 // }
 
-// Small Mobile devices
-@media (max-width: 320px) {
-  // Text
-  h1 {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 0.8em;
-    font-weight: 200;
-  }
-  small {
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
+// // Small - Medium devices
+// @media (min-width: 320px) and (max-width: 480px) {
+//   // Text
+//   h1 {
+//     font-size: 2em;
+//     font-weight: 400;
+//   }
+//   h4 {
+//     font-size: 0.8em;
+//     font-weight: 200;
+//   }
+//   small {
+//     font-size: 0.8rem;
+//     font-weight: 400;
+//   }
+// }
+
+// // Big phones and Small Tablets
+// @media (min-width: 481px) and (max-width: 768px) {
+//   // Text
+//   h1 {
+//     font-size: 2em;
+//     font-weight: 400;
+//   }
+//   h4 {
+//     font-size: 0.8em;
+//     font-weight: 200;
+//   }
+//   small {
+//     font-size: 0.8rem;
+//     font-weight: 400;
+//   }
+// }
+
+// // Tablets  and small screens
+// @media (min-width: 769px) and (max-width: 1024px) {
+//   // Text
+//   h1 {
+//     font-size: 2.5em;
+//     font-weight: 400;
+//   }
+//   h4 {
+//     font-size: 1em;
+//     font-weight: 200;
+//   }
+//   small {
+//     font-size: 0.8rem;
+//     font-weight: 400;
+//   }
+// }
+
+// // Tablets Landscape and Medium  Screens
+// @media (min-width: 1025px) and (max-width: 1200px) {
+//   // Text
+//   h1 {
+//     font-size: 3em;
+//     font-weight: 400;
+//   }
+//   h4 {
+//     font-size: 1em;
+//     font-weight: 200;
+//   }
+//   small {
+//     font-size: 0.8rem;
+//     font-weight: 400;
+//   }
+// }
+
+// // Large - Extra Large Screens
+
+// @media (min-width: 1201px) {
+//   // Text
+//   h1 {
+//     font-size: 4em;
+//     font-weight: 400;
+//   }
+//   h4 {
+//     font-size: 1em;
+//     font-weight: 200;
+//   }
+//   small {
+//     font-size: 0.8rem;
+//     font-weight: 400;
+//   }
+// }
+
+// Altassian
+
+span.prismjs.css-1vdujjq {
+  background-color: none;
+  background-color: #22272e;
+  border: 1px solid #444c56;
+  border-radius: 6px;
+  // padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
 }
 
-// Small - Medium devices
-@media (min-width: 320px) and (max-width: 480px) {
-  // Text
-  h1 {
-    font-size: 2em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 0.8em;
-    font-weight: 200;
-  }
-  small {
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
+span.css-1vdujjq code:first-of-type {
+  background-image: none;
 }
 
-// Big phones and Small Tablets
-@media (min-width: 481px) and (max-width: 768px) {
-  // Text
-  h1 {
-    font-size: 2em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 0.8em;
-    font-weight: 200;
-  }
-  small {
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
+span.css-3yrc6a-CodeBlock {
+  background-color: none;
+  background-color: #22272e;
+  border: 1px solid #444c56;
+  border-radius: 6px;
+  // padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+}
+span.css-1vdujjq code:first-of-type {
+  background-image: none;
 }
 
-// Tablets  and small screens
-@media (min-width: 769px) and (max-width: 1024px) {
-  // Text
-  h1 {
-    font-size: 2.5em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1em;
-    font-weight: 200;
-  }
-  small {
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
-}
-
-// Tablets Landscape and Medium  Screens
-@media (min-width: 1025px) and (max-width: 1200px) {
-  // Text
-  h1 {
-    font-size: 3em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1em;
-    font-weight: 200;
-  }
-  small {
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
-}
-
-// Large - Extra Large Screens
-
-@media (min-width: 1201px) {
-  // Text
-  h1 {
-    font-size: 4em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1em;
-    font-weight: 200;
-  }
-  small {
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
+span.css-3yrc6a-CodeBlock code:first-of-type {
+  background-image: none;
 }

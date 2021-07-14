@@ -22,6 +22,11 @@ const Navbar = () => {
         <div className="nav-action-3">
           <Options data={{ name: "Apps", link: "/apps" }} />
         </div>
+        <div className="nav-action-3">
+          <Options
+            data={{ name: "Github", link: "https://github.com/stephensanwo" }}
+          />
+        </div>
       </div>
       <div className="div"></div>
     </div>

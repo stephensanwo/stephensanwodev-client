@@ -14,10 +14,10 @@ const ArticleList = () => {
           <div className="blog-home-articles-description">
             <h4
               style={{
-                fontFamily: "display-text-bold",
+                fontFamily: "display-text",
                 fontSize: "0.8em",
                 color: "#539bf5",
-                marginBottom: "0.4em",
+                marginBottom: "0.6em",
               }}
             >
               {article.category}
@@ -26,8 +26,8 @@ const ArticleList = () => {
               style={{
                 color: "#adbac7",
                 fontFamily: "display-text-bold",
-                fontSize: "1.2em",
-                marginBottom: "0.4em",
+                fontSize: "1em",
+                marginBottom: "0.5em",
                 lineHeight: 1.4,
               }}
             >
@@ -36,7 +36,7 @@ const ArticleList = () => {
             </h2>
             <p
               style={{
-                fontFamily: "display-text-medium",
+                fontFamily: "display-text",
                 fontSize: "1em",
                 color: "#768390",
                 marginBottom: "0.4em",

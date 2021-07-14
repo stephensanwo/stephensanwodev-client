@@ -10,7 +10,7 @@ const Blog = () => {
     <Fragment>
       <Navbar />
       <Switch>
-        <Route path={`${path}/post`} component={BlogPost} />
+        <Route exact path={`${path}/:post_id`} component={BlogPost} />
         <Route path={`${path}/`} component={BlogHome} />
       </Switch>
     </Fragment>

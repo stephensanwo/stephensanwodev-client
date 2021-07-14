@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
-import { Launch16, Share16, ArrowRight16 } from "@carbon/icons-react";
+import { Launch16, Share16, ArrowRight24 } from "@carbon/icons-react";
 
 import BlogImage from "../../../assets/svg/article.svg";
 import { blog_categories } from "../../../data/blog";
+import { Devops, Javascript } from "@carbon/pictograms-react";
+import Tags from "../../components/Tags";
 
 const featured_articles = [
   {
@@ -11,8 +13,8 @@ const featured_articles = [
     title: "Structuring your python software development projects",
     description:
       "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics engine without having to write code.",
-    image_url:
-      "https://hbr.org/resources/images/article_assets/2021/06/Jun21_16_1249103806.jpg",
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    tags: ["Python", "API", "Javascript"],
   },
   {
     id: 2,
@@ -21,6 +23,7 @@ const featured_articles = [
     description:
       "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics engine without having to write code.",
     image_url: BlogImage,
+    tags: ["Python", "API"],
   },
 ];
 
@@ -29,22 +32,31 @@ const Blog = () => {
     <div className="section-container">
       <div className="section-divider">
         <div className="section-title">
-          <h4>Blog</h4>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <Devops fill="#539bf5" />
+            <h4 style={{ color: "#539bf5" }}>Blog</h4>
+          </div>
+
+          <div className="see-all-container">
+            <a
+              style={{
+                fontFamily: "display-text-bold",
+                fontSize: "1em",
+                color: "#539bf5",
+                marginRight: "0.5rem",
+              }}
+            >
+              Read All Posts
+            </a>
+            <ArrowRight24 fill="#539bf5" />
+          </div>
         </div>
         <div className="section-divider-line"></div>
       </div>
       <div className="blog-content">
         <div className="blog-content-featured">
           <div className="blog-content-featured-title">
-            <h4
-              style={{
-                fontSize: "0.8rem",
-                lineHeight: "1.5",
-                color: "#444c56",
-              }}
-            >
-              Featured Articles & Tutorials
-            </h4>
+            <h4>Featured Articles & Tutorials</h4>
           </div>
           <div className="blog-content-featured-container">
             {featured_articles.map((article, index) => (
@@ -55,20 +67,20 @@ const Blog = () => {
                 <div className="blog-content-featured-description">
                   <h4
                     style={{
-                      fontFamily: "display-text-semibold",
-                      fontSize: "0.7rem",
+                      fontFamily: "display-text",
+                      fontSize: "0.8em",
                       color: "#539bf5",
-                      marginBottom: "1rem",
+                      marginBottom: "0.6em",
                     }}
                   >
                     {article.category}
                   </h4>
                   <h2
                     style={{
-                      color: "#ffffff",
-                      fontFamily: "display-text-semibold",
-                      fontSize: "1rem",
-                      marginBottom: "0.5rem",
+                      color: "#adbac7",
+                      fontFamily: "display-text-bold",
+                      fontSize: "1em",
+                      marginBottom: "0.5em",
                       lineHeight: 1.2,
                     }}
                   >
@@ -78,15 +90,24 @@ const Blog = () => {
                     style={{
                       fontFamily: "display-text",
                       fontWeight: "400",
-                      fontSize: "0.8rem",
+                      fontSize: "1em",
                       color: "#768390",
-                      marginBottom: "0.5rem",
+                      marginBottom: "0.4em",
+                      lineHeight: "1.4",
                     }}
                   >
-                    From predicting user growth to revenue forecasts,
-                    Non-technical users across several functions can now
-                    leverage the powerful facebook prophet analytics
+                    {article.description}
                   </p>
+                  <div className="blog-content-featured-tags">
+                    {article.tags.map((tag, index) => (
+                      <Tags
+                        key={index}
+                        type="blog"
+                        title={tag}
+                        color={"generic"}
+                      />
+                    ))}
+                  </div>
                   <div className="blog-content-featured-logo">
                     <div
                       style={{
@@ -132,23 +153,11 @@ const Blog = () => {
                 </div>
               </div>
             ))}
-            <div className="see-all-container">
-              <h4>Read All Posts</h4>
-              <ArrowRight16 fill="#539bf5" />
-            </div>
           </div>
         </div>
         <div className="blog-categories">
           <div className="blog-categories-title">
-            <h4
-              style={{
-                fontSize: "0.8rem",
-                lineHeight: "1.5",
-                color: "#444c56",
-              }}
-            >
-              Topics
-            </h4>
+            <h4>Topics</h4>
           </div>
           <div className="blog-categories-container">
             {blog_categories.map((blog_item) => (

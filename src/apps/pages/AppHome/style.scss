@@ -1,5 +1,5 @@
 .app-home-container {
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
 }
 
@@ -23,56 +23,6 @@
 
 .app-home-featured-container {
   margin-top: 4rem;
-  height: 600px;
-}
-
-.app-home-featured-image {
-  // min-width: 200px;
-  overflow: hidden;
-  height: 400px;
-}
-
-.app-home-featured-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.app-home-featured-description {
-  width: 100%;
-  height: 300px;
-  margin-top: 2rem;
-}
-
-.app-content-featured-tags {
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-  display: flex;
-}
-
-// Articles
-
-.app-home-articles-container {
-  margin-top: 4rem;
-  display: flex;
-}
-
-.app-home-articles-image {
-  width: 450px;
-  overflow: hidden;
-  height: 190px;
-}
-
-.app-home-articles-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.app-home-articles-description {
-  width: 100%;
-  height: 170px;
-  margin-left: 2rem;
 }
 
 // Options Nav

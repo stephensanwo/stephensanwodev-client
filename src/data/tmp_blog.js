@@ -1,199 +1,6 @@
-import featured_image from "../assets/img/Jun21_16_1249103806.jpg";
-
-export const api_microservice = [
-  {
-    id: "python",
-    category: "Python Development",
-    sub_category: "From Scripting to Software",
-    title: "The Import Module, Python's Import System",
-    description:
-      "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
-    tags: ["Python", "API"],
-  },
-  {
-    id: "python",
-    category: "Python Development",
-    sub_category: "From Scripting to Software",
-    title: "The Import Module, Python's Import System",
-    description:
-      "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
-    tags: ["Python", "API"],
-  },
-  {
-    id: "python",
-    category: "Python Development",
-    sub_category: "From Scripting to Software",
-    title: "The Import Module, Python's Import System",
-    description:
-      "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
-    tags: ["Python", "API"],
-  },
-  {
-    id: "python",
-    category: "Python Development",
-    sub_category: "From Scripting to Software",
-    title: "The Import Module, Python's Import System",
-    description:
-      "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
-    tags: ["Python", "API"],
-  },
-  {
-    id: "python",
-    category: "Python Development",
-    sub_category: "From Scripting to Software",
-    title: "The Import Module, Python's Import System",
-    description:
-      "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
-    tags: ["Python", "API"],
-  },
-];
-
-export const deeplearning_ai = [
-  {
-    id: "tensorflow",
-    category: "Deep Learning & AI",
-    sub_category: "Tensorflow Basics",
-    title: "Learn how to use Tensorflow for basic Neural Networks",
-    description:
-      "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
-    tags: ["AI", "ML"],
-  },
-  {
-    id: "tensorflow",
-    category: "Deep Learning & AI",
-    sub_category: "Tensorflow Basics",
-    title: "Learn how to use Tensorflow for basic Neural Networks",
-    description:
-      "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
-    tags: ["AI", "ML"],
-  },
-  {
-    id: "tensorflow",
-    category: "Deep Learning & AI",
-    sub_category: "Tensorflow Basics",
-    title: "Learn how to use Tensorflow for basic Neural Networks",
-    description:
-      "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
-    tags: ["AI", "ML"],
-  },
-  {
-    id: "tensorflow",
-    category: "Deep Learning & AI",
-    sub_category: "Tensorflow Basics",
-    title: "Learn how to use Tensorflow for basic Neural Networks",
-    description:
-      "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
-    tags: ["AI", "ML"],
-  },
-  {
-    id: "tensorflow",
-    category: "Deep Learning & AI",
-    sub_category: "Tensorflow Basics",
-    title: "Learn how to use Tensorflow for basic Neural Networks",
-    description:
-      "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
-    tags: ["AI", "ML"],
-  },
-];
-
-export const software_dev = [
-  {
-    id: "python",
-    category: "Software Development",
-    sub_category: "Data Structures",
-    title: "Learn how to use Data Structure & Algorithms",
-    description:
-      "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
-    tags: ["Software"],
-  },
-  {
-    id: "javascript",
-    category: "Software Development",
-    sub_category: "Data Structures",
-    title: "Learn how to use Data Structure & Algorithms",
-    description:
-      "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
-    tags: ["Software"],
-  },
-  {
-    id: "python",
-    category: "Software Development",
-    sub_category: "Data Structures",
-    title: "Learn how to use Data Structure & Algorithms",
-    description:
-      "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
-    tags: ["Software"],
-  },
-  {
-    id: "python",
-    category: "Software Development",
-    sub_category: "Data Structures",
-    title: "Learn how to use Data Structure & Algorithms",
-    description:
-      "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
-    tags: ["Software"],
-  },
-  {
-    id: "python",
-    category: "Software Development",
-    sub_category: "Data Structures",
-    title: "Learn how to use Data Structure & Algorithms",
-    description:
-      "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
-    tags: ["Software"],
-  },
-];
-
-export const frontend_dev = [
-  {
-    id: "react",
-    category: "Frontend Development",
-    sub_category: "React",
-    title: "React Hooks & Context API",
-    description:
-      "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
-    tags: ["React", "Frontend"],
-  },
-  {
-    id: "javascript",
-    category: "Frontend Development",
-    sub_category: "React",
-    title: "React Hooks & Context API",
-    description:
-      "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
-    tags: ["React", "Frontend"],
-  },
-  {
-    id: "javascript",
-    category: "Frontend Development",
-    sub_category: "React",
-    title: "React Hooks & Context API",
-    description:
-      "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
-    tags: ["React", "Frontend"],
-  },
-  {
-    id: "react",
-    category: "Frontend Development",
-    sub_category: "React",
-    title: "React Hooks & Context API",
-    description:
-      "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
-    tags: ["React", "Frontend"],
-  },
-  {
-    id: "react",
-    category: "Frontend Development",
-    sub_category: "React",
-    title: "React Hooks & Context API",
-    description:
-      "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
-    tags: ["React", "Frontend"],
-  },
-];
-
 export const all = [
   {
+    post_id: "1",
     id: "python",
     category: "Python Development",
     sub_category: "From Scripting to Software",
@@ -201,9 +8,43 @@ export const all = [
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System 2",
+      "Virtual environments using Venv 2",
+    ],
+    detail:
+      "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python. While this served its purpose, moving into software development, is completely different area,although the programming language has stayed the same, there a number of things that need to be covered in order to have a good python software or API development project, many of which are poorly covered on the internet, and one key area is how to structure your python projects. Tutorials typically write code in a single file, which is not necessarily true of actual software development projects, and developers get confused on selecting the best way to structure projects. This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index. Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python. While this served its purpose, moving into software development, is completely different area,although the programming language has stayed the same, there a number of things that need to be covered in order to have a good python software or API development project, many of which are poorly covered on the internet, and one key area is how to structure your python projects. Tutorials typically write code in a single file, which is not necessarily true of actual software development projects, and developers get confused on selecting the best way to structure projects. This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
   },
   {
+    post_id: "2",
+    id: "python",
+    category: "Python Development",
+    sub_category: "From Scripting to Software",
+    title: "Setting up Python Virtual Environments with venv ",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
+    description:
+      "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
+    tags: ["Python", "API"],
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+  },
+  {
+    post_id: "3",
     id: "python",
     category: "Python Development",
     sub_category: "From Scripting to Software",
@@ -211,9 +52,23 @@ export const all = [
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
-    image_url: featured_image,
+
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "4",
     id: "python",
     category: "Python Development",
     sub_category: "From Scripting to Software",
@@ -221,9 +76,22 @@ export const all = [
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "5",
     id: "python",
     category: "Python Development",
     sub_category: "From Scripting to Software",
@@ -231,19 +99,22 @@ export const all = [
     description:
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
-    id: "python",
-    category: "Python Development",
-    sub_category: "From Scripting to Software",
-    title: "The Import Module, Python's Import System",
-    description:
-      "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
-    tags: ["Python", "API"],
-    image_url: featured_image,
-  },
-  {
+    post_id: "6",
     id: "tensorflow",
     category: "Deep Learning & AI",
     sub_category: "Tensorflow Basics",
@@ -251,9 +122,22 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "7",
     id: "tensorflow",
     category: "Deep Learning & AI",
     sub_category: "Tensorflow Basics",
@@ -261,9 +145,22 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "8",
     id: "tensorflow",
     category: "Deep Learning & AI",
     sub_category: "Tensorflow Basics",
@@ -271,9 +168,22 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "9",
     id: "tensorflow",
     category: "Deep Learning & AI",
     sub_category: "Tensorflow Basics",
@@ -281,9 +191,22 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "10",
     id: "tensorflow",
     category: "Deep Learning & AI",
     sub_category: "Tensorflow Basics",
@@ -291,9 +214,22 @@ export const all = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "11",
     id: "python",
     category: "Software Development",
     sub_category: "Data Structures",
@@ -301,9 +237,22 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "12",
     id: "javascript",
     category: "Software Development",
     sub_category: "Data Structures",
@@ -311,9 +260,22 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "13",
     id: "python",
     category: "Software Development",
     sub_category: "Data Structures",
@@ -321,9 +283,22 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "14",
     id: "python",
     category: "Software Development",
     sub_category: "Data Structures",
@@ -331,9 +306,22 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "15",
     id: "python",
     category: "Software Development",
     sub_category: "Data Structures",
@@ -341,9 +329,22 @@ export const all = [
     description:
       "This article however, hopes to simplify the concepts behind structuring your projects, and it especially targets developers who want to move from writing basic scripts to building complex multi-module softwares, or even building reusable python packages for the PyPi index.",
     tags: ["Software"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "16",
     id: "react",
     category: "Frontend Development",
     sub_category: "React",
@@ -351,9 +352,22 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "17",
     id: "javascript",
     category: "Frontend Development",
     sub_category: "React",
@@ -361,9 +375,22 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "18",
     id: "javascript",
     category: "Frontend Development",
     sub_category: "React",
@@ -371,9 +398,22 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "19",
     id: "react",
     category: "Frontend Development",
     sub_category: "React",
@@ -381,9 +421,22 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
   {
+    post_id: "20",
     id: "react",
     category: "Frontend Development",
     sub_category: "React",
@@ -391,7 +444,19 @@ export const all = [
     description:
       "Building a full scale maintainable and scalable software application or API in Python however, requires more than just a single script. Large applications require a lot of moving parts, individual .py files communicating with each other in a directory called modules, doing specific tasks.",
     tags: ["React", "Frontend"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
 ];
 
@@ -401,7 +466,19 @@ export const featured_article = {
   title: "Structuring your python software development projects",
   description:
     "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics engine without having to write code. Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
-  image_url: featured_image,
+  image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+  author: "Stephen Sanwo",
+  date: "2020-June-20",
+  content: [
+    "The Import Module/System",
+    "Virtual environments using Venv",
+    "The Import Module/System",
+    "Virtual environments using Venv",
+    "The Import Module/System",
+    "Virtual environments using Venv",
+    "The Import Module/System",
+    "Virtual environments using Venv",
+  ],
 };
 
 export const top_articles = [
@@ -431,6 +508,18 @@ export const top_articles = [
     description:
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
-    image_url: featured_image,
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    author: "Stephen Sanwo",
+    date: "2020-June-20",
+    content: [
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+      "The Import Module/System",
+      "Virtual environments using Venv",
+    ],
   },
 ];

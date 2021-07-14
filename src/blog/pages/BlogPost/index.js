@@ -3,17 +3,20 @@ import BlogPostOptions from "./BlogPostOptions";
 import PostContent from "./PostContent";
 import PostOptions from "./PostOptions";
 import "./style.scss";
+import { all } from "../../../data/tmp_blog";
 
-const BlogPost = () => {
+const BlogPost = (props) => {
+  const post_id = props.match.params.post_id;
+  const post_data = all.filter((item) => item.post_id === post_id)[0];
   return (
     <div className="blog-home-container">
       <div className="blog-home-sidenav">
-        <BlogPostOptions />
+        <BlogPostOptions post_data={post_data} />
       </div>
       <div className="blog-post-content-container">
         <div className="blog-post-content">
           <div className="blog-post-content-items">
-            <PostContent />
+            <PostContent post_data={post_data} />
           </div>
         </div>
         <div className="blog-home-options">

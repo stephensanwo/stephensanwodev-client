@@ -30,6 +30,7 @@ const SideNavOptions = () => {
                     style={{
                       fontFamily: "display-text-medium",
                       fontSize: "0.85em",
+                      lineHeight: 1.5,
                     }}
                   >
                     {app_item.title}

@@ -28,10 +28,9 @@ const AppHome = () => {
 
             <div
               className="section-divider-line"
-              style={{ marginTop: "4rem", marginBottom: "6rem" }}
-            >
-              <AppList />
-            </div>
+              style={{ marginTop: "4rem", marginBottom: "4rem" }}
+            ></div>
+            <AppList />
             <Footer />
           </div>
         </div>

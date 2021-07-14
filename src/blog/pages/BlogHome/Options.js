@@ -43,11 +43,6 @@ const Options = () => {
             {`${article.description}`.slice(0, 160)}
             {article.description.length > 160 ? "..." : ""}
           </p>
-          <div style={{ marginTop: "0.5rem", display: "flex" }}>
-            {article.tags.map((tag, index) => (
-              <Tags key={index} type="blog" title={tag} color={"green"} />
-            ))}
-          </div>
         </div>
       ))}
 
@@ -87,11 +82,6 @@ const Options = () => {
           >
             {app_data.desc}
           </p>
-          <div style={{ marginTop: "0.5rem", display: "flex" }}>
-            {app_data.built_with.slice(0, 4).map((tag, index) => (
-              <Tags key={index} type="app" title={tag} />
-            ))}
-          </div>
         </div>
       ))}
     </div>

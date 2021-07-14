@@ -1,7 +1,7 @@
 // App Navbar
 .app-nav {
   height: 50px;
-  background: #23272d;
+  background: #1e2329;
   display: flex;
   position: -webkit-sticky;
   position: sticky;
@@ -12,8 +12,9 @@
 }
 
 .app-nav .nav-tabs {
-  flex-basis: 80%;
+  min-width: 200px;
   display: flex;
+
   align-items: center;
 }
 
@@ -64,5 +65,5 @@
 
 .options-container:hover,
 .options-container:hover a {
-  color: #539bf5;
+  color: #05aa82;
 }

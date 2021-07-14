@@ -1,17 +1,18 @@
 import React from "react";
-
 import "./style.scss";
 import {
-  LogoGithub24,
-  LogoLinkedin24,
-  LogoTwitter24,
-  Email24,
+  LogoGithub16,
+  LogoLinkedin16,
+  LogoTwitter16,
+  Email16,
+  Phone16,
 } from "@carbon/icons-react";
+import Tags from "../../components/Tags";
 
 const Landing = () => {
   return (
     <div className="landing-content">
-      <h4>✋🏽Hi, I'm</h4>
+      <h4>✋🏽 Hi, I'm</h4>
       <h1>Stephen Sanwo</h1>
       <h4>
         I solve complex problems with Software and Artificial Intelligence
@@ -28,8 +29,26 @@ const Landing = () => {
       <div className="contact-section">
         <h4>Get in touch</h4>
         <div className="contact-section-logo">
-          <Email24 color="#768390" /> <LogoGithub24 color="#768390" />{" "}
-          <LogoLinkedin24 color="#768390" /> <LogoTwitter24 color="#768390" />
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginRight: "2rem",
+            }}
+          >
+            <Email16 color="#05aa82" />
+            <a>stephen.sanwo@icloud.com</a>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginRight: "2rem",
+            }}
+          >
+            <Phone16 color="#05aa82" />
+            <a>+2347069331383</a>
+          </div>
         </div>
       </div>
     </div>
