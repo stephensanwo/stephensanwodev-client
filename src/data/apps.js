@@ -6,16 +6,10 @@ import gallium_image from "../assets/img/SA-mortgageAIcredit.jpg";
 import {
   Api_116,
   Application16,
-  DataStructured16,
-  LogoPython16,
-  MachineLearningModel16,
   Settings16,
-  Wikis16,
-  Code24,
   Code16,
   LogoGithub16,
   MachineLearning16,
-  Phone16,
 } from "@carbon/icons-react";
 
 export const featured_apps_data = [
@@ -76,7 +70,6 @@ export const apps_data = [
       "Docker",
       "MongoDB",
     ],
-    logo: <Code24 fill="#539bf5" />,
   },
   {
     id: 2,
@@ -92,7 +85,6 @@ export const apps_data = [
       "Docker",
       "MongoDB",
     ],
-    logo: <Code24 fill="#539bf5" />,
   },
   {
     id: 3,
@@ -108,7 +100,6 @@ export const apps_data = [
       "Docker",
       "MongoDB",
     ],
-    logo: <Code24 fill="#539bf5" />,
   },
   {
     id: 4,
@@ -124,7 +115,6 @@ export const apps_data = [
       "Docker",
       "MongoDB",
     ],
-    logo: <Code24 fill="#539bf5" />,
   },
   {
     id: 5,
@@ -141,7 +131,6 @@ export const apps_data = [
       "Docker",
       "MongoDB",
     ],
-    logo: <Code24 fill="#539bf5" />,
   },
   {
     id: 6,
@@ -150,7 +139,6 @@ export const apps_data = [
     desc: "An app that uses weekly satellite imagery and computer vision algorithms, to track urbanization, and provide accurate recommendations to govt agencies.",
     image_url: corpenicus_image,
     built_with: ["Python", "OpenCV", "GraphQL", "NodeJs", "React", "MongoDB"],
-    logo: <Code24 fill="#539bf5" />,
   },
   {
     id: 7,
@@ -159,7 +147,6 @@ export const apps_data = [
     desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
     image_url: gallium_image,
     built_with: ["Python", "PostgresSQL", "Redis", "React"],
-    logo: <Code24 fill="#539bf5" />,
   },
   {
     id: 8,
@@ -168,7 +155,6 @@ export const apps_data = [
     desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
     image_url: tomori_mobile,
     built_with: ["React Native", "AWS"],
-    logo: <Code24 fill="#539bf5" />,
   },
 ];
 

@@ -7,8 +7,8 @@ import Tags from "../Tags";
 const Card = ({ app_data, featured }) => {
   return (
     <div className={`card-container ${featured ? `card-links-featured` : ``}`}>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div>
+      <div className="card-container-header">
+        <div className="card-container-header-text">
           <h4
             style={{
               fontFamily: "display-text",
@@ -19,17 +19,7 @@ const Card = ({ app_data, featured }) => {
           >
             {app_data.title}
           </h4>
-          <h2
-            style={{
-              color: "#adbac7",
-              fontFamily: "display-text-bold",
-              fontSize: "1.5em",
-              marginBottom: "0.5em",
-              lineHeight: 1.2,
-            }}
-          >
-            {app_data.name}
-          </h2>
+          <h4>{app_data.name}</h4>
         </div>
         <div>
           <CloudComputing fill="#986ee2" />
@@ -46,7 +36,8 @@ const Card = ({ app_data, featured }) => {
             lineHeight: "1.4",
           }}
         >
-          {app_data.desc}
+          {`${app_data.desc}`.slice(0, 100)}
+          {app_data.desc.length > 100 ? "..." : ""}
         </p>
       </div>
       <div className="card-links">
@@ -69,7 +60,7 @@ const Card = ({ app_data, featured }) => {
           <a>View Repo</a>
         </div>
       </div>
-      <div style={{ marginTop: "2em", display: "flex" }}>
+      <div style={{ marginTop: "2em", display: "flex", flexWrap: "wrap" }}>
         {app_data.built_with.map((item, index) => (
           <Tags type="app" title={item} />
         ))}

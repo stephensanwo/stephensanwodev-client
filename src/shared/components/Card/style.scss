@@ -1,6 +1,6 @@
 .card-container {
   width: 100%;
-  height: 250px;
+  min-height: 250px;
   border: 1px solid #444c56;
   margin-bottom: 3rem;
   border-radius: 6px;
@@ -27,4 +27,30 @@
 
 .card-links a:hover {
   color: #986ee2;
+}
+
+.card-container h4 {
+  color: #adbac7;
+  font-family: "display-text-bold";
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.card-container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Small Mobile devices
+@media (min-width: 0px) and (max-width: 599px) {
+  .card-container {
+    padding: 1rem;
+  }
+  .card-container h4 {
+    font-size: 1.2em;
+  }
+  .card-container-header-text {
+    width: 70%;
+  }
 }

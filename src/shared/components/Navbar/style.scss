@@ -67,3 +67,22 @@
 .options-container:hover a {
   color: #05aa82;
 }
+
+@media (min-width: 0px) and (max-width: 599px) {
+  .app-nav {
+    padding-left: 30px;
+  }
+  .app-nav .nav-actions {
+    display: none;
+  }
+}
+
+// Small - Medium devices
+@media (min-width: 600px) and (max-width: 634px) {
+  .app-nav {
+    padding-left: 45px;
+  }
+  .app-nav .nav-actions {
+    display: none;
+  }
+}

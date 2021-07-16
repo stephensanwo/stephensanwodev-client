@@ -13,6 +13,7 @@ const Footer = () => {
         <div className="footer-contact-section">
           <div className="footer-contact-section-logo">
             <div
+              className="footer-section-contact"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -32,6 +33,7 @@ const Footer = () => {
               </small>
             </div>
             <div
+              className="footer-section-contact"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -51,6 +53,7 @@ const Footer = () => {
               </small>
             </div>
             <div
+              className="footer-section-contact"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -70,6 +73,7 @@ const Footer = () => {
               </small>
             </div>
             <div
+              className="footer-section-contact"
               style={{
                 display: "flex",
                 alignItems: "center",

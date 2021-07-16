@@ -1,5 +1,10 @@
 import React, { Fragment } from "react";
-import { Launch16, Share16, ArrowRight24 } from "@carbon/icons-react";
+import {
+  Launch16,
+  Share16,
+  ArrowRight24,
+  ArrowRight16,
+} from "@carbon/icons-react";
 
 import BlogImage from "../../../assets/svg/article.svg";
 import { blog_categories } from "../../../data/blog";
@@ -40,15 +45,19 @@ const Blog = () => {
           <div className="see-all-container">
             <a
               style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
                 color: "#539bf5",
-                marginRight: "0.5rem",
               }}
             >
               Read All Posts
             </a>
-            <ArrowRight24 fill="#539bf5" />
+            <ArrowRight24
+              fill="#539bf5"
+              className="see-all-container-logo-large"
+            />
+            <ArrowRight16
+              fill="#539bf5"
+              className="see-all-container-logo-small"
+            />
           </div>
         </div>
         <div className="section-divider-line"></div>
@@ -56,7 +65,7 @@ const Blog = () => {
       <div className="blog-content">
         <div className="blog-content-featured">
           <div className="blog-content-featured-title">
-            <h4>Featured Articles & Tutorials</h4>
+            <h4>Articles & Tutorials</h4>
           </div>
           <div className="blog-content-featured-container">
             {featured_articles.map((article, index) => (
@@ -75,7 +84,7 @@ const Blog = () => {
                   >
                     {article.category}
                   </h4>
-                  <h2
+                  <h4
                     style={{
                       color: "#adbac7",
                       fontFamily: "display-text-bold",
@@ -85,7 +94,7 @@ const Blog = () => {
                     }}
                   >
                     {article.title}
-                  </h2>
+                  </h4>
                   <p
                     style={{
                       fontFamily: "display-text",
@@ -96,7 +105,8 @@ const Blog = () => {
                       lineHeight: "1.4",
                     }}
                   >
-                    {article.description}
+                    {`${article.description}`.slice(0, 150)}
+                    {article.description.length > 150 ? "..." : ""}
                   </p>
                   <div className="blog-content-featured-tags">
                     {article.tags.map((tag, index) => (
@@ -162,8 +172,9 @@ const Blog = () => {
           <div className="blog-categories-container">
             {blog_categories.map((blog_item) => (
               <div className="blog-category-item">
-                {blog_item.logo}
-                <h2>{blog_item.title}</h2>
+                <div>{blog_item.logo}</div>
+
+                <h4>{blog_item.title}</h4>
               </div>
             ))}
           </div>

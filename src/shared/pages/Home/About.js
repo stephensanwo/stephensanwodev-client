@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { tech_stack } from "../../../data/techstack";
 import { MachineLearningModel24 } from "@carbon/icons-react";
 import { UserProfile } from "@carbon/pictograms-react";
+import Tags from "../../components/Tags";
 
 const About = () => {
   return (
@@ -90,30 +91,28 @@ const About = () => {
             {tech_stack.map((tech_item, index) => (
               <div className="about-technologies-item-container">
                 <div key={index} className="about-technologies-item">
-                  {tech_item.logo}
-                  <h2
+                  <div>{tech_item.logo}</div>
+                  <h4
                     style={{
                       color: "#adbac7",
                       fontFamily: "display-text-bold",
                       fontSize: "1em",
                       marginLeft: "1.5rem",
+                      lineHeight: 1.2,
                     }}
                   >
                     {tech_item.category}
-                  </h2>
+                  </h4>
                 </div>
+
                 <div className="about-technologies-list">
                   {tech_item.tools.map((tool, index) => (
-                    <small
-                      key={index}
-                      style={{
-                        color: "#768390",
-                        fontFamily: "display-text",
-                        fontSize: "0.7rem",
-                      }}
-                    >
-                      {tool}
-                    </small>
+                    <Tags
+                      type="blog"
+                      title={tool}
+                      color="green"
+                      style={{ marginBottom: "0.5em" }}
+                    />
                   ))}
                 </div>
               </div>

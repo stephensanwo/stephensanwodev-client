@@ -29,23 +29,11 @@ const Landing = () => {
       <div className="contact-section">
         <h4>Get in touch</h4>
         <div className="contact-section-logo">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginRight: "2rem",
-            }}
-          >
+          <div className="contact-section-logo-item">
             <Email16 color="#05aa82" />
             <a>stephen.sanwo@icloud.com</a>
           </div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginRight: "2rem",
-            }}
-          >
+          <div className="contact-section-logo-item">
             <Phone16 color="#05aa82" />
             <a>+2347069331383</a>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Launch16, Share16, ArrowRight24 } from "@carbon/icons-react";
+import { Launch16, Share16, ArrowRight24, Code24 } from "@carbon/icons-react";
 import { featured_apps_data, apps_data } from "../../../data/apps";
 import { Ideate } from "@carbon/pictograms-react";
 import Card from "../../components/Card";
@@ -16,10 +16,7 @@ const Apps = () => {
           <div className="see-all-container">
             <a
               style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
                 color: "#986ee2",
-                marginRight: "0.5rem",
               }}
             >
               Discover Apps
@@ -38,7 +35,7 @@ const Apps = () => {
           <div className="app-content-featured-container">
             {featured_apps_data.map((app_data, index) => (
               <div className="app-content-featured-container-item">
-                <Card app_data={app_data} key={index} />
+                <Card app_data={app_data} key={index} featured={true} />
               </div>
             ))}
           </div>
@@ -51,13 +48,15 @@ const Apps = () => {
             {apps_data.map((app_item, index) => (
               <div key={index} className="app-others-item-container">
                 <div className="app-others-item">
-                  {app_item.logo}
+                  <div>
+                    <Code24 fill="#986ee2" />
+                  </div>
                   <div>
                     <h2
                       style={{
-                        color: "#ffffff",
-                        fontFamily: "display-text-semibold",
-                        fontSize: "0.8rem",
+                        color: "#adbac7",
+                        fontFamily: "display-text-bold",
+                        fontSize: "1em",
                         marginLeft: "1.5rem",
                       }}
                     >
@@ -65,12 +64,11 @@ const Apps = () => {
                     </h2>
                     <h4
                       style={{
-                        color: "#ffffff",
                         fontFamily: "display-text",
-                        fontSize: "0.7rem",
+                        fontSize: "0.8em",
                         marginLeft: "1.5rem",
-                        marginTop: "0.5rem",
-                        color: "#adbac7",
+                        marginTop: "0.5em",
+                        color: "#768390",
                       }}
                     >
                       {app_item.title}

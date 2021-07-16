@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import "./styles.scss";
 
-const Tags = ({ title, color, type, app_title }) => {
+const Tags = ({ title, color, type, app_title, style }) => {
   const tag_width = title.length * 6 + 15;
   return (
-    <Fragment>
+    <div style={style}>
       {type === "blog" ? (
         <div className="tags-container" style={{ width: `${tag_width}px` }}>
           <a
@@ -31,7 +31,7 @@ const Tags = ({ title, color, type, app_title }) => {
           </a>
         </div>
       )}
-    </Fragment>
+    </div>
   );
 };
 

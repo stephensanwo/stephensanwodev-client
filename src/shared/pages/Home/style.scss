@@ -8,8 +8,7 @@
 
 .home-content {
   flex-basis: 100%;
-  //   height: 95vh;
-  //   background-color: red;
+  background-color: violet;
   border-left: 1px solid #444c56;
   border-right: 1px solid #444c56;
   padding: 5rem;
@@ -17,7 +16,7 @@
 }
 
 .home-sections {
-  width: 60%;
+  width: 65%;
   margin: auto;
 }
 
@@ -60,13 +59,19 @@
   border: 1px solid #444c56;
   border-radius: 6px;
   padding: 1rem;
-  width: 420px;
+  max-width: 420px;
 }
 .contact-section-logo {
   display: flex;
   justify-content: space-between;
   max-width: 130px;
   cursor: pointer;
+}
+
+.contact-section-logo-item {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
 }
 
 .contact-section h4 {
@@ -171,32 +176,31 @@
 .about-content-technologies-container {
   flex-basis: 75%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 49% 49%;
   row-gap: 1rem;
+  column-gap: 1rem;
 }
+
 .about-technologies-item-container {
-  display: block;
-  // border-bottom: 1px solid #444c56;
-  height: 65px;
-  width: 100%;
+  min-height: 65px;
+  border: 1px solid #444c56;
+  border-radius: 5px;
+  padding: 1em;
 }
 
 .about-technologies-item {
   display: flex;
   align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
 }
 
 .about-technologies-list {
-  padding-left: 3rem;
-  padding-bottom: 0.5rem;
-  padding-right: 3rem;
-}
-
-.about-technologies-item-container:nth-child(7) {
-  border-bottom: none;
-}
-.about-technologies-item-container:last-child {
-  border-bottom: none;
+  margin-left: 3rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-content-experience-grid {
@@ -281,11 +285,22 @@
   margin-right: 0.5rem;
   margin-bottom: 0;
 }
+.see-all-container a {
+  font-family: "display-text-bold";
+  font-size: 1em;
+  margin-right: 0.5rem;
+}
+.see-all-container-logo-small {
+  display: none;
+}
+.see-all-container-logo-large {
+  display: block;
+}
 
 //Blog Categories
 
 .blog-categories {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -299,7 +314,9 @@
 .blog-categories-container {
   flex-basis: 75%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 49% 49%;
+  row-gap: 1rem;
+  column-gap: 1rem;
 }
 
 .blog-category-item {
@@ -311,15 +328,16 @@
   cursor: pointer;
 }
 
-.blog-category-item h2 {
+.blog-category-item h4 {
   color: #adbac7;
   font-family: "display-text-bold";
   font-size: 1em;
   margin-left: 1.5rem;
   cursor: pointer;
+  line-height: 1.2;
 }
 
-.blog-category-item h2:hover {
+.blog-category-item h4:hover {
   color: #539bf5;
 }
 
@@ -357,60 +375,10 @@
   flex-basis: 75%;
 }
 
-// .app-content-featured-container-item {
-//   display: flex;
-//   margin-bottom: 2rem;
-//   height: 170px;
-// }
-
-// .app-content-featured-image {
-//   flex-basis: 40%;
-//   width: 400px;
-//   overflow: hidden;
-//   height: 170px;
-//   // min-width: 291px;
-//   //   background-color: red;
-// }
-
-// .app-content-featured img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
-
-// .app-content-image-cover {
-//   background-color: #04070ed8;
-//   width: 291px;
-//   height: 170px;
-//   position: absolute;
-//   opacity: 0.9;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .app-content-image-cover h4 {
-//   color: #ffffff;
-//   font-size: 0.7rem;
-//   cursor: pointer;
-// }
-
-// .app-content-image-cover h4:hover {
-//   color: #539bf5;
-// }
-
-// .app-content-featured-description {
-//   flex-basis: 60%;
-//   min-width: 200px;
-//   height: 170px;
-//   margin-left: 2rem;
-//   //   background-color: blue;
-// }
-
 //App Categories
 
 .app-categories {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -426,8 +394,9 @@
 .app-others-container {
   flex-basis: 75%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 49% 49%;
   row-gap: 1rem;
+  column-gap: 1rem;
   margin-bottom: 10rem;
 }
 .app-others-item-container {
@@ -557,4 +526,488 @@
   margin-right: 0.5rem;
   margin-bottom: 0;
   text-align: center;
+}
+
+// Media Queries
+
+// Small Mobile devices
+@media (min-width: 0px) and (max-width: 599px) {
+  .home-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-container {
+    height: 150px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-content {
+    border-left: none;
+    border-right: none;
+  }
+  .footer-contact-section {
+    width: 80%;
+    margin: auto;
+    height: 80%;
+  }
+  .footer-contact-section-logo {
+    display: block;
+  }
+  .footer-section-contact {
+    margin-bottom: 0.5rem;
+  }
+
+  .home-content {
+    background-color: greenyellow;
+    border: none;
+    padding: 0;
+  }
+
+  .home-sections {
+    width: 85%;
+  }
+  .about-content-experience,
+  .about-content-technologies,
+  .blog-content-featured,
+  .blog-categories,
+  .app-content-featured,
+  .app-categories {
+    display: block;
+  }
+
+  .about-content-title,
+  .blog-content-featured-title,
+  .blog-categories-title,
+  .app-content-featured-title,
+  .app-categories-title {
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+
+  .landing-content {
+    width: 100%;
+    height: 700px;
+    padding-top: 100px;
+  }
+  .landing-content h1 {
+    font-size: 2.5rem;
+  }
+  .landing-content h4 {
+    font-size: 1rem;
+  }
+
+  .contact-section-logo-item {
+    margin-top: 0.5rem;
+  }
+
+  .contact-section-logo {
+    display: block;
+
+    max-width: 100%;
+  }
+  .blog-content-featured-container-item {
+    display: block;
+    margin-bottom: 4rem;
+    height: 480px;
+  }
+  .blog-content-featured-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .blog-content-featured-description {
+    min-width: 200px;
+    height: 300px;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+
+  .blog-content-featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-content-featured-logo {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .blog-categories-container {
+    display: block;
+  }
+
+  .app-others-container {
+    display: block;
+  }
+  .about-content-technologies-container {
+    flex-basis: 75%;
+    display: block;
+  }
+  .about-technologies-item-container {
+    min-height: 65px;
+    margin-bottom: 1rem;
+  }
+
+  .section-divider {
+    margin-bottom: 1rem;
+  }
+
+  .blog-content-featured-title {
+    margin-top: 1rem;
+  }
+  .app-content-featured-title {
+    margin-top: 1rem;
+  }
+
+  .about-content-title {
+    margin-top: 1rem;
+  }
+
+  .section-title h4 {
+    font-size: 1.5rem;
+    margin-left: 0.8rem;
+  }
+
+  .see-all-container a {
+    font-size: 0.8em;
+  }
+  .see-all-container-logo-large {
+    display: none;
+  }
+  .see-all-container-logo-small {
+    display: block;
+  }
+}
+
+// Small - Medium devices
+@media (min-width: 600px) and (max-width: 634px) {
+  .home-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .footer-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .home-content {
+    background-color: indianred;
+    border: none;
+    padding: 2rem;
+  }
+
+  .home-sections {
+    width: 95%;
+  }
+  .about-content-experience,
+  .about-content-technologies,
+  .blog-content-featured,
+  .blog-categories,
+  .app-content-featured,
+  .app-categories {
+    display: block;
+  }
+
+  .about-content-title,
+  .blog-content-featured-title,
+  .blog-categories-title,
+  .app-content-featured-title,
+  .app-categories-title {
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+
+  .landing-content {
+    width: 100%;
+
+    height: 700px;
+    padding-top: 100px;
+  }
+  .landing-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .blog-content-featured-container-item {
+    display: block;
+    margin-bottom: 4rem;
+    min-height: 420px;
+  }
+  .blog-content-featured-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .blog-content-featured-description {
+    min-width: 200px;
+    height: 300px;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+
+  .blog-content-featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-content-featured-logo {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .about-content-technologies-container {
+    flex-basis: 75%;
+    display: block;
+  }
+  .about-technologies-item-container {
+    min-height: 65px;
+    margin-bottom: 1rem;
+  }
+}
+
+// Small - Medium devices
+@media (min-width: 635px) and (max-width: 819px) {
+  .home-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .home-content {
+    background-color: purple;
+    border: none;
+    padding: 3rem;
+  }
+
+  .home-sections {
+    width: 95%;
+  }
+  .about-content-experience,
+  .about-content-technologies,
+  .blog-content-featured,
+  .blog-categories,
+  .app-content-featured,
+  .app-categories {
+    display: block;
+  }
+
+  .about-content-title,
+  .blog-content-featured-title,
+  .blog-categories-title,
+  .app-content-featured-title,
+  .app-categories-title {
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+
+  .landing-content {
+    width: 100%;
+    height: 700px;
+    padding-top: 100px;
+  }
+  .landing-content h1 {
+    font-size: 4rem;
+  }
+
+  .blog-content-featured-container-item {
+    display: block;
+    margin-bottom: 4rem;
+    height: 420px;
+  }
+  .blog-content-featured-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .blog-content-featured-description {
+    min-width: 200px;
+    height: 300px;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+
+  .blog-content-featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-content-featured-logo {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .about-content-technologies-container {
+    flex-basis: 75%;
+    display: block;
+  }
+  .about-technologies-item-container {
+    min-height: 65px;
+    margin-bottom: 1rem;
+  }
+}
+
+// Big phones and Small Tablets
+@media (min-width: 820px) and (max-width: 944px) {
+  .home-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .home-content {
+    background-color: green;
+    border: none;
+  }
+
+  .home-sections {
+    width: 85%;
+  }
+  .about-content-experience,
+  .about-content-technologies,
+  .blog-content-featured,
+  .blog-categories,
+  .app-content-featured,
+  .app-categories {
+    display: block;
+  }
+
+  .about-content-title,
+  .blog-content-featured-title,
+  .blog-categories-title,
+  .app-content-featured-title,
+  .app-categories-title {
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+
+  .landing-content {
+    width: 100%;
+    height: 800px;
+    padding-top: 100px;
+  }
+  .landing-content h1 {
+    font-size: 4.5rem;
+  }
+
+  .blog-content-featured-container-item {
+    display: block;
+    margin-bottom: 4rem;
+    height: 420px;
+  }
+  .blog-content-featured-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .blog-content-featured-description {
+    min-width: 200px;
+    height: 300px;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+
+  .blog-content-featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-content-featured-logo {
+    display: flex;
+    margin-top: 1rem;
+  }
+}
+
+// Tablets  and small screens
+@media (min-width: 945px) and (max-width: 1199px) {
+  .home-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .footer-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .home-content {
+    background-color: blue;
+    border: none;
+  }
+
+  .home-sections {
+    width: 85%;
+  }
+  .about-content-experience,
+  .about-content-technologies,
+  .blog-content-featured,
+  .blog-categories,
+  .app-content-featured,
+  .app-categories {
+    display: block;
+  }
+
+  .about-content-title,
+  .blog-content-featured-title,
+  .blog-categories-title,
+  .app-content-featured-title,
+  .app-categories-title {
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+
+  .landing-content {
+    width: 100%;
+    height: 800px;
+    padding-top: 100px;
+  }
+  .landing-content h1 {
+    font-size: 5rem;
+  }
+}
+
+// Tablets Landscape and Medium  Screens
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .home-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .footer-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .home-content {
+    background-color: red;
+  }
+
+  .home-sections {
+    width: 85%;
+  }
+}
+
+// Large - Extra Large Screens
+@media (min-width: 1441px) and (max-width: 1820px) {
+  .home-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .footer-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .home-content {
+    background-color: #539bf5;
+  }
+
+  .home-sections {
+    width: 70%;
+  }
 }
