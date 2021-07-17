@@ -4,11 +4,11 @@ import Navbar from "../shared/components/Navbar";
 import BlogHome from "./pages/BlogHome";
 import BlogPost from "./pages/BlogPost";
 
-const Blog = () => {
+const Blog = ({ isNavOpen, setIsNavOpen }) => {
   const { path } = useRouteMatch();
   return (
     <Fragment>
-      <Navbar />
+      <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Switch>
         <Route exact path={`${path}/:post_id`} component={BlogPost} />
         <Route path={`${path}/`} component={BlogHome} />

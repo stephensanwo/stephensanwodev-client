@@ -49,7 +49,7 @@ const Footer = () => {
                   marginLeft: "0.5rem",
                 }}
               >
-                stephensanwo
+                github.com/stephensanwo
               </small>
             </div>
             <div
@@ -89,7 +89,7 @@ const Footer = () => {
                   marginLeft: "0.5rem",
                 }}
               >
-                stephensanwo
+                @stephensanwo
               </small>
             </div>
           </div>

@@ -32,7 +32,8 @@ const FeaturedArticle = () => {
               lineHeight: 1.5,
             }}
           >
-            {featured_article.title}
+            {`${featured_article.title}`.slice(0, 80)}
+            {featured_article.title.length > 80 ? "..." : ""}
           </a>
         </Link>
 
@@ -45,7 +46,8 @@ const FeaturedArticle = () => {
             lineHeight: 1.4,
           }}
         >
-          {featured_article.description}
+          {`${featured_article.description}`.slice(0, 200)}
+          {featured_article.description.length > 200 ? "..." : ""}
         </p>
         <div className="blog-content-featured-tags">
           <Tags type="blog" title={"Python"} color={"generic"} />
@@ -55,7 +57,7 @@ const FeaturedArticle = () => {
         <div className="blog-content-featured-logo">
           <div
             style={{
-              width: "15%",
+              width: "120px",
               display: "flex",
               cursor: "pointer",
               alignItems: "center",

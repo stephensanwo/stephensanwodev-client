@@ -8,7 +8,6 @@
 
 .home-content {
   flex-basis: 100%;
-  background-color: violet;
   border-left: 1px solid #444c56;
   border-right: 1px solid #444c56;
   padding: 5rem;
@@ -558,7 +557,6 @@
   }
 
   .home-content {
-    background-color: greenyellow;
     border: none;
     padding: 0;
   }
@@ -692,8 +690,11 @@
     padding-right: 0px;
   }
 
+  .footer-content {
+    border-left: none;
+    border-right: none;
+  }
   .home-content {
-    background-color: indianred;
     border: none;
     padding: 2rem;
   }
@@ -776,9 +777,11 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-
+  .footer-content {
+    border-left: none;
+    border-right: none;
+  }
   .home-content {
-    background-color: purple;
     border: none;
     padding: 3rem;
   }
@@ -860,9 +863,12 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+  .footer-content {
+    border-left: none;
+    border-right: none;
+  }
 
   .home-content {
-    background-color: green;
     border: none;
   }
 
@@ -936,9 +942,12 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+  .footer-content {
+    border-left: none;
+    border-right: none;
+  }
 
   .home-content {
-    background-color: blue;
     border: none;
   }
 
@@ -983,9 +992,8 @@
     padding-left: 60px;
     padding-right: 60px;
   }
-  .home-content {
-    background-color: red;
-  }
+  // .home-content {
+  // }
 
   .home-sections {
     width: 85%;
@@ -1003,9 +1011,8 @@
     padding-right: 80px;
   }
 
-  .home-content {
-    background-color: #539bf5;
-  }
+  // .home-content {
+  // }
 
   .home-sections {
     width: 70%;

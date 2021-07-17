@@ -54,7 +54,7 @@ const ArticleList = () => {
             <div style={{ display: "flex" }}>
               <div
                 style={{
-                  width: "20%",
+                  width: "120px",
                   display: "flex",
                   cursor: "pointer",
                   alignItems: "center",
