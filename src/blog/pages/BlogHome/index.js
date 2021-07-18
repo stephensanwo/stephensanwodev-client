@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-
+import { Devops } from "@carbon/pictograms-react";
 import FeaturedArticle from "./FeaturedArticle";
 import ArticleList from "./ArticleList";
 import Options from "./Options";
@@ -16,15 +16,20 @@ const BlogHome = () => {
       <div className="blog-home-content-container">
         <div className="blog-home-content">
           <div className="blog-home-content-items">
-            <h4
-              style={{
-                fontSize: "2rem",
-                fontFamily: "display-text-medium",
-                color: "#adbac7",
-              }}
-            >
-              Blog
-            </h4>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <Devops fill="#539bf5" />
+              <h4
+                style={{
+                  fontSize: "2rem",
+                  fontFamily: "display-text-medium",
+                  color: "#539bf5",
+                  marginLeft: "2rem",
+                }}
+              >
+                Blog
+              </h4>
+            </div>
+
             <FeaturedArticle />
             <div
               className="section-divider-line"

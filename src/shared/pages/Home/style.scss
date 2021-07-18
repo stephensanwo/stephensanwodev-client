@@ -550,7 +550,9 @@
     height: 80%;
   }
   .footer-contact-section-logo {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
   }
   .footer-section-contact {
     margin-bottom: 0.5rem;
@@ -694,6 +696,17 @@
     border-left: none;
     border-right: none;
   }
+  .footer-contact-section {
+    width: 80%;
+    margin: auto;
+    height: 80%;
+  }
+
+  .footer-contact-section-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
   .home-content {
     border: none;
     padding: 2rem;
@@ -780,6 +793,18 @@
   .footer-content {
     border-left: none;
     border-right: none;
+  }
+
+  .footer-contact-section {
+    width: 80%;
+    margin: auto;
+    height: 80%;
+  }
+
+  .footer-contact-section-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
   }
   .home-content {
     border: none;

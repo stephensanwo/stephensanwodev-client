@@ -5,7 +5,7 @@ import Tags from "../../../shared/components/Tags";
 
 const Options = () => {
   return (
-    <div className="blog-home-options-container">
+    <div className="app-home-options-container">
       <div style={{ borderBottom: "1px solid #444c56" }}>
         <h4
           style={{

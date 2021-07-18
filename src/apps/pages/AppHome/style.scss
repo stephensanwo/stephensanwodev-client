@@ -31,7 +31,7 @@
   width: 700px;
 }
 
-.blog-home-options-container {
+.app-home-options-container {
   margin-top: 6rem;
   width: 70%;
 }
@@ -89,4 +89,125 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+// Media Queries
+
+@media (min-width: 0px) and (max-width: 599px) {
+  .app-home-container {
+    width: 85%;
+    margin: auto;
+  }
+
+  .app-home-sidenav {
+    display: none;
+    width: 0px;
+  }
+
+  .app-home-options {
+    display: none;
+    width: 0px;
+  }
+
+  .app-home-content-container {
+    margin-left: 0px;
+  }
+  .app-home-content-items {
+    max-width: 100%;
+  }
+  .app-home-content {
+    width: 100%;
+  }
+  .app-home-articles-container {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 874px) {
+  .app-home-sidenav {
+    display: none;
+    width: 0px;
+  }
+
+  .app-home-options {
+    display: none;
+    width: 0px;
+  }
+
+  .app-home-content-container {
+    margin-left: 0px;
+  }
+  .app-home-content-items {
+    max-width: 500px;
+  }
+  .app-home-content {
+    width: 100%;
+  }
+  .app-home-articles-container {
+    display: block;
+  }
+}
+
+@media (min-width: 875px) and (max-width: 1279px) {
+  .app-home-sidenav {
+    display: none;
+    width: 0px;
+  }
+
+  .app-home-options {
+    display: none;
+    width: 0px;
+  }
+
+  .app-home-content-container {
+    margin-left: 0px;
+  }
+  .app-home-content-items {
+    max-width: 750px;
+  }
+  .app-home-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1679px) {
+  .app-home-sidenav {
+    width: 300px;
+  }
+
+  .app-home-options {
+    display: none;
+    width: 0px;
+  }
+
+  .app-home-content-container {
+    margin-left: 300px;
+  }
+  .app-home-content-items {
+    max-width: 800px;
+  }
+  .app-home-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 1820px) {
+  .app-home-sidenav {
+    width: 300px;
+  }
+
+  .app-home-options {
+    width: 600px;
+  }
+
+  .app-home-content-container {
+    margin-left: 300px;
+  }
+  .app-home-content-items {
+    max-width: 750px;
+  }
+
+  .app-home-content {
+    width: 80%;
+  }
 }

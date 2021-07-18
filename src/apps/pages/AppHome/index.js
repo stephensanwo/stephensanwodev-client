@@ -5,6 +5,7 @@ import FeaturedApps from "./FeaturedApps";
 import AppList from "./AppList";
 import Options from "./Options";
 import Footer from "../../../shared/components/Footer";
+import { Ideate } from "@carbon/pictograms-react";
 
 const AppHome = () => {
   return (
@@ -15,15 +16,19 @@ const AppHome = () => {
       <div className="app-home-content-container">
         <div className="app-home-content">
           <div className="app-home-content-items">
-            <h4
-              style={{
-                fontSize: "2rem",
-                fontFamily: "display-text-medium",
-                color: "#adbac7",
-              }}
-            >
-              Apps
-            </h4>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <Ideate fill="#986ee2" />
+              <h4
+                style={{
+                  fontSize: "2rem",
+                  fontFamily: "display-text-medium",
+                  color: "#986ee2",
+                  marginLeft: "2rem",
+                }}
+              >
+                Apps
+              </h4>
+            </div>
             <FeaturedApps />
 
             <div
@@ -31,10 +36,10 @@ const AppHome = () => {
               style={{ marginTop: "4rem", marginBottom: "4rem" }}
             ></div>
             <AppList />
-            <Footer />
+            <Footer data_type={"app"} />
           </div>
         </div>
-        <div className="blog-home-options">
+        <div className="app-home-options">
           <Options />
         </div>
       </div>
