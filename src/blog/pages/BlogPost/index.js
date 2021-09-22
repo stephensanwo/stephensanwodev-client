@@ -4,6 +4,7 @@ import PostContent from "./PostContent";
 import PostOptions from "./PostOptions";
 import "./style.scss";
 import { all } from "../../../data/tmp_blog";
+import Footer from "../../../shared/components/Footer";
 
 const BlogPost = (props) => {
   const post_id = props.match.params.post_id;
@@ -17,6 +18,7 @@ const BlogPost = (props) => {
         <div className="blog-post-content">
           <div className="blog-post-content-items">
             <PostContent post_data={post_data} />
+            <Footer />
           </div>
         </div>
         <div className="blog-home-options">

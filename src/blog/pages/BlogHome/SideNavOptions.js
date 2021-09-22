@@ -6,6 +6,7 @@ import {
   blog_sort,
 } from "../../../data/blog";
 import Tags from "../../../shared/components/Tags";
+import { Link } from "react-router-dom";
 
 const SideNavOptions = () => {
   return (
@@ -13,7 +14,8 @@ const SideNavOptions = () => {
       <div className="blog-home-sidenav-container">
         <div className="blog-home-sidenav-content">
           <div>
-            <a
+            <Link
+              to="/"
               style={{
                 fontFamily: "display-text-bold",
                 fontSize: "1em",
@@ -25,7 +27,7 @@ const SideNavOptions = () => {
             >
               <ArrowLeft24 fill="#539bf5" style={{ marginRight: "0.5em" }} />{" "}
               Home
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -47,15 +49,14 @@ const SideNavOptions = () => {
               {blog_categories_small.map((blog_item) => (
                 <div className="blog-sidenav-category-item">
                   {blog_item.logo}
-                  <a
+                  <h4
                     style={{
-                      fontFamily: "display-text-medium",
-                      fontSize: "0.85em",
-                      lineHeight: 1.5,
+                      marginLeft: "1.5rem",
                     }}
+                    className="header-link-highlight"
                   >
                     {blog_item.title}
-                  </a>
+                  </h4>
                 </div>
               ))}
             </div>

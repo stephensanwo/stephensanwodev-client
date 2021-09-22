@@ -10,7 +10,7 @@ const Post_1 = ({content}) => {
     <Fragment>
       <SubHeading id={content[0]}>The Import Module/System</SubHeading>
       <Paragraph>
-        "Many people get introduced to Python firstly as a scripting language, I
+        Many people get introduced to Python firstly as a scripting language, I
         first started out doing analytics with python, and the nature of those
         projects involved writing single file scripts, or using jupyter
         notebooks perform analysis in python. While this served its purpose,
@@ -27,16 +27,7 @@ const Post_1 = ({content}) => {
         article however, hopes to simplify the concepts behind structuring your
         projects, and it especially targets developers who want to move from
         writing basic scripts to building complex multi-module softwares, or
-        even building reusable python packages for the PyPi index. Many people
-        get introduced to Python firstly as a scripting language, I first
-        started out doing analytics with python, and the nature of those
-        projects involved writing single file scripts, or using jupyter
-        notebooks perform analysis in python. While this served its purpose,
-        moving into software development, is completely different area,although
-        the programming language has stayed the same, there a number of things
-        that need to be covered in order to have a good python software or API
-        development project, many of which are poorly covered on the internet,
-        and one key area is how to structure your python projects.
+        even building reusable python packages for the PyPi index. 
       </Paragraph>
       <Paragraph>
         Tutorials typically write code in a single file, which is not
@@ -66,7 +57,7 @@ const Post_1 = ({content}) => {
 
       </Code>
       <Paragraph>
-        "Many people get introduced to Python firstly as a scripting language, I
+        Many people get introduced to Python firstly as a scripting language, I
         first started out doing analytics with python, and the nature of those
         projects involved writing single file scripts, or using jupyter
         notebooks perform analysis in python. While this served its purpose,
@@ -77,32 +68,12 @@ const Post_1 = ({content}) => {
         and one key area is how to structure your python projects. Tutorials
         typically write code in a single file, which is not necessarily true of
         actual software development projects, and developers get confused on
-        selecting the best way to structure projects. This article however,
-        hopes to simplify the concepts behind structuring your projects, and it
-        especially targets developers who want to move from writing basic
-        scripts to building complex multi-module softwares, or even building
-        reusable python packages for the PyPi index. Many people get introduced
-        to Python firstly as a scripting language, I first started out doing
-        analytics with python, and the nature of those projects involved writing
-        single file scripts, or using jupyter notebooks perform analysis in
-        python. While this served its purpose, moving into software development,
-        is completely different area,although the programming language has
-        stayed the same, there a number of things that need to be covered in
-        order to have a good python software or API development project, many of
-        which are poorly covered on the internet, and one key area is how to
-        structure your python projects. Tutorials typically write code in a
-        single file, which is not necessarily true of actual software
-        development projects, and developers get confused on selecting the best
-        way to structure projects. This article however, hopes to simplify the
-        concepts behind structuring your projects, and it especially targets
-        developers who want to move from writing basic scripts to building
-        complex multi-module softwares, or even building reusable python
-        packages for the PyPi index."
+        selecting the best way to structure projects. 
       </Paragraph>
       <SubHeading id = {content[1]}>Virtual environments using Venv</SubHeading>
 
       <Paragraph>
-        "Many people get introduced to Python firstly as a scripting language, I
+        Many people get introduced to Python firstly as a scripting language, I
         first started out doing analytics with python, and the nature of those
         projects involved writing single file scripts, or using jupyter
         notebooks perform analysis in python. While this served its purpose,
@@ -113,68 +84,20 @@ const Post_1 = ({content}) => {
         and one key area is how to structure your python projects. Tutorials
         typically write code in a single file, which is not necessarily true of
         actual software development projects, and developers get confused on
-        selecting the best way to structure projects. This article however,
-        hopes to simplify the concepts behind structuring your projects, and it
-        especially targets developers who want to move from writing basic
-        scripts to building complex multi-module softwares, or even building
-        reusable python packages for the PyPi index. Many people get introduced
-        to Python firstly as a scripting language, I first started out doing
-        analytics with python, and the nature of those projects involved writing
-        single file scripts, or using jupyter notebooks perform analysis in
-        python. While this served its purpose, moving into software development,
-        is completely different area,although the programming language has
-        stayed the same, there a number of things that need to be covered in
-        order to have a good python software or API development project, many of
-        which are poorly covered on the internet, and one key area is how to
-        structure your python projects. Tutorials typically write code in a
-        single file, which is not necessarily true of actual software
-        development projects, and developers get confused on selecting the best
-        way to structure projects. This article however, hopes to simplify the
-        concepts behind structuring your projects, and it especially targets
-        developers who want to move from writing basic scripts to building
-        complex multi-module softwares, or even building reusable python
-        packages for the PyPi index."
+        selecting the best way to structure projects. 
       </Paragraph>
       <SubHeading id = {content[2]}>The Import Module/System 2</SubHeading>
 
 <Paragraph>
-  "Many people get introduced to Python firstly as a scripting language, I
+  Many people get introduced to Python firstly as a scripting language, I
   first started out doing analytics with python, and the nature of those
   projects involved writing single file scripts, or using jupyter
-  notebooks perform analysis in python. While this served its purpose,
-  moving into software development, is completely different area,although
-  the programming language has stayed the same, there a number of things
-  that need to be covered in order to have a good python software or API
-  development project, many of which are poorly covered on the internet,
-  and one key area is how to structure your python projects. Tutorials
-  typically write code in a single file, which is not necessarily true of
-  actual software development projects, and developers get confused on
-  selecting the best way to structure projects. This article however,
-  hopes to simplify the concepts behind structuring your projects, and it
-  especially targets developers who want to move from writing basic
-  scripts to building complex multi-module softwares, or even building
-  reusable python packages for the PyPi index. Many people get introduced
-  to Python firstly as a scripting language, I first started out doing
-  analytics with python, and the nature of those projects involved writing
-  single file scripts, or using jupyter notebooks perform analysis in
-  python. While this served its purpose, moving into software development,
-  is completely different area,although the programming language has
-  stayed the same, there a number of things that need to be covered in
-  order to have a good python software or API development project, many of
-  which are poorly covered on the internet, and one key area is how to
-  structure your python projects. Tutorials typically write code in a
-  single file, which is not necessarily true of actual software
-  development projects, and developers get confused on selecting the best
-  way to structure projects. This article however, hopes to simplify the
-  concepts behind structuring your projects, and it especially targets
-  developers who want to move from writing basic scripts to building
-  complex multi-module softwares, or even building reusable python
-  packages for the PyPi index."
+  notebooks perform analysis in python. 
 </Paragraph>
 <SubHeading id = {content[3]}>Virtual environments using Venv 2</SubHeading>
 
 <Paragraph>
-  "Many people get introduced to Python firstly as a scripting language, I
+  Many people get introduced to Python firstly as a scripting language, I
   first started out doing analytics with python, and the nature of those
   projects involved writing single file scripts, or using jupyter
   notebooks perform analysis in python. While this served its purpose,
@@ -196,19 +119,7 @@ const Post_1 = ({content}) => {
   to Python firstly as a scripting language, I first started out doing
   analytics with python, and the nature of those projects involved writing
   single file scripts, or using jupyter notebooks perform analysis in
-  python. While this served its purpose, moving into software development,
-  is completely different area,although the programming language has
-  stayed the same, there a number of things that need to be covered in
-  order to have a good python software or API development project, many of
-  which are poorly covered on the internet, and one key area is how to
-  structure your python projects. Tutorials typically write code in a
-  single file, which is not necessarily true of actual software
-  development projects, and developers get confused on selecting the best
-  way to structure projects. This article however, hopes to simplify the
-  concepts behind structuring your projects, and it especially targets
-  developers who want to move from writing basic scripts to building
-  complex multi-module softwares, or even building reusable python
-  packages for the PyPi index."
+  python. 
 </Paragraph>
 
     </Fragment>

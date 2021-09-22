@@ -70,66 +70,12 @@ const BlogPostOptions = ({ post_data }) => {
                         lineHeight: 1.5,
                       }}
                     >
-                      {blog_item}
+                      {`${blog_item}`.slice(0, 35)}
+                      {blog_item.length > 35 ? "..." : ""}
                     </a>
                   </Link>
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="blog-home-sidenav-container">
-        <div className="blog-home-sidenav-content">
-          <div>
-            <h4
-              style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
-                color: "#adbac7",
-                marginBottom: "2em",
-              }}
-            >
-              Tags
-            </h4>
-            <div>
-              <div className="blog-sidenav-filters">
-                {post_data.tags.map((tag, index) => (
-                  <div style={{ marginBottom: "0.5rem" }}>
-                    <Tags key={index} type="blog" title={tag} color={"green"} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="blog-home-sidenav-container blog-last">
-        <div className="blog-home-sidenav-content">
-          <div>
-            <h4
-              style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
-                color: "#adbac7",
-                marginBottom: "2em",
-              }}
-            >
-              Sort By
-            </h4>
-            <div>
-              <div className="blog-sidenav-filters">
-                {blog_sort.map((tag, index) => (
-                  <div style={{ marginBottom: "0.5rem" }}>
-                    <Tags
-                      key={index}
-                      type="blog"
-                      title={tag}
-                      color={"purple"}
-                    />
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

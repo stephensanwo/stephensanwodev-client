@@ -36,8 +36,8 @@ const BlogHome = () => {
               style={{ marginTop: "4rem", marginBottom: "6rem" }}
             ></div>
             <ArticleList />
+            <Footer />
           </div>
-          <Footer />
         </div>
         <div className="blog-home-options">
           <Options />

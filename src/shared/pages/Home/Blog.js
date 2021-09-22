@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import {
   Launch16,
-  Share16,
+  Copy16,
   ArrowRight24,
   ArrowRight16,
 } from "@carbon/icons-react";
@@ -10,6 +10,7 @@ import BlogImage from "../../../assets/svg/article.svg";
 import { blog_categories } from "../../../data/blog";
 import { Devops, Javascript } from "@carbon/pictograms-react";
 import Tags from "../../components/Tags";
+import { Link } from "react-router-dom";
 
 const featured_articles = [
   {
@@ -43,13 +44,14 @@ const Blog = () => {
           </div>
 
           <div className="see-all-container">
-            <a
+            <Link
               style={{
                 color: "#539bf5",
               }}
+              to="/blog"
             >
               Read All Posts
-            </a>
+            </Link>
             <ArrowRight24
               fill="#539bf5"
               className="see-all-container-logo-large"
@@ -76,37 +78,31 @@ const Blog = () => {
                 <div className="blog-content-featured-description">
                   <h4
                     style={{
-                      fontFamily: "display-text",
-                      fontSize: "0.8em",
+                      fontFamily: "display-text-medium",
+                      fontSize: "0.8rem",
                       color: "#539bf5",
                       marginBottom: "0.6em",
                     }}
                   >
                     {article.category}
                   </h4>
-                  <h4
-                    style={{
-                      color: "#adbac7",
-                      fontFamily: "display-text-bold",
-                      fontSize: "1em",
-                      marginBottom: "0.5em",
-                      lineHeight: 1.2,
-                    }}
-                  >
-                    {article.title}
-                  </h4>
+                  <Link to={`/blog/${article.id}`}>
+                    <h4
+                      style={{
+                        marginBottom: "0.8em",
+                      }}
+                      className="header-link-highlight"
+                    >
+                      {article.title}
+                    </h4>
+                  </Link>
                   <p
                     style={{
-                      fontFamily: "display-text",
-                      fontWeight: "400",
-                      fontSize: "1em",
-                      color: "#768390",
                       marginBottom: "0.4em",
-                      lineHeight: "1.4",
                     }}
                   >
-                    {`${article.description}`.slice(0, 150)}
-                    {article.description.length > 150 ? "..." : ""}
+                    {`${article.description}`.slice(0, 120)}
+                    {article.description.length > 120 ? "..." : ""}
                   </p>
                   <div className="blog-content-featured-tags">
                     {article.tags.map((tag, index) => (
@@ -121,42 +117,44 @@ const Blog = () => {
                   <div className="blog-content-featured-logo">
                     <div
                       style={{
-                        width: "30%",
+                        width: "40%",
                         display: "flex",
                         cursor: "pointer",
                         alignItems: "center",
                       }}
                     >
                       <Launch16 color="#539bf5" />
-                      <h4
-                        style={{
-                          fontFamily: "display-text-medium",
-                          fontSize: "0.7rem",
-                          color: "#539bf5",
-                          marginLeft: "0.5rem",
-                        }}
-                      >
-                        Read More
-                      </h4>
+                      <Link to={`/blog/${article.id}`}>
+                        <h4
+                          style={{
+                            fontFamily: "display-text-medium",
+                            fontSize: "0.8rem",
+                            color: "#539bf5",
+                            marginLeft: "0.5rem",
+                          }}
+                        >
+                          Read More
+                        </h4>
+                      </Link>
                     </div>
                     <div
                       style={{
-                        width: "30%",
+                        width: "40%",
                         display: "flex",
                         cursor: "pointer",
                         alignItems: "center",
                       }}
                     >
-                      <Share16 color="#539bf5" />
+                      <Copy16 color="#539bf5" />
                       <h4
                         style={{
                           fontFamily: "display-text-medium",
-                          fontSize: "0.7rem",
+                          fontSize: "0.8rem",
                           color: "#539bf5",
-                          marginLeft: "0.5rem",
+                          marginLeft: "0.8rem",
                         }}
                       >
-                        Share
+                        Copy Link
                       </h4>
                     </div>
                   </div>

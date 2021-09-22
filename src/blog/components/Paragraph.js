@@ -8,8 +8,8 @@ const Paragraph = (props) => {
           fontFamily: "display-text-medium",
           fontWeight: "400",
           fontSize: "1em",
-          color: "#768390",
-          lineHeight: 1.6,
+          color: "#adbac7",
+          lineHeight: 2,
           marginBottom: "2rem",
         }}
       >

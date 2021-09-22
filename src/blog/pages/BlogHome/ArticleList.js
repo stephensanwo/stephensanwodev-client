@@ -2,6 +2,7 @@ import React from "react";
 import { all } from "../../../data/tmp_blog";
 import { Launch16, Share16, ArrowRight24 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
+import { Link } from "react-router-dom";
 
 const ArticleList = () => {
   return (
@@ -14,37 +15,32 @@ const ArticleList = () => {
           <div className="blog-home-articles-description">
             <h4
               style={{
-                fontFamily: "display-text",
-                fontSize: "0.8em",
+                fontFamily: "display-text-medium",
+                fontSize: "0.8rem",
                 color: "#539bf5",
                 marginBottom: "0.6em",
               }}
             >
               {article.category}
             </h4>
-            <h2
-              style={{
-                color: "#adbac7",
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
-                marginBottom: "0.5em",
-                lineHeight: 1.4,
-              }}
-            >
-              {`${article.title}`.slice(0, 80)}
-              {article.title.length > 80 ? "..." : ""}
-            </h2>
+            <Link to={`/blog/${article.post_id}`}>
+              <h4
+                style={{
+                  marginBottom: "0.8em",
+                }}
+                className="header-link-highlight"
+              >
+                {`${article.title}`.slice(0, 80)}
+                {article.title.length > 80 ? "..." : ""}
+              </h4>
+            </Link>
             <p
               style={{
-                fontFamily: "display-text",
-                fontSize: "1em",
-                color: "#768390",
                 marginBottom: "0.4em",
-                lineHeight: 1.4,
               }}
             >
-              {`${article.description}`.slice(0, 200)}
-              {article.description.length > 200 ? "..." : ""}
+              {`${article.description}`.slice(0, 120)}
+              {article.description.length > 120 ? "..." : ""}
             </p>
             <div className="blog-content-featured-tags">
               {article.tags.map((tag, index) => (
@@ -54,43 +50,43 @@ const ArticleList = () => {
             <div style={{ display: "flex" }}>
               <div
                 style={{
-                  width: "120px",
+                  width: "40%",
                   display: "flex",
                   cursor: "pointer",
                   alignItems: "center",
                 }}
               >
                 <Launch16 color="#539bf5" />
-                <p
+                <h4
                   style={{
-                    fontFamily: "display-text-semibold",
-                    fontSize: "0.6rem",
+                    fontFamily: "display-text-medium",
+                    fontSize: "0.8rem",
                     color: "#539bf5",
                     marginLeft: "0.5rem",
                   }}
                 >
                   Read More
-                </p>
+                </h4>
               </div>
               <div
                 style={{
-                  width: "20%",
+                  width: "40%",
                   display: "flex",
                   cursor: "pointer",
                   alignItems: "center",
                 }}
               >
                 <Share16 color="#539bf5" />
-                <p
+                <h4
                   style={{
-                    fontFamily: "display-text-semibold",
-                    fontSize: "0.6rem",
+                    fontFamily: "display-text-medium",
+                    fontSize: "0.8rem",
                     color: "#539bf5",
                     marginLeft: "0.5rem",
                   }}
                 >
-                  Share
-                </p>
+                  Copy Link
+                </h4>
               </div>
             </div>
           </div>

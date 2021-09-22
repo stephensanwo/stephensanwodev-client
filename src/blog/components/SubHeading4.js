@@ -1,23 +1,23 @@
 import React, { Fragment } from "react";
 
-const SubHeading = (props) => {
+const SubHeading4 = (props) => {
   console.log(props.id);
   return (
     <Fragment>
-      <h2
+      <h4
         style={{
           color: "#ffffff",
           fontFamily: "display-text-bold",
-          fontSize: "1.5em",
+          fontSize: "1.1em",
           marginBottom: "0.4em",
           lineHeight: 1.5,
         }}
         id={props.id}
       >
         {props.children}
-      </h2>
+      </h4>
     </Fragment>
   );
 };
 
-export default SubHeading;
+export default SubHeading4;

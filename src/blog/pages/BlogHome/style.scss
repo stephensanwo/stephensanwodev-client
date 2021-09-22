@@ -23,7 +23,8 @@
 
 .blog-home-featured-container {
   margin-top: 4rem;
-  height: 600px;
+  min-height: 650px;
+  max-height: 650px;
 }
 
 .blog-home-featured-image {
@@ -48,6 +49,7 @@
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
   display: flex;
+  flex-wrap: wrap;
 }
 
 // Articles

@@ -1,6 +1,6 @@
 import React from "react";
 import { featured_article } from "../../../data/tmp_blog";
-import { Launch16, Share16, ArrowRight16 } from "@carbon/icons-react";
+import { Launch16, Copy16 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link, useRouteMatch } from "react-router-dom";
 
@@ -15,85 +15,77 @@ const FeaturedArticle = () => {
         <h4
           style={{
             fontFamily: "display-text-bold",
-            fontSize: "0.8em",
+            fontSize: "1em",
             color: "#539bf5",
             marginBottom: "0.4em",
           }}
         >
-          # Featured Article
+          Featured Article
         </h4>
         <Link to={`${path}${featured_article.id}`}>
-          <a
+          <h4
             style={{
-              // color: "#adbac7",
-              fontFamily: "display-text-bold",
-              fontSize: "1.2em",
+              fontSize: "1.8em",
               marginBottom: "0.4em",
-              lineHeight: 1.5,
             }}
+            className="header-link-highlight"
           >
             {`${featured_article.title}`.slice(0, 80)}
             {featured_article.title.length > 80 ? "..." : ""}
-          </a>
+          </h4>
         </Link>
 
-        <p
-          style={{
-            fontFamily: "display-text-medium",
-            fontWeight: "400",
-            fontSize: "1em",
-            color: "#768390",
-            lineHeight: 1.4,
-          }}
-        >
+        <p>
           {`${featured_article.description}`.slice(0, 200)}
           {featured_article.description.length > 200 ? "..." : ""}
         </p>
         <div className="blog-content-featured-tags">
-          <Tags type="blog" title={"Python"} color={"generic"} />
-          <Tags type="blog" title={"Software Developement"} color={"green"} />
-          <Tags type={"app"} title={"Python"} />
+          {featured_article.tags.map((tag_item, index) => (
+            <Tags type="blog" title={tag_item} color={"generic"} />
+          ))}
         </div>
         <div className="blog-content-featured-logo">
           <div
             style={{
-              width: "120px",
+              width: "40%",
               display: "flex",
               cursor: "pointer",
               alignItems: "center",
             }}
           >
             <Launch16 color="#539bf5" />
-            <a
-              style={{
-                fontFamily: "display-text-semibold",
-                fontSize: "0.8em",
-
-                marginLeft: "0.5rem",
-              }}
-            >
-              Read More
-            </a>
+            <Link to={`/blog/${featured_article.id}`}>
+              <h4
+                style={{
+                  fontFamily: "display-text-medium",
+                  fontSize: "0.8rem",
+                  color: "#539bf5",
+                  marginLeft: "0.5rem",
+                }}
+              >
+                Read More
+              </h4>
+            </Link>
           </div>
           <div
             style={{
-              width: "15%",
+              width: "40%",
               display: "flex",
               cursor: "pointer",
               alignItems: "center",
             }}
           >
-            <Share16 color="#539bf5" />
-            <a
+            <Copy16 color="#539bf5" />
+            <h4
               style={{
-                fontFamily: "display-text-semibold",
-                fontSize: "0.8em",
-
-                marginLeft: "0.5rem",
+                fontFamily: "display-text-medium",
+                fontSize: "0.8rem",
+                color: "#539bf5",
+                marginLeft: "0.8rem",
               }}
             >
-              Share
-            </a>
+              Copy Link
+            </h4>
           </div>
         </div>
       </div>

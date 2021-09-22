@@ -10,7 +10,6 @@ import {
 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import "./style.scss";
-import Footer from "../../../shared/components/Footer";
 import SubHeading from "../../components/SubHeading";
 import Paragraph from "../../components/Paragraph";
 
@@ -42,7 +41,7 @@ const PostContent = ({ post_data }) => {
         style={{
           fontSize: "2rem",
           fontFamily: "display-text-bold",
-          color: "#adbac7",
+          color: "#ffffff",
           marginBottom: "1rem",
           marginTop: "1rem",
           lineHeight: 1.3,
@@ -99,7 +98,7 @@ const PostContent = ({ post_data }) => {
       <div className="blog-post-detail">
         <h2
           style={{
-            color: "#6bc46d",
+            color: "#05aa82",
             fontFamily: "display-text-bold",
             fontSize: "1.2em",
             marginBottom: "0.4em",
@@ -114,7 +113,7 @@ const PostContent = ({ post_data }) => {
             fontFamily: "display-text-medium-italic",
             fontWeight: "400",
             fontSize: "1em",
-            color: "#6bc46d",
+            color: "#05aa82",
             lineHeight: 1.6,
             marginBottom: "2rem",
           }}
@@ -164,7 +163,6 @@ const PostContent = ({ post_data }) => {
           <ArrowRight24 fill="#539bf5" />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

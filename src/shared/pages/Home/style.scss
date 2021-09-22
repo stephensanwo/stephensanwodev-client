@@ -46,13 +46,6 @@
   line-height: 1.5;
 }
 
-.landing-content p {
-  color: #768390;
-  font-family: "display-text";
-  font-size: 1em;
-  line-height: 1.5;
-}
-
 .contact-section {
   margin-top: 2rem;
   border: 1px solid #444c56;
@@ -76,7 +69,7 @@
 .contact-section h4 {
   font-size: 0.8rem;
   font-family: "display-text-medium";
-  color: #adbac7;
+  color: #05aa82;
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
@@ -84,7 +77,7 @@
 .contact-section-logo a {
   font-family: "display-text";
   font-size: 0.8rem;
-  color: #768390;
+  color: #adbac7;
   margin-left: 0.5rem;
 }
 
@@ -112,7 +105,7 @@
 }
 
 .section-title h4 {
-  //   color: #768390;
+  //   color: #adbac7;
   font-family: "display-text-semibold";
   color: #444c56;
   font-size: 2rem;
@@ -125,31 +118,19 @@
   width: 100%;
 }
 
-.section-container p {
-  color: #768390;
-  font-size: 1em;
-}
-
 // About Content
 
 .about-content {
   margin-top: 4rem;
 }
 
-.about-content h4 {
-  font-size: 1em;
-  font-family: "display-text-semibold";
-  color: #768390;
-  // margin-bottom: 1rem;
-  line-height: 1.5;
-}
-
-.about-content p {
-  color: #768390;
-  font-family: "display-text";
-  font-size: 1em;
-  line-height: 1.5;
-}
+// .about-content h4 {
+//   font-size: 1em;
+//   font-family: "display-text-semibold";
+//   color: #adbac7;
+//   // margin-bottom: 1rem;
+//   line-height: 1.5;
+// }
 
 .about-content-experience {
   display: flex;
@@ -203,21 +184,13 @@
 }
 
 .about-content-experience-grid {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 // Blog Content
 
 .blog-content {
   margin-top: 4rem;
-}
-
-.blog-content h4 {
-  font-size: 1em;
-  font-family: "display-text-semibold";
-  color: #768390;
-  // margin-bottom: 1rem;
-  line-height: 1.5;
 }
 
 .blog-content-featured {
@@ -328,12 +301,8 @@
 }
 
 .blog-category-item h4 {
-  color: #adbac7;
-  font-family: "display-text-bold";
-  font-size: 1em;
   margin-left: 1.5rem;
   cursor: pointer;
-  line-height: 1.2;
 }
 
 .blog-category-item h4:hover {
@@ -359,7 +328,7 @@
 .app-content h4 {
   font-size: 1em;
   font-family: "display-text-semibold";
-  color: #768390;
+  color: #adbac7;
   // margin-bottom: 1rem;
   line-height: 1.5;
 }
@@ -421,27 +390,6 @@
   font-family: "display-text";
 }
 
-// Accordion
-
-.tools-accordion {
-  width: 450px;
-}
-
-.bx--accordion__heading:hover::before {
-  background-color: transparent;
-}
-
-.bx--accordion__content {
-  width: 500px;
-  padding-right: 0;
-  padding-left: 0rem;
-}
-.tools-accordion p {
-  font-family: "display-text-light";
-  color: #539bf5;
-  font-size: 0.8rem;
-}
-
 // Carbon Overrides
 
 .bx--accordion__title {
@@ -451,7 +399,7 @@
   font-family: "display-text-light", "Helvetica Neue", "Helvetica", "Arial",
     "sans-serif";
 
-  color: #768390;
+  color: #adbac7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   text-align: left;

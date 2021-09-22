@@ -37,14 +37,12 @@ const About = () => {
             <div className="about-content-experience-grid ">
               <div
                 style={{
-                  marginBottom: "1rem",
+                  marginBottom: "2rem",
                 }}
               >
                 <h4
                   style={{
-                    color: "#768390",
-                    fontFamily: "display-text-semibold",
-                    fontSize: "0.8rem",
+                    marginBottom: "0.5rem",
                   }}
                 >
                   Assistant Manager - KPMG
@@ -62,9 +60,7 @@ const About = () => {
               <div>
                 <h4
                   style={{
-                    color: "#768390",
-                    fontFamily: "display-text-semibold",
-                    fontSize: "0.8rem",
+                    marginBottom: "0.5rem",
                   }}
                 >
                   Freelance Senior Software Developer - Proxify
@@ -94,11 +90,7 @@ const About = () => {
                   <div>{tech_item.logo}</div>
                   <h4
                     style={{
-                      color: "#adbac7",
-                      fontFamily: "display-text-bold",
-                      fontSize: "1em",
                       marginLeft: "1.5rem",
-                      lineHeight: 1.2,
                     }}
                   >
                     {tech_item.category}
@@ -110,7 +102,7 @@ const About = () => {
                     <Tags
                       type="blog"
                       title={tool}
-                      color="green"
+                      color={"generic"}
                       style={{ marginBottom: "0.5em" }}
                     />
                   ))}

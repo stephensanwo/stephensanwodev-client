@@ -1,6 +1,6 @@
 import {
   Close24,
-  Switcher24,
+  Menu24,
   ArrowRight24,
   ArrowRight16,
 } from "@carbon/icons-react";
@@ -48,9 +48,9 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             {isNavOpen === "open" ? (
               <Close24 style={{ color: "#ffffff" }} />
             ) : isNavOpen === "closed" ? (
-              <Switcher24 style={{ color: "#ffffff" }} />
+              <Menu24 style={{ color: "#ffffff" }} />
             ) : (
-              <Switcher24 style={{ color: "#ffffff" }} />
+              <Menu24 style={{ color: "#ffffff" }} />
             )}
           </motion.div>
         </div>
@@ -65,7 +65,13 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             className="slider-menu"
           >
             <div className="slider-menu-container">
-              <div className="slider-item">
+              <motion.div
+                initial={{ x: "-100px" }}
+                animate={{ x: "0", speed: "100ms" }}
+                transition={{ ease: "easeInOut", duration: 0.5 }}
+                exit={{ display: "none", speed: "1000ms" }}
+                className="slider-item"
+              >
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <a>Blog</a>
                 </div>
@@ -73,16 +79,28 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                 <div className="see-all-container">
                   <ArrowRight16 fill="#539bf5" />
                 </div>
-              </div>
-              <div className="slider-item">
+              </motion.div>
+              <motion.div
+                initial={{ x: "-100px" }}
+                animate={{ x: "0", speed: "100ms" }}
+                transition={{ ease: "easeInOut", duration: 0.6 }}
+                exit={{ display: "none", speed: "10000ms" }}
+                className="slider-item"
+              >
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <a>Apps</a>
                 </div>
                 <div className="see-all-container">
                   <ArrowRight16 fill="#539bf5" />
                 </div>
-              </div>
-              <div className="slider-item">
+              </motion.div>
+              <motion.div
+                initial={{ x: "-100px" }}
+                animate={{ x: "0", speed: "100ms" }}
+                transition={{ ease: "easeInOut", duration: 0.7 }}
+                exit={{ display: "none", speed: "10000ms" }}
+                className="slider-item"
+              >
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <a>Github</a>
                 </div>
@@ -90,7 +108,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                 <div className="see-all-container">
                   <ArrowRight16 fill="#539bf5" />
                 </div>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         )}

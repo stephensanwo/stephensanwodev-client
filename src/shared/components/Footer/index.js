@@ -103,15 +103,14 @@ const Footer = ({ data_type }) => {
           {blog_categories_small.map((blog_item) => (
             <div className="blog-sidenav-category-item">
               {blog_item.logo}
-              <a
+              <h4
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.85em",
-                  lineHeight: 1.5,
+                  marginLeft: "1.5rem",
                 }}
+                className="header-link-highlight"
               >
                 {blog_item.title}
-              </a>
+              </h4>
             </div>
           ))}
           <div style={{ borderBottom: "1px solid #444c56", marginTop: "4em" }}>
@@ -130,21 +129,16 @@ const Footer = ({ data_type }) => {
             <div style={{ marginTop: "1.5rem" }}>
               <h4
                 style={{
-                  color: "#adbac7",
-                  fontFamily: "display-text-bold",
-                  fontSize: "0.85em",
                   marginBottom: "0.4em",
                 }}
+                className="header-link-highlight"
               >
                 {article.title}
               </h4>
               <p
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.85em",
-                  color: "#768390",
                   marginBottom: "0.4em",
-                  lineHeight: 1.4,
+
                   width: "100%",
                 }}
               >
