@@ -1,7 +1,7 @@
 .card-container {
   width: 100%;
   min-height: 250px;
-  border: 1px solid #444c56;
+  border: 1px solid #2b323d;
   margin-bottom: 3rem;
   border-radius: 6px;
   padding: 1.5rem;
@@ -14,20 +14,20 @@
   margin-top: 1em;
 }
 
-.card-links-featured {
-  background-color: #22272e;
-}
+// .card-links-featured {
+//   // background-color: #22272e;
+// }
 
-.card-links a {
-  font-family: "display-text";
-  font-size: 0.8rem;
-  color: #768390;
-  margin-left: 0.5rem;
-}
+// .card-links a {
+//   font-family: "display-text";
+//   font-size: 0.8rem;
+//   color: #768390;
+//   margin-left: 0.5rem;
+// }
 
-.card-links a:hover {
-  color: #986ee2;
-}
+// .card-links a:hover {
+//   color: #986ee2;
+// }
 
 .card-container h4 {
   color: #adbac7;

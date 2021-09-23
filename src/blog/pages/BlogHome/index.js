@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.scss";
 import { Devops } from "@carbon/pictograms-react";
 import FeaturedArticle from "./FeaturedArticle";
@@ -6,8 +6,15 @@ import ArticleList from "./ArticleList";
 import Options from "./Options";
 import SideNavOptions from "./SideNavOptions";
 import Footer from "../../../shared/components/Footer";
+import { useLocation } from "react-router-dom";
 
 const BlogHome = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="blog-home-container">
       <div className="blog-home-sidenav">

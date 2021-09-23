@@ -3,6 +3,7 @@ import { Launch16, Share16, ArrowRight24, Code24 } from "@carbon/icons-react";
 import { featured_apps_data, apps_data } from "../../../data/apps";
 import { Ideate } from "@carbon/pictograms-react";
 import Card from "../../components/Card";
+import { Link } from "react-router-dom";
 
 const Apps = () => {
   return (
@@ -14,13 +15,15 @@ const Apps = () => {
             <h4 style={{ color: "#986ee2" }}>Projects</h4>
           </div>
           <div className="see-all-container">
-            <a
+            <Link
               style={{
                 color: "#986ee2",
               }}
+              to="/apps"
             >
               Discover Apps
-            </a>
+            </Link>
+
             <ArrowRight24 fill="#986ee2" />
           </div>
         </div>

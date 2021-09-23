@@ -47,7 +47,7 @@ const FeaturedArticle = () => {
         <div className="blog-content-featured-logo">
           <div
             style={{
-              width: "40%",
+              width: "200px",
               display: "flex",
               cursor: "pointer",
               alignItems: "center",
@@ -69,7 +69,7 @@ const FeaturedArticle = () => {
           </div>
           <div
             style={{
-              width: "40%",
+              width: "200px",
               display: "flex",
               cursor: "pointer",
               alignItems: "center",

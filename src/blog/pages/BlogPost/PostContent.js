@@ -1,5 +1,4 @@
-import React, { lazy, Fragment, useEffect } from "react";
-
+import React, { lazy, Fragment } from "react";
 import {
   Launch16,
   Share16,
@@ -41,7 +40,7 @@ const PostContent = ({ post_data }) => {
         style={{
           fontSize: "2rem",
           fontFamily: "display-text-bold",
-          color: "#ffffff",
+          color: "#adbac7",
           marginBottom: "1rem",
           marginTop: "1rem",
           lineHeight: 1.3,
@@ -126,7 +125,7 @@ const PostContent = ({ post_data }) => {
         ></div>
 
         {/* JSX will be inserted here */}
-        <React.Suspense fallback={<ArrowDown24 fill="#ffffff" />}>
+        <React.Suspense fallback={<ArrowDown24 fill="#adbac7" />}>
           <Post content={content_id} />
         </React.Suspense>
       </div>

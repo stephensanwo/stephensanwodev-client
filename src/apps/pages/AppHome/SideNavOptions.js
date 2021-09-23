@@ -6,14 +6,16 @@ import {
   app_sort,
 } from "../../../data/apps";
 import Tags from "../../../shared/components/Tags";
+import { useRouteMatch, Link } from "react-router-dom";
 
 const SideNavOptions = () => {
+  const { path } = useRouteMatch();
   return (
     <Fragment>
       <div className="app-home-sidenav-container">
         <div className="app-home-sidenav-content">
           <div>
-            <a
+            <Link
               style={{
                 fontFamily: "display-text-bold",
                 fontSize: "1em",
@@ -22,10 +24,11 @@ const SideNavOptions = () => {
                 display: "flex",
                 alignItems: "center",
               }}
+              to={`/`}
             >
               <ArrowLeft24 fill="#539bf5" style={{ marginRight: "0.5em" }} />{" "}
               Home
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -46,15 +49,14 @@ const SideNavOptions = () => {
               {app_categories_small.map((app_item) => (
                 <div className="app-sidenav-category-item">
                   {app_item.logo}
-                  <a
+                  <h4
                     style={{
-                      fontFamily: "display-text-medium",
-                      fontSize: "0.85em",
-                      lineHeight: 1.5,
+                      marginLeft: "1rem",
                     }}
+                    className="header-link-highlight"
                   >
                     {app_item.title}
-                  </a>
+                  </h4>
                 </div>
               ))}
             </div>

@@ -8,8 +8,8 @@
 
 .home-content {
   flex-basis: 100%;
-  border-left: 1px solid #444c56;
-  border-right: 1px solid #444c56;
+  border-left: 1px solid #2b323d;
+  border-right: 1px solid #2b323d;
   padding: 5rem;
   padding-top: 10rem;
 }
@@ -48,7 +48,7 @@
 
 .contact-section {
   margin-top: 2rem;
-  border: 1px solid #444c56;
+  border: 1px solid #2b323d;
   border-radius: 6px;
   padding: 1rem;
   max-width: 420px;
@@ -107,14 +107,14 @@
 .section-title h4 {
   //   color: #adbac7;
   font-family: "display-text-semibold";
-  color: #444c56;
+  color: #2b323d;
   font-size: 2rem;
   margin-bottom: 0;
   margin-left: 2rem;
 }
 
 .section-divider-line {
-  border-top: 1px solid #444c56;
+  border-top: 1px solid #2b323d;
   width: 100%;
 }
 
@@ -163,9 +163,10 @@
 
 .about-technologies-item-container {
   min-height: 65px;
-  border: 1px solid #444c56;
+  border: 1px solid #2b323d;
   border-radius: 5px;
   padding: 1em;
+  // background-color: #1f242c;
 }
 
 .about-technologies-item {
@@ -292,7 +293,7 @@
 }
 
 .blog-category-item {
-  // border-bottom: 1px solid #444c56;
+  // border-bottom: 1px solid #2b323d;
   display: flex;
   align-items: center;
   width: 100%;
@@ -369,7 +370,7 @@
 }
 .app-others-item-container {
   display: block;
-  // border-bottom: 1px solid #444c56;
+  // border-bottom: 1px solid #2b323d;
   height: 65px;
   width: 100%;
 }
@@ -437,15 +438,15 @@
 // Footer
 
 .footer-container {
-  border-top: 1px solid #444c56;
+  border-top: 1px solid #2b323d;
   height: 80px;
   padding-left: 100px;
   padding-right: 100px;
 }
 
 .footer-content {
-  border-left: 1px solid #444c56;
-  border-right: 1px solid #444c56;
+  border-left: 1px solid #2b323d;
+  border-right: 1px solid #2b323d;
   width: 100%;
   height: 100%;
   display: flex;

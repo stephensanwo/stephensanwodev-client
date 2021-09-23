@@ -6,7 +6,7 @@ import Tags from "../../../shared/components/Tags";
 const Options = () => {
   return (
     <div className="app-home-options-container">
-      <div style={{ borderBottom: "1px solid #444c56" }}>
+      <div style={{ borderBottom: "1px solid #2b323d" }}>
         <h4
           style={{
             color: "#adbac7",
@@ -22,21 +22,17 @@ const Options = () => {
         <div style={{ marginTop: "2rem" }}>
           <h4
             style={{
-              color: "#adbac7",
-              fontFamily: "display-text-bold",
-              fontSize: "0.85em",
+              fontSize: "0.8em",
               marginBottom: "0.4em",
             }}
+            className="header-link-highlight"
           >
             {article.title}
           </h4>
           <p
             style={{
-              fontFamily: "display-text-medium",
-              fontSize: "0.85em",
-              color: "#768390",
+              fontSize: "0.8em",
               marginBottom: "0.4em",
-              lineHeight: 1.4,
               width: "100%",
             }}
           >
@@ -46,7 +42,7 @@ const Options = () => {
         </div>
       ))}
 
-      <div style={{ borderBottom: "1px solid #444c56", marginTop: "4rem" }}>
+      <div style={{ borderBottom: "1px solid #2b323d", marginTop: "4rem" }}>
         <h4
           style={{
             color: "#adbac7",
@@ -62,21 +58,18 @@ const Options = () => {
         <div style={{ marginTop: "2rem" }}>
           <h4
             style={{
-              color: "#adbac7",
-              fontFamily: "display-text-bold",
-              fontSize: "0.85em",
+              fontSize: "0.8em",
               marginBottom: "0.4em",
             }}
+            className="header-link-highlight"
           >
             {app_data.title}
           </h4>
           <p
             style={{
-              fontFamily: "display-text-medium",
-              fontSize: "0.85em",
-              color: "#768390",
+              fontSize: "0.8em",
               marginBottom: "0.4em",
-              lineHeight: 1.4,
+
               width: "100%",
             }}
           >

@@ -22,22 +22,18 @@ const PostOptions = () => {
         <div style={{ marginTop: "2rem" }}>
           <h4
             style={{
-              color: "#adbac7",
-              fontFamily: "display-text-bold",
-              fontSize: "0.85em",
+              fontSize: "0.8em",
               marginBottom: "0.4em",
             }}
+            className="header-link-highlight"
           >
             {article.title}
           </h4>
           <p
             style={{
-              fontFamily: "display-text-medium",
-              fontSize: "0.85em",
-              color: "#768390",
               marginBottom: "0.4em",
-              lineHeight: 1.4,
               width: "100%",
+              fontSize: "0.8em",
             }}
           >
             {`${article.description}`.slice(0, 160)}
@@ -62,22 +58,18 @@ const PostOptions = () => {
         <div style={{ marginTop: "2rem" }}>
           <h4
             style={{
-              color: "#adbac7",
-              fontFamily: "display-text-bold",
-              fontSize: "0.85em",
+              fontSize: "0.8em",
               marginBottom: "0.4em",
             }}
+            className="header-link-highlight"
           >
             {article.title}
           </h4>
           <p
             style={{
-              fontFamily: "display-text-medium",
-              fontSize: "0.85em",
-              color: "#768390",
               marginBottom: "0.4em",
-              lineHeight: 1.4,
               width: "100%",
+              fontSize: "0.8em",
             }}
           >
             {`${article.description}`.slice(0, 160)}

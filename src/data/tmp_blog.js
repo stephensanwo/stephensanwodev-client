@@ -73,31 +73,39 @@ export const all = [
       "Redis",
       "Docker",
     ],
-    image_url:
-      "https://ddxzec2p5v0iq.cloudfront.net/full-stack-chatbot-architecture.svg",
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/article.svg",
   },
 ];
 
 export const featured_article = {
-  id: 1,
-  category: "Python",
-  title: "Structuring your python software development projects",
-  description:
-    "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics engine without having to write code. Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
-  image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+  id: 3,
+  category: "Python Development",
+  sub_category: "From Scripting to Software",
+  title:
+    "Build a full stack AI Chatbot with GPT, React, FastAPI, Redis, Docker & AWS",
   author: "Stephen Sanwo",
-  date: "2020-June-20",
+  date: "2020-September-20",
   content: [
-    "The Import Module/System",
-    "Virtual environments using Venv",
-    "The Import Module/System",
-    "Virtual environments using Venv",
-    "The Import Module/System",
-    "Virtual environments using Venv",
-    "The Import Module/System",
-    "Virtual environments using Venv",
+    "Introduction",
+    "Important Note",
+    "Software Architecture",
+    "Development Environment",
+    "Project Structure",
+    "Setup Git Repository",
   ],
-  tags: ["Python", "API"],
+  description:
+    "One of the best ways to learn how to develop full stack applications is to build projects that cover the end to end software development process, from designing the system, to building an API, developing the user interface, and finally deploying your application. This tutorial is designed to take you through the end to end process of building and deploying a functional full stack app.",
+  tags: [
+    "Python",
+    "API",
+    "AWS",
+    "GPT-J-6B",
+    "Hugging-Face",
+    "FastAPI",
+    "Redis",
+    "Docker",
+  ],
+  image_url: "https://ddxzec2p5v0iq.cloudfront.net/article.svg",
 };
 
 export const top_articles = [

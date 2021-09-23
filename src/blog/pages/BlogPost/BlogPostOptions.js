@@ -1,22 +1,15 @@
-import {
-  ArrowDownRight16,
-  ArrowLeft24,
-  ArrowUpRight16,
-  Code16,
-} from "@carbon/icons-react";
+import { ArrowLeft24, ArrowUpRight16 } from "@carbon/icons-react";
 import React, { Fragment } from "react";
 import { Link } from "react-scroll";
-import {
-  blog_categories_small,
-  blog_filters,
-  blog_sort,
-} from "../../../data/blog";
-import Tags from "../../../shared/components/Tags";
+import { useRouteMatch } from "react-router-dom";
 
 const BlogPostOptions = ({ post_data }) => {
   const content_id = post_data.content.map((content_data) =>
     content_data.replaceAll(/\s/g, "")
   );
+
+  const { path } = useRouteMatch();
+
   return (
     <Fragment>
       <div className="blog-home-sidenav-container">
@@ -31,9 +24,10 @@ const BlogPostOptions = ({ post_data }) => {
                 display: "flex",
                 alignItems: "center",
               }}
+              href={`${path}/blog`}
             >
               <ArrowLeft24 fill="#539bf5" style={{ marginRight: "0.5em" }} />{" "}
-              Back
+              Blog
             </a>
           </div>
         </div>
@@ -43,9 +37,6 @@ const BlogPostOptions = ({ post_data }) => {
           <div>
             <h4
               style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
-                color: "#adbac7",
                 marginBottom: "2em",
               }}
             >
@@ -55,7 +46,6 @@ const BlogPostOptions = ({ post_data }) => {
               {post_data.content.map((blog_item, index) => (
                 <div key={index} className="blog-sidenav-category-item">
                   <ArrowUpRight16 fill="#539bf5" />
-
                   <Link
                     to={content_id[index]}
                     spy={true}
@@ -63,16 +53,10 @@ const BlogPostOptions = ({ post_data }) => {
                     offset={-100}
                     duration={500}
                   >
-                    <a
-                      style={{
-                        fontFamily: "display-text-medium",
-                        fontSize: "0.85em",
-                        lineHeight: 1.5,
-                      }}
-                    >
+                    <h4 className="header-link-highlight">
                       {`${blog_item}`.slice(0, 35)}
                       {blog_item.length > 35 ? "..." : ""}
-                    </a>
+                    </h4>
                   </Link>
                 </div>
               ))}

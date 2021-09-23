@@ -3,6 +3,7 @@ import "./style.scss";
 import { CloudComputing } from "@carbon/pictograms-react";
 import { Launch16, LogoGithub16 } from "@carbon/icons-react";
 import Tags from "../Tags";
+import { Link } from "react-router-dom";
 
 const Card = ({ app_data, featured }) => {
   return (
@@ -19,7 +20,7 @@ const Card = ({ app_data, featured }) => {
           >
             {app_data.title}
           </h4>
-          <h4>{app_data.name}</h4>
+          <h4 className="header-link-highlight">{app_data.name}</h4>
         </div>
         <div>
           <CloudComputing fill="#986ee2" />
@@ -28,12 +29,7 @@ const Card = ({ app_data, featured }) => {
       <div style={{ width: "80%" }}>
         <p
           style={{
-            fontFamily: "display-text",
-            fontWeight: "400",
-            fontSize: "1em",
-            color: "#768390",
             marginBottom: "0.4em",
-            lineHeight: "1.4",
           }}
         >
           {`${app_data.desc}`.slice(0, 100)}
@@ -45,10 +41,24 @@ const Card = ({ app_data, featured }) => {
           style={{
             display: "flex",
             alignItems: "center",
+            width: "40%",
           }}
         >
           <Launch16 color="#986ee2" />
-          <a>Launch App</a>
+          <Link to={"/"}>
+            <h4
+              style={{
+                fontFamily: "display-text-medium",
+                fontSize: "0.8rem",
+                color: "#986ee2",
+                marginTop: 0,
+                marginBottom: 0,
+                marginLeft: "0.5rem",
+              }}
+            >
+              Launch
+            </h4>
+          </Link>
         </div>
         <div
           style={{
@@ -57,7 +67,20 @@ const Card = ({ app_data, featured }) => {
           }}
         >
           <LogoGithub16 color="#986ee2" />
-          <a>View Repo</a>
+          <Link to={"/"}>
+            <h4
+              style={{
+                fontFamily: "display-text-medium",
+                fontSize: "0.8rem",
+                color: "#986ee2",
+                marginTop: 0,
+                marginBottom: 0,
+                marginLeft: "0.5rem",
+              }}
+            >
+              View Repo
+            </h4>
+          </Link>
         </div>
       </div>
       <div style={{ marginTop: "2em", display: "flex", flexWrap: "wrap" }}>

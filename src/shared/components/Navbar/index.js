@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import Options from "./Options";
 import { motion, AnimatePresence } from "framer-motion";
 import "./style.scss";
+import Logo from "../../../assets/svg/logo.svg";
 
 const Navbar = ({ isNavOpen, setIsNavOpen }) => {
   const handleClick = () => {
@@ -22,7 +23,8 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
     <Fragment>
       <div className="app-nav">
         <div className="nav-tabs">
-          <Link to={"/"}>
+          <Link to={"/"} style={{ display: "flex", alignItems: "center" }}>
+            <img src={Logo} width="24px" style={{ marginRight: "1rem" }} />
             <a>stephensanwo.dev</a>
           </Link>
         </div>
@@ -38,9 +40,22 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             <Options data={{ name: "Apps", link: "/apps" }} />
           </div>
           <div className="nav-action-3">
-            <Options
-              data={{ name: "Github", link: "https://github.com/stephensanwo" }}
-            />
+            <a
+              href="https://github.com/stephensanwo"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <motion.div
+                className="options-container"
+                whileHover={{ borderBottom: "2px solid #05aa82" }}
+                transition={{ ease: "easeIn", duration: 0.2 }}
+              >
+                <div className="options-text">
+                  <a>Github</a>
+                </div>
+              </motion.div>
+            </a>
           </div>
         </div>
         <div className="nav-switcher">
@@ -72,8 +87,11 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                 exit={{ display: "none", speed: "1000ms" }}
                 className="slider-item"
               >
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <a>Blog</a>
+                <div
+                  style={{ display: "flex", alignItems: "center" }}
+                  onClick={() => setIsNavOpen("closed")}
+                >
+                  <Link to={"/blog"}>Blog</Link>
                 </div>
 
                 <div className="see-all-container">
@@ -87,8 +105,11 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                 exit={{ display: "none", speed: "10000ms" }}
                 className="slider-item"
               >
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <a>Apps</a>
+                <div
+                  style={{ display: "flex", alignItems: "center" }}
+                  onClick={() => setIsNavOpen("closed")}
+                >
+                  <Link to={"/apps"}>Apps</Link>
                 </div>
                 <div className="see-all-container">
                   <ArrowRight16 fill="#539bf5" />
@@ -101,8 +122,17 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                 exit={{ display: "none", speed: "10000ms" }}
                 className="slider-item"
               >
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <a>Github</a>
+                <div
+                  style={{ display: "flex", alignItems: "center" }}
+                  onClick={() => setIsNavOpen("closed")}
+                >
+                  <a
+                    href="https://github.com/stephensanwo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github
+                  </a>
                 </div>
 
                 <div className="see-all-container">

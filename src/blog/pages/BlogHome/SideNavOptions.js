@@ -51,7 +51,7 @@ const SideNavOptions = () => {
                   {blog_item.logo}
                   <h4
                     style={{
-                      marginLeft: "1.5rem",
+                      marginLeft: "1rem",
                     }}
                     className="header-link-highlight"
                   >

@@ -6,7 +6,7 @@ const SubHeading4 = (props) => {
     <Fragment>
       <h4
         style={{
-          color: "#ffffff",
+          color: "#adbac7",
           fontFamily: "display-text-bold",
           fontSize: "1.1em",
           marginBottom: "0.4em",
