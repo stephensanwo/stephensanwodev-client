@@ -14,7 +14,7 @@ const Card = ({ app_data, featured }) => {
             style={{
               fontFamily: "display-text",
               fontSize: "0.8em",
-              color: "#986ee2",
+              color: "#05aa82",
               marginBottom: "0.6em",
             }}
           >
@@ -23,7 +23,7 @@ const Card = ({ app_data, featured }) => {
           <h4 className="header-link-highlight">{app_data.name}</h4>
         </div>
         <div>
-          <CloudComputing fill="#986ee2" />
+          <CloudComputing fill="#05aa82" />
         </div>
       </div>
       <div style={{ width: "80%" }}>
@@ -44,13 +44,13 @@ const Card = ({ app_data, featured }) => {
             width: "40%",
           }}
         >
-          <Launch16 color="#986ee2" />
+          <Launch16 color="#05aa82" />
           <Link to={"/"}>
             <h4
               style={{
                 fontFamily: "display-text-medium",
                 fontSize: "0.8rem",
-                color: "#986ee2",
+                color: "#05aa82",
                 marginTop: 0,
                 marginBottom: 0,
                 marginLeft: "0.5rem",
@@ -66,13 +66,13 @@ const Card = ({ app_data, featured }) => {
             alignItems: "center",
           }}
         >
-          <LogoGithub16 color="#986ee2" />
+          <LogoGithub16 color="#05aa82" />
           <Link to={"/"}>
             <h4
               style={{
                 fontFamily: "display-text-medium",
                 fontSize: "0.8rem",
-                color: "#986ee2",
+                color: "#05aa82",
                 marginTop: 0,
                 marginBottom: 0,
                 marginLeft: "0.5rem",

@@ -49,9 +49,11 @@ const SideNavOptions = () => {
               {app_categories_small.map((app_item) => (
                 <div className="app-sidenav-category-item">
                   {app_item.logo}
+
                   <h4
                     style={{
                       marginLeft: "1rem",
+                      fontSize: "0.8rem",
                     }}
                     className="header-link-highlight"
                   >

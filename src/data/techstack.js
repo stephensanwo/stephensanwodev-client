@@ -18,13 +18,13 @@ export const tech_stack = [
       "Software Architecture",
       "Database Modeling",
     ],
-    logo: <CalendarSettings24 fill="#05aa82" />,
+    logo: <CalendarSettings24 fill="#986ee2" />,
   },
 
   {
     category: "Programming Language",
     tools: ["Python", "Javascript", "Go", "TypeScript"],
-    logo: <Code24 fill="#05aa82" />,
+    logo: <Code24 fill="#986ee2" />,
   },
   {
     category: "Distributed Software, APIs & Microservices",
@@ -39,7 +39,7 @@ export const tech_stack = [
       "Concurrency",
       "Events & Queues",
     ],
-    logo: <Api24 fill="#05aa82" />,
+    logo: <Api24 fill="#986ee2" />,
   },
   {
     category: "Database, Storage & Caching",
@@ -52,26 +52,26 @@ export const tech_stack = [
       "AWS S3",
       "Redis-Queue",
     ],
-    logo: <DataBase24 fill="#05aa82" />,
+    logo: <DataBase24 fill="#986ee2" />,
   },
   {
     category: "Web & Mobile Development",
     tools: ["React Js", "React Native", "HTML", "CSS", "Sketch"],
-    logo: <Screen24 fill="#05aa82" />,
+    logo: <Screen24 fill="#986ee2" />,
   },
   {
     category: "AI & ML Development/Ops",
     tools: ["Tensorflow", "OpenCV"],
-    logo: <MachineLearningModel24 fill="#05aa82" />,
+    logo: <MachineLearningModel24 fill="#986ee2" />,
   },
   {
     category: "DevOps & CI",
     tools: ["Docker", "Nginx", "uWSGI", "ASGI", "Github", "Git", "Bash"],
-    logo: <TreeViewAlt24 fill="#05aa82" />,
+    logo: <TreeViewAlt24 fill="#986ee2" />,
   },
   {
     category: "Cloud",
     tools: ["AWS", "MongoDB Atlas"],
-    logo: <Cloud24 fill="#05aa82" />,
+    logo: <Cloud24 fill="#986ee2" />,
   },
 ];

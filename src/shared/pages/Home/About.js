@@ -10,8 +10,8 @@ const About = () => {
       <div className="section-divider">
         <div className="section-title">
           <div style={{ display: "flex", alignItems: "center" }}>
-            <UserProfile fill="#05aa82" />
-            <h4 style={{ color: "#05aa82" }}>About Me</h4>
+            <UserProfile fill="#986ee2" />
+            <h4 style={{ color: "#986ee2" }}>About Me</h4>
           </div>
           <div></div>
         </div>
@@ -51,7 +51,7 @@ const About = () => {
                   style={{
                     fontFamily: "display-text",
                     fontSize: "0.7rem",
-                    color: "#05aa82",
+                    color: "#986ee2",
                   }}
                 >
                   Sep 2015 - Present
@@ -69,7 +69,7 @@ const About = () => {
                   style={{
                     fontFamily: "display-text",
                     fontSize: "0.7rem",
-                    color: "#05aa82",
+                    color: "#986ee2",
                   }}
                 >
                   February 2021 - Present
@@ -100,7 +100,8 @@ const About = () => {
                 <div className="about-technologies-list">
                   {tech_item.tools.map((tool, index) => (
                     <Tags
-                      type="blog"
+                      type="app"
+                      icon="false"
                       title={tool}
                       color={"generic"}
                       style={{ marginBottom: "0.5em" }}

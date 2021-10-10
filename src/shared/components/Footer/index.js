@@ -33,15 +33,15 @@ const Footer = ({ data_type }) => {
           {app_categories_small.map((app_item) => (
             <div className="blog-sidenav-category-item">
               {app_item.logo}
-              <a
+              <h4
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.85em",
-                  lineHeight: 1.5,
+                  marginLeft: "1rem",
+                  fontSize: "0.8rem",
                 }}
+                className="header-link-highlight"
               >
                 {app_item.title}
-              </a>
+              </h4>
             </div>
           ))}
           <div style={{ borderBottom: "1px solid #444c56", marginTop: "4em" }}>
@@ -60,21 +60,17 @@ const Footer = ({ data_type }) => {
             <div style={{ marginTop: "1.5rem" }}>
               <h4
                 style={{
-                  color: "#adbac7",
-                  fontFamily: "display-text-bold",
-                  fontSize: "0.85em",
+                  fontSize: "0.8em",
                   marginBottom: "0.4em",
                 }}
+                className="header-link-highlight"
               >
                 {apps.title}
               </h4>
               <p
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.85em",
-                  color: "#768390",
+                  fontSize: "0.8em",
                   marginBottom: "0.4em",
-                  lineHeight: 1.4,
                   width: "100%",
                 }}
               >
@@ -105,7 +101,8 @@ const Footer = ({ data_type }) => {
               {blog_item.logo}
               <h4
                 style={{
-                  marginLeft: "1.5rem",
+                  marginLeft: "1rem",
+                  fontSize: "0.8rem",
                 }}
                 className="header-link-highlight"
               >
@@ -130,6 +127,7 @@ const Footer = ({ data_type }) => {
               <h4
                 style={{
                   marginBottom: "0.4em",
+                  fontSize: "0.8em",
                 }}
                 className="header-link-highlight"
               >
@@ -137,8 +135,8 @@ const Footer = ({ data_type }) => {
               </h4>
               <p
                 style={{
+                  fontSize: "0.8em",
                   marginBottom: "0.4em",
-
                   width: "100%",
                 }}
               >

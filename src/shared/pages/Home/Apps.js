@@ -11,20 +11,20 @@ const Apps = () => {
       <div className="section-divider">
         <div className="section-title">
           <div style={{ display: "flex", alignItems: "center" }}>
-            <Ideate fill="#986ee2" />
-            <h4 style={{ color: "#986ee2" }}>Projects</h4>
+            <Ideate fill="#05aa82" />
+            <h4 style={{ color: "#05aa82" }}>Projects</h4>
           </div>
           <div className="see-all-container">
             <Link
               style={{
-                color: "#986ee2",
+                color: "#05aa82",
               }}
               to="/apps"
             >
               Discover Apps
             </Link>
 
-            <ArrowRight24 fill="#986ee2" />
+            <ArrowRight24 fill="#05aa82" />
           </div>
         </div>
         <div className="section-divider-line"></div>
@@ -52,7 +52,7 @@ const Apps = () => {
               <div key={index} className="app-others-item-container">
                 <div className="app-others-item">
                   <div>
-                    <Code24 fill="#986ee2" />
+                    <Code24 fill="#05aa82" />
                   </div>
                   <div>
                     <h2

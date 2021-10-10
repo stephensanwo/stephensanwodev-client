@@ -52,6 +52,7 @@ const SideNavOptions = () => {
                   <h4
                     style={{
                       marginLeft: "1rem",
+                      fontSize: "0.8rem",
                     }}
                     className="header-link-highlight"
                   >

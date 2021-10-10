@@ -17,12 +17,12 @@ const AppHome = () => {
         <div className="app-home-content">
           <div className="app-home-content-items">
             <div style={{ display: "flex", alignItems: "center" }}>
-              <Ideate fill="#986ee2" />
+              <Ideate fill="#05aa82" />
               <h4
                 style={{
                   fontSize: "2rem",
                   fontFamily: "display-text-medium",
-                  color: "#986ee2",
+                  color: "#05aa82",
                   marginLeft: "2rem",
                 }}
               >

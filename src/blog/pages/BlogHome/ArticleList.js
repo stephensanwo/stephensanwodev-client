@@ -44,7 +44,7 @@ const ArticleList = () => {
             </p>
             <div className="blog-content-featured-tags">
               {article.tags.map((tag, index) => (
-                <Tags key={index} type="blog" title={tag} color={"green"} />
+                <Tags key={index} type="blog" title={tag} color={"generic"} />
               ))}
             </div>
             <div style={{ display: "flex" }}>

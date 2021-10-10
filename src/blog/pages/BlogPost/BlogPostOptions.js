@@ -53,7 +53,12 @@ const BlogPostOptions = ({ post_data }) => {
                     offset={-100}
                     duration={500}
                   >
-                    <h4 className="header-link-highlight">
+                    <h4
+                      style={{
+                        fontSize: "0.8rem",
+                      }}
+                      className="header-link-highlight"
+                    >
                       {`${blog_item}`.slice(0, 35)}
                       {blog_item.length > 35 ? "..." : ""}
                     </h4>

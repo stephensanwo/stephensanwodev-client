@@ -53,7 +53,7 @@ const PostContent = ({ post_data }) => {
         style={{ marginBottom: "1rem" }}
       >
         {post_data.tags.map((tag, index) => (
-          <Tags type="blog" title={tag} color={"green"} />
+          <Tags type="blog" title={tag} color={"generic"} />
         ))}
       </div>
       <div style={{ display: "flex", marginBottom: "1rem" }}>

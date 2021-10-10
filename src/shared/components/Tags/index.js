@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import "./styles.scss";
 
-const Tags = ({ title, color, type, app_title, style }) => {
+const Tags = ({ title, color, type, app_title, style, icon }) => {
   const tag_width = title.length * 6 + 15;
   return (
     <div style={style}>
@@ -19,7 +19,11 @@ const Tags = ({ title, color, type, app_title, style }) => {
         </div>
       ) : (
         <div className="app-tag-container">
-          <div className={`app-dot app-color-${title}`}></div>
+          {icon === "false" ? (
+            ""
+          ) : (
+            <div className={`app-dot app-color-${title}`}></div>
+          )}
           <a
             style={{
               fontFamily: "display-text-medium",
