@@ -15,6 +15,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: 
-            cd ${{ secrets.PROJECT_PATH }} && git pull origin master
+            cd ${{ secrets.PROJECT_PATH }} && git pull origin prod
             npm run build
             npm start
