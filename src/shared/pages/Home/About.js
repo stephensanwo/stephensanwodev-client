@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { tech_stack } from "../../../data/techstack";
-import { MachineLearningModel24 } from "@carbon/icons-react";
 import { UserProfile } from "@carbon/pictograms-react";
 import Tags from "../../components/Tags";
 

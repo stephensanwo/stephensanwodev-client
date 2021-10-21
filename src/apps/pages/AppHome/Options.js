@@ -1,7 +1,6 @@
 import React from "react";
 import { top_articles } from "../../../data/tmp_blog";
 import { featured_apps_data } from "../../../data/apps";
-import Tags from "../../../shared/components/Tags";
 
 const Options = () => {
   return (

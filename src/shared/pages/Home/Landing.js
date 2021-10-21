@@ -1,14 +1,6 @@
 import React from "react";
 import "./style.scss";
-import {
-  LogoGithub16,
-  LogoLinkedin16,
-  LogoTwitter16,
-  Email16,
-  Phone16,
-  Chat16,
-} from "@carbon/icons-react";
-// import { motion, AnimatePresence } from "framer-motion";
+import { Email16, Chat16 } from "@carbon/icons-react";
 
 const Landing = () => {
   return (

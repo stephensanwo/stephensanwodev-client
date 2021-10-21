@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./styles.scss";
 
 const Tags = ({ title, color, type, app_title, style, icon }) => {

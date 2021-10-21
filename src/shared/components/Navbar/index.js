@@ -1,15 +1,9 @@
-import {
-  Close24,
-  Menu24,
-  ArrowRight24,
-  ArrowRight16,
-} from "@carbon/icons-react";
+import { Close24, Menu24, ArrowRight16 } from "@carbon/icons-react";
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import Options from "./Options";
 import { motion, AnimatePresence } from "framer-motion";
 import "./style.scss";
-import Logo from "../../../assets/svg/logo.svg";
 
 const Navbar = ({ isNavOpen, setIsNavOpen }) => {
   const handleClick = () => {

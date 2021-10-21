@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { all, beta, projects } from "../data/tmp_apps";
+import { all } from "../data/tmp_apps";
 import AppItem from "./AppItem";
 import "../styles/app-list.scss";
 

@@ -1,13 +1,6 @@
 import React from "react";
 import { apps_data } from "../../../data/apps";
-import {
-  Launch16,
-  Share16,
-  ArrowRight24,
-  LogoGithub16,
-} from "@carbon/icons-react";
-import Tags from "../../../shared/components/Tags";
-import featured_image from "../../../assets/img/Jun21_16_1249103806.jpg";
+import { ArrowRight24 } from "@carbon/icons-react";
 import Card from "../../../shared/components/Card";
 
 const AppList = () => {
