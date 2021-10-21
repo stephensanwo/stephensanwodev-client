@@ -8,7 +8,7 @@ import Apps from "./apps";
 function App() {
   const [isNavOpen, setIsNavOpen] = useState("closed");
   return (
-    <Router basename="/">
+    <Router>
       <Switch>
         <Route exact path="/">
           <Home isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
@@ -19,7 +19,6 @@ function App() {
         <Route path="/apps">
           <Apps isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </Route>
-        <Route render={(props) => <Apps {...props} />} />
       </Switch>
     </Router>
   );
