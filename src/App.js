@@ -8,7 +8,7 @@ import Apps from "./apps";
 function App() {
   const [isNavOpen, setIsNavOpen] = useState("closed");
   return (
-    <Router>
+    <Router basename="/">
       <Switch>
         <Route exact path="/">
           <Home isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
