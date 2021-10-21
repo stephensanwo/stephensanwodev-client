@@ -19,6 +19,7 @@ function App() {
         <Route path="/apps">
           <Apps isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </Route>
+        <Route render={(props) => <Apps {...props} />} />
       </Switch>
     </Router>
   );
