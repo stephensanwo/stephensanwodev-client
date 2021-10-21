@@ -21,7 +21,7 @@ const AppHome = () => {
               <h4
                 style={{
                   fontSize: "2rem",
-                  fontFamily: "display-text-medium",
+                  fontWeight: 600,
                   color: "#05aa82",
                   marginLeft: "2rem",
                 }}

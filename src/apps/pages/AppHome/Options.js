@@ -9,9 +9,6 @@ const Options = () => {
       <div style={{ borderBottom: "1px solid #2b323d" }}>
         <h4
           style={{
-            color: "#adbac7",
-            fontFamily: "display-text-bold",
-            fontSize: "1em",
             marginBottom: "1em",
           }}
         >
@@ -45,9 +42,6 @@ const Options = () => {
       <div style={{ borderBottom: "1px solid #2b323d", marginTop: "4rem" }}>
         <h4
           style={{
-            color: "#adbac7",
-            fontFamily: "display-text-bold",
-            fontSize: "1em",
             marginBottom: "1em",
           }}
         >

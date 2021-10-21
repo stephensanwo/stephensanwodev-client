@@ -15,7 +15,6 @@ const ArticleList = () => {
           <div className="blog-home-articles-description">
             <h4
               style={{
-                fontFamily: "display-text-medium",
                 fontSize: "0.8rem",
                 color: "#539bf5",
                 marginBottom: "0.6em",
@@ -59,7 +58,7 @@ const ArticleList = () => {
                 <Launch16 color="#539bf5" />
                 <h4
                   style={{
-                    fontFamily: "display-text-medium",
+                    fontWeight: 400,
                     fontSize: "0.8rem",
                     color: "#539bf5",
                     marginLeft: "0.5rem",
@@ -79,7 +78,7 @@ const ArticleList = () => {
                 <Share16 color="#539bf5" />
                 <h4
                   style={{
-                    fontFamily: "display-text-medium",
+                    fontWeight: 400,
                     fontSize: "0.8rem",
                     color: "#539bf5",
                     marginLeft: "0.5rem",
@@ -96,8 +95,8 @@ const ArticleList = () => {
       <div className="see-all-blog">
         <a
           style={{
-            fontFamily: "display-text-bold",
             fontSize: "1em",
+            fontWeight: 800,
             color: "#539bf5",
             marginRight: "0.5rem",
           }}

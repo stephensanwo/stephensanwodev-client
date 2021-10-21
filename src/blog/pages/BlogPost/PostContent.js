@@ -28,7 +28,6 @@ const PostContent = ({ post_data }) => {
     <div className="blog-post-container">
       <h4
         style={{
-          fontFamily: "display-text-bold",
           fontSize: "0.8em",
           color: "#539bf5",
           marginBottom: "1em",
@@ -39,7 +38,6 @@ const PostContent = ({ post_data }) => {
       <h4
         style={{
           fontSize: "2rem",
-          fontFamily: "display-text-bold",
           color: "#adbac7",
           marginBottom: "1rem",
           marginTop: "1rem",
@@ -59,7 +57,6 @@ const PostContent = ({ post_data }) => {
       <div style={{ display: "flex", marginBottom: "1rem" }}>
         <h4
           style={{
-            fontFamily: "display-text-medium",
             fontSize: "0.85em",
             color: "#adbac7",
             marginBottom: "0.5rem",
@@ -69,7 +66,6 @@ const PostContent = ({ post_data }) => {
         </h4>
         <h4
           style={{
-            fontFamily: "display-text-medium",
             fontSize: "0.85em",
             color: "#adbac7",
             marginBottom: "1.5rem",
@@ -81,7 +77,6 @@ const PostContent = ({ post_data }) => {
         </h4>
         <h4
           style={{
-            fontFamily: "display-text-medium",
             fontSize: "0.85em",
             color: "#adbac7",
             marginBottom: "1.5rem",
@@ -98,7 +93,6 @@ const PostContent = ({ post_data }) => {
         <h2
           style={{
             color: "#05aa82",
-            fontFamily: "display-text-bold",
             fontSize: "1.2em",
             marginBottom: "0.4em",
             lineHeight: 1.5,
@@ -109,8 +103,7 @@ const PostContent = ({ post_data }) => {
 
         <p
           style={{
-            fontFamily: "display-text-medium-italic",
-            fontWeight: "400",
+            fontWeight: 600,
             fontSize: "1em",
             color: "#05aa82",
             lineHeight: 1.6,
@@ -139,8 +132,8 @@ const PostContent = ({ post_data }) => {
           <ArrowLeft24 fill="#539bf5" />
           <a
             style={{
-              fontFamily: "display-text-bold",
               fontSize: "1em",
+              fontWeight: 800,
               color: "#539bf5",
               marginLeft: "0.5rem",
             }}
@@ -151,8 +144,8 @@ const PostContent = ({ post_data }) => {
         <div className="next-previous-item">
           <a
             style={{
-              fontFamily: "display-text-bold",
               fontSize: "1em",
+              fontWeight: 800,
               color: "#539bf5",
               marginRight: "0.5rem",
             }}

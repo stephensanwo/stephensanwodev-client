@@ -17,8 +17,7 @@ const BlogPostOptions = ({ post_data }) => {
           <div>
             <a
               style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
+                fontWeight: 800,
                 color: "#539bf5",
                 marginBottom: "2em",
                 display: "flex",

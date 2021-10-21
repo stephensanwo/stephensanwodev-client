@@ -5,8 +5,7 @@ const Paragraph = (props) => {
     <Fragment>
       <p
         style={{
-          fontFamily: "display-text-medium",
-          fontWeight: "400",
+          fontWeight: 400,
           fontSize: "1em",
           color: "#adbac7",
           lineHeight: 2,

@@ -17,8 +17,8 @@ const SideNavOptions = () => {
           <div>
             <Link
               style={{
-                fontFamily: "display-text-bold",
                 fontSize: "1em",
+                fontWeight: 800,
                 color: "#539bf5",
                 marginBottom: "2em",
                 display: "flex",
@@ -37,8 +37,6 @@ const SideNavOptions = () => {
           <div>
             <h4
               style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
                 color: "#adbac7",
                 marginBottom: "2em",
               }}
@@ -70,8 +68,6 @@ const SideNavOptions = () => {
           <div>
             <h4
               style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
                 color: "#adbac7",
                 marginBottom: "2em",
               }}
@@ -95,8 +91,6 @@ const SideNavOptions = () => {
           <div>
             <h4
               style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
                 color: "#adbac7",
                 marginBottom: "2em",
               }}

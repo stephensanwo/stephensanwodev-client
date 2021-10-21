@@ -14,7 +14,6 @@ const FeaturedArticle = () => {
       <div className="blog-home-featured-description">
         <h4
           style={{
-            fontFamily: "display-text-bold",
             fontSize: "1em",
             color: "#539bf5",
             marginBottom: "0.4em",
@@ -57,7 +56,7 @@ const FeaturedArticle = () => {
             <Link to={`/blog/${featured_article.id}`}>
               <h4
                 style={{
-                  fontFamily: "display-text-medium",
+                  fontWeight: 400,
                   fontSize: "0.8rem",
                   color: "#539bf5",
                   marginLeft: "0.5rem",
@@ -78,7 +77,7 @@ const FeaturedArticle = () => {
             <Copy16 color="#539bf5" />
             <h4
               style={{
-                fontFamily: "display-text-medium",
+                fontWeight: 400,
                 fontSize: "0.8rem",
                 color: "#539bf5",
                 marginLeft: "0.8rem",

@@ -7,8 +7,7 @@ const SubHeading = (props) => {
       <h2
         style={{
           color: "#539bf5",
-          fontFamily: "display-text-bold",
-          fontSize: "1.5em",
+          fontSize: "1.4em",
           marginBottom: "0.4em",
           lineHeight: 1.5,
         }}

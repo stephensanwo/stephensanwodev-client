@@ -23,8 +23,6 @@ const Footer = () => {
               <Email16 color="#768390" />
               <small
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.6rem",
                   color: "#768390",
                   marginLeft: "0.5rem",
                 }}
@@ -43,8 +41,6 @@ const Footer = () => {
               <LogoGithub16 color="#768390" />
               <small
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.6rem",
                   color: "#768390",
                   marginLeft: "0.5rem",
                 }}
@@ -63,8 +59,6 @@ const Footer = () => {
               <LogoLinkedin16 color="#768390" />
               <small
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.6rem",
                   color: "#768390",
                   marginLeft: "0.5rem",
                 }}
@@ -83,8 +77,6 @@ const Footer = () => {
               <LogoTwitter16 color="#768390" />
               <small
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.6rem",
                   color: "#768390",
                   marginLeft: "0.5rem",
                 }}

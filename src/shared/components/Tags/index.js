@@ -10,8 +10,10 @@ const Tags = ({ title, color, type, app_title, style, icon }) => {
           <a
             className={`tag-color-${color}`}
             style={{
-              fontFamily: "display-text-medium",
+              fontFamily: "IBM Plex Sans",
+              fontWeight: 500,
               fontSize: "0.8em",
+              color: "#768390",
             }}
           >
             {title}
@@ -26,7 +28,8 @@ const Tags = ({ title, color, type, app_title, style, icon }) => {
           )}
           <a
             style={{
-              fontFamily: "display-text-medium",
+              fontFamily: "IBM Plex Sans",
+              fontWeight: 500,
               fontSize: "0.8em",
               color: "#768390",
             }}

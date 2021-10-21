@@ -24,7 +24,6 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
       <div className="app-nav">
         <div className="nav-tabs">
           <Link to={"/"} style={{ display: "flex", alignItems: "center" }}>
-            <img src={Logo} width="24px" style={{ marginRight: "1rem" }} />
             <a>stephensanwo.dev</a>
           </Link>
         </div>

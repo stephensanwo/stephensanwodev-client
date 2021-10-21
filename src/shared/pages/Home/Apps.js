@@ -21,7 +21,7 @@ const Apps = () => {
               }}
               to="/apps"
             >
-              Discover Apps
+              Discover
             </Link>
 
             <ArrowRight24 fill="#05aa82" />
@@ -55,27 +55,22 @@ const Apps = () => {
                     <Code24 fill="#05aa82" />
                   </div>
                   <div>
-                    <h2
+                    <h4
                       style={{
-                        color: "#adbac7",
-                        fontFamily: "display-text-bold",
-                        fontSize: "1em",
                         marginLeft: "1.5rem",
                       }}
                     >
                       {app_item.name}
-                    </h2>
-                    <h4
+                    </h4>
+                    <small
                       style={{
-                        fontFamily: "display-text",
-                        fontSize: "0.8em",
                         marginLeft: "1.5rem",
                         marginTop: "0.5em",
                         color: "#768390",
                       }}
                     >
                       {app_item.title}
-                    </h4>
+                    </small>
                   </div>
                 </div>
               </div>

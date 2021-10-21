@@ -28,7 +28,8 @@
 
 .landing-content h1 {
   font-size: 6rem;
-  font-family: "display-text-medium";
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #adbac7;
@@ -39,9 +40,6 @@
 }
 
 .landing-content h4 {
-  font-size: 1.2rem;
-  font-family: "display-text-medium";
-  color: #adbac7;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
@@ -68,14 +66,14 @@
 
 .contact-section h4 {
   font-size: 0.8rem;
-  font-family: "display-text-medium";
+  font-family: "IBM Plex Sans", sans-serif;
   color: #05aa82;
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
 
 .contact-section-logo a {
-  font-family: "display-text";
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 0.8rem;
   color: #adbac7;
   margin-left: 0.5rem;
@@ -106,7 +104,8 @@
 
 .section-title h4 {
   //   color: #adbac7;
-  font-family: "display-text-semibold";
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
   color: #2b323d;
   font-size: 2rem;
   margin-bottom: 0;
@@ -252,14 +251,14 @@
 }
 
 .see-all-container h4 {
-  font-family: "display-text-light";
-  font-size: 0.8rem;
   color: #539bf5;
   margin-right: 0.5rem;
   margin-bottom: 0;
 }
+
 .see-all-container a {
-  font-family: "display-text-bold";
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 800;
   font-size: 1em;
   margin-right: 0.5rem;
 }
@@ -326,13 +325,6 @@
   display: flex;
   justify-content: space-between;
 }
-.app-content h4 {
-  font-size: 1em;
-  font-family: "display-text-semibold";
-  color: #adbac7;
-  // margin-bottom: 1rem;
-  line-height: 1.5;
-}
 
 .app-content-featured-title {
   flex-basis: 25%;
@@ -386,19 +378,15 @@
   padding-right: 3rem;
 }
 
-.about-content small {
-  font-size: 0.7rem;
-  font-family: "display-text";
-}
-
+//
 // Carbon Overrides
 
 .bx--accordion__title {
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0rem;
-  font-family: "display-text-light", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
+  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
+    "Arial", "sans-serif";
 
   color: #adbac7;
   -webkit-font-smoothing: antialiased;
@@ -468,7 +456,7 @@
 }
 
 .footer-contact-section h4 {
-  font-family: "display-text";
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 0.8rem;
   color: #539bf5;
   margin-right: 0.5rem;
@@ -539,10 +527,7 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 2.5rem;
-  }
-  .landing-content h4 {
-    font-size: 1rem;
+    font-size: 2.8rem;
   }
 
   .contact-section-logo-item {
@@ -611,11 +596,6 @@
 
   .about-content-title {
     margin-top: 1rem;
-  }
-
-  .section-title h4 {
-    font-size: 1.5rem;
-    margin-left: 0.8rem;
   }
 
   .see-all-container a {

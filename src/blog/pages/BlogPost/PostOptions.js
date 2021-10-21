@@ -10,8 +10,7 @@ const PostOptions = () => {
         <h4
           style={{
             color: "#adbac7",
-            fontFamily: "display-text-bold",
-            fontSize: "1em",
+
             marginBottom: "1em",
           }}
         >
@@ -46,8 +45,6 @@ const PostOptions = () => {
         <h4
           style={{
             color: "#adbac7",
-            fontFamily: "display-text-bold",
-            fontSize: "1em",
             marginBottom: "1em",
           }}
         >

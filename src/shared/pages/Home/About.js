@@ -49,8 +49,6 @@ const About = () => {
                 </h4>
                 <small
                   style={{
-                    fontFamily: "display-text",
-                    fontSize: "0.7rem",
                     color: "#986ee2",
                   }}
                 >
@@ -67,8 +65,6 @@ const About = () => {
                 </h4>
                 <small
                   style={{
-                    fontFamily: "display-text",
-                    fontSize: "0.7rem",
                     color: "#986ee2",
                   }}
                 >

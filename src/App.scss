@@ -1,84 +1,13 @@
 $nav-background: #1c2128;
 $text-color-light: #adbac7;
 
-// Fonts
-@font-face {
-  font-family: "display-text";
-  src: url("./assets/fonts/sf/SF-Pro-Text-Regular.otf");
-}
-@font-face {
-  font-family: "display-text-light";
-  src: url("./assets/fonts/sf/SF-Pro-Text-Light.otf");
-}
-@font-face {
-  font-family: "display-text-extralight";
-  src: url("./assets/fonts/sf/SF-Pro-Text-Thin.otf");
-}
-@font-face {
-  font-family: "display-text-semibold";
-  src: url("./assets/fonts/sf/SF-Pro-Text-Semibold.otf");
-}
-@font-face {
-  font-family: "display-text-bold";
-  src: url("./assets/fonts/sf/SF-Pro-Text-Bold.otf");
-}
-@font-face {
-  font-family: "display-text-medium";
-  src: url("./assets/fonts/sf/SF-Pro-Text-Medium.otf");
-}
-
-@font-face {
-  font-family: "display-text-medium-italic";
-  src: url("./assets/fonts/sf/SF-Pro-Text-MediumItalic.otf");
-}
-@font-face {
-  font-family: "display-text-code";
-  src: url("./assets/fonts/sf/SF-Mono-Regular.otf");
-}
-@font-face {
-  font-family: "display-text-code-light";
-  src: url("./assets/fonts/sf/SF-Mono-Light.otf");
-}
-
-// nav {
-//   background-color: #ffffffa9;
-//   position: fixed;
-//   width: 100%;
-// }
-
-// .transparent-nav {
-//   background-color: transparent;
-//   height: 6vh;
-//   position: fixed;
-//   width: 100%;
-//   color: #ffffff;
-// }
-// .transparent-nav h4 {
-//   color: #ffffff;
-// }
-
-// .container {
-//   margin: 0 auto;
-//   display: grid;
-//   grid-template-columns: 80% 20%;
-//   min-height: 900vh;
-// }
-
-// .grid-1 {
-//   background-color: #ffffff;
-// }
-// .grid-2 {
-//   background-color: #ffffff;
-//   z-index: 10000;
-//   margin-top: 5vh;
-// }
-
 // Text
 h1 {
   letter-spacing: normal;
-  font-family: "display-text-bold", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
+  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
+    "Arial", "sans-serif";
   color: #ffffff;
+  font-weight: 800;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   text-align: left;
@@ -89,8 +18,9 @@ h1 {
 
 h2 {
   letter-spacing: normal;
-  font-family: "display-text-medium", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
+  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
+    "Arial", "sans-serif";
+  font-weight: 800;
   color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
@@ -101,16 +31,16 @@ h2 {
 }
 
 h4 {
-  letter-spacing: normal;
-  font-family: "display-text-bold", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
+  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
+    "Arial", "sans-serif";
+  font-weight: 800;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   text-align: left;
   padding: 0 0;
   margin: 0 0;
   line-height: 1;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #adbac7;
   // color: #b7bdc6;
   line-height: 1.5;
@@ -120,8 +50,8 @@ p {
   font-size: 1em;
   font-weight: 400;
   letter-spacing: normal;
-  font-family: "display-text", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
+  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
+    "Arial", "sans-serif";
   color: #adbac7;
   // color: #eaecef;
   -webkit-font-smoothing: antialiased;
@@ -135,8 +65,8 @@ a {
   font-size: 1em;
   font-weight: 400;
   letter-spacing: normal;
-  font-family: "display-text-light", "Helvetica Neue", "Helvetica", "Arial",
-    "sans-serif";
+  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
+    "Arial", "sans-serif";
   color: #adbac7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
@@ -157,8 +87,9 @@ a:hover {
 }
 small {
   letter-spacing: normal;
-  font-family: "display-text", "SF Pro Display", "Helvetica Neue", "Helvetica",
+  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
     "Arial", "sans-serif";
+  font-weight: 500;
   color: #999999;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
@@ -167,172 +98,13 @@ small {
   margin: 0, 0;
   line-height: 1;
   text-decoration: none;
+  font-size: 0.8em;
 }
 
 body {
   // background-color: #181a1f;
   background-color: #1c2128;
 }
-
-// Dark Theme
-
-// .grid-1-dark {
-//   background-color: #1c2128;
-// }
-
-// .grid-2-dark {
-//   background-color: #22272e;
-// }
-
-// @media (max-width: 1024px) {
-//   .container {
-//     grid-template-columns: 100%;
-//   }
-//   .nav {
-//     height: 8vh;
-//   }
-//   .grid-2 {
-//     display: none;
-//     margin-top: 1vh;
-//   }
-//   .grid-1 {
-//     margin-top: 0vh;
-//   }
-
-//   // .blog-content {
-//   //   max-width: 90%;
-//   //   margin: auto;
-//   //   background-color: #ffffff;
-//   //   min-height: 100vh;
-//   // }
-// }
-
-// @media (min-width: 1024px) {
-//   .container {
-//     grid-template-columns: 70% 30%;
-//   }
-//   .grid-1 {
-//     width: 100%;
-//     margin-left: auto;
-//     margin-right: auto;
-//     background-color: #ffffff;
-//   }
-
-//   .grid-2 {
-//     position: fixed;
-//     height: 100vh;
-//     margin-left: 70%;
-//     width: 30%;
-//     background-color: #ffffff;
-//   }
-//   .grid-2-content {
-//     width: 70%;
-//     margin: auto;
-//     margin-top: 6rem;
-//   }
-
-// // Small Mobile devices
-// @media (max-width: 320px) {
-//   // Text
-//   h1 {
-//     font-size: 2rem;
-//     font-weight: 400;
-//   }
-//   h4 {
-//     font-size: 0.8em;
-//     font-weight: 200;
-//   }
-//   small {
-//     font-size: 0.8rem;
-//     font-weight: 400;
-//   }
-// }
-
-// // Small - Medium devices
-// @media (min-width: 320px) and (max-width: 480px) {
-//   // Text
-//   h1 {
-//     font-size: 2em;
-//     font-weight: 400;
-//   }
-//   h4 {
-//     font-size: 0.8em;
-//     font-weight: 200;
-//   }
-//   small {
-//     font-size: 0.8rem;
-//     font-weight: 400;
-//   }
-// }
-
-// // Big phones and Small Tablets
-// @media (min-width: 481px) and (max-width: 768px) {
-//   // Text
-//   h1 {
-//     font-size: 2em;
-//     font-weight: 400;
-//   }
-//   h4 {
-//     font-size: 0.8em;
-//     font-weight: 200;
-//   }
-//   small {
-//     font-size: 0.8rem;
-//     font-weight: 400;
-//   }
-// }
-
-// // Tablets  and small screens
-// @media (min-width: 769px) and (max-width: 1024px) {
-//   // Text
-//   h1 {
-//     font-size: 2.5em;
-//     font-weight: 400;
-//   }
-//   h4 {
-//     font-size: 1em;
-//     font-weight: 200;
-//   }
-//   small {
-//     font-size: 0.8rem;
-//     font-weight: 400;
-//   }
-// }
-
-// // Tablets Landscape and Medium  Screens
-// @media (min-width: 1025px) and (max-width: 1200px) {
-//   // Text
-//   h1 {
-//     font-size: 3em;
-//     font-weight: 400;
-//   }
-//   h4 {
-//     font-size: 1em;
-//     font-weight: 200;
-//   }
-//   small {
-//     font-size: 0.8rem;
-//     font-weight: 400;
-//   }
-// }
-
-// // Large - Extra Large Screens
-
-// @media (min-width: 1201px) {
-//   // Text
-//   h1 {
-//     font-size: 4em;
-//     font-weight: 400;
-//   }
-//   h4 {
-//     font-size: 1em;
-//     font-weight: 200;
-//   }
-//   small {
-//     font-size: 0.8rem;
-//     font-weight: 400;
-//   }
-// }
 
 // Altassian
 
@@ -375,17 +147,16 @@ span.css-3yrc6a-CodeBlock code:first-of-type {
 
 span.css-1vdujjq {
   font-size: 0.9em;
-  font-family: "display-text-code", "display-text", "Helvetica Neue",
-    "Helvetica", "Arial", "sans-serif";
+  font-family: "IBM Plex Mono", sans-serif;
   line-height: 1.5;
+  font-weight: 400;
 }
 
 @media (min-width: 0px) and (max-width: 599px) {
   span.css-1vdujjq {
-    font-size: 0.5em;
-    font-weight: 800;
-    font-family: "display-text-code", "display-text", "Helvetica Neue",
-      "Helvetica", "Arial", "sans-serif";
+    font-size: 0.6em;
+    font-weight: 400;
+    font-family: "IBM Plex Mono", sans-serif;
     line-height: 1.5;
   }
 }

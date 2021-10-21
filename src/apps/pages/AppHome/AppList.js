@@ -22,8 +22,8 @@ const AppList = () => {
       <div className="see-all-apps">
         <a
           style={{
-            fontFamily: "display-text-bold",
             fontSize: "1em",
+            fontWeight: 800,
             color: "#539bf5",
             marginRight: "0.5rem",
           }}

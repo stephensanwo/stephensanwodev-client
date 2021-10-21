@@ -12,7 +12,8 @@ const Card = ({ app_data, featured }) => {
         <div className="card-container-header-text">
           <h4
             style={{
-              fontFamily: "display-text",
+              fontFamily: "IBM Plex Sans",
+              fontWeight: "600",
               fontSize: "0.8em",
               color: "#05aa82",
               marginBottom: "0.6em",
@@ -23,7 +24,7 @@ const Card = ({ app_data, featured }) => {
           <h4 className="header-link-highlight">{app_data.name}</h4>
         </div>
         <div>
-          <CloudComputing fill="#05aa82" />
+          <CloudComputing fill="#05aa82" width="48px" height="48px" />
         </div>
       </div>
       <div style={{ width: "80%" }}>
@@ -48,7 +49,8 @@ const Card = ({ app_data, featured }) => {
           <Link to={"/"}>
             <h4
               style={{
-                fontFamily: "display-text-medium",
+                fontFamily: "IBM Plex Sans",
+                fontWeight: 400,
                 fontSize: "0.8rem",
                 color: "#05aa82",
                 marginTop: 0,
@@ -70,8 +72,9 @@ const Card = ({ app_data, featured }) => {
           <Link to={"/"}>
             <h4
               style={{
-                fontFamily: "display-text-medium",
+                fontFamily: "IBM Plex Sans",
                 fontSize: "0.8rem",
+                fontWeight: 400,
                 color: "#05aa82",
                 marginTop: 0,
                 marginBottom: 0,

@@ -7,7 +7,7 @@ const SubHeading4 = (props) => {
       <h4
         style={{
           color: "#adbac7",
-          fontFamily: "display-text-bold",
+
           fontSize: "1.1em",
           marginBottom: "0.4em",
           lineHeight: 1.5,

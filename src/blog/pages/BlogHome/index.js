@@ -28,8 +28,8 @@ const BlogHome = () => {
               <h4
                 style={{
                   fontSize: "2rem",
-                  fontFamily: "display-text-medium",
                   color: "#539bf5",
+                  fontWeight: 600,
                   marginLeft: "2rem",
                 }}
               >

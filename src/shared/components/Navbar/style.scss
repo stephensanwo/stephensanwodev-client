@@ -36,7 +36,7 @@
 .app-nav .nav-tabs a {
   color: #ffffff;
   font-size: 0.9rem;
-  font-family: "display-text-medium";
+  font-weight: 800;
   cursor: pointer;
   text-decoration: none;
 }
@@ -63,7 +63,7 @@
 .options-container a {
   color: #ffffff;
   font-size: 0.7rem;
-  font-family: "display-text-medium";
+  font-weight: 600;
   cursor: pointer;
   text-decoration: none;
 }
@@ -124,8 +124,8 @@
 
   .slider-item a {
     color: #adbac7;
-    font-family: "display-text-medium";
     font-size: 1.2em;
+    font-weight: 600;
     cursor: pointer;
     line-height: 1.2;
   }
@@ -177,7 +177,6 @@
 
   .slider-item a {
     color: #adbac7;
-    font-family: "display-text-medium";
     font-size: 1.2em;
     cursor: pointer;
     line-height: 1.2;

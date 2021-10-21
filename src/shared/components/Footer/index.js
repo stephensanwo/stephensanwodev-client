@@ -21,7 +21,6 @@ const Footer = ({ data_type }) => {
           >
             <h4
               style={{
-                fontFamily: "display-text-bold",
                 fontSize: "1em",
                 color: "#adbac7",
                 marginBottom: "1em",
@@ -48,8 +47,6 @@ const Footer = ({ data_type }) => {
             <h4
               style={{
                 color: "#adbac7",
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
                 marginBottom: "1em",
               }}
             >
@@ -87,8 +84,6 @@ const Footer = ({ data_type }) => {
           >
             <h4
               style={{
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
                 color: "#adbac7",
                 marginBottom: "1em",
               }}
@@ -114,8 +109,6 @@ const Footer = ({ data_type }) => {
             <h4
               style={{
                 color: "#adbac7",
-                fontFamily: "display-text-bold",
-                fontSize: "1em",
                 marginBottom: "1em",
               }}
             >
@@ -162,8 +155,6 @@ const Footer = ({ data_type }) => {
               <Email16 color="#768390" />
               <small
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.6rem",
                   color: "#768390",
                   marginLeft: "0.5rem",
                 }}
@@ -182,8 +173,6 @@ const Footer = ({ data_type }) => {
               <LogoGithub16 color="#768390" />
               <small
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.6rem",
                   color: "#768390",
                   marginLeft: "0.5rem",
                 }}
@@ -202,8 +191,6 @@ const Footer = ({ data_type }) => {
               <LogoLinkedin16 color="#768390" />
               <small
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.6rem",
                   color: "#768390",
                   marginLeft: "0.5rem",
                 }}
@@ -221,8 +208,6 @@ const Footer = ({ data_type }) => {
               <LogoTwitter16 color="#768390" />
               <small
                 style={{
-                  fontFamily: "display-text-medium",
-                  fontSize: "0.6rem",
                   color: "#768390",
                   marginLeft: "0.5rem",
                 }}
