@@ -13,6 +13,9 @@ import {
   Settings16,
   Wikis24,
   Wikis16,
+  Blockchain16,
+  Blockchain24,
+  Blog16,
 } from "@carbon/icons-react";
 
 export const blog_categories = [
@@ -39,9 +42,19 @@ export const blog_categories = [
   },
   { id: 6, title: "Software Development", logo: <Settings24 fill="#539bf5" /> },
   { id: 6, title: "Python", logo: <LogoPython24 fill="#539bf5" /> },
+  {
+    id: 8,
+    title: "Blockchain Development",
+    logo: <Blockchain24 fill="#539bf5" />,
+  },
 ];
 
 export const blog_categories_small = [
+  {
+    id: 0,
+    title: "All Categories",
+    logo: <Blog16 fill="#539bf5" />,
+  },
   {
     id: 1,
     title: "APIs & Microservices",
@@ -64,7 +77,12 @@ export const blog_categories_small = [
     logo: <DataStructured16 fill="#539bf5" />,
   },
   { id: 6, title: "Software Development", logo: <Settings16 fill="#539bf5" /> },
-  { id: 6, title: "Python", logo: <LogoPython16 fill="#539bf5" /> },
+  { id: 7, title: "Python", logo: <LogoPython16 fill="#539bf5" /> },
+  {
+    id: 8,
+    title: "Blockchain Development",
+    logo: <Blockchain16 fill="#539bf5" />,
+  },
 ];
 
 export const blog_filters = [

@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { featured_article } from "../../../data/tmp_blog";
 import { Launch16, Copy16 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link, useRouteMatch } from "react-router-dom";
+import { PostContext } from "../..";
 
 const FeaturedArticle = () => {
   const { path } = useRouteMatch();
+  const data = useContext(PostContext);
+
+  console.log(data);
   return (
     <div className="blog-home-featured-container">
       <div className="blog-home-featured-image">

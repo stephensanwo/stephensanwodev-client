@@ -9,7 +9,7 @@ export const all = [
       "Many people get introduced to Python firstly as a scripting language, I first started out doing analytics with python, and the nature of those projects involved writing single file scripts, or using jupyter notebooks perform analysis in python.",
     tags: ["Python", "API"],
     image_url:
-      "https://blog-images.stephensanwo.dev/blog/blog-images/ssdev-image.jpg",
+      "https://stephensanwo.fra1.cdn.digitaloceanspaces.com/blog/blog-images/ssdev-image.jpg",
     author: "Stephen Sanwo",
     date: "2020-June-20",
     content: [
@@ -76,7 +76,7 @@ export const all = [
       "Docker",
     ],
     image_url:
-      "https://blog-images.stephensanwo.dev/blog/blog-images/article.svg",
+      "https://stephensanwo.fra1.cdn.digitaloceanspaces.com/blog/blog-images/article.svg",
   },
 ];
 
@@ -139,7 +139,7 @@ export const top_articles = [
       "What do you think happens underneath the hood? and why do you think this import statement fails to run with an error like no module namde Numpy! Importing pandas means that the pandas package is run in your sofware project, and the packages imported within the pandas package (or dependencies) are also imported.",
     tags: ["AI", "ML"],
     image_url:
-      "https://blog-images.stephensanwo.dev/blog/blog-images/ssdev-image.jpg",
+      "https://stephensanwo.fra1.cdn.digitaloceanspaces.com/blog/blog-images/ssdev-image.jpg",
     author: "Stephen Sanwo",
     date: "2020-June-20",
     content: [
