@@ -170,7 +170,6 @@ const Blog = () => {
             {blog_categories.map((blog_item) => (
               <div className="blog-category-item">
                 <div>{blog_item.logo}</div>
-
                 <h4>{blog_item.title}</h4>
               </div>
             ))}

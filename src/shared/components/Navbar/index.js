@@ -50,6 +50,25 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
               </motion.div>
             </a>
           </div>
+
+          <div className="nav-action-4">
+            <a
+              href="https://gist.github.com/stephensanwo"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <motion.div
+                className="options-container"
+                whileHover={{ borderBottom: "2px solid #05aa82" }}
+                transition={{ ease: "easeIn", duration: 0.2 }}
+              >
+                <div className="options-text">
+                  <a>Github Gists</a>
+                </div>
+              </motion.div>
+            </a>
+          </div>
         </div>
         <div className="nav-switcher">
           <motion.div onClick={handleClick}>
@@ -125,6 +144,30 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                     rel="noopener noreferrer"
                   >
                     Github
+                  </a>
+                </div>
+
+                <div className="see-all-container">
+                  <ArrowRight16 fill="#539bf5" />
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ x: "-100px" }}
+                animate={{ x: "0", speed: "100ms" }}
+                transition={{ ease: "easeInOut", duration: 0.7 }}
+                exit={{ display: "none", speed: "10000ms" }}
+                className="slider-item"
+              >
+                <div
+                  style={{ display: "flex", alignItems: "center" }}
+                  onClick={() => setIsNavOpen("closed")}
+                >
+                  <a
+                    href="https://gist.github.com/stephensanwo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github Gists
                   </a>
                 </div>
 

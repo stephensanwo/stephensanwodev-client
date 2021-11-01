@@ -12,12 +12,7 @@ import {
 export const tech_stack = [
   {
     category: "Software Development",
-    tools: [
-      "Planning",
-      "Strategy",
-      "Software Architecture",
-      "Database Modeling",
-    ],
+    tools: ["Linux", "Strategy", "Software Architecture", "Database Modeling"],
     logo: <CalendarSettings24 fill="#986ee2" />,
   },
 
@@ -71,7 +66,7 @@ export const tech_stack = [
   },
   {
     category: "Cloud",
-    tools: ["AWS", "MongoDB Atlas"],
+    tools: ["AWS", "MongoDB Atlas", "Digital Ocean"],
     logo: <Cloud24 fill="#986ee2" />,
   },
 ];

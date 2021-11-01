@@ -24,13 +24,18 @@ const About = () => {
           <div className="about-content-experience-container">
             <div>
               <p>
-                I am a full-stack software, and analytics driven solutions
-                developer, who is skilled in architecting solutions in complex
-                data-oriented environments and building models that cut through
-                the complexities of business problems. I am energised by
-                technically challenging, competitive and collaborative
-                environments, where learning, personal and technical
-                development, spontaneously align with organisational goals.
+                I am a full-stack software, and artificial intelligence
+                solutions developer, skilled in architecting data-driven
+                solutions in complex data-oriented environments, building and
+                deploying solutions that cut through the complexities of
+                business problems. I currently lead the digital solutions
+                development team for the GRC Unit at KPMG Nigeria, where I
+                develop and maintain scalable analytics solutions for clients
+                and internal use cases.
+              </p>
+              <p style={{ marginTop: "1rem" }}>
+                I am also a certified robotics process automation (RPA) advanced
+                developer, and a Microsoft certified data and analytics expert
               </p>
             </div>
             <div className="about-content-experience-grid ">
@@ -44,7 +49,7 @@ const About = () => {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  Assistant Manager - KPMG
+                  Manager - KPMG Nigeria
                 </h4>
                 <small
                   style={{
@@ -54,13 +59,33 @@ const About = () => {
                   Sep 2015 - Present
                 </small>
               </div>
+              <div
+                style={{
+                  marginBottom: "2rem",
+                }}
+              >
+                <h4
+                  style={{
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  Founder - Wager Nigeria
+                </h4>
+                <small
+                  style={{
+                    color: "#986ee2",
+                  }}
+                >
+                  October 2021 - Present
+                </small>
+              </div>
               <div>
                 <h4
                   style={{
                     marginBottom: "0.5rem",
                   }}
                 >
-                  Freelance Senior Software Developer - Proxify
+                  Freelance Senior Software Developer - Proxify Sweden
                 </h4>
                 <small
                   style={{

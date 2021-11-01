@@ -5,52 +5,19 @@ import { Email16, Chat16 } from "@carbon/icons-react";
 const Landing = () => {
   return (
     <div className="landing-content">
-      <h4
-        initial={{ x: "-100px" }}
-        animate={{ x: "0", speed: "100ms" }}
-        transition={{ ease: "easeInOut", duration: 0.5 }}
-        exit={{ display: "none", speed: "1000ms" }}
-      >
-        ✋🏽 Hi, I'm
-      </h4>
-      <h1
-        initial={{ x: "-100px" }}
-        animate={{ x: "0", speed: "100ms" }}
-        transition={{ ease: "easeInOut", duration: 0.6 }}
-        exit={{ display: "none", speed: "1000ms" }}
-      >
-        Stephen Sanwo
-      </h1>
-      <h4
-        initial={{ x: "-100px" }}
-        animate={{ x: "0", speed: "100ms" }}
-        transition={{ ease: "easeInOut", duration: 0.7 }}
-        exit={{ display: "none", speed: "1000ms" }}
-      >
-        I solve complex problems with Software and Artificial Intelligence
-      </h4>
-      <p
-        initial={{ x: "-100px" }}
-        animate={{ x: "0", speed: "100ms" }}
-        transition={{ ease: "easeInOut", duration: 0.8 }}
-        exit={{ display: "none", speed: "1000ms" }}
-        style={{ width: "100%" }}
-      >
-        I translate problem statements into solutions that solve the problems;
-        building and shipping APIs and Micro-services for internal and client
-        projects, developing custom algorithms to tackle domain problems, and
-        developing custom analytics solutions for automating client processes. I
-        currently lead the digital solutions development project team for the
-        GRC Unit at KPMG, developing and maintaining scalable and quality
-        software and analytics solutions for clients and internal use cases.
+      <h4>✋🏽 Hi, I'm</h4>
+      <h1>Stephen Sanwo</h1>
+      <h4>I Build Software and Artificial Intelligence Solutions</h4>
+      <p style={{ width: "100%" }}>
+        I am a full-stack software, and artificial intelligence solutions
+        developer, skilled in architecting data-driven solutions in complex
+        data-oriented environments, building and deploying solutions that cut
+        through the complexities of business problems. I currently lead the
+        digital solutions development team for the GRC Unit at KPMG Nigeria,
+        where I develop and maintain scalable analytics solutions for clients
+        and internal use cases.
       </p>
-      <div
-        initial={{ x: "-100px" }}
-        animate={{ x: "0", speed: "100ms" }}
-        transition={{ ease: "easeInOut", duration: 0.9 }}
-        exit={{ display: "none", speed: "1000ms" }}
-        className="contact-section"
-      >
+      <div className="contact-section">
         <h4>Get in touch</h4>
         <div className="contact-section-logo">
           <div className="contact-section-logo-item">
