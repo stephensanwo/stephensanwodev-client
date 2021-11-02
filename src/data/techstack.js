@@ -16,11 +16,10 @@ export const tech_stack = [
     logo: <Code24 fill="#986ee2" />,
   },
   {
-    category: "Software Development",
-    tools: ["Software Architecture", "Database Modeling"],
-    logo: <CalendarSettings24 fill="#986ee2" />,
+    category: "Web & Mobile Development",
+    tools: ["React Js", "React Native", "HTML", "CSS", "Figma"],
+    logo: <Screen24 fill="#986ee2" />,
   },
-
   {
     category: "Distributed Software, APIs & Microservices",
     tools: [
@@ -31,11 +30,21 @@ export const tech_stack = [
       "Go",
       "REST",
       "GraphQL",
-      "Concurrency",
       "Events & Queues",
     ],
     logo: <Api24 fill="#986ee2" />,
   },
+  {
+    category: "Software Development",
+    tools: [
+      "Software Architecture",
+      "Database Modeling",
+      "Product Development",
+      "Unit Testing",
+    ],
+    logo: <CalendarSettings24 fill="#986ee2" />,
+  },
+
   {
     category: "Database, Storage & Caching",
     tools: [
@@ -49,14 +58,10 @@ export const tech_stack = [
     ],
     logo: <DataBase24 fill="#986ee2" />,
   },
-  {
-    category: "Web & Mobile Development",
-    tools: ["React Js", "React Native", "HTML", "CSS", "Figma"],
-    logo: <Screen24 fill="#986ee2" />,
-  },
+
   {
     category: "AI & ML Development/Ops",
-    tools: ["Tensorflow", "OpenCV"],
+    tools: ["Tensorflow", "OpenCV", "HuggingFace"],
     logo: <MachineLearningModel24 fill="#986ee2" />,
   },
   {
