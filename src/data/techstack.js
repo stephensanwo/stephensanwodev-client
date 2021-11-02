@@ -11,16 +11,16 @@ import {
 
 export const tech_stack = [
   {
-    category: "Software Development",
-    tools: ["Linux", "Strategy", "Software Architecture", "Database Modeling"],
-    logo: <CalendarSettings24 fill="#986ee2" />,
-  },
-
-  {
     category: "Programming Language",
     tools: ["Python", "Javascript", "Go", "TypeScript"],
     logo: <Code24 fill="#986ee2" />,
   },
+  {
+    category: "Software Development",
+    tools: ["Software Architecture", "Database Modeling"],
+    logo: <CalendarSettings24 fill="#986ee2" />,
+  },
+
   {
     category: "Distributed Software, APIs & Microservices",
     tools: [
@@ -51,7 +51,7 @@ export const tech_stack = [
   },
   {
     category: "Web & Mobile Development",
-    tools: ["React Js", "React Native", "HTML", "CSS", "Sketch"],
+    tools: ["React Js", "React Native", "HTML", "CSS", "Figma"],
     logo: <Screen24 fill="#986ee2" />,
   },
   {
@@ -61,12 +61,21 @@ export const tech_stack = [
   },
   {
     category: "DevOps & CI",
-    tools: ["Docker", "Nginx", "uWSGI", "ASGI", "Github", "Git", "Bash"],
+    tools: [
+      "Linux",
+      "Docker",
+      "Nginx",
+      "WSGI",
+      "ASGI",
+      "Github",
+      "Git",
+      "Bash",
+    ],
     logo: <TreeViewAlt24 fill="#986ee2" />,
   },
   {
     category: "Cloud",
-    tools: ["AWS", "MongoDB Atlas", "Digital Ocean"],
+    tools: ["AWS", "Digital Ocean", "Cloudflare"],
     logo: <Cloud24 fill="#986ee2" />,
   },
 ];
