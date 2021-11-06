@@ -7,9 +7,10 @@ import {
 } from "@carbon/icons-react";
 import "./style.scss";
 import { blog_categories_small } from "../../../data/blog";
+import { code_categories_small } from "../../../data/code";
 import { top_articles } from "../../../data/tmp_blog";
 import { app_categories_small } from "../../../data/apps";
-import { featured_apps_data } from "../../../data/apps";
+import { apps_data } from "../../../data/apps";
 
 const Footer = ({ data_type }) => {
   return (
@@ -53,7 +54,7 @@ const Footer = ({ data_type }) => {
               Top Apps
             </h4>
           </div>
-          {featured_apps_data.map((apps, index) => (
+          {apps_data.map((apps, index) => (
             <div style={{ marginTop: "1.5rem" }}>
               <h4
                 style={{
@@ -74,6 +75,36 @@ const Footer = ({ data_type }) => {
                 {`${apps.desc}`.slice(0, 160)}
                 {apps.desc.length > 160 ? "..." : ""}
               </p>
+            </div>
+          ))}
+        </div>
+      ) : data_type === "code" ? (
+        <div className="footer-category-content">
+          <div
+            style={{ borderBottom: "1px solid #444c56", marginBottom: "1.5em" }}
+          >
+            <h4
+              style={{
+                fontSize: "1em",
+                color: "#adbac7",
+                marginBottom: "1em",
+              }}
+            >
+              Topics
+            </h4>
+          </div>
+          {code_categories_small.map((app_item) => (
+            <div className="blog-sidenav-category-item">
+              {app_item.logo}
+              <h4
+                style={{
+                  marginLeft: "1rem",
+                  fontSize: "0.8rem",
+                }}
+                className="header-link-highlight"
+              >
+                {app_item.title}
+              </h4>
             </div>
           ))}
         </div>

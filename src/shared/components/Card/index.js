@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { CloudComputing } from "@carbon/pictograms-react";
+
 import { Launch16, LogoGithub16 } from "@carbon/icons-react";
 import Tags from "../Tags";
 import { Link } from "react-router-dom";
@@ -21,11 +21,16 @@ const Card = ({ app_data, featured }) => {
           >
             {app_data.title}
           </h4>
-          <h4 className="header-link-highlight">{app_data.name}</h4>
+          <a
+            className="header-link-highlight"
+            href={app_data.app_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {app_data.name}
+          </a>
         </div>
-        <div>
-          <CloudComputing fill="#05aa82" width="48px" height="48px" />
-        </div>
+        <div>{app_data.logo}</div>
       </div>
       <div style={{ width: "80%" }}>
         <p
@@ -46,7 +51,7 @@ const Card = ({ app_data, featured }) => {
           }}
         >
           <Launch16 color="#05aa82" />
-          <Link to={"/"}>
+          <a href={app_data.app_url} target="_blank" rel="noopener noreferrer">
             <h4
               style={{
                 fontFamily: "IBM Plex Sans",
@@ -60,7 +65,7 @@ const Card = ({ app_data, featured }) => {
             >
               Launch
             </h4>
-          </Link>
+          </a>
         </div>
         <div
           style={{
@@ -69,7 +74,7 @@ const Card = ({ app_data, featured }) => {
           }}
         >
           <LogoGithub16 color="#05aa82" />
-          <Link to={"/"}>
+          <a href={app_data.repo_url} target="_blank" rel="noopener noreferrer">
             <h4
               style={{
                 fontFamily: "IBM Plex Sans",
@@ -83,7 +88,7 @@ const Card = ({ app_data, featured }) => {
             >
               View Repo
             </h4>
-          </Link>
+          </a>
         </div>
       </div>
       <div style={{ marginTop: "2em", display: "flex", flexWrap: "wrap" }}>

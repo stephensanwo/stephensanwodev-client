@@ -6,7 +6,7 @@ import Card from "../../../shared/components/Card";
 const AppList = () => {
   return (
     <div>
-      {apps_data.map((app_item, index) => (
+      {apps_data.slice(1).map((app_item, index) => (
         <div className="app-home-articles-container">
           <Card app_data={app_item} />
         </div>

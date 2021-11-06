@@ -32,7 +32,10 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
           <div className="nav-action-3">
             <Options data={{ name: "Apps", link: "/apps" }} />
           </div>
-          <div className="nav-action-3">
+          <div className="nav-action-4">
+            <Options data={{ name: "Code Snippets", link: "/code" }} />
+          </div>
+          <div className="nav-action-5">
             <a
               href="https://github.com/stephensanwo"
               style={{ textDecoration: "none" }}
@@ -51,7 +54,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             </a>
           </div>
 
-          <div className="nav-action-4">
+          <div className="nav-action-6">
             <a
               href="https://gist.github.com/stephensanwo"
               style={{ textDecoration: "none" }}
@@ -106,8 +109,14 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                   <Link to={"/blog"}>Blog</Link>
                 </div>
 
-                <div className="see-all-container">
-                  <ArrowRight16 fill="#539bf5" />
+                <div
+                  onClick={() => setIsNavOpen("closed")}
+                  className="see-all-container"
+                >
+                  <Link to={"/blog"}>
+                    {" "}
+                    <ArrowRight16 fill="#539bf5" />
+                  </Link>
                 </div>
               </motion.div>
               <motion.div
@@ -123,8 +132,37 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                 >
                   <Link to={"/apps"}>Apps</Link>
                 </div>
-                <div className="see-all-container">
-                  <ArrowRight16 fill="#539bf5" />
+                <div
+                  onClick={() => setIsNavOpen("closed")}
+                  className="see-all-container"
+                >
+                  <Link to={"/apps"}>
+                    {" "}
+                    <ArrowRight16 fill="#539bf5" />
+                  </Link>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ x: "-100px" }}
+                animate={{ x: "0", speed: "100ms" }}
+                transition={{ ease: "easeInOut", duration: 0.6 }}
+                exit={{ display: "none", speed: "10000ms" }}
+                className="slider-item"
+              >
+                <div
+                  style={{ display: "flex", alignItems: "center" }}
+                  onClick={() => setIsNavOpen("closed")}
+                >
+                  <Link to={"/code"}>Code Snippets</Link>
+                </div>
+                <div
+                  onClick={() => setIsNavOpen("closed")}
+                  className="see-all-container"
+                >
+                  <Link to={"/code"}>
+                    {" "}
+                    <ArrowRight16 fill="#539bf5" />
+                  </Link>
                 </div>
               </motion.div>
               <motion.div
@@ -147,8 +185,17 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                   </a>
                 </div>
 
-                <div className="see-all-container">
-                  <ArrowRight16 fill="#539bf5" />
+                <div
+                  onClick={() => setIsNavOpen("closed")}
+                  className="see-all-container"
+                >
+                  <a
+                    href="https://github.com/stephensanwo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ArrowRight16 fill="#539bf5" />
+                  </a>
                 </div>
               </motion.div>
               <motion.div
@@ -171,8 +218,17 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                   </a>
                 </div>
 
-                <div className="see-all-container">
-                  <ArrowRight16 fill="#539bf5" />
+                <div
+                  onClick={() => setIsNavOpen("closed")}
+                  className="see-all-container"
+                >
+                  <a
+                    href="https://gist.github.com/stephensanwo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ArrowRight16 fill="#539bf5" />
+                  </a>
                 </div>
               </motion.div>
             </div>

@@ -13,28 +13,26 @@ import SubHeading from "../../components/SubHeading";
 import Paragraph from "../../components/Paragraph";
 import Loader from "../../../shared/components/Loader";
 
-const PostContent = ({ post_data }) => {
+const PostContent = ({ code_content }) => {
   const importPost = (id) =>
     lazy(() =>
       import(`../../posts/Post_${id}.jsx`).catch(() =>
         import(`../../posts/Not_Found`)
       )
     );
-  const Post = importPost(post_data.post_id);
-  const content_id = post_data.content.map((content_data) =>
-    content_data.replaceAll(/\s/g, "")
-  );
+
+  const Post = importPost(code_content.code_id);
 
   return (
     <div className="blog-post-container">
       <h4
         style={{
           fontSize: "0.8em",
-          color: "#539bf5",
+          color: "#986ee2",
           marginBottom: "1em",
         }}
       >
-        {post_data.category} - {post_data.sub_category}
+        {code_content.category}
       </h4>
       <h4
         style={{
@@ -45,13 +43,13 @@ const PostContent = ({ post_data }) => {
           lineHeight: 1.3,
         }}
       >
-        {post_data.title}
+        {code_content.title}
       </h4>
       <div
         className="blog-content-featured-tags"
         style={{ marginBottom: "1rem" }}
       >
-        {post_data.tags.map((tag, index) => (
+        {code_content.tags.map((tag, index) => (
           <Tags type="blog" title={tag} color={"generic"} />
         ))}
       </div>
@@ -63,7 +61,7 @@ const PostContent = ({ post_data }) => {
             marginBottom: "0.5rem",
           }}
         >
-          {post_data.author}
+          {code_content.author}
         </h4>
         <h4
           style={{
@@ -83,51 +81,41 @@ const PostContent = ({ post_data }) => {
             marginBottom: "1.5rem",
           }}
         >
-          {post_data.date}
+          {code_content.date}
         </h4>
       </div>
 
-      <div className="blog-post-image">
-        <img src={post_data.image_url} width="100%"></img>
-      </div>
       <div className="blog-post-detail">
         <h2
           style={{
-            color: "#05aa82",
+            color: "#adbac7",
             fontSize: "1.2em",
             marginBottom: "0.4em",
             lineHeight: 1.5,
           }}
         >
-          TL;DR
+          Description
         </h2>
 
         <p
           style={{
             fontWeight: 600,
             fontSize: "1em",
-            color: "#05aa82",
+            color: "#adbac7",
             lineHeight: 1.6,
             marginBottom: "2rem",
           }}
         >
-          {post_data.description}
+          {code_content.desc}
         </p>
         <div
           className="section-divider-line"
           style={{ marginTop: "1rem", marginBottom: "2rem" }}
         ></div>
+
         {/* JSX will be inserted here */}
-        <React.Suspense
-          fallback={
-            <Fragment>
-              <Loader height="30px" />
-              <Loader height="30px" />
-              <Loader height="30px" />
-            </Fragment>
-          }
-        >
-          <Post content={content_id} />
+        <React.Suspense fallback={<Loader height="450px" />}>
+          <Post />
         </React.Suspense>
       </div>
       <div
@@ -137,12 +125,12 @@ const PostContent = ({ post_data }) => {
 
       <div className="next-previous-post">
         <div className="next-previous-item">
-          <ArrowLeft24 fill="#539bf5" />
+          <ArrowLeft24 fill="#986ee2" />
           <a
             style={{
               fontSize: "1em",
               fontWeight: 800,
-              color: "#539bf5",
+              color: "#986ee2",
               marginLeft: "0.5rem",
             }}
           >
@@ -154,13 +142,13 @@ const PostContent = ({ post_data }) => {
             style={{
               fontSize: "1em",
               fontWeight: 800,
-              color: "#539bf5",
+              color: "#986ee2",
               marginRight: "0.5rem",
             }}
           >
             Next Post
           </a>
-          <ArrowRight24 fill="#539bf5" />
+          <ArrowRight24 fill="#986ee2" />
         </div>
       </div>
     </div>
