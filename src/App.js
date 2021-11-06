@@ -5,6 +5,8 @@ import Home from "./shared/pages/Home";
 import Blog from "./blog";
 import Apps from "./apps";
 
+import Code from "./code";
+
 function App() {
   const [isNavOpen, setIsNavOpen] = useState("closed");
   return (
@@ -18,6 +20,9 @@ function App() {
         </Route>
         <Route path="/apps">
           <Apps isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+        </Route>
+        <Route path="/code">
+          <Code isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </Route>
       </Switch>
     </Router>

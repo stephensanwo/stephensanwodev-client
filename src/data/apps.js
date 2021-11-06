@@ -1,7 +1,4 @@
-import corpenicus_image from "../assets/img/project-corpenicus-2.png";
-import atm_recon from "../assets/img/atm_recon.png";
-import tomori_mobile from "../assets/img/tomorii_mobile.png";
-import gallium_image from "../assets/img/SA-mortgageAIcredit.jpg";
+import { CloudComputing, Robot, Globe } from "@carbon/pictograms-react";
 
 import {
   Api_116,
@@ -12,182 +9,54 @@ import {
   MachineLearning16,
 } from "@carbon/icons-react";
 
-export const featured_apps_data = [
-  {
-    id: 1,
-    name: "ATM Reconciliation Analytics as a Service",
-    title: "Enterprise Analytics Solution for Banks",
-    desc: " An enterprise solution that analyses ATM activities in real-time to improve the ATM reconciliation efficiency and actively monitor ATM risks and identify areas for performance improvement.",
-    image_url: atm_recon,
-    built_with: [
-      "Python",
-      "Javascript",
-      "SQL",
-      "React",
-      "RQ",
-      "Docker",
-      "MongoDB",
-    ],
-  },
-  {
-    id: 2,
-    name: "Project Corpenicus",
-    title: "Urban Development Tracking App",
-    desc: "An app that uses weekly satellite imagery and computer vision algorithms, to track urbanization, and provide accurate recommendations to govt agencies.",
-    image_url: corpenicus_image,
-    built_with: ["Python", "OpenCV", "GraphQL", "NodeJs", "React", "MongoDB"],
-  },
-  {
-    id: 3,
-    name: "Gallium",
-    title: "No-code forecasting at scale",
-    desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
-    image_url: gallium_image,
-    built_with: ["Python", "PostgresSQL", "Redis", "React"],
-  },
-  {
-    id: 4,
-    name: "Tomorii Mobile",
-    title: "IOS and Android Fashion Ecommerce App",
-    desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
-    image_url: tomori_mobile,
-    built_with: ["React Native", "AWS"],
-  },
-];
-
 export const apps_data = [
   {
     id: 1,
-    name: "Citadel",
-    title: "Find and download anybook",
-    desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
-    built_with: [
-      "Python",
-      "SQL",
-      "React",
-      "RQ",
-      "Javascript",
-      "Docker",
-      "MongoDB",
-    ],
+    name: "Artificial Intelligence Playground",
+    title: "Playground for AI Models",
+    desc: "AI Playground is where I test stuff I build with open source and custom Machine Learning and Deep Learning models",
+    logo: <CloudComputing fill="#05aa82" width="48px" height="48px" />,
+    built_with: ["Python", "PostgresSQL", "Redis", "React"],
+    app_url: "https://ai.stephensanwo.dev",
+    repo_url: "https://github.com/stephensanwo/ai-playground-api",
   },
   {
     id: 2,
-    name: "Gallium",
-    title: "No-code forecasting at scale",
-    desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
-    built_with: [
-      "Python",
-      "SQL",
-      "React",
-      "RQ",
-      "Javascript",
-      "Docker",
-      "MongoDB",
-    ],
+    name: "Hypercompose",
+    title: "Supercharge your writing with AI",
+    desc: "Write faster and save time with the power of Artificial Intelligence and Open AI's GPT3 to write blog posts, compose emails, write marketing briefs, social media copies, etc. without writing a single line of code!. Integrate Compose-AI with Notion for free, by authenticating with Notion and selecting the pages you want Compose-AI to have access to",
+    logo: <Robot fill="#05aa82" width="48px" height="48px" />,
+    built_with: ["Python", "OpenCV", "GraphQL", "NodeJs", "React", "MongoDB"],
+    app_url: "https://www.hypercompose.com",
+    repo_url: "",
   },
   {
     id: 3,
-    name: "Exchange Rate API",
-    title: "Daily NGN exchange rate data",
-    desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
-    built_with: [
-      "Python",
-      "SQL",
-      "React",
-      "RQ",
-      "Javascript",
-      "Docker",
-      "MongoDB",
-    ],
-  },
-  {
-    id: 4,
-    name: "Citadel",
-    title: "Find and download anybook",
-    desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
-    built_with: [
-      "Python",
-      "SQL",
-      "React",
-      "RQ",
-      "Javascript",
-      "Docker",
-      "MongoDB",
-    ],
-  },
-  {
-    id: 5,
-    name: "ATM Reconciliation Analytics as a Service",
-    title: "Enterprise Analytics Solution for Banks",
-    desc: " An enterprise solution that analyses ATM activities in real-time to improve the ATM reconciliation efficiency and actively monitor ATM risks and identify areas for performance improvement.",
-    image_url: atm_recon,
-    built_with: [
-      "Python",
-      "SQL",
-      "React",
-      "RQ",
-      "Javascript",
-      "Docker",
-      "MongoDB",
-    ],
-  },
-  {
-    id: 6,
     name: "Project Corpenicus",
     title: "Urban Development Tracking App",
     desc: "An app that uses weekly satellite imagery and computer vision algorithms, to track urbanization, and provide accurate recommendations to govt agencies.",
-    image_url: corpenicus_image,
+    logo: <Globe fill="#05aa82" width="48px" height="48px" />,
     built_with: ["Python", "OpenCV", "GraphQL", "NodeJs", "React", "MongoDB"],
-  },
-  {
-    id: 7,
-    name: "Gallium",
-    title: "No-code forecasting at scale",
-    desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
-    image_url: gallium_image,
-    built_with: ["Python", "PostgresSQL", "Redis", "React"],
-  },
-  {
-    id: 8,
-    name: "Tomorii Mobile",
-    title: "IOS and Android Fashion Ecommerce App",
-    desc: "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics",
-    image_url: tomori_mobile,
-    built_with: ["React Native", "AWS"],
+    app_url: "",
+    repo_url: "",
   },
 ];
 
 export const app_categories_small = [
   {
     id: 1,
-    title: "APIs & Microservices",
-    logo: <Api_116 fill="#539bf5" />,
+    title: "All Apps",
+    logo: <Api_116 fill="#05aa82" />,
   },
   {
     id: 2,
     title: "Code Snippets",
-    logo: <Code16 fill="#539bf5" />,
+    logo: <Code16 fill="#05aa82" />,
   },
   {
     id: 3,
-    title: "Mobile Software Projects",
-    logo: <Application16 Application16 fill="#539bf5" />,
-  },
-  {
-    id: 4,
-    title: "SaaS Projects",
-    logo: <Settings16 fill="#539bf5" />,
-  },
-  {
-    id: 4,
-    title: "AI & Bots Projects",
-    logo: <MachineLearning16 fill="#539bf5" />,
-  },
-  {
-    id: 5,
-    title: "In Development WIP",
-    logo: <LogoGithub16 fill="#539bf5" />,
+    title: "Github",
+    logo: <LogoGithub16 fill="#05aa82" />,
   },
 ];
 

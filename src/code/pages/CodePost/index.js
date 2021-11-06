@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
-import BlogPostOptions from "./BlogPostOptions";
+import CodePostOptions from "./CodePostOptions";
 import PostContent from "./PostContent";
 import PostOptions from "./PostOptions";
 import "./style.scss";
-import { all } from "../../../data/tmp_blog";
+import { code_data } from "../../../data/code";
 import Footer from "../../../shared/components/Footer";
 import { useLocation } from "react-router-dom";
 
-const BlogPost = (props) => {
-  const post_id = props.match.params.post_id;
-  const post_data = all.filter((item) => item.post_id === post_id)[0];
+const CodePost = (props) => {
+  const code_id = props.match.params.code_id;
+  const code_content = code_data.filter((item) => item.code_id === code_id)[0];
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -19,13 +19,13 @@ const BlogPost = (props) => {
   return (
     <div className="blog-home-container">
       <div className="blog-home-sidenav">
-        <BlogPostOptions post_data={post_data} />
+        <CodePostOptions />
       </div>
       <div className="blog-post-content-container">
         <div className="blog-post-content">
           <div className="blog-post-content-items">
-            <PostContent post_data={post_data} />
-            <Footer data_type={"blog"} />
+            <PostContent code_content={code_content} />
+            <Footer data_type={"code"} />
           </div>
         </div>
         <div className="blog-home-options">
@@ -36,4 +36,4 @@ const BlogPost = (props) => {
   );
 };
 
-export default BlogPost;
+export default CodePost;

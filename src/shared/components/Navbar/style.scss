@@ -31,8 +31,10 @@
 .app-nav .nav-action-1,
 .app-nav .nav-action-2,
 .app-nav .nav-action-3,
-.app-nav .nav-action-4 {
-  width: 80px;
+.app-nav .nav-action-4,
+.app-nav .nav-action-5,
+.app-nav .nav-action-6 {
+  width: 100px;
 }
 .app-nav .nav-tabs a {
   color: #ffffff;
@@ -81,6 +83,7 @@
 
 .slider-menu {
   display: none;
+  z-index: 1000;
 }
 
 @media (min-width: 0px) and (max-width: 599px) {
@@ -137,6 +140,57 @@
 
 // Small - Medium devices
 @media (min-width: 600px) and (max-width: 634px) {
+  .app-nav {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .app-nav .nav-actions {
+    display: none;
+  }
+  .nav-switcher {
+    display: block;
+  }
+
+  // Switcher
+
+  .slider-menu {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1c2128;
+  }
+
+  .slider-menu-container {
+    width: 85%;
+    margin: auto;
+
+    padding-top: 50px;
+  }
+
+  .slider-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+  }
+
+  .slider-item a {
+    color: #adbac7;
+    font-size: 1.2em;
+    cursor: pointer;
+    line-height: 1.2;
+  }
+
+  .slider-item a:hover {
+    color: #539bf5;
+  }
+}
+
+@media (min-width: 635px) and (max-width: 900px) {
   .app-nav {
     padding-left: 7.5%;
     padding-right: 7.5%;

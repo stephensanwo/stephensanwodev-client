@@ -1,6 +1,6 @@
 import React from "react";
 import { top_articles } from "../../../data/tmp_blog";
-import { featured_apps_data } from "../../../data/apps";
+import { apps_data } from "../../../data/apps";
 
 const Options = () => {
   return (
@@ -47,17 +47,19 @@ const Options = () => {
           Top Apps
         </h4>
       </div>
-      {featured_apps_data.map((app_data, index) => (
+      {apps_data.map((app_data, index) => (
         <div style={{ marginTop: "2rem" }}>
-          <h4
-            style={{
-              marginBottom: "0.4em",
-              fontSize: "0.8em",
-            }}
-            className="header-link-highlight"
-          >
-            {app_data.title}
-          </h4>
+          <a href={app_data.app_url} target="_blank" rel="noopener noreferrer">
+            <h4
+              style={{
+                marginBottom: "0.4em",
+                fontSize: "0.8em",
+              }}
+              className="header-link-highlight"
+            >
+              {app_data.title}
+            </h4>
+          </a>
           <p
             style={{
               marginBottom: "0.4em",

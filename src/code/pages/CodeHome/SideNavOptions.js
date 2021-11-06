@@ -1,39 +1,35 @@
 import React, { Fragment } from "react";
 import { ArrowLeft24 } from "@carbon/icons-react";
-import {
-  app_categories_small,
-  app_filters,
-  app_sort,
-} from "../../../data/apps";
+import { code_categories_small } from "../../../data/code";
 import Tags from "../../../shared/components/Tags";
-import { useRouteMatch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SideNavOptions = () => {
-  const { path } = useRouteMatch();
   return (
     <Fragment>
-      <div className="app-home-sidenav-container">
-        <div className="app-home-sidenav-content">
+      <div className="blog-home-sidenav-container">
+        <div className="blog-home-sidenav-content">
           <div>
             <Link
+              to="/"
               style={{
                 fontSize: "1em",
                 fontWeight: 800,
-                color: "#539bf5",
+                color: "#986ee2",
                 marginBottom: "2em",
                 display: "flex",
                 alignItems: "center",
               }}
-              to={`/`}
             >
-              <ArrowLeft24 fill="#539bf5" style={{ marginRight: "0.5em" }} />{" "}
+              <ArrowLeft24 fill="#986ee2" style={{ marginRight: "0.5em" }} />{" "}
               Home
             </Link>
           </div>
         </div>
       </div>
-      <div className="app-home-sidenav-container">
-        <div className="app-home-sidenav-content">
+
+      <div className="blog-home-sidenav-container">
+        <div className="blog-home-sidenav-content">
           <div>
             <h4
               style={{
@@ -41,13 +37,12 @@ const SideNavOptions = () => {
                 marginBottom: "2em",
               }}
             >
-              App Categories
+              Topics
             </h4>
             <div>
-              {app_categories_small.map((app_item) => (
-                <div className="app-sidenav-category-item">
-                  {app_item.logo}
-
+              {code_categories_small.map((blog_item) => (
+                <div className="blog-sidenav-category-item">
+                  {blog_item.logo}
                   <h4
                     style={{
                       marginLeft: "1rem",
@@ -55,7 +50,7 @@ const SideNavOptions = () => {
                     }}
                     className="header-link-highlight"
                   >
-                    {app_item.title}
+                    {blog_item.title}
                   </h4>
                 </div>
               ))}
