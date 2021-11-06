@@ -2,7 +2,6 @@ import React, { Fragment, useEffect } from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import Navbar from "../shared/components/Navbar";
 import AppHome from "./pages/AppHome";
-import CodeSnipets from "./pages/CodeSnipets";
 
 const Apps = ({ isNavOpen, setIsNavOpen }) => {
   const { path } = useRouteMatch();
@@ -16,7 +15,6 @@ const Apps = ({ isNavOpen, setIsNavOpen }) => {
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Switch>
         <Route path={`${path}/`} component={AppHome} />
-        <Route path={`${path}/code/:id`} component={CodeSnipets} />
       </Switch>
     </Fragment>
   );
