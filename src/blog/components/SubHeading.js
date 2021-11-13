@@ -6,9 +6,9 @@ const SubHeading = (props) => {
     <Fragment>
       <h2
         style={{
-          color: "#539bf5",
+          color: "#adbac7",
           fontSize: "1.4em",
-          marginBottom: "0.4em",
+          marginBottom: "1rem",
           lineHeight: 1.5,
         }}
         id={props.id}

@@ -5,13 +5,7 @@ import CodeHome from "./pages/CodeHome";
 import CodePost from "./pages/CodePost";
 import { useQuery } from "react-query";
 import axios from "axios";
-
-const getPosts = async (limit, filter) => {
-  const { data } = await axios.get(
-    `http://192.168.0.149:2304/blog_data?limit=${limit}`
-  );
-  return data;
-};
+import Error from "./Error";
 
 export const PostContext = React.createContext();
 
@@ -19,17 +13,25 @@ const Code = ({ isNavOpen, setIsNavOpen }) => {
   const { path } = useRouteMatch();
   const [filter, setFilter] = useState("");
   const [limit, setLimit] = useState(10);
-  const { status, error, data } = useQuery("posts", getPosts(limit, filter));
 
-  console.log(data);
+  const getCode = async (limit, filter) => {
+    const { data } = await axios.get(
+      `http://192.168.0.149:2304/code_data?limit=${limit}`
+    );
+    return data;
+  };
+
+  const { isLoading, status, error, data } = useQuery("code", () =>
+    getCode(limit, filter)
+  );
+
   return (
     <PostContext.Provider
-      post={(status, error, data)}
-      limit={limit}
-      filter={filter}
+      value={{ isLoading, status, error, data, filter, limit }}
     >
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Switch>
+        <Route path={`${path}/error`} component={Error} />
         <Route exact path={`${path}/:code_id`} component={CodePost} />
         <Route path={`${path}/`} component={CodeHome} />
       </Switch>

@@ -1,13 +1,12 @@
 import React from "react";
-import { all } from "../../../data/tmp_blog";
 import { Launch16, Share16, ArrowRight24 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
 
-const ArticleList = () => {
+const ArticleList = ({ data }) => {
   return (
     <div>
-      {all.map((article, index) => (
+      {data.blog_posts.map((article, index) => (
         <div className="blog-home-articles-container">
           <div className="blog-home-articles-image">
             <img src={article.image_url} width="100%"></img>

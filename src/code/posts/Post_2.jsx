@@ -9,22 +9,18 @@ const Post_1 = () => {
   return (
     <Fragment>
      
-      <Code language = "py">
-        {`def SignUp():
-    response = {"errors": {}, "data": {}, "token": {}}
-
-    req = request.get_json()
-    email = req["email"]
-    password = req["password"]
-
-    errors, valid = validateLoginInput(
-        email, password)
-
-    if not valid:
-        response["errors"] = errors
-        return make_response(jsonify(response), 400)
-
-    return make_response(jsonify(response), 200)`}
+      <Code language = "js">
+        {`  if (post_data) {
+    const importPost = (id) =>
+      lazy(() =>
+        import("../../posts/Post.jsx").catch(() =>
+          import("../../posts/Not_Found")
+        )
+      );
+    const Post = importPost(post_data.post_id);
+    const content_id = post_data.content.map((content_data) =>
+      content_data.replaceAll(/\s/g, "")
+    );`}
 
       </Code>
      

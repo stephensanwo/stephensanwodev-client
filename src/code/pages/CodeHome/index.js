@@ -1,13 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import "./style.scss";
 import { CodeSyntax } from "@carbon/pictograms-react";
 import CodeList from "./CodeList";
 import SideNavOptions from "./SideNavOptions";
 import Footer from "../../../shared/components/Footer";
 import { useLocation } from "react-router-dom";
+import { PostContext } from "../..";
+import Loader from "../../../shared/components/Loader";
 
 const CodeHome = () => {
   const { pathname } = useLocation();
+
+  const data = useContext(PostContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,7 +39,14 @@ const CodeHome = () => {
               </h4>
             </div>
 
-            <CodeList />
+            {data.isLoading ? (
+              <div style={{ marginTop: "4rem" }}>
+                <Loader height="250px" />
+              </div>
+            ) : (
+              <CodeList data={data.data.code_posts} />
+            )}
+
             <Footer data_type={"code"} />
           </div>
         </div>
