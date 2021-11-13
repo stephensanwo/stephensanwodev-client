@@ -1,22 +1,21 @@
 import React, { Fragment } from "react";
 
-const SubHeading4 = (props) => {
-  console.log(props.id);
+const LinkItem = (props) => {
   return (
     <Fragment>
-      <h4
+      <p
         style={{
+          fontWeight: 400,
+          fontSize: "1em",
           color: "#adbac7",
-          fontSize: "1.1em",
+          lineHeight: 2,
           marginBottom: "1rem",
-          lineHeight: 1.5,
         }}
-        id={props.id}
       >
         {props.children}
-      </h4>
+      </p>
     </Fragment>
   );
 };
 
-export default SubHeading4;
+export default LinkItem;

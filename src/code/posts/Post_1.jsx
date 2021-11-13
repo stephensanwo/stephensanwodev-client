@@ -7,28 +7,37 @@ import Code from "../components/Code";
 const Post_1 = () => {
 
   return (
-    <Fragment>
-     
+    <Fragment>     
+      <Paragraph>
+      A simple hello world boiler plate setup for Flask API. The Flask application is initialized as app and a simple get request to the root route returns "Hello World". Note that you will have to export environment = dev in the terminal for this to work in development environment.
+      </Paragraph>
+   
       <Code language = "py">
-        {`def login():
-    response = {"errors": {}, "data": {}, "token": {}}
+        {`from flask import Flask, jsonify, request, redirect, url_for, make_response
+import os
 
-    req = request.get_json()
-    email = req["email"]
-    password = req["password"]
+app = Flask(__name__)
 
-    errors, valid = validateLoginInput(
-        email, password)
+# @route   GET /
+# @desc    Test
+# @access  Public - Test Only
 
-    if not valid:
-        response["errors"] = errors
-        return make_response(jsonify(response), 400)
+@app.route('/', methods=['GET'])
+def files():
 
-    return make_response(jsonify(response), 200)`}
+    response = "Hello World"
+    status = 200
+    return make_response(jsonify({'response': f'{response}'}), status)
+
+
+if environment == "dev":
+    if __name__ == '__main__':
+        app.run(debug=True)
+else:
+    if __name__ == '__main__':
+        app.run(host='0.0.0.0', port=5000, debug=False)`}
 
       </Code>
-     
-
     </Fragment>
   );
 };

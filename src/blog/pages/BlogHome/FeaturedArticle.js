@@ -1,19 +1,15 @@
 import React, { useContext } from "react";
-import { featured_article } from "../../../data/tmp_blog";
 import { Launch16, Copy16 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link, useRouteMatch } from "react-router-dom";
-import { PostContext } from "../..";
 
-const FeaturedArticle = () => {
+const FeaturedArticle = ({ data }) => {
   const { path } = useRouteMatch();
-  const data = useContext(PostContext);
-
   console.log(data);
   return (
     <div className="blog-home-featured-container">
       <div className="blog-home-featured-image">
-        <img src={featured_article.image_url} width="100%"></img>
+        <img src={data.image_url} width="100%"></img>
       </div>
       <div className="blog-home-featured-description">
         <h4
@@ -23,9 +19,9 @@ const FeaturedArticle = () => {
             marginBottom: "0.4em",
           }}
         >
-          Featured Article
+          Featured Series
         </h4>
-        <Link to={`${path}${featured_article.id}`}>
+        <Link to={`${path}${data.post_id}`}>
           <h4
             style={{
               fontSize: "1.8em",
@@ -33,17 +29,17 @@ const FeaturedArticle = () => {
             }}
             className="header-link-highlight"
           >
-            {`${featured_article.title}`.slice(0, 80)}
-            {featured_article.title.length > 80 ? "..." : ""}
+            {`${data.series_title}`.slice(0, 80)}
+            {data.title.length > 80 ? "..." : ""}
           </h4>
         </Link>
 
         <p>
-          {`${featured_article.description}`.slice(0, 200)}
-          {featured_article.description.length > 200 ? "..." : ""}
+          {`${data.description}`.slice(0, 200)}
+          {data.description.length > 200 ? "..." : ""}
         </p>
         <div className="blog-content-featured-tags">
-          {featured_article.tags.map((tag_item, index) => (
+          {data.tags.map((tag_item, index) => (
             <Tags type="blog" title={tag_item} color={"generic"} />
           ))}
         </div>
@@ -57,7 +53,7 @@ const FeaturedArticle = () => {
             }}
           >
             <Launch16 color="#539bf5" />
-            <Link to={`/blog/${featured_article.id}`}>
+            <Link to={`/blog/${data.post_id}`}>
               <h4
                 style={{
                   fontWeight: 400,

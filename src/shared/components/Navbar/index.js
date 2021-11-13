@@ -44,7 +44,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             >
               <motion.div
                 className="options-container"
-                whileHover={{ borderBottom: "2px solid #05aa82" }}
+                whileHover={{ borderBottom: "2px solid #539bf5" }}
                 transition={{ ease: "easeIn", duration: 0.2 }}
               >
                 <div className="options-text">
@@ -63,7 +63,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             >
               <motion.div
                 className="options-container"
-                whileHover={{ borderBottom: "2px solid #05aa82" }}
+                whileHover={{ borderBottom: "2px solid #539bf5" }}
                 transition={{ ease: "easeIn", duration: 0.2 }}
               >
                 <div className="options-text">

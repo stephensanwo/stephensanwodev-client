@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect, useContext } from "react";
 import "./style.scss";
 import { Devops } from "@carbon/pictograms-react";
 import FeaturedArticle from "./FeaturedArticle";
@@ -7,10 +7,13 @@ import Options from "./Options";
 import SideNavOptions from "./SideNavOptions";
 import Footer from "../../../shared/components/Footer";
 import { useLocation } from "react-router-dom";
+import { PostContext } from "../..";
+import Loader from "../../../shared/components/Loader";
 
 const BlogHome = () => {
   const { pathname } = useLocation();
 
+  const data = useContext(PostContext);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -36,13 +39,29 @@ const BlogHome = () => {
                 Blog
               </h4>
             </div>
-
-            <FeaturedArticle />
+            {data.isLoading ? (
+              <div style={{ marginTop: "4rem" }}>
+                <Loader height="300px" />
+                <Loader height="30px" />
+                <Loader height="30px" />
+              </div>
+            ) : (
+              <FeaturedArticle data={data.data.data.featured_posts[0]} />
+            )}
             <div
               className="section-divider-line"
               style={{ marginTop: "4rem", marginBottom: "6rem" }}
             ></div>
-            <ArticleList />
+            {data.isLoading ? (
+              <div style={{ marginTop: "4rem" }}>
+                <Loader height="150px" />
+                <Loader height="30px" />
+                <Loader height="30px" />
+              </div>
+            ) : (
+              <ArticleList data={data.data.data} />
+            )}
+
             <Footer />
           </div>
         </div>

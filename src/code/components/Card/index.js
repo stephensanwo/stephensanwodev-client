@@ -46,8 +46,8 @@ const Card = ({ code_item, featured }) => {
             marginBottom: "0.4em",
           }}
         >
-          {`${code_item.desc}`.slice(0, 100)}
-          {code_item.desc.length > 100 ? "..." : ""}
+          {`${code_item.description}`.slice(0, 100)}
+          {code_item.description.length > 100 ? "..." : ""}
         </p>
       </div>
       <div className="card-links">
