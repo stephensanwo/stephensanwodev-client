@@ -16,7 +16,7 @@ const Blog = ({ isNavOpen, setIsNavOpen }) => {
 
   const getPosts = async (limit, filter) => {
     const data = await axios.get(
-      `http://192.168.0.149:2304/blog_data?limit=${limit}`
+      `http://192.168.0.149:2304/api/v1/blog/blog_data?limit=${limit}`
     );
     return data;
   };

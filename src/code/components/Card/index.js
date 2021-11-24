@@ -8,6 +8,7 @@ import {
 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
+import { Javascript } from "@carbon/pictograms-react";
 
 const Card = ({ code_item, featured }) => {
   return (
@@ -34,7 +35,9 @@ const Card = ({ code_item, featured }) => {
         </div>
         <div>
           {code_item.category === "Python" ? (
-            <LogoPython32 fill="#986ee2" width="48px" height="48px" />
+            <LogoPython32 fill="#daaa3f" width="48px" height="48px" />
+          ) : code_item.category === "JavaScript" ? (
+            <Javascript fill="#daaa3f" width="48px" height="48px" />
           ) : (
             <Code32 fill="#986ee2" width="48px" height="48px" />
           )}

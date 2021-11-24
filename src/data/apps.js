@@ -40,6 +40,34 @@ export const apps_data = [
     app_url: "",
     repo_url: "",
   },
+  {
+    id: 4,
+    name: "Data Scrapping and Ingestion for Global Company Data",
+    title: "Company Data Fabric",
+    desc: "A Data ingestion pipeline for company centric data from multiple sources. 6482 Companies base information available, and more data available for S&P 500 companies",
+    logo: <Globe fill="#05aa82" width="48px" height="48px" />,
+    built_with: [
+      "Python",
+      "BeautifulSoup",
+      "Web Scrapping",
+      "Data Archeology",
+      "Data Pipelines",
+    ],
+    app_url:
+      "https://github.com/stephensanwo/KPMG-Hackathon-Company-Data-Fabric",
+    repo_url:
+      "https://github.com/stephensanwo/KPMG-Hackathon-Company-Data-Fabric",
+  },
+  {
+    id: 4,
+    name: "Citadel Microservice",
+    title: "Data Scrapping for Libgen Books Data",
+    desc: "Webscrapper and Flask API for books publicly available on Libgen",
+    logo: <Globe fill="#05aa82" width="48px" height="48px" />,
+    built_with: ["Python", "Flask", "API", "BeautifulSoup", "Web Scrapping"],
+    app_url: "https://github.com/stephensanwo/citadel-microservice",
+    repo_url: "https://github.com/stephensanwo/citadel-microservice",
+  },
 ];
 
 export const app_categories_small = [

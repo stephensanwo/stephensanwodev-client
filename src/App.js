@@ -6,6 +6,7 @@ import Blog from "./blog";
 import Apps from "./apps";
 
 import Code from "./code";
+import Error from "./shared/pages/Error";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState("closed");
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path="/code">
           <Code isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+        </Route>
+        <Route path="/error">
+          <Error />
         </Route>
       </Switch>
     </Router>

@@ -6,28 +6,42 @@ import CodePost from "./pages/CodePost";
 import { useQuery } from "react-query";
 import axios from "axios";
 import Error from "./Error";
+import URL from "../config";
 
 export const PostContext = React.createContext();
 
 const Code = ({ isNavOpen, setIsNavOpen }) => {
   const { path } = useRouteMatch();
-  const [filter, setFilter] = useState("");
-  const [limit, setLimit] = useState(10);
+  const [filter, setFilter] = useState("Code");
+  const [limit, setLimit] = useState(4);
 
   const getCode = async (limit, filter) => {
     const { data } = await axios.get(
-      `http://192.168.0.149:2304/code_data?limit=${limit}`
+      `${URL}/api/v1/blog/code_data?filter=${filter}&limit=${limit}`
     );
     return data;
   };
 
-  const { isLoading, status, error, data } = useQuery("code", () =>
-    getCode(limit, filter)
+  const { isLoading, status, error, data, isFetching } = useQuery(
+    ["code", limit, filter],
+    () => getCode(limit, filter),
+    { keepPreviousData: true, refetchOnWindowFocus: false }
   );
 
+  console.log();
   return (
     <PostContext.Provider
-      value={{ isLoading, status, error, data, filter, limit }}
+      value={{
+        isLoading,
+        status,
+        error,
+        data,
+        limit,
+        setFilter,
+        setLimit,
+        isFetching,
+        filter,
+      }}
     >
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Switch>

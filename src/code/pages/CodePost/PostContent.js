@@ -11,6 +11,8 @@ const PostContent = ({
   previous_post_link,
   next_post_link,
   post_count,
+  all_posts,
+  isFetching,
 }) => {
   if (code_content) {
     const importPost = (id) =>
@@ -22,6 +24,8 @@ const PostContent = ({
 
     const Post = importPost(code_content.code_id);
 
+    console.log(all_posts);
+
     return (
       <div className="blog-post-container">
         <h4
@@ -31,7 +35,7 @@ const PostContent = ({
             marginBottom: "1em",
           }}
         >
-          {code_content.category}
+          {isFetching ? <Loader height="20px" /> : code_content.category}
         </h4>
         <h4
           style={{
@@ -42,59 +46,74 @@ const PostContent = ({
             lineHeight: 1.3,
           }}
         >
-          {code_content.title}
+          {isFetching ? <Loader height="50px" /> : code_content.title}
         </h4>
-        <div
-          className="blog-content-featured-tags"
-          style={{ marginBottom: "1rem" }}
-        >
-          {code_content.tags.map((tag, index) => (
-            <Tags type="blog" title={tag} color={"generic"} />
-          ))}
-        </div>
-        <div style={{ display: "flex", marginBottom: "1rem" }}>
-          <h4
-            style={{
-              fontSize: "0.85em",
-              color: "#adbac7",
-              marginBottom: "0.5rem",
-            }}
+
+        {isFetching ? (
+          <Loader height="20px" />
+        ) : (
+          <div
+            className="blog-content-featured-tags"
+            style={{ marginBottom: "1rem" }}
           >
-            {code_content.author}
-          </h4>
-          <h4
-            style={{
-              fontSize: "0.85em",
-              color: "#adbac7",
-              marginBottom: "1.5rem",
-              marginLeft: "0.5rem",
-              marginRight: "0.5rem",
-            }}
-          >
-            |
-          </h4>
-          <h4
-            style={{
-              fontSize: "0.85em",
-              color: "#adbac7",
-              marginBottom: "1.5rem",
-            }}
-          >
-            {moment(code_content.creation_date, "YYYYMMDD").fromNow()}
-          </h4>
-        </div>
+            {code_content.tags.map((tag, index) => (
+              <Tags type="blog" title={tag} color={"generic"} />
+            ))}
+          </div>
+        )}
+        {isFetching ? (
+          <Fragment></Fragment>
+        ) : (
+          <div style={{ display: "flex", marginBottom: "1rem" }}>
+            <h4
+              style={{
+                fontSize: "0.85em",
+                color: "#adbac7",
+                marginBottom: "0.5rem",
+              }}
+            >
+              {code_content.author}
+            </h4>
+
+            <h4
+              style={{
+                fontSize: "0.85em",
+                color: "#adbac7",
+                marginBottom: "1.5rem",
+                marginLeft: "0.5rem",
+                marginRight: "0.5rem",
+              }}
+            >
+              |
+            </h4>
+
+            <h4
+              style={{
+                fontSize: "0.85em",
+                color: "#adbac7",
+                marginBottom: "1.5rem",
+              }}
+            >
+              {moment(code_content.creation_date, "YYYYMMDD").fromNow()}
+            </h4>
+          </div>
+        )}
 
         <div className="blog-post-detail">
-          <h2
-            style={{
-              color: "#986ee2",
-              fontSize: "1.2em",
-              marginBottom: "0.4em",
-              lineHeight: 1.5,
-            }}
-          >
-            TL;DR
-          </h2>
+          {isFetching ? (
+            <Fragment></Fragment>
+          ) : (
+            <h2
+              style={{
+                color: "#986ee2",
+                fontSize: "1.2em",
+                marginBottom: "0.4em",
+                lineHeight: 1.5,
+              }}
+            >
+              TL;DR
+            </h2>
+          )}
 
           <p
             style={{
@@ -105,7 +124,13 @@ const PostContent = ({
               marginBottom: "2rem",
             }}
           >
-            {code_content.description}
+            {isFetching ? (
+              <Fragment>
+                <Loader height="50px" />
+              </Fragment>
+            ) : (
+              code_content.description
+            )}
           </p>
           <div
             className="section-divider-line"
@@ -113,8 +138,23 @@ const PostContent = ({
           ></div>
 
           {/* JSX will be inserted here */}
-          <React.Suspense fallback={<Loader height="450px" />}>
-            <Post />
+          <React.Suspense
+            fallback={
+              <Fragment>
+                <Loader height="30px" />
+                <Loader height="450px" />
+              </Fragment>
+            }
+          >
+            {isFetching ? (
+              <Fragment>
+                {" "}
+                <Loader height="30px" />
+                <Loader height="450px" />
+              </Fragment>
+            ) : (
+              <Post />
+            )}
           </React.Suspense>
         </div>
         <div
@@ -157,7 +197,7 @@ const PostContent = ({
           <h4>
             {code_content.code_id} of {post_count}
           </h4>
-          {code_content.code_id == post_count ? (
+          {all_posts.length < 2 ? (
             <div className="next-previous-item">
               <Fragment></Fragment>
             </div>
@@ -174,6 +214,7 @@ const PostContent = ({
               >
                 Next Post
               </Link>
+
               <ArrowRight24 fill="#986ee2" />
             </div>
           )}

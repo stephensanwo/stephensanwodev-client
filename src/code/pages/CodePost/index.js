@@ -7,29 +7,44 @@ import Footer from "../../../shared/components/Footer";
 import { Redirect, useLocation } from "react-router-dom";
 import { PostContext } from "../..";
 import { Loading } from "carbon-components-react";
+import axios from "axios";
+import { useQuery } from "react-query";
+import URL from "../../../config";
 
 const CodePost = (props) => {
   const code_id = props.match.params.code_id;
   const { pathname } = useLocation();
-  const data = useContext(PostContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  if (data.isLoading) {
-    return <Loading stlye={{ backgroundColor: "green" }} />;
+  const getCode = async () => {
+    const { data } = await axios.get(`${URL}/api/v1/blog/code_data/${code_id}`);
+    return data.code_posts;
+  };
+
+  const { isLoading, status, error, data, isFetching } = useQuery(
+    ["code_item", code_id],
+    () => getCode(),
+    { keepPreviousData: false, refetchOnWindowFocus: false }
+  );
+
+  if (isLoading) {
+    return <Loading />;
   }
 
-  if (data.error) {
+  // if (isFetching) {
+  //   return <Loading />;
+  // }
+
+  if (error) {
     <Redirect to="/code" />;
   }
 
-  const code_content = data.data.code_posts.filter(
-    (item) => item.code_id === code_id
-  )[0];
-  const post_count = data.data.code_posts.length;
-  const all_posts = data.data.code_posts;
+  console.log(data);
+
+  const post_count = 20;
 
   let next_post_link = `/code/${Number(code_id) + 1}`;
   let previous_post_link;
@@ -43,22 +58,24 @@ const CodePost = (props) => {
   return (
     <div className="blog-home-container">
       <div className="blog-home-sidenav">
-        <CodePostOptions code_content={code_content} />
+        <CodePostOptions />
       </div>
       <div className="blog-post-content-container">
         <div className="blog-post-content">
           <div className="blog-post-content-items">
             <PostContent
-              code_content={code_content}
+              code_content={data[0]}
+              all_posts={data}
               next_post_link={next_post_link}
               previous_post_link={previous_post_link}
               post_count={post_count}
+              isFetching={isFetching}
             />
             <Footer data_type={"code"} />
           </div>
         </div>
         <div className="blog-home-options">
-          <PostOptions all_posts={all_posts} code_id={code_id} />
+          <PostOptions all_posts={data} code_id={code_id} />
         </div>
       </div>
     </div>

@@ -1,19 +1,33 @@
-import React from "react";
-import { code_data } from "../../../data/code";
+import React, { useContext } from "react";
+import { PostContext } from "../..";
 import { ArrowRight24 } from "@carbon/icons-react";
 import Card from "../../components/Card";
+import { InlineLoading } from "carbon-components-react";
 
-const CodeList = ({ data }) => {
-  console.log(data);
+const CodeList = () => {
+  const data = useContext(PostContext);
+
+  const fetchData = () => {
+    data.setLimit(data.limit + 2);
+  };
+
   return (
     <div style={{ marginTop: "4rem", marginBottom: "4rem" }}>
-      {data.map((code_item, index) => (
-        <div key={index} className="app-home-articles-container">
-          <Card code_item={code_item} />
+      {data.data.code_posts.length === 0 ? (
+        <div className="app-home-articles-container">
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <h4>No posts available for the current filter - {data.filter}</h4>
+          </div>
         </div>
-      ))}
+      ) : (
+        data.data.code_posts.map((code_item, index) => (
+          <div key={index} className="app-home-articles-container">
+            <Card code_item={code_item} />
+          </div>
+        ))
+      )}
 
-      <div className="see-all-blog">
+      <div className="see-all-blog" onClick={fetchData}>
         <a
           style={{
             fontSize: "1em",
@@ -24,7 +38,13 @@ const CodeList = ({ data }) => {
         >
           More Posts
         </a>
-        <ArrowRight24 fill="#986ee2" />
+        {data.isFetching ? (
+          <div style={{ width: "24px", height: "24px" }}>
+            <InlineLoading />
+          </div>
+        ) : (
+          <ArrowRight24 fill="#986ee2" />
+        )}
       </div>
     </div>
   );
