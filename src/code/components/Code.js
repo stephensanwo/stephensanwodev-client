@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-
+import { ThemeModes } from "@atlaskit/theme/types";
 import GlobalTheme from "@atlaskit/theme/components";
 import { CodeBlock } from "@atlaskit/code";
 
 const Code = (props) => {
-  const [mode, setMode] = useState("dark");
-
   return (
-    <GlobalTheme.Provider value={() => ({ mode })}>
+    <GlobalTheme.Provider value={() => ({ mode: "dark" })}>
       <CodeBlock
         language={props.language}
         text={props.children}
