@@ -4,7 +4,7 @@ import { CodeSyntax } from "@carbon/pictograms-react";
 import CodeList from "./CodeList";
 import SideNavOptions from "./SideNavOptions";
 import Footer from "../../../shared/components/Footer";
-import { useLocation } from "react-router-dom";
+import { useLocation, Redirect } from "react-router-dom";
 import { PostContext } from "../..";
 import Loader from "../../../shared/components/Loader";
 
@@ -16,6 +16,10 @@ const CodeHome = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  if (data.error) {
+    return <Redirect to="/error" />;
+  }
 
   return (
     <div className="blog-home-container">
@@ -35,16 +39,18 @@ const CodeHome = () => {
                   marginLeft: "2rem",
                 }}
               >
-                Code
+                {data.filter} {data.isFetching ? "..." : ""}
               </h4>
             </div>
 
             {data.isLoading ? (
               <div style={{ marginTop: "4rem" }}>
                 <Loader height="250px" />
+                <Loader height="250px" />
+                <Loader height="250px" />
               </div>
             ) : (
-              <CodeList data={data.data.code_posts} />
+              <CodeList />
             )}
 
             <Footer data_type={"code"} />

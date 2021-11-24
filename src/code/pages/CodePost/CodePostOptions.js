@@ -1,10 +1,13 @@
 import { ArrowLeft24, ArrowUpRight16 } from "@carbon/icons-react";
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import { useRouteMatch } from "react-router-dom";
 import { code_categories_small } from "../../../data/code";
+import { PostContext } from "../..";
 
 const CodePostOptions = () => {
   const { path } = useRouteMatch();
+
+  const data = useContext(PostContext);
 
   return (
     <Fragment>

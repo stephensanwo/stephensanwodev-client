@@ -1,5 +1,5 @@
 import React from "react";
-import { Launch16, Share16, ArrowRight24 } from "@carbon/icons-react";
+import { Launch16, ArrowRight24, Copy16 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
 
@@ -74,17 +74,22 @@ const ArticleList = ({ data }) => {
                   alignItems: "center",
                 }}
               >
-                <Share16 color="#539bf5" />
-                <h4
+                <Copy16 color="#539bf5" />
+                <a
                   style={{
                     fontWeight: 400,
                     fontSize: "0.8rem",
                     color: "#539bf5",
                     marginLeft: "0.5rem",
                   }}
+                  onClick={() => {
+                    navigator.clipboard.writeText(
+                      `${window.location.href}/${article.post_id}`
+                    );
+                  }}
                 >
                   Copy Link
-                </h4>
+                </a>
               </div>
             </div>
           </div>

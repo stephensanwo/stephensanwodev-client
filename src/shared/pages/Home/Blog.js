@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Launch16,
   Copy16,
   ArrowRight24,
   ArrowRight16,
 } from "@carbon/icons-react";
-
-import BlogImage from "../../../assets/svg/article.svg";
 import { blog_categories } from "../../../data/blog";
-import { Devops, Javascript } from "@carbon/pictograms-react";
+import { Devops } from "@carbon/pictograms-react";
 import Tags from "../../components/Tags";
 import { Link } from "react-router-dom";
 
@@ -16,20 +14,30 @@ const featured_articles = [
   {
     id: 1,
     category: "Python",
-    title: "Structuring your python software development projects",
+    title:
+      "Build a full stack AI Chatbot with GPT, React, FastAPI, Redis & AWS",
     description:
-      "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics engine without having to write code.",
-    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
-    tags: ["Python", "API", "Javascript"],
+      "One of the best ways to learn how to develop full stack applications is to build projects that cover the end to end development process, from designing the solution architecture, to building the API, developing the user interface, and finally deploying your application. This tutorial will take your through each step using a project based example.",
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/article.svg",
+    tags: [
+      "Python",
+      "GPT",
+      "WebSockets",
+      "React",
+      "FastAPI",
+      "Redis",
+      "AWS",
+      "API",
+    ],
   },
   {
     id: 2,
     category: "Go",
-    title: "Introduction to APIs and Microservices with Go Lang",
+    title: "Structuring your python software development projects",
     description:
       "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics engine without having to write code.",
-    image_url: BlogImage,
-    tags: ["Python", "API"],
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
+    tags: ["Python", "Software Development"],
   },
 ];
 
@@ -145,16 +153,21 @@ const Blog = () => {
                       }}
                     >
                       <Copy16 color="#539bf5" />
-                      <h4
+                      <a
                         style={{
                           fontSize: "0.8rem",
                           fontWeight: 400,
                           color: "#539bf5",
                           marginLeft: "0.8rem",
                         }}
+                        onClick={() => {
+                          navigator.clipboard.writeText(
+                            `${window.location.href}blog/${article.id}`
+                          );
+                        }}
                       >
                         Copy Link
-                      </h4>
+                      </a>
                     </div>
                   </div>
                 </div>

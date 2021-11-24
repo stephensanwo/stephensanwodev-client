@@ -6,7 +6,7 @@ import ArticleList from "./ArticleList";
 import Options from "./Options";
 import SideNavOptions from "./SideNavOptions";
 import Footer from "../../../shared/components/Footer";
-import { useLocation } from "react-router-dom";
+import { useLocation, Redirect } from "react-router-dom";
 import { PostContext } from "../..";
 import Loader from "../../../shared/components/Loader";
 
@@ -17,6 +17,10 @@ const BlogHome = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  if (data.error) {
+    return <Redirect to="/error" />;
+  }
 
   return (
     <div className="blog-home-container">

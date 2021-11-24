@@ -30,15 +30,33 @@ const Error = () => {
             alignItems: "center",
           }}
         >
-          <h4>Error 404 - Not Found</h4>
+          <h4>Server Unavailable</h4>
           <p style={{ textAlign: "center" }}>
-            This means that the content you are trying to view does not exist,
-            or has been deleted
+            Unfortunately this means that the content you are trying to view is
+            offline at thie moment.
           </p>{" "}
-          <div style={{ marginTop: "2rem" }}>
-            <Link style={{ fontSize: "1em", fontWeight: 800 }} to="/code">
-              Go Back to Code Snippets
-            </Link>
+          <div
+            style={{
+              marginTop: "2rem",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <a style={{ fontSize: "1em", fontWeight: 800 }} href="/">
+              Go Back Home
+            </a>
+            <a style={{ fontSize: "1em", fontWeight: 800 }} href="/blog">
+              Go to Blog
+            </a>
+            <a style={{ fontSize: "1em", fontWeight: 800 }} href="/code">
+              Go to Code Snippets
+            </a>
+
+            <a style={{ fontSize: "1em", fontWeight: 800 }} href="/apps">
+              Go to Apps
+            </a>
           </div>
         </div>
       </div>

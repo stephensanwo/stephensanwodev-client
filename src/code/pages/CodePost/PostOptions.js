@@ -1,6 +1,5 @@
 import React from "react";
-import { top_articles } from "../../../data/tmp_blog";
-
+import { Link } from "react-router-dom";
 const PostOptions = ({ all_posts, code_id }) => {
   return (
     <div className="blog-home-options-container">
@@ -15,10 +14,9 @@ const PostOptions = ({ all_posts, code_id }) => {
           Suggested
         </h4>
       </div>
-      {all_posts
-        .slice(Number(code_id), Number(code_id + 3))
-        .map((article, index) => (
-          <div style={{ marginTop: "2rem" }}>
+      {all_posts.slice(1).map((article, index) => (
+        <div key={index} style={{ marginTop: "2rem" }}>
+          <Link to={`/code/${article.code_id}`}>
             <h4
               style={{
                 fontSize: "0.8em",
@@ -28,18 +26,19 @@ const PostOptions = ({ all_posts, code_id }) => {
             >
               {article.title}
             </h4>
-            <p
-              style={{
-                marginBottom: "0.4em",
-                width: "100%",
-                fontSize: "0.8em",
-              }}
-            >
-              {`${article.description}`.slice(0, 160)}
-              {article.description.length > 160 ? "..." : ""}
-            </p>
-          </div>
-        ))}
+          </Link>
+          <p
+            style={{
+              marginBottom: "0.4em",
+              width: "100%",
+              fontSize: "0.8em",
+            }}
+          >
+            {`${article.description}`.slice(0, 160)}
+            {article.description.length > 160 ? "..." : ""}
+          </p>
+        </div>
+      ))}
     </div>
   );
 };
