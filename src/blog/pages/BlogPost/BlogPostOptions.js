@@ -1,11 +1,12 @@
 import { ArrowLeft24, ArrowUpRight16 } from "@carbon/icons-react";
 import React, { Fragment } from "react";
 import { Link } from "react-scroll";
-import { Redirect, useRouteMatch } from "react-router-dom";
+import { useRouteMatch } from "react-router-dom";
 import Error from "../../Error";
 
 const BlogPostOptions = ({ post_data }) => {
   const { path } = useRouteMatch();
+
   if (post_data) {
     const content_id = post_data.content.map((content_data) =>
       content_data.replaceAll(/\s/g, "")

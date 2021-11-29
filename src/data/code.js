@@ -3,7 +3,7 @@ import { LogoPython16, Code16, Sql16, DataBase16 } from "@carbon/icons-react";
 export const code_categories_small = [
   {
     id: 0,
-    title: "Code",
+    title: "All Code Snippets",
     logo: <Code16 fill="#986ee2" />,
   },
   {

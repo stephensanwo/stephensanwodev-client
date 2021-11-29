@@ -1,102 +1,120 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Launch16, ArrowRight24, Copy16 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
+import { PostContext } from "../..";
+import { InlineLoading } from "carbon-components-react";
 
-const ArticleList = ({ data }) => {
+const ArticleList = () => {
+  const data = useContext(PostContext);
+
+  const fetchData = () => {
+    data.setLimit(data.limit + 2);
+  };
+
   return (
-    <div>
-      {data.blog_posts.map((article, index) => (
-        <div className="blog-home-articles-container">
-          <div className="blog-home-articles-image">
-            <img src={article.image_url} width="100%"></img>
-          </div>
-          <div className="blog-home-articles-description">
-            <h4
-              style={{
-                fontSize: "0.8rem",
-                color: "#539bf5",
-                marginBottom: "0.6em",
-              }}
-            >
-              {article.category}
-            </h4>
-            <Link to={`/blog/${article.post_id}`}>
+    <div style={{ marginTop: "4rem", marginBottom: "4rem" }}>
+      {data.data.data.blog_posts.length === 0 ? (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <h4 style={{ textAlign: "center" }}>
+            {data.isFetching
+              ? ""
+              : `No posts available for the current filter - ${data.filter}`}
+          </h4>
+        </div>
+      ) : (
+        data.data.data.blog_posts.map((article, index) => (
+          <div className="blog-home-articles-container">
+            <div className="blog-home-articles-image">
+              <img src={article.image_url} width="100%"></img>
+            </div>
+            <div className="blog-home-articles-description">
               <h4
                 style={{
-                  marginBottom: "0.8em",
+                  fontSize: "0.8rem",
+                  color: "#539bf5",
+                  marginBottom: "0.6em",
                 }}
-                className="header-link-highlight"
               >
-                {`${article.title}`.slice(0, 80)}
-                {article.title.length > 80 ? "..." : ""}
+                {article.category}
               </h4>
-            </Link>
-            <p
-              style={{
-                marginBottom: "0.4em",
-              }}
-            >
-              {`${article.description}`.slice(0, 120)}
-              {article.description.length > 120 ? "..." : ""}
-            </p>
-            <div className="blog-content-featured-tags">
-              {article.tags.map((tag, index) => (
-                <Tags key={index} type="blog" title={tag} color={"generic"} />
-              ))}
-            </div>
-            <div style={{ display: "flex" }}>
-              <div
-                style={{
-                  width: "40%",
-                  display: "flex",
-                  cursor: "pointer",
-                  alignItems: "center",
-                }}
-              >
-                <Launch16 color="#539bf5" />
+              <Link to={`/blog/${article.post_id}`}>
                 <h4
                   style={{
-                    fontWeight: 400,
-                    fontSize: "0.8rem",
-                    color: "#539bf5",
-                    marginLeft: "0.5rem",
+                    marginBottom: "0.8em",
                   }}
+                  className="header-link-highlight"
                 >
-                  Read More
+                  {`${article.title}`.slice(0, 80)}
+                  {article.title.length > 80 ? "..." : ""}
                 </h4>
-              </div>
-              <div
+              </Link>
+              <p
                 style={{
-                  width: "40%",
-                  display: "flex",
-                  cursor: "pointer",
-                  alignItems: "center",
+                  marginBottom: "0.4em",
                 }}
               >
-                <Copy16 color="#539bf5" />
-                <a
+                {`${article.description}`.slice(0, 120)}
+                {article.description.length > 120 ? "..." : ""}
+              </p>
+              <div className="blog-content-featured-tags">
+                {article.tags.map((tag, index) => (
+                  <Tags key={index} type="blog" title={tag} color={"generic"} />
+                ))}
+              </div>
+              <div style={{ display: "flex" }}>
+                <div
                   style={{
-                    fontWeight: 400,
-                    fontSize: "0.8rem",
-                    color: "#539bf5",
-                    marginLeft: "0.5rem",
-                  }}
-                  onClick={() => {
-                    navigator.clipboard.writeText(
-                      `${window.location.href}/${article.post_id}`
-                    );
+                    width: "40%",
+                    display: "flex",
+                    cursor: "pointer",
+                    alignItems: "center",
                   }}
                 >
-                  Copy Link
-                </a>
+                  <Launch16 color="#539bf5" />
+                  <h4
+                    style={{
+                      fontWeight: 400,
+                      fontSize: "0.8rem",
+                      color: "#539bf5",
+                      marginLeft: "0.5rem",
+                    }}
+                  >
+                    Read More
+                  </h4>
+                </div>
+                <div
+                  style={{
+                    width: "40%",
+                    display: "flex",
+                    cursor: "pointer",
+                    alignItems: "center",
+                  }}
+                >
+                  <Copy16 color="#539bf5" />
+                  <a
+                    style={{
+                      fontWeight: 400,
+                      fontSize: "0.8rem",
+                      color: "#539bf5",
+                      marginLeft: "0.5rem",
+                    }}
+                    onClick={() => {
+                      navigator.clipboard.writeText(
+                        `${window.location.href}/${article.post_id}`
+                      );
+                    }}
+                  >
+                    Copy Link
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))
+      )}
 
-      <div className="see-all-blog">
+      <div className="see-all-blog" onClick={fetchData}>
         <a
           style={{
             fontSize: "1em",
@@ -107,7 +125,13 @@ const ArticleList = ({ data }) => {
         >
           More Posts
         </a>
-        <ArrowRight24 fill="#539bf5" />
+        {data.isFetching ? (
+          <span>
+            <InlineLoading width="24px" height="24px" />
+          </span>
+        ) : (
+          <ArrowRight24 fill="#539bf5" />
+        )}
       </div>
     </div>
   );

@@ -16,7 +16,11 @@ const CodeList = () => {
       {data.data.code_posts.length === 0 ? (
         <div className="app-home-articles-container">
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <h4>No posts available for the current filter - {data.filter}</h4>
+            <h4 style={{ textAlign: "center" }}>
+              {data.isFetching
+                ? ""
+                : `No posts available for the current filter - ${data.filter}`}
+            </h4>
           </div>
         </div>
       ) : (
@@ -39,9 +43,9 @@ const CodeList = () => {
           More Posts
         </a>
         {data.isFetching ? (
-          <div style={{ width: "24px", height: "24px" }}>
-            <InlineLoading />
-          </div>
+          <span>
+            <InlineLoading width="24px" height="24px" />
+          </span>
         ) : (
           <ArrowRight24 fill="#986ee2" />
         )}
