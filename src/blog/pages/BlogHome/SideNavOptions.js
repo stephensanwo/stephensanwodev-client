@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import { ArrowLeft24 } from "@carbon/icons-react";
 import {
   blog_categories_small,
@@ -7,8 +7,11 @@ import {
 } from "../../../data/blog";
 import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
+import { PostContext } from "../..";
 
 const SideNavOptions = () => {
+  const data = useContext(PostContext);
+
   return (
     <Fragment>
       <div className="blog-home-sidenav-container">
@@ -45,7 +48,10 @@ const SideNavOptions = () => {
             </h4>
             <div>
               {blog_categories_small.map((blog_item) => (
-                <div className="blog-sidenav-category-item">
+                <div
+                  className="blog-sidenav-category-item"
+                  onClick={(e) => data.setFilter(e.target.innerText)}
+                >
                   {blog_item.logo}
                   <h4
                     style={{

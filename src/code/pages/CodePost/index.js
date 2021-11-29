@@ -5,7 +5,6 @@ import PostOptions from "./PostOptions";
 import "./style.scss";
 import Footer from "../../../shared/components/Footer";
 import { Redirect, useLocation } from "react-router-dom";
-import { PostContext } from "../..";
 import { Loading } from "carbon-components-react";
 import axios from "axios";
 import { useQuery } from "react-query";
@@ -16,7 +15,7 @@ const CodePost = (props) => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
 
   const getCode = async () => {
@@ -34,15 +33,9 @@ const CodePost = (props) => {
     return <Loading />;
   }
 
-  // if (isFetching) {
-  //   return <Loading />;
-  // }
-
   if (error) {
     <Redirect to="/code" />;
   }
-
-  console.log(data);
 
   const post_count = 20;
 

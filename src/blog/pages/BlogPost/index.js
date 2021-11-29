@@ -5,34 +5,42 @@ import PostOptions from "./PostOptions";
 import "./style.scss";
 import Footer from "../../../shared/components/Footer";
 import { Redirect, useLocation } from "react-router-dom";
-import { PostContext } from "../..";
 import { Loading } from "carbon-components-react";
+import axios from "axios";
+import { useQuery } from "react-query";
+import { PostContext } from "../..";
+import URL from "../../../config";
 
 const BlogPost = (props) => {
   const post_id = props.match.params.post_id;
   const { pathname } = useLocation();
-  const data = useContext(PostContext);
+
+  const context_data = useContext(PostContext);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
 
-  if (data.isLoading) {
-    return <Loading stlye={{ backgroundColor: "green" }} />;
+  const getPost = async () => {
+    const { data } = await axios.get(`${URL}/api/v1/blog/blog_post/${post_id}`);
+    return data;
+  };
+
+  const { isLoading, status, error, data, isFetching } = useQuery(
+    ["post_item", post_id],
+    () => getPost(),
+    { keepPreviousData: false, refetchOnWindowFocus: false }
+  );
+
+  if (isLoading) {
+    return <Loading />;
   }
 
-  if (data.error) {
-    <Redirect to="/blog" />;
+  if (error) {
+    return <Redirect to="/error" />;
   }
 
-  const post_data = data.data.data.blog_posts.filter(
-    (item) => item.post_id === post_id
-  )[0];
-
-  const all_posts = data.data.data.blog_posts;
-  const featured_posts = data.data.data.featured_posts;
-
-  const post_count = data.data.data.blog_posts.length;
+  const post_count = 20;
 
   let next_post_link = `/blog/${Number(post_id) + 1}`;
   let previous_post_link;
@@ -46,26 +54,28 @@ const BlogPost = (props) => {
   return (
     <div className="blog-home-container">
       <div className="blog-home-sidenav">
-        <BlogPostOptions all_posts={all_posts} post_data={post_data} />
+        <BlogPostOptions post_data={data.blog_posts[0]} />
       </div>
       <div className="blog-post-content-container">
         <div className="blog-post-content">
           <div className="blog-post-content-items">
             <PostContent
-              post_data={post_data}
+              post_data={data.blog_posts[0]}
               next_post_link={next_post_link}
               previous_post_link={previous_post_link}
               post_count={post_count}
+              isFetching={isFetching}
             />
-            <Footer data_type={"blog"} />
+            <Footer
+              blogData={data.featured_posts}
+              blogDataLoading={data.isLoading}
+              setBlogFilter={context_data.setFilter}
+              data_type={"blog"}
+            />
           </div>
         </div>
         <div className="blog-home-options">
-          <PostOptions
-            all_posts={all_posts}
-            featured_posts={featured_posts}
-            post_id={post_id}
-          />
+          <PostOptions all_posts={data} post_id={post_id} />
         </div>
       </div>
     </div>

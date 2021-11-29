@@ -31,16 +31,28 @@ const CodeHome = () => {
           <div className="blog-home-content-items">
             <div style={{ display: "flex", alignItems: "center" }}>
               <CodeSyntax fill="#986ee2" />
-              <h4
-                style={{
-                  fontSize: "2rem",
-                  color: "#986ee2",
-                  fontWeight: 600,
-                  marginLeft: "2rem",
-                }}
-              >
-                {data.filter} {data.isFetching ? "..." : ""}
-              </h4>
+              <div>
+                <h4
+                  style={{
+                    fontSize: "2rem",
+                    color: "#986ee2",
+                    fontWeight: 600,
+                    marginLeft: "2rem",
+                  }}
+                >
+                  Code
+                </h4>
+                <small
+                  style={{
+                    fontSize: "0.5rem",
+
+                    fontWeight: 600,
+                    marginLeft: "2rem",
+                  }}
+                >
+                  {data.isFetching ? "..." : data.filter}
+                </small>
+              </div>
             </div>
 
             {data.isLoading ? (
@@ -53,7 +65,11 @@ const CodeHome = () => {
               <CodeList />
             )}
 
-            <Footer data_type={"code"} />
+            <Footer
+              data_type={"code"}
+              codeData={data}
+              setCodeFilter={data.setFilter}
+            />
           </div>
         </div>
         <div className="blog-home-options"></div>

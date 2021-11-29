@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import Navbar from "../shared/components/Navbar";
 import CodeHome from "./pages/CodeHome";
@@ -12,7 +12,7 @@ export const PostContext = React.createContext();
 
 const Code = ({ isNavOpen, setIsNavOpen }) => {
   const { path } = useRouteMatch();
-  const [filter, setFilter] = useState("Code");
+  const [filter, setFilter] = useState("All Code Snippets");
   const [limit, setLimit] = useState(4);
 
   const getCode = async (limit, filter) => {
@@ -28,7 +28,6 @@ const Code = ({ isNavOpen, setIsNavOpen }) => {
     { keepPreviousData: true, refetchOnWindowFocus: false }
   );
 
-  console.log();
   return (
     <PostContext.Provider
       value={{

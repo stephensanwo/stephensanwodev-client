@@ -8,11 +8,28 @@ import {
 import "./style.scss";
 import { blog_categories_small } from "../../../data/blog";
 import { code_categories_small } from "../../../data/code";
-import { top_articles } from "../../../data/tmp_blog";
 import { app_categories_small } from "../../../data/apps";
 import { apps_data } from "../../../data/apps";
+import Loader from "../Loader";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Footer = ({ data_type }) => {
+const Footer = ({
+  data_type,
+  blogData,
+  blogDataLoading,
+  setBlogFilter,
+  setCodeFilter,
+}) => {
+  const { pathname } = useLocation();
+
+  const Refocus = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="footer-component-container">
       {data_type === "app" ? (
@@ -94,7 +111,13 @@ const Footer = ({ data_type }) => {
             </h4>
           </div>
           {code_categories_small.map((app_item) => (
-            <div className="blog-sidenav-category-item">
+            <div
+              className="blog-sidenav-category-item"
+              onClick={(e) => {
+                setCodeFilter(e.target.innerText);
+                Refocus();
+              }}
+            >
               {app_item.logo}
               <h4
                 style={{
@@ -123,7 +146,13 @@ const Footer = ({ data_type }) => {
             </h4>
           </div>
           {blog_categories_small.map((blog_item) => (
-            <div className="blog-sidenav-category-item">
+            <div
+              className="blog-sidenav-category-item"
+              onClick={(e) => {
+                setBlogFilter(e.target.innerText);
+                Refocus();
+              }}
+            >
               {blog_item.logo}
               <h4
                 style={{
@@ -146,29 +175,38 @@ const Footer = ({ data_type }) => {
               Top Blog Posts
             </h4>
           </div>
-          {top_articles.map((article, index) => (
-            <div style={{ marginTop: "1.5rem" }}>
-              <h4
-                style={{
-                  marginBottom: "0.4em",
-                  fontSize: "0.8em",
-                }}
-                className="header-link-highlight"
-              >
-                {article.title}
-              </h4>
-              <p
-                style={{
-                  fontSize: "0.8em",
-                  marginBottom: "0.4em",
-                  width: "100%",
-                }}
-              >
-                {`${article.description}`.slice(0, 160)}
-                {article.description.length > 160 ? "..." : ""}
-              </p>
+          {blogDataLoading ? (
+            <div style={{ marginTop: "2rem" }}>
+              <Loader height="30px" />
+              <Loader height="60px" />
             </div>
-          ))}
+          ) : (
+            blogData.map((article, index) => (
+              <div style={{ marginTop: "1.5rem" }} key={index}>
+                <Link to={`/blog/${article.post_id}`}>
+                  <h4
+                    style={{
+                      marginBottom: "0.4em",
+                      fontSize: "0.8em",
+                    }}
+                    className="header-link-highlight"
+                  >
+                    {article.title}
+                  </h4>
+                  <p
+                    style={{
+                      fontSize: "0.8em",
+                      marginBottom: "0.4em",
+                      width: "100%",
+                    }}
+                  >
+                    {`${article.description}`.slice(0, 160)}
+                    {article.description.length > 160 ? "..." : ""}
+                  </p>
+                </Link>
+              </div>
+            ))
+          )}
         </div>
       )}
 

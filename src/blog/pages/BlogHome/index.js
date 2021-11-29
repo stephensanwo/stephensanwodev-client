@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useContext } from "react";
+import React, { useEffect, useContext, Fragment } from "react";
 import "./style.scss";
 import { Devops } from "@carbon/pictograms-react";
 import FeaturedArticle from "./FeaturedArticle";
@@ -12,8 +12,8 @@ import Loader from "../../../shared/components/Loader";
 
 const BlogHome = () => {
   const { pathname } = useLocation();
-
   const data = useContext(PostContext);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -32,16 +32,28 @@ const BlogHome = () => {
           <div className="blog-home-content-items">
             <div style={{ display: "flex", alignItems: "center" }}>
               <Devops fill="#539bf5" />
-              <h4
-                style={{
-                  fontSize: "2rem",
-                  color: "#539bf5",
-                  fontWeight: 600,
-                  marginLeft: "2rem",
-                }}
-              >
-                Blog
-              </h4>
+              <div>
+                <h4
+                  style={{
+                    fontSize: "2rem",
+                    color: "#539bf5",
+                    fontWeight: 600,
+                    marginLeft: "2rem",
+                  }}
+                >
+                  {data.isFetching ? "Fetching ..." : "Blog"}
+                </h4>
+                <small
+                  style={{
+                    fontSize: "0.5rem",
+
+                    fontWeight: 600,
+                    marginLeft: "2rem",
+                  }}
+                >
+                  {data.isFetching ? "..." : data.filter}
+                </small>
+              </div>
             </div>
             {data.isLoading ? (
               <div style={{ marginTop: "4rem" }}>
@@ -50,12 +62,14 @@ const BlogHome = () => {
                 <Loader height="30px" />
               </div>
             ) : (
-              <FeaturedArticle data={data.data.data.featured_posts[0]} />
+              <FeaturedArticle />
             )}
+
             <div
               className="section-divider-line"
               style={{ marginTop: "4rem", marginBottom: "6rem" }}
             ></div>
+
             {data.isLoading ? (
               <div style={{ marginTop: "4rem" }}>
                 <Loader height="150px" />
@@ -63,10 +77,19 @@ const BlogHome = () => {
                 <Loader height="30px" />
               </div>
             ) : (
-              <ArticleList data={data.data.data} />
+              <ArticleList />
             )}
 
-            <Footer />
+            {data.isLoading ? (
+              <Fragment></Fragment>
+            ) : (
+              <Footer
+                blogData={data.data.data.featured_posts}
+                blogDataLoading={data.isLoading}
+                setBlogFilter={data.setFilter}
+                data_type={"blog"}
+              />
+            )}
           </div>
         </div>
         <div className="blog-home-options">
