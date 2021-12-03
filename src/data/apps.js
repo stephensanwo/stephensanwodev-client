@@ -3,10 +3,9 @@ import { CloudComputing, Robot, Globe } from "@carbon/pictograms-react";
 import {
   Api_116,
   Application16,
-  Settings16,
-  Code16,
-  LogoGithub16,
-  MachineLearning16,
+  Wikis16,
+  MachineLearningModel16,
+  App16,
 } from "@carbon/icons-react";
 
 export const apps_data = [
@@ -19,6 +18,7 @@ export const apps_data = [
     built_with: ["Python", "PostgresSQL", "Redis", "React"],
     app_url: "https://ai.stephensanwo.dev",
     repo_url: "https://github.com/stephensanwo/ai-playground-api",
+    category: ["AI and ML Apps", "Web Apps"],
   },
   {
     id: 2,
@@ -29,6 +29,7 @@ export const apps_data = [
     built_with: ["Python", "OpenCV", "GraphQL", "NodeJs", "React", "MongoDB"],
     app_url: "https://www.hypercompose.com",
     repo_url: "",
+    category: ["AI and ML Apps", "Web Apps"],
   },
   {
     id: 3,
@@ -39,6 +40,7 @@ export const apps_data = [
     built_with: ["Python", "OpenCV", "GraphQL", "NodeJs", "React", "MongoDB"],
     app_url: "",
     repo_url: "",
+    category: ["AI and ML Apps", "Web Apps"],
   },
   {
     id: 4,
@@ -57,9 +59,10 @@ export const apps_data = [
       "https://github.com/stephensanwo/KPMG-Hackathon-Company-Data-Fabric",
     repo_url:
       "https://github.com/stephensanwo/KPMG-Hackathon-Company-Data-Fabric",
+    category: ["Software Package"],
   },
   {
-    id: 4,
+    id: 5,
     name: "Citadel Microservice",
     title: "Data Scrapping for Libgen Books Data",
     desc: "Webscrapper and Flask API for books publicly available on Libgen",
@@ -67,6 +70,7 @@ export const apps_data = [
     built_with: ["Python", "Flask", "API", "BeautifulSoup", "Web Scrapping"],
     app_url: "https://github.com/stephensanwo/citadel-microservice",
     repo_url: "https://github.com/stephensanwo/citadel-microservice",
+    category: ["Web APIs"],
   },
 ];
 
@@ -78,13 +82,24 @@ export const app_categories_small = [
   },
   {
     id: 2,
-    title: "Code Snippets",
-    logo: <Code16 fill="#05aa82" />,
+    title: "AI and ML Apps",
+    logo: <MachineLearningModel16 fill="#05aa82" />,
+  },
+  { id: 3, title: "Web Apps", logo: <Wikis16 fill="#05aa82" /> },
+  {
+    id: 4,
+    title: "Mobile Apps",
+    logo: <Application16 fill="#05aa82" />,
   },
   {
-    id: 3,
-    title: "Github",
-    logo: <LogoGithub16 fill="#05aa82" />,
+    id: 5,
+    title: "Web APIs",
+    logo: <Api_116 fill="#05aa82" />,
+  },
+  {
+    id: 6,
+    title: "Software Package",
+    logo: <App16 fill="#05aa82" />,
   },
 ];
 

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Launch16, Copy16 } from "@carbon/icons-react";
+import { Launch16 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link, useRouteMatch } from "react-router-dom";
 import { Fragment } from "react/cjs/react.production.min";
@@ -50,7 +50,12 @@ const FeaturedArticle = () => {
             </p>
             <div className="blog-content-featured-tags">
               {featured_post[0].tags.map((tag_item, index) => (
-                <Tags type="blog" title={tag_item} color={"generic"} />
+                <Tags
+                  key={index}
+                  type="blog"
+                  title={tag_item}
+                  color={"generic"}
+                />
               ))}
             </div>
             <div className="blog-content-featured-logo">
@@ -75,31 +80,6 @@ const FeaturedArticle = () => {
                     Read More
                   </h4>
                 </Link>
-              </div>
-              <div
-                style={{
-                  width: "200px",
-                  display: "flex",
-                  cursor: "pointer",
-                  alignItems: "center",
-                }}
-              >
-                <Copy16 color="#539bf5" />
-                <a
-                  style={{
-                    fontWeight: 400,
-                    fontSize: "0.8rem",
-                    color: "#539bf5",
-                    marginLeft: "0.8rem",
-                  }}
-                  onClick={() => {
-                    navigator.clipboard.writeText(
-                      `${window.location.href}/${featured_post[0].post_id}`
-                    );
-                  }}
-                >
-                  Copy Link
-                </a>
               </div>
             </div>
           </div>

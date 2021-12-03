@@ -48,7 +48,7 @@ const Card = ({ code_item, featured }) => {
           {code_item.description.length > 100 ? "..." : ""}
         </p>
       </div>
-      <div className="card-links">
+      <div className="card-links card-links-code">
         <div
           style={{
             display: "flex",

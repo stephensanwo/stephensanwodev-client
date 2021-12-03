@@ -40,7 +40,7 @@ const CodeHome = () => {
                     marginLeft: "2rem",
                   }}
                 >
-                  Code
+                  {data.isFetching ? "Fetching ..." : "Code"}
                 </h4>
                 <small
                   style={{

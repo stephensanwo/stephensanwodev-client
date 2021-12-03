@@ -1,10 +1,7 @@
-import React, { useContext } from "react";
-import { top_articles } from "../../../data/tmp_blog";
-import { PostContext } from "../..";
+import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
-import Loader from "../../../shared/components/Loader";
 
-const PostOptions = ({ all_posts, featured_posts, post_id }) => {
+const PostOptions = ({ all_posts, post_id }) => {
   const { path } = useRouteMatch();
   return (
     <div className="blog-home-options-container">
@@ -20,7 +17,7 @@ const PostOptions = ({ all_posts, featured_posts, post_id }) => {
         </h4>
       </div>
       {all_posts.blog_posts.slice(Number(post_id)).map((article, index) => (
-        <div style={{ marginTop: "2rem" }}>
+        <div key={index} style={{ marginTop: "2rem" }}>
           <Link to={`${path}${article.post_id}`}>
             <h4
               style={{

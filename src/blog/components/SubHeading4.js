@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 
 const SubHeading4 = (props) => {
-  console.log(props.id);
   return (
     <Fragment>
       <h4

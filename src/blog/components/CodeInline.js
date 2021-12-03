@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-
 import GlobalTheme from "@atlaskit/theme/components";
 import { CodeBlock } from "@atlaskit/code";
 
 const CodeInline = (props) => {
-  const [mode, setMode] = useState("dark");
   const minWidth = props.children.length;
-
-  console.log(minWidth);
 
   return (
     <span
@@ -18,7 +14,7 @@ const CodeInline = (props) => {
     //   display: "flex",
     // }}
     >
-      <GlobalTheme.Provider value={() => ({ mode })}>
+      <GlobalTheme.Provider value={() => ({ mode: "dark" })}>
         <CodeBlock
           language={props.language}
           text={props.children}

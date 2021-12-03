@@ -47,10 +47,11 @@ const SideNavOptions = () => {
               Topics
             </h4>
             <div>
-              {blog_categories_small.map((blog_item) => (
+              {blog_categories_small.map((blog_item, index) => (
                 <div
                   className="blog-sidenav-category-item"
                   onClick={(e) => data.setFilter(e.target.innerText)}
+                  key={index}
                 >
                   {blog_item.logo}
                   <h4
@@ -105,7 +106,7 @@ const SideNavOptions = () => {
             <div>
               <div className="blog-sidenav-filters">
                 {blog_sort.map((tag, index) => (
-                  <div style={{ marginBottom: "0.5rem" }}>
+                  <div style={{ marginBottom: "0.5rem" }} key={index}>
                     <Tags
                       key={index}
                       type="blog"

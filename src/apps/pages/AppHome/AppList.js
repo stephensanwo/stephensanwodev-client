@@ -1,30 +1,29 @@
-import React from "react";
-import { apps_data } from "../../../data/apps";
+import React, { useContext } from "react";
 import { ArrowRight24 } from "@carbon/icons-react";
 import Card from "../../../shared/components/Card";
+import { AppContext } from ".";
 
 const AppList = () => {
-  return (
-    <div>
-      {apps_data.slice(1).map((app_item, index) => (
-        <div className="app-home-articles-container">
-          <Card app_data={app_item} />
-        </div>
-      ))}
+  const data = useContext(AppContext);
 
-      <div className="see-all-apps">
-        <a
-          style={{
-            fontSize: "1em",
-            fontWeight: 800,
-            color: "#539bf5",
-            marginRight: "0.5rem",
-          }}
-        >
-          More Apps
-        </a>
-        <ArrowRight24 fill="#539bf5" />
-      </div>
+  console.log(data.data.length);
+  return (
+    <div style={{ marginTop: "4rem" }}>
+      {data.data.length === 0 ? (
+        <div className="app-home-articles-container">
+          <h4 style={{ textAlign: "center" }}>
+            {`No Apps available for the current filter - ${data.filter}`}
+          </h4>
+        </div>
+      ) : (
+        data.data.map((app_item, index) => (
+          <div className="app-home-articles-container">
+            <Card app_data={app_item} />
+          </div>
+        ))
+      )}
+
+      <div className="see-all-apps"></div>
     </div>
   );
 };
