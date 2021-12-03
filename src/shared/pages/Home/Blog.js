@@ -144,31 +144,6 @@ const Blog = () => {
                         </h4>
                       </Link>
                     </div>
-                    <div
-                      style={{
-                        width: "40%",
-                        display: "flex",
-                        cursor: "pointer",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Copy16 color="#539bf5" />
-                      <a
-                        style={{
-                          fontSize: "0.8rem",
-                          fontWeight: 400,
-                          color: "#539bf5",
-                          marginLeft: "0.8rem",
-                        }}
-                        onClick={() => {
-                          navigator.clipboard.writeText(
-                            `${window.location.href}blog/${article.id}`
-                          );
-                        }}
-                      >
-                        Copy Link
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>

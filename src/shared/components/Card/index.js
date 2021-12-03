@@ -42,7 +42,7 @@ const Card = ({ app_data, featured }) => {
           {app_data.desc.length > 100 ? "..." : ""}
         </p>
       </div>
-      <div className="card-links">
+      <div className="card-links card-links-all">
         <div
           style={{
             display: "flex",

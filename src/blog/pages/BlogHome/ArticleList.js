@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Launch16, ArrowRight24, Copy16 } from "@carbon/icons-react";
+import { Launch16, ArrowRight24 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
 import { PostContext } from "../..";
@@ -24,7 +24,7 @@ const ArticleList = () => {
         </div>
       ) : (
         data.data.data.blog_posts.map((article, index) => (
-          <div className="blog-home-articles-container">
+          <div className="blog-home-articles-container" key={index}>
             <div className="blog-home-articles-image">
               <img src={article.image_url} width="100%"></img>
             </div>
@@ -72,41 +72,18 @@ const ArticleList = () => {
                   }}
                 >
                   <Launch16 color="#539bf5" />
-                  <h4
-                    style={{
-                      fontWeight: 400,
-                      fontSize: "0.8rem",
-                      color: "#539bf5",
-                      marginLeft: "0.5rem",
-                    }}
-                  >
-                    Read More
-                  </h4>
-                </div>
-                <div
-                  style={{
-                    width: "40%",
-                    display: "flex",
-                    cursor: "pointer",
-                    alignItems: "center",
-                  }}
-                >
-                  <Copy16 color="#539bf5" />
-                  <a
-                    style={{
-                      fontWeight: 400,
-                      fontSize: "0.8rem",
-                      color: "#539bf5",
-                      marginLeft: "0.5rem",
-                    }}
-                    onClick={() => {
-                      navigator.clipboard.writeText(
-                        `${window.location.href}/${article.post_id}`
-                      );
-                    }}
-                  >
-                    Copy Link
-                  </a>
+                  <Link to={`/blog/${article.post_id}`}>
+                    <h4
+                      style={{
+                        fontWeight: 400,
+                        fontSize: "0.8rem",
+                        color: "#539bf5",
+                        marginLeft: "0.5rem",
+                      }}
+                    >
+                      Read More
+                    </h4>
+                  </Link>
                 </div>
               </div>
             </div>

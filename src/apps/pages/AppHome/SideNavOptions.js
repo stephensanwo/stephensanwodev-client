@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import { ArrowLeft24 } from "@carbon/icons-react";
 import {
   app_categories_small,
@@ -7,9 +7,11 @@ import {
 } from "../../../data/apps";
 import Tags from "../../../shared/components/Tags";
 import { useRouteMatch, Link } from "react-router-dom";
+import { AppContext } from ".";
 
 const SideNavOptions = () => {
   const { path } = useRouteMatch();
+  const data = useContext(AppContext);
   return (
     <Fragment>
       <div className="app-home-sidenav-container">
@@ -45,7 +47,10 @@ const SideNavOptions = () => {
             </h4>
             <div>
               {app_categories_small.map((app_item) => (
-                <div className="app-sidenav-category-item">
+                <div
+                  className="app-sidenav-category-item"
+                  onClick={(e) => data.setFilter(e.target.innerText)}
+                >
                   {app_item.logo}
 
                   <h4

@@ -2,7 +2,6 @@ import { ArrowLeft24, ArrowUpRight16 } from "@carbon/icons-react";
 import React, { Fragment } from "react";
 import { Link } from "react-scroll";
 import { useRouteMatch } from "react-router-dom";
-import Error from "../../Error";
 
 const BlogPostOptions = ({ post_data }) => {
   const { path } = useRouteMatch();

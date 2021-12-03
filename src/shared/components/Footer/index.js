@@ -20,6 +20,7 @@ const Footer = ({
   blogDataLoading,
   setBlogFilter,
   setCodeFilter,
+  setAppFilter,
 }) => {
   const { pathname } = useLocation();
 
@@ -48,7 +49,13 @@ const Footer = ({
             </h4>
           </div>
           {app_categories_small.map((app_item) => (
-            <div className="blog-sidenav-category-item">
+            <div
+              className="blog-sidenav-category-item"
+              onClick={(e) => {
+                setAppFilter(e.target.innerText);
+                Refocus();
+              }}
+            >
               {app_item.logo}
               <h4
                 style={{
@@ -73,15 +80,17 @@ const Footer = ({
           </div>
           {apps_data.map((apps, index) => (
             <div style={{ marginTop: "1.5rem" }}>
-              <h4
-                style={{
-                  fontSize: "0.8em",
-                  marginBottom: "0.4em",
-                }}
-                className="header-link-highlight"
-              >
-                {apps.title}
-              </h4>
+              <a href={apps.app_url} target="_blank" rel="noopener noreferrer">
+                <h4
+                  style={{
+                    fontSize: "0.8em",
+                    marginBottom: "0.4em",
+                  }}
+                  className="header-link-highlight"
+                >
+                  {apps.title}
+                </h4>
+              </a>
               <p
                 style={{
                   fontSize: "0.8em",
@@ -193,17 +202,17 @@ const Footer = ({
                   >
                     {article.title}
                   </h4>
-                  <p
-                    style={{
-                      fontSize: "0.8em",
-                      marginBottom: "0.4em",
-                      width: "100%",
-                    }}
-                  >
-                    {`${article.description}`.slice(0, 160)}
-                    {article.description.length > 160 ? "..." : ""}
-                  </p>
                 </Link>
+                <p
+                  style={{
+                    fontSize: "0.8em",
+                    marginBottom: "0.4em",
+                    width: "100%",
+                  }}
+                >
+                  {`${article.description}`.slice(0, 160)}
+                  {article.description.length > 160 ? "..." : ""}
+                </p>
               </div>
             ))
           )}

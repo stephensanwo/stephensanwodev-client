@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import Navbar from "../shared/components/Navbar";
 import BlogHome from "./pages/BlogHome";

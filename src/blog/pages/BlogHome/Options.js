@@ -25,7 +25,7 @@ const Options = () => {
         </div>
       ) : (
         data.data.data.featured_posts.map((article, index) => (
-          <div style={{ marginTop: "2rem" }}>
+          <div key={index} style={{ marginTop: "2rem" }}>
             <Link to={`${path}${article.post_id}`}>
               <h4
                 style={{
@@ -62,7 +62,7 @@ const Options = () => {
         </h4>
       </div>
       {apps_data.map((app_data, index) => (
-        <div style={{ marginTop: "2rem" }}>
+        <div key={index} style={{ marginTop: "2rem" }}>
           <a href={app_data.app_url} target="_blank" rel="noopener noreferrer">
             <h4
               style={{

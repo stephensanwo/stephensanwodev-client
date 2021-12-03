@@ -1,13 +1,18 @@
-import { ArrowLeft24, ArrowUpRight16 } from "@carbon/icons-react";
+import { ArrowLeft24 } from "@carbon/icons-react";
 import React, { Fragment, useContext } from "react";
-import { useRouteMatch } from "react-router-dom";
+import { useRouteMatch, useHistory } from "react-router-dom";
 import { code_categories_small } from "../../../data/code";
 import { PostContext } from "../..";
 
 const CodePostOptions = () => {
   const { path } = useRouteMatch();
-
+  const history = useHistory();
   const data = useContext(PostContext);
+
+  const clickTopic = (e) => {
+    data.setFilter(e.target.innerText);
+    history.push("/code");
+  };
 
   return (
     <Fragment>
@@ -42,8 +47,12 @@ const CodePostOptions = () => {
               Topics
             </h4>
             <div>
-              {code_categories_small.map((blog_item) => (
-                <div className="blog-sidenav-category-item">
+              {code_categories_small.map((blog_item, index) => (
+                <div
+                  className="blog-sidenav-category-item"
+                  onClick={(e) => clickTopic(e)}
+                  key={index}
+                >
                   {blog_item.logo}
                   <h4
                     style={{
