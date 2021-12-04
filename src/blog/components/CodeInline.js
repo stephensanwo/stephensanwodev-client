@@ -16,7 +16,7 @@ const CodeInline = (props) => {
     //   display: "flex",
     // }}
     >
-      <GlobalTheme.Provider value={() => ({ mode })}>
+      <GlobalTheme.Provider value={() => ({})}>
         <CodeBlock
           language={props.language}
           text={props.children}
