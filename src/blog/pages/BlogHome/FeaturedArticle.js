@@ -4,6 +4,7 @@ import Tags from "../../../shared/components/Tags";
 import { Link, useRouteMatch } from "react-router-dom";
 import { Fragment } from "react/cjs/react.production.min";
 import { PostContext } from "../..";
+import moment from "moment";
 
 const FeaturedArticle = () => {
   const { path } = useRouteMatch();
@@ -43,6 +44,24 @@ const FeaturedArticle = () => {
                 {featured_post[0].title.length > 80 ? "..." : ""}
               </h4>
             </Link>
+            <div
+              style={{
+                display: "flex",
+                marginBottom: "1em",
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: "IBM Plex Sans",
+                  fontWeight: 500,
+                  fontSize: "0.8em",
+                  color: "#768390",
+                }}
+              >
+                Written By: {featured_post[0].author},{" "}
+                {moment(featured_post[0].creation_date, "YYYYMMDD").fromNow()}
+              </p>
+            </div>
 
             <p>
               {`${featured_post[0].description}`.slice(0, 200)}

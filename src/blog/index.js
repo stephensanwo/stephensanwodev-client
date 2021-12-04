@@ -13,7 +13,7 @@ export const PostContext = React.createContext();
 const Blog = ({ isNavOpen, setIsNavOpen }) => {
   const { path } = useRouteMatch();
   const [filter, setFilter] = useState("All Categories");
-  const [limit, setLimit] = useState(2);
+  const [limit, setLimit] = useState(10);
 
   const getPosts = async (limit, filter) => {
     const data = await axios.get(

@@ -8,8 +8,8 @@ import moment from "moment";
 
 const PostContent = ({
   code_content,
-  previous_post_link,
-  next_post_link,
+  older_post_link,
+  newer_post_link,
   post_count,
   all_posts,
   isFetching,
@@ -57,7 +57,7 @@ const PostContent = ({
             style={{ marginBottom: "1rem" }}
           >
             {code_content.tags.map((tag, index) => (
-              <Tags type="blog" title={tag} color={"generic"} />
+              <Tags key={index} type="blog" title={tag} color={"generic"} />
             ))}
           </div>
         )}
@@ -162,7 +162,7 @@ const PostContent = ({
           style={{ marginTop: "4rem", marginBottom: "2rem" }}
         ></div>
         <div className="next-previous-post">
-          {code_content.code_id === "1" ? (
+          {code_content.code_id == post_count ? (
             <div className="next-previous-item">
               <ArrowLeft24 fill="#986ee2" />
               <Link
@@ -187,9 +187,9 @@ const PostContent = ({
                   color: "#986ee2",
                   marginLeft: "0.5rem",
                 }}
-                to={previous_post_link}
+                to={newer_post_link}
               >
-                Previous Post
+                Newer Post
               </Link>
             </div>
           )}
@@ -197,9 +197,20 @@ const PostContent = ({
           <h4>
             {code_content.code_id} of {post_count}
           </h4>
-          {all_posts.length < 2 ? (
+          {code_content.code_id == "1" ? (
             <div className="next-previous-item">
-              <Fragment></Fragment>
+              <Link
+                style={{
+                  fontSize: "1em",
+                  fontWeight: 800,
+                  color: "#986ee2",
+                  marginRight: "0.5rem",
+                }}
+                to={"/code"}
+              >
+                Code Snippets
+              </Link>
+              <ArrowRight24 fill="#986ee2" />
             </div>
           ) : (
             <div className="next-previous-item">
@@ -210,9 +221,9 @@ const PostContent = ({
                   color: "#986ee2",
                   marginRight: "0.5rem",
                 }}
-                to={next_post_link}
+                to={older_post_link}
               >
-                Next Post
+                Older Post
               </Link>
 
               <ArrowRight24 fill="#986ee2" />

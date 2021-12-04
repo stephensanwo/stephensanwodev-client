@@ -8,7 +8,7 @@ const CodeList = () => {
   const data = useContext(PostContext);
 
   const fetchData = () => {
-    data.setLimit(data.limit + 2);
+    data.setLimit(data.limit + 5);
   };
 
   return (

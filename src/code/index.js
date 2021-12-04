@@ -13,7 +13,7 @@ export const PostContext = React.createContext();
 const Code = ({ isNavOpen, setIsNavOpen }) => {
   const { path } = useRouteMatch();
   const [filter, setFilter] = useState("All Code Snippets");
-  const [limit, setLimit] = useState(4);
+  const [limit, setLimit] = useState(10);
 
   const getCode = async (limit, filter) => {
     const { data } = await axios.get(

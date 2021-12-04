@@ -4,12 +4,13 @@ import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
 import { PostContext } from "../..";
 import { InlineLoading } from "carbon-components-react";
+import moment from "moment";
 
 const ArticleList = () => {
   const data = useContext(PostContext);
 
   const fetchData = () => {
-    data.setLimit(data.limit + 2);
+    data.setLimit(data.limit + 5);
   };
 
   return (
@@ -41,14 +42,32 @@ const ArticleList = () => {
               <Link to={`/blog/${article.post_id}`}>
                 <h4
                   style={{
-                    marginBottom: "0.8em",
+                    marginBottom: "0.5em",
                   }}
                   className="header-link-highlight"
                 >
-                  {`${article.title}`.slice(0, 80)}
-                  {article.title.length > 80 ? "..." : ""}
+                  {`${article.title}`.slice(0, 60)}
+                  {article.title.length > 60 ? "..." : ""}
                 </h4>
               </Link>
+              <div
+                style={{
+                  display: "flex",
+                  marginBottom: "0.6em",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "IBM Plex Sans",
+                    fontWeight: 500,
+                    fontSize: "0.8em",
+                    color: "#768390",
+                  }}
+                >
+                  Written By: {article.author},{" "}
+                  {moment(article.creation_date, "YYYYMMDD").fromNow()}
+                </p>
+              </div>
               <p
                 style={{
                   marginBottom: "0.4em",
@@ -62,6 +81,7 @@ const ArticleList = () => {
                   <Tags key={index} type="blog" title={tag} color={"generic"} />
                 ))}
               </div>
+
               <div style={{ display: "flex" }}>
                 <div
                   style={{

@@ -77,9 +77,6 @@ const SampleComponent = () => {
 };
 
 export default SampleComponent;
-
-
-
 `}
 
       </Code>
