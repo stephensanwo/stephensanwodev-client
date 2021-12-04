@@ -7,7 +7,7 @@ const Code = (props) => {
   const [mode, setMode] = useState("dark");
 
   return (
-    <GlobalTheme.Provider value={() => ({ mode })}>
+    <GlobalTheme.Provider value={() => ({})}>
       <CodeBlock
         language={props.language}
         text={props.children}
