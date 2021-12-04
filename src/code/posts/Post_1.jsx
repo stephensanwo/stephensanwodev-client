@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import SubHeading4 from "../components/SubHeading4";
 import Paragraph from "../components/Paragraph";
 import Code from "../components/Code";
 

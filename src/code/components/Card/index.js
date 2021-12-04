@@ -4,6 +4,7 @@ import { Code32, Launch16, LogoPython32 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
 import { Javascript } from "@carbon/pictograms-react";
+import moment from "moment";
 
 const Card = ({ code_item, featured }) => {
   return (
@@ -74,10 +75,23 @@ const Card = ({ code_item, featured }) => {
           </Link>
         </div>
       </div>
-      <div style={{ marginTop: "2em", display: "flex", flexWrap: "wrap" }}>
+      <div style={{ marginTop: "1.2em", display: "flex", flexWrap: "wrap" }}>
         {code_item.tags.map((item, index) => (
           <Tags type="blog" title={item} />
         ))}
+      </div>
+      <div style={{ marginTop: "1.2em", display: "flex" }}>
+        <p
+          style={{
+            fontFamily: "IBM Plex Sans",
+            fontWeight: 500,
+            fontSize: "0.8em",
+            color: "#768390",
+          }}
+        >
+          Created By: {code_item.author},{" "}
+          {moment(code_item.creation_date, "YYYYMMDD").fromNow()}
+        </p>
       </div>
     </div>
   );

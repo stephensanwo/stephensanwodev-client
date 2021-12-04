@@ -8,8 +8,8 @@ import moment from "moment";
 
 const PostContent = ({
   post_data,
-  previous_post_link,
-  next_post_link,
+  newer_post_link,
+  older_post_link,
   post_count,
 }) => {
   if (post_data) {
@@ -140,7 +140,7 @@ const PostContent = ({
         ></div>
 
         <div className="next-previous-post">
-          {post_data.post_id === "1" ? (
+          {post_data.post_id == post_count ? (
             <div className="next-previous-item">
               <ArrowLeft24 fill="#539bf5" />
               <Link
@@ -165,9 +165,9 @@ const PostContent = ({
                   color: "#539bf5",
                   marginLeft: "0.5rem",
                 }}
-                to={previous_post_link}
+                to={newer_post_link}
               >
-                Previous Post
+                Newer Post
               </Link>
             </div>
           )}
@@ -175,9 +175,20 @@ const PostContent = ({
           <h4>
             {post_data.post_id} of {post_count}
           </h4>
-          {post_data.post_id == post_count ? (
+          {post_data.post_id == "1" ? (
             <div className="next-previous-item">
-              <Fragment></Fragment>
+              <Link
+                style={{
+                  fontSize: "1em",
+                  fontWeight: 800,
+                  color: "#539bf5",
+                  marginRight: "0.5rem",
+                }}
+                to={"/blog"}
+              >
+                Blog Home
+              </Link>
+              <ArrowRight24 fill="#539bf5" />
             </div>
           ) : (
             <div className="next-previous-item">
@@ -188,9 +199,9 @@ const PostContent = ({
                   color: "#539bf5",
                   marginRight: "0.5rem",
                 }}
-                to={next_post_link}
+                to={older_post_link}
               >
-                Next Post
+                Older Post
               </Link>
               <ArrowRight24 fill="#539bf5" />
             </div>

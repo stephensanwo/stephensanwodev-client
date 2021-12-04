@@ -14,7 +14,7 @@ const Video = (props) => {
           id={props.id}
           src={props.children}
           width="100%"
-          // autoplay="autoplay"
+          autoplay="autoplay"
         ></video>
       </div>
     </Fragment>

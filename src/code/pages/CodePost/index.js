@@ -37,15 +37,15 @@ const CodePost = (props) => {
     <Redirect to="/code" />;
   }
 
-  const post_count = 20;
+  const post_count = 5;
 
-  let next_post_link = `/code/${Number(code_id) + 1}`;
-  let previous_post_link;
+  let newer_post_link = `/code/${Number(code_id) + 1}`;
+  let older_post_link;
 
   if (Number(code_id) >= 2) {
-    previous_post_link = `/code/${Number(code_id) - 1}`;
+    older_post_link = `/code/${Number(code_id) - 1}`;
   } else {
-    previous_post_link = `/code`;
+    older_post_link = `/code`;
   }
 
   return (
@@ -59,8 +59,8 @@ const CodePost = (props) => {
             <PostContent
               code_content={data[0]}
               all_posts={data}
-              next_post_link={next_post_link}
-              previous_post_link={previous_post_link}
+              newer_post_link={newer_post_link}
+              older_post_link={older_post_link}
               post_count={post_count}
               isFetching={isFetching}
             />

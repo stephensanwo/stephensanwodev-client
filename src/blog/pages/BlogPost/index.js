@@ -40,15 +40,15 @@ const BlogPost = (props) => {
     return <Redirect to="/error" />;
   }
 
-  const post_count = 20;
+  const post_count = 2;
 
-  let next_post_link = `/blog/${Number(post_id) + 1}`;
-  let previous_post_link;
+  let newer_post_link = `/blog/${Number(post_id) + 1}`;
+  let older_post_link;
 
   if (Number(post_id) >= 2) {
-    previous_post_link = `/blog/${Number(post_id) - 1}`;
+    older_post_link = `/blog/${Number(post_id) - 1}`;
   } else {
-    previous_post_link = `/blog`;
+    older_post_link = `/blog`;
   }
 
   return (
@@ -61,8 +61,8 @@ const BlogPost = (props) => {
           <div className="blog-post-content-items">
             <PostContent
               post_data={data.blog_posts[0]}
-              next_post_link={next_post_link}
-              previous_post_link={previous_post_link}
+              newer_post_link={newer_post_link}
+              older_post_link={older_post_link}
               post_count={post_count}
               isFetching={isFetching}
             />

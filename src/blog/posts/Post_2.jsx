@@ -46,7 +46,7 @@ This creates a clean python environment that is separate from your global python
 
 <Paragraph>This illustrative video is really just me testing how well videos work on my blog in production 😊</Paragraph>
 <Video>
-https://stephensanwo.fra1.digitaloceanspaces.com/blog/blog-gifs/Screen%20Recording%202021-09-11%20at%2023.24.24.mov
+https://stephensanwodev.s3.eu-west-2.amazonaws.com/blog-images/python-environment-setup.mov
 </Video>
 
 <SubHeading id={content[2]}>

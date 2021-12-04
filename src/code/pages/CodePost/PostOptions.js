@@ -14,31 +14,48 @@ const PostOptions = ({ all_posts, code_id }) => {
           Suggested
         </h4>
       </div>
-      {all_posts.slice(1).map((article, index) => (
-        <div key={index} style={{ marginTop: "2rem" }}>
-          <Link to={`/code/${article.code_id}`}>
-            <h4
-              style={{
-                fontSize: "0.8em",
-                marginBottom: "0.4em",
-              }}
-              className="header-link-highlight"
-            >
-              {article.title}
-            </h4>
-          </Link>
-          <p
+      {all_posts.length === 1 ? (
+        <div
+          style={{
+            marginTop: "2rem",
+          }}
+        >
+          <h4
             style={{
-              marginBottom: "0.4em",
-              width: "100%",
               fontSize: "0.8em",
+              marginBottom: "0.4em",
             }}
           >
-            {`${article.description}`.slice(0, 160)}
-            {article.description.length > 160 ? "..." : ""}
-          </p>
+            No Suggestions
+          </h4>
         </div>
-      ))}
+      ) : (
+        all_posts.slice(1).map((article, index) => (
+          <div key={index} style={{ marginTop: "2rem" }}>
+            <Link to={`/code/${article.code_id}`}>
+              <h4
+                style={{
+                  fontSize: "0.8em",
+                  marginBottom: "0.4em",
+                }}
+                className="header-link-highlight"
+              >
+                {article.title}
+              </h4>
+            </Link>
+            <p
+              style={{
+                marginBottom: "0.4em",
+                width: "100%",
+                fontSize: "0.8em",
+              }}
+            >
+              {`${article.description}`.slice(0, 160)}
+              {article.description.length > 160 ? "..." : ""}
+            </p>
+          </div>
+        ))
+      )}
     </div>
   );
 };
