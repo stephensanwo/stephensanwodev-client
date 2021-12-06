@@ -5,17 +5,15 @@ import {
   Application16,
   DataStructured24,
   DataStructured16,
-  LogoPython24,
-  LogoPython16,
   MachineLearningModel24,
   MachineLearningModel16,
-  Settings24,
-  Settings16,
   Wikis24,
   Wikis16,
   Blockchain16,
   Blockchain24,
   Blog16,
+  Chat24,
+  Chat16,
 } from "@carbon/icons-react";
 
 export const blog_categories = [
@@ -44,6 +42,11 @@ export const blog_categories = [
     id: 6,
     title: "Blockchain Development",
     logo: <Blockchain24 fill="#539bf5" />,
+  },
+  {
+    id: 7,
+    title: "Developer Guides",
+    logo: <Chat24 fill="#539bf5" />,
   },
 ];
 
@@ -78,6 +81,11 @@ export const blog_categories_small = [
     id: 6,
     title: "Blockchain Development",
     logo: <Blockchain16 fill="#539bf5" />,
+  },
+  {
+    id: 7,
+    title: "Developer Guides",
+    logo: <Chat16 fill="#539bf5" />,
   },
 ];
 

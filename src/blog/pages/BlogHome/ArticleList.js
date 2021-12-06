@@ -46,8 +46,8 @@ const ArticleList = () => {
                   }}
                   className="header-link-highlight"
                 >
-                  {`${article.title}`.slice(0, 60)}
-                  {article.title.length > 60 ? "..." : ""}
+                  {`${article.title}`.slice(0, 180)}
+                  {article.title.length > 180 ? "..." : ""}
                 </h4>
               </Link>
               <div
@@ -73,8 +73,8 @@ const ArticleList = () => {
                   marginBottom: "0.4em",
                 }}
               >
-                {`${article.description}`.slice(0, 120)}
-                {article.description.length > 120 ? "..." : ""}
+                {`${article.description}`.slice(0, 60)}
+                {article.description.length > 60 ? "..." : ""}
               </p>
               <div className="blog-content-featured-tags">
                 {article.tags.map((tag, index) => (

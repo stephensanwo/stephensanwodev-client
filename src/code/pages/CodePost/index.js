@@ -48,6 +48,8 @@ const CodePost = (props) => {
     older_post_link = `/code`;
   }
 
+  document.title = `${data[0].category} | ${data[0].title}`;
+
   return (
     <div className="blog-home-container">
       <div className="blog-home-sidenav">

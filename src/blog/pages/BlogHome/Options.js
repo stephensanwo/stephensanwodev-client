@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { apps_data } from "../../../data/apps";
 import { PostContext } from "../..";
 import { Link, useRouteMatch } from "react-router-dom";
 import Loader from "../../../shared/components/Loader";
@@ -51,40 +50,6 @@ const Options = () => {
           </div>
         ))
       )}
-
-      <div style={{ borderBottom: "1px solid #2b323d", marginTop: "4rem" }}>
-        <h4
-          style={{
-            marginBottom: "1em",
-          }}
-        >
-          Top Apps
-        </h4>
-      </div>
-      {apps_data.map((app_data, index) => (
-        <div key={index} style={{ marginTop: "2rem" }}>
-          <a href={app_data.app_url} target="_blank" rel="noopener noreferrer">
-            <h4
-              style={{
-                marginBottom: "0.4em",
-                fontSize: "0.8em",
-              }}
-              className="header-link-highlight"
-            >
-              {app_data.title}
-            </h4>
-          </a>
-          <p
-            style={{
-              marginBottom: "0.4em",
-              width: "100%",
-              fontSize: "0.8em",
-            }}
-          >
-            {app_data.desc}
-          </p>
-        </div>
-      ))}
     </div>
   );
 };

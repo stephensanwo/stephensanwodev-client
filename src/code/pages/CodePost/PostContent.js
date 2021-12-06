@@ -195,7 +195,7 @@ const PostContent = ({
           )}
 
           <h4>
-            {code_content.code_id} of {post_count}
+            {code_content.code_id}/{post_count}
           </h4>
           {code_content.code_id == "1" ? (
             <div className="next-previous-item">
