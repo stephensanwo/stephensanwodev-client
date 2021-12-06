@@ -69,57 +69,6 @@ const SideNavOptions = () => {
           </div>
         </div>
       </div>
-      <div className="blog-home-sidenav-container">
-        <div className="blog-home-sidenav-content">
-          <div>
-            <h4
-              style={{
-                color: "#adbac7",
-                marginBottom: "2em",
-              }}
-            >
-              Filters
-            </h4>
-            <div>
-              <div className="blog-sidenav-filters">
-                {blog_filters.map((tag, index) => (
-                  <div style={{ marginBottom: "0.5rem" }}>
-                    <Tags key={index} type="blog" title={tag} color={"green"} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="blog-home-sidenav-container blog-last">
-        <div className="blog-home-sidenav-content">
-          <div>
-            <h4
-              style={{
-                color: "#adbac7",
-                marginBottom: "2em",
-              }}
-            >
-              Sort By
-            </h4>
-            <div>
-              <div className="blog-sidenav-filters">
-                {blog_sort.map((tag, index) => (
-                  <div style={{ marginBottom: "0.5rem" }} key={index}>
-                    <Tags
-                      key={index}
-                      type="blog"
-                      title={tag}
-                      color={"purple"}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </Fragment>
   );
 };

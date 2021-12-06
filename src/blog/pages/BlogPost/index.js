@@ -14,7 +14,6 @@ import URL from "../../../config";
 const BlogPost = (props) => {
   const post_id = props.match.params.post_id;
   const { pathname } = useLocation();
-
   const context_data = useContext(PostContext);
 
   useEffect(() => {
@@ -40,7 +39,7 @@ const BlogPost = (props) => {
     return <Redirect to="/error" />;
   }
 
-  const post_count = 2;
+  const post_count = 4;
 
   let newer_post_link = `/blog/${Number(post_id) + 1}`;
   let older_post_link;
@@ -50,6 +49,8 @@ const BlogPost = (props) => {
   } else {
     older_post_link = `/blog`;
   }
+
+  document.title = `${data.blog_posts[0].category} | ${data.blog_posts[0].title}`;
 
   return (
     <div className="blog-home-container">
