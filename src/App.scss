@@ -216,10 +216,10 @@ span.prismjs .token.string {
 }
 
 @media (min-width: 0px) and (max-width: 599px) {
-  // span.prismjs {
-  //   font-size: 0.6em;
-  //   font-weight: 400;
-  //   font-family: "IBM Plex Mono", sans-serif;
-  //   line-height: 1.5;
-  // }
+  span.prismjs {
+    font-size: 0.7em;
+    font-weight: 400;
+    font-family: "IBM Plex Mono", sans-serif;
+    line-height: 1.5;
+  }
 }

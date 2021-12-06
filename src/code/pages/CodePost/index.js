@@ -9,6 +9,7 @@ import { Loading } from "carbon-components-react";
 import axios from "axios";
 import { useQuery } from "react-query";
 import URL from "../../../config";
+import Helmet from "react-helmet";
 
 const CodePost = (props) => {
   const code_id = props.match.params.code_id;
@@ -48,10 +49,21 @@ const CodePost = (props) => {
     older_post_link = `/code`;
   }
 
-  document.title = `${data[0].category} | ${data[0].title}`;
+  document.title = `Stephen Sanwo - Code - ${data[0].title}`;
 
+  let seo_keywords = "";
+  data[0].tags.map((tag, index) => {
+    return (seo_keywords = seo_keywords + tag + ", ");
+  });
+
+  const meta_content = `${data[0].category} - ${data[0].title}`;
   return (
     <div className="blog-home-container">
+      <Helmet>
+        <title>Stephen Sanwo - Code - {data[0].title}</title>
+        <meta name="description" content={data[0].description} />
+        <meta name="keywords" content={seo_keywords} />
+      </Helmet>
       <div className="blog-home-sidenav">
         <CodePostOptions />
       </div>

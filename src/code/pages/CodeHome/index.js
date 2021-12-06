@@ -7,6 +7,7 @@ import Footer from "../../../shared/components/Footer";
 import { useLocation, Redirect } from "react-router-dom";
 import { PostContext } from "../..";
 import Loader from "../../../shared/components/Loader";
+import Helmet from "react-helmet";
 
 const CodeHome = () => {
   const { pathname } = useLocation();
@@ -20,9 +21,21 @@ const CodeHome = () => {
   if (data.error) {
     return <Redirect to="/error" />;
   }
+  document.title = `Stephen Sanwo - Code - ${data.filter}`;
 
   return (
     <div className="blog-home-container">
+      <Helmet>
+        <title>Stephen Sanwo - Code</title>
+        <meta
+          name="description"
+          content="Welcome to my Developer Code Library. I write share Software and ML Code Snippets"
+        />
+        <meta
+          name="keywords"
+          content="API, Software Development, AI, Deep Learning, Mobile Development, Data Structures, Algorithms, Blockchain, Python, React, JavaScript, AWS"
+        />
+      </Helmet>
       <div className="blog-home-sidenav">
         <SideNavOptions />
       </div>

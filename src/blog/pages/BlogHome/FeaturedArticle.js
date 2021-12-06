@@ -11,8 +11,6 @@ const FeaturedArticle = () => {
   const data = useContext(PostContext);
   const featured_post = data.data.data.featured_posts;
 
-  console.log(data);
-
   return (
     <Fragment>
       {featured_post.length === 0 ? (

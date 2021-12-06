@@ -7,6 +7,7 @@ import { useQuery } from "react-query";
 import axios from "axios";
 import Error from "./Error";
 import URL from "../config";
+import Helmet from "react-helmet";
 
 export const PostContext = React.createContext();
 
@@ -42,6 +43,17 @@ const Blog = ({ isNavOpen, setIsNavOpen }) => {
         filter,
       }}
     >
+      <Helmet>
+        <title>Stephen Sanwo - Blog</title>
+        <meta
+          name="description"
+          content="Welcome to my Developer Blog. I write on Software and AI Development "
+        />
+        <meta
+          name="keywords"
+          content="API, Software Development, AI, Deep Learning, Mobile Development, Data Structures, Algorithms, Blockchain, Python, React, JavaScript, AWS"
+        />
+      </Helmet>
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Switch>
         <Route path={`${path}/error`} component={Error} />

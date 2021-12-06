@@ -64,7 +64,7 @@ const ArticleList = () => {
                     color: "#768390",
                   }}
                 >
-                  Written By: {article.author},{" "}
+                  By: {article.author},{" "}
                   {moment(article.creation_date, "YYYYMMDD").fromNow()}
                 </p>
               </div>
