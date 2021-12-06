@@ -10,6 +10,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import { PostContext } from "../..";
 import URL from "../../../config";
+import Helmet from "react-helmet";
 
 const BlogPost = (props) => {
   const post_id = props.match.params.post_id;
@@ -50,10 +51,23 @@ const BlogPost = (props) => {
     older_post_link = `/blog`;
   }
 
-  document.title = `${data.blog_posts[0].category} | ${data.blog_posts[0].title}`;
+  document.title = `Stephen Sanwo - Blog - ${data.blog_posts[0].title}`;
+
+  let seo_keywords = "";
+  data.blog_posts[0].tags.map((tag, index) => {
+    return (seo_keywords = seo_keywords + tag + ", ");
+  });
+
+  const meta_content = `${data.blog_posts[0].category} - ${data.blog_posts[0].title}`;
 
   return (
     <div className="blog-home-container">
+      <Helmet>
+        <title>Stephen Sanwo - Blog - {data.blog_posts[0].title}</title>
+        <meta name="description" content={data.blog_posts[0].description} />
+        <meta name="keywords" content={seo_keywords} />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="blog-home-sidenav">
         <BlogPostOptions post_data={data.blog_posts[0]} />
       </div>

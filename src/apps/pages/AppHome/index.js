@@ -20,6 +20,8 @@ const AppHome = () => {
     data = apps_data.filter((item) => item.category.includes(filter));
   }
 
+  document.title = `Stephen Sanwo - Apps - ${filter}`;
+
   return (
     <AppContext.Provider
       value={{

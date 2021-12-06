@@ -9,6 +9,7 @@ import Footer from "../../../shared/components/Footer";
 import { useLocation, Redirect } from "react-router-dom";
 import { PostContext } from "../..";
 import Loader from "../../../shared/components/Loader";
+import Helmet from "react-helmet";
 
 const BlogHome = () => {
   const { pathname } = useLocation();
@@ -22,8 +23,21 @@ const BlogHome = () => {
     return <Redirect to="/error" />;
   }
 
+  document.title = `Stephen Sanwo - Blog - ${data.filter}`;
+
   return (
     <div className="blog-home-container">
+      <Helmet>
+        <title>Stephen Sanwo - Blog</title>
+        <meta
+          name="description"
+          content="Welcome to my Developer Blog. I write on Software and AI Development"
+        />
+        <meta
+          name="keywords"
+          content="API, Software Development, AI, Deep Learning, Mobile Development, Data Structures, Algorithms, Blockchain, Python, React, JavaScript, AWS"
+        />
+      </Helmet>
       <div className="blog-home-sidenav">
         <SideNavOptions />
       </div>
@@ -46,7 +60,6 @@ const BlogHome = () => {
                 <small
                   style={{
                     fontSize: "0.5rem",
-
                     fontWeight: 600,
                     marginLeft: "2rem",
                   }}
