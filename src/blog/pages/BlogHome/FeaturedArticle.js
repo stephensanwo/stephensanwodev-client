@@ -30,7 +30,7 @@ const FeaturedArticle = () => {
             >
               Featured Series
             </h4>
-            <Link to={`${path}${featured_post[0].post_id}`}>
+            <Link to={`${path}${featured_post[0].post_url}`}>
               <h4
                 style={{
                   fontSize: "1.8em",
@@ -85,7 +85,7 @@ const FeaturedArticle = () => {
                 }}
               >
                 <Launch16 color="#539bf5" />
-                <Link to={`/blog/${featured_post[0].post_id}`}>
+                <Link to={`/blog/${featured_post[0].post_url}`}>
                   <h4
                     style={{
                       fontWeight: 400,

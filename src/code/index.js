@@ -47,7 +47,7 @@ const Code = ({ isNavOpen, setIsNavOpen }) => {
         <title>Stephen Sanwo - Code</title>
         <meta
           name="description"
-          content="Welcome to my Developer Code Library. I write share Software and ML Code Snippets"
+          content="Welcome to my Developer Code Share. I share Software and ML Code Snippets"
         />
         <meta
           name="keywords"
@@ -57,7 +57,7 @@ const Code = ({ isNavOpen, setIsNavOpen }) => {
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Switch>
         <Route path={`${path}/error`} component={Error} />
-        <Route exact path={`${path}/:code_id`} component={CodePost} />
+        <Route exact path={`${path}/:code_url`} component={CodePost} />
         <Route path={`${path}/`} component={CodeHome} />
       </Switch>
     </PostContext.Provider>

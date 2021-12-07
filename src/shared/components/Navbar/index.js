@@ -33,7 +33,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             <Options data={{ name: "Apps", link: "/apps" }} />
           </div>
           <div className="nav-action-4">
-            <Options data={{ name: "Code Snippets", link: "/code" }} />
+            <Options data={{ name: "Code Share", link: "/code" }} />
           </div>
           <div className="nav-action-5">
             <a
@@ -153,7 +153,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                   style={{ display: "flex", alignItems: "center" }}
                   onClick={() => setIsNavOpen("closed")}
                 >
-                  <Link to={"/code"}>Code Snippets</Link>
+                  <Link to={"/code"}>Code Share</Link>
                 </div>
                 <div
                   onClick={() => setIsNavOpen("closed")}

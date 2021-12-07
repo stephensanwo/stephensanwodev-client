@@ -3,17 +3,19 @@ import { ArrowRight24, ArrowLeft24 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import "./style.scss";
 import Loader from "../../../shared/components/Loader";
-import { Link, Redirect } from "react-router-dom";
+import { Link, Redirect, useHistory } from "react-router-dom";
 import moment from "moment";
 
 const PostContent = ({
   code_content,
-  older_post_link,
   newer_post_link,
-  post_count,
-  all_posts,
+  newer_post_value,
+  older_post_link,
+  older_post_value,
   isFetching,
 }) => {
+  let history = useHistory();
+
   if (code_content) {
     const importPost = (id) =>
       lazy(() =>
@@ -23,8 +25,6 @@ const PostContent = ({
       );
 
     const Post = importPost(code_content.code_id);
-
-    console.log(all_posts);
 
     return (
       <div className="blog-post-container">
@@ -162,7 +162,7 @@ const PostContent = ({
           style={{ marginTop: "4rem", marginBottom: "2rem" }}
         ></div>
         <div className="next-previous-post">
-          {code_content.code_id == post_count ? (
+          {older_post_value === "Back Home" ? (
             <div className="next-previous-item">
               <ArrowLeft24 fill="#986ee2" />
               <Link
@@ -172,32 +172,30 @@ const PostContent = ({
                   color: "#986ee2",
                   marginLeft: "0.5rem",
                 }}
-                to={"/code"}
+                to={older_post_link}
               >
-                Code Snippets
+                {older_post_value}
               </Link>
             </div>
           ) : (
             <div className="next-previous-item">
               <ArrowLeft24 fill="#986ee2" />
-              <Link
+              <a
                 style={{
                   fontSize: "1em",
                   fontWeight: 800,
                   color: "#986ee2",
                   marginLeft: "0.5rem",
                 }}
-                to={newer_post_link}
+                onClick={history.goBack}
               >
-                Newer Post
-              </Link>
+                {older_post_value}
+              </a>
             </div>
           )}
 
-          <h4>
-            {code_content.code_id}/{post_count}
-          </h4>
-          {code_content.code_id == "1" ? (
+          <h4>{code_content.code_id}</h4>
+          {newer_post_value === "Back Home" ? (
             <div className="next-previous-item">
               <Link
                 style={{
@@ -206,9 +204,9 @@ const PostContent = ({
                   color: "#986ee2",
                   marginRight: "0.5rem",
                 }}
-                to={"/code"}
+                to={newer_post_link}
               >
-                Code Snippets
+                {newer_post_value}
               </Link>
               <ArrowRight24 fill="#986ee2" />
             </div>
@@ -221,11 +219,10 @@ const PostContent = ({
                   color: "#986ee2",
                   marginRight: "0.5rem",
                 }}
-                to={older_post_link}
+                to={newer_post_link}
               >
-                Older Post
+                {newer_post_value}
               </Link>
-
               <ArrowRight24 fill="#986ee2" />
             </div>
           )}

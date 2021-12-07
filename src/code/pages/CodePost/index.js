@@ -12,7 +12,7 @@ import URL from "../../../config";
 import Helmet from "react-helmet";
 
 const CodePost = (props) => {
-  const code_id = props.match.params.code_id;
+  const code_url = props.match.params.code_url;
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -20,12 +20,14 @@ const CodePost = (props) => {
   }, [pathname]);
 
   const getCode = async () => {
-    const { data } = await axios.get(`${URL}/api/v1/blog/code_data/${code_id}`);
+    const { data } = await axios.get(
+      `${URL}/api/v1/blog/code_post?code_url=${code_url}`
+    );
     return data.code_posts;
   };
 
   const { isLoading, status, error, data, isFetching } = useQuery(
-    ["code_item", code_id],
+    ["code_item", code_url],
     () => getCode(),
     { keepPreviousData: false, refetchOnWindowFocus: false }
   );
@@ -38,15 +40,26 @@ const CodePost = (props) => {
     <Redirect to="/code" />;
   }
 
-  const post_count = 5;
+  let newer_post_link;
+  let newer_post_value;
 
-  let newer_post_link = `/code/${Number(code_id) + 1}`;
-  let older_post_link;
-
-  if (Number(code_id) >= 2) {
-    older_post_link = `/code/${Number(code_id) - 1}`;
+  if (data.length > 1) {
+    newer_post_link = `/code/${data[1].code_url}`;
+    newer_post_value = "Next Post";
   } else {
-    older_post_link = `/code`;
+    newer_post_link = "/code";
+    newer_post_value = "Back Home";
+  }
+
+  let older_post_link;
+  let older_post_value;
+
+  if (data[0].code_id === "1") {
+    older_post_link = "/code";
+    older_post_value = "Back Home";
+  } else {
+    older_post_link = "";
+    older_post_value = "Previous Post";
   }
 
   document.title = `Stephen Sanwo - Code - ${data[0].title}`;
@@ -74,15 +87,16 @@ const CodePost = (props) => {
               code_content={data[0]}
               all_posts={data}
               newer_post_link={newer_post_link}
+              newer_post_value={newer_post_value}
               older_post_link={older_post_link}
-              post_count={post_count}
+              older_post_value={older_post_value}
               isFetching={isFetching}
             />
             <Footer data_type={"code"} />
           </div>
         </div>
         <div className="blog-home-options">
-          <PostOptions all_posts={data} code_id={code_id} />
+          <PostOptions all_posts={data} code_id={data[0].code_id} />
         </div>
       </div>
     </div>

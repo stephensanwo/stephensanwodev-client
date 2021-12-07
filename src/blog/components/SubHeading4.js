@@ -10,7 +10,6 @@ const SubHeading4 = (props) => {
           marginBottom: "1rem",
           lineHeight: 1.5,
         }}
-        id={props.id}
       >
         {props.children}
       </h4>

@@ -39,7 +39,7 @@ const ArticleList = () => {
               >
                 {article.category}
               </h4>
-              <Link to={`/blog/${article.post_id}`}>
+              <Link to={`/blog/${article.post_url}`}>
                 <h4
                   style={{
                     marginBottom: "0.5em",
@@ -92,7 +92,7 @@ const ArticleList = () => {
                   }}
                 >
                   <Launch16 color="#539bf5" />
-                  <Link to={`/blog/${article.post_id}`}>
+                  <Link to={`/blog/${article.post_url}`}>
                     <h4
                       style={{
                         fontWeight: 400,

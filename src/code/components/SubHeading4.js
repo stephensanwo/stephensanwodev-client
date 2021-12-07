@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 
 const SubHeading4 = (props) => {
-  console.log(props.id);
   return (
     <Fragment>
       <h4
@@ -12,7 +11,6 @@ const SubHeading4 = (props) => {
           marginBottom: "0.4em",
           lineHeight: 1.5,
         }}
-        id={props.id}
       >
         {props.children}
       </h4>
