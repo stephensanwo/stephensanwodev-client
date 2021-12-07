@@ -13,7 +13,7 @@ import URL from "../../../config";
 import Helmet from "react-helmet";
 
 const BlogPost = (props) => {
-  const post_id = props.match.params.post_id;
+  const post_url = props.match.params.post_url;
   const { pathname } = useLocation();
   const context_data = useContext(PostContext);
 
@@ -22,12 +22,14 @@ const BlogPost = (props) => {
   }, [pathname]);
 
   const getPost = async () => {
-    const { data } = await axios.get(`${URL}/api/v1/blog/blog_post/${post_id}`);
+    const { data } = await axios.get(
+      `${URL}/api/v1/blog/blog_post?post_url=${post_url}`
+    );
     return data;
   };
 
   const { isLoading, status, error, data, isFetching } = useQuery(
-    ["post_item", post_id],
+    ["post_item", post_url],
     () => getPost(),
     { keepPreviousData: false, refetchOnWindowFocus: false }
   );
@@ -40,15 +42,26 @@ const BlogPost = (props) => {
     return <Redirect to="/error" />;
   }
 
-  const post_count = 4;
+  let newer_post_link;
+  let newer_post_value;
 
-  let newer_post_link = `/blog/${Number(post_id) + 1}`;
-  let older_post_link;
-
-  if (Number(post_id) >= 2) {
-    older_post_link = `/blog/${Number(post_id) - 1}`;
+  if (data.blog_posts.length > 1) {
+    newer_post_link = `/blog/${data.blog_posts[1].post_url}`;
+    newer_post_value = "Next Post";
   } else {
-    older_post_link = `/blog`;
+    newer_post_link = "/blog";
+    newer_post_value = "Back Home";
+  }
+
+  let older_post_link;
+  let older_post_value;
+
+  if (data.blog_posts[0].post_id === "1") {
+    older_post_link = "/blog";
+    older_post_value = "Back Home";
+  } else {
+    older_post_link = "";
+    older_post_value = "Previous Post";
   }
 
   document.title = `Stephen Sanwo - Blog - ${data.blog_posts[0].title}`;
@@ -77,9 +90,11 @@ const BlogPost = (props) => {
             <PostContent
               post_data={data.blog_posts[0]}
               newer_post_link={newer_post_link}
+              newer_post_value={newer_post_value}
               older_post_link={older_post_link}
-              post_count={post_count}
+              older_post_value={older_post_value}
               isFetching={isFetching}
+              all_data={data.blog_posts}
             />
             <Footer
               blogData={data.featured_posts}
@@ -90,7 +105,7 @@ const BlogPost = (props) => {
           </div>
         </div>
         <div className="blog-home-options">
-          <PostOptions all_posts={data} post_id={post_id} />
+          <PostOptions all_posts={data} post_id={data.blog_posts[0].post_id} />
         </div>
       </div>
     </div>

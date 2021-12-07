@@ -57,7 +57,7 @@ const Blog = ({ isNavOpen, setIsNavOpen }) => {
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Switch>
         <Route path={`${path}/error`} component={Error} />
-        <Route exact path={`${path}/:post_id`} component={BlogPost} />
+        <Route exact path={`${path}/:post_url`} component={BlogPost} />
         <Route path={`${path}/`} component={BlogHome} />
       </Switch>
     </PostContext.Provider>

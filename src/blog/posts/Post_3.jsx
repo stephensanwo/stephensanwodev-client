@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
 import SubHeading from "../components/SubHeading";
-import SubHeading4 from "../components/SubHeading4";
 import Paragraph from "../components/Paragraph";
-import Image from "../components/Image"
 import ListItem from "../components/ListItem";
 import CodeInline from "../components/CodeInline";
 import InlineLink from "../components/InlineLink";

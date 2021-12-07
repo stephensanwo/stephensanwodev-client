@@ -18,7 +18,7 @@ const PostOptions = ({ all_posts, post_id }) => {
       </div>
       {all_posts.blog_posts.slice(Number(post_id)).map((article, index) => (
         <div key={index} style={{ marginTop: "2rem" }}>
-          <Link to={`${path}${article.post_id}`}>
+          <Link to={`${article.post_url}`}>
             <h4
               style={{
                 fontSize: "0.8em",

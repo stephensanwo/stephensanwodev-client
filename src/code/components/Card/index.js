@@ -24,7 +24,7 @@ const Card = ({ code_item, featured }) => {
           </h4>
           <Link
             className="header-link-highlight"
-            to={`/code/${code_item.code_id}`}
+            to={`/code/${code_item.code_url}`}
           >
             {code_item.title}
           </Link>
@@ -58,7 +58,7 @@ const Card = ({ code_item, featured }) => {
           }}
         >
           <Launch16 color="#986ee2" />
-          <Link to={`/code/${code_item.code_id}`}>
+          <Link to={`/code/${code_item.code_url}`}>
             <h4
               style={{
                 fontFamily: "IBM Plex Sans",

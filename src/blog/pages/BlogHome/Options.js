@@ -25,7 +25,7 @@ const Options = () => {
       ) : (
         data.data.data.featured_posts.map((article, index) => (
           <div key={index} style={{ marginTop: "2rem" }}>
-            <Link to={`${path}${article.post_id}`}>
+            <Link to={`${path}${article.post_url}`}>
               <h4
                 style={{
                   marginBottom: "0.4em",
