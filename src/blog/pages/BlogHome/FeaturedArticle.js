@@ -39,7 +39,7 @@ const FeaturedArticle = () => {
                 className="header-link-highlight"
               >
                 {`${featured_post[0].series_title}`.slice(0, 80)}
-                {featured_post[0].title.length > 80 ? "..." : ""}
+                {featured_post[0].series_title.length > 80 ? "..." : ""}
               </h4>
             </Link>
             <div
