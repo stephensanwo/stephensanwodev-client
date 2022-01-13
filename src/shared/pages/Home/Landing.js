@@ -7,8 +7,8 @@ const Landing = () => {
     <div className="landing-content">
       <h4>✋🏽 Hi, I'm</h4>
       <h1>Stephen Sanwo</h1>
-      <h4>I Build Software and Artificial Intelligence Solutions</h4>
-      <p style={{ width: "100%" }}>
+      <h2>I Build Software and AI Solutions</h2>
+      {/* <p style={{ width: "100%" }}>
         I am a full-stack software, and artificial intelligence solutions
         developer, skilled in architecting data-driven solutions in complex
         data-oriented environments, building and deploying solutions that cut
@@ -16,7 +16,7 @@ const Landing = () => {
         digital solutions development team for the GRC Unit at KPMG Nigeria,
         where I develop and maintain scalable analytics solutions for clients
         and internal use cases.
-      </p>
+      </p> */}
       <div className="contact-section">
         <h4>Get in touch</h4>
         <div className="contact-section-logo">

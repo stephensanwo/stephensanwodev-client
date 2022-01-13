@@ -59,7 +59,7 @@ const CodePost = (props) => {
     older_post_value = "Back Home";
   } else {
     older_post_link = "";
-    older_post_value = "Previous Post";
+    older_post_value = "Back";
   }
 
   document.title = `Stephen Sanwo - Code - ${data[0].title}`;

@@ -29,15 +29,17 @@ const featured_articles = [
       "AWS",
       "API",
     ],
+    url: "https://www.stephensanwo.dev/blog/build-a-full-stack-ai-chatbot-part-i-introduction",
   },
   {
     id: 2,
-    category: "Go",
-    title: "Structuring your python software development projects",
+    category: "Python",
+    title: "Build a full stack AI Chatbot Part II - GPT-J-6B Wrapper",
     description:
-      "From predicting user growth to revenue forecasts, Non-technical users across several functions can now leverage the powerful facebook prophet analytics engine without having to write code.",
+      "In this section, we will focus on building a wrapper to communicate with the GPT-J-6B API, send prompts from a user to the API in a conversational format, and receive and transform responses for our chat application",
     image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
     tags: ["Python", "Software Development"],
+    url: "https://www.stephensanwo.dev/blog/build-a-full-stack-ai-chatbot-part-ii-gpt-j-6b-wrapper",
   },
 ];
 
@@ -93,7 +95,11 @@ const Blog = () => {
                   >
                     {article.category}
                   </h4>
-                  <Link to={`/blog/${article.id}`}>
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <h4
                       style={{
                         marginBottom: "0.8em",
@@ -102,7 +108,7 @@ const Blog = () => {
                     >
                       {article.title}
                     </h4>
-                  </Link>
+                  </a>
                   <p
                     style={{
                       marginBottom: "0.4em",
@@ -131,7 +137,11 @@ const Blog = () => {
                       }}
                     >
                       <Launch16 color="#539bf5" />
-                      <Link to={`/blog/${article.id}`}>
+                      <a
+                        href={article.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <h4
                           style={{
                             fontSize: "0.8rem",
@@ -142,7 +152,7 @@ const Blog = () => {
                         >
                           Read More
                         </h4>
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

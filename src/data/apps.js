@@ -1,4 +1,10 @@
-import { CloudComputing, Robot, Globe } from "@carbon/pictograms-react";
+import {
+  CloudComputing,
+  Robot,
+  Globe,
+  Desktop,
+  Network,
+} from "@carbon/pictograms-react";
 
 import {
   Api_116,
@@ -42,8 +48,31 @@ export const apps_data = [
     repo_url: "",
     category: ["AI and ML Apps", "Web Apps"],
   },
+
   {
     id: 4,
+    name: "Stephen Sanwo Dev Client",
+    title: "Web Application & Blog",
+    desc: "The Web client that powers the stephensanwo.dev blog and codeshare platform",
+    logo: <Desktop fill="#05aa82" width="48px" height="48px" />,
+    built_with: ["React", "JavaScript", "Hooks", "React Query", "Axios"],
+    app_url: "https://github.com/stephensanwo?tab=repositories",
+    repo_url: "https://github.com/stephensanwo?tab=repositories",
+    category: ["Web APIs"],
+  },
+  {
+    id: 5,
+    name: "Stephen Sanwo Dev API",
+    title: "Core backend and API",
+    desc: "Core backend and APIs that power the stephensanwo.dev blog and codeshare platform",
+    logo: <Network fill="#05aa82" width="48px" height="48px" />,
+    built_with: ["Python", "FastAPI", "REST", "MongoDB", "Redis"],
+    app_url: "https://github.com/stephensanwo/stephensanwodev-api",
+    repo_url: "https://github.com/stephensanwo/stephensanwodev-api",
+    category: ["Web APIs"],
+  },
+  {
+    id: 6,
     name: "Data Scrapping and Ingestion for Global Company Data",
     title: "Company Data Fabric",
     desc: "A Data ingestion pipeline for company centric data from multiple sources. 6482 Companies base information available, and more data available for S&P 500 companies",
@@ -62,7 +91,7 @@ export const apps_data = [
     category: ["Software Package"],
   },
   {
-    id: 5,
+    id: 7,
     name: "Citadel Microservice",
     title: "Data Scrapping for Libgen Books Data",
     desc: "Webscrapper and Flask API for books publicly available on Libgen",
