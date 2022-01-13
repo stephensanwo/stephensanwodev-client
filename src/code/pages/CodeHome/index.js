@@ -11,7 +11,6 @@ import Helmet from "react-helmet";
 
 const CodeHome = () => {
   const { pathname } = useLocation();
-
   const data = useContext(PostContext);
 
   useEffect(() => {

@@ -4,6 +4,7 @@
   max-width: 100vw;
   padding-left: 100px;
   padding-right: 100px;
+  min-height: 100vh;
 }
 
 .home-content {
@@ -27,16 +28,25 @@
 }
 
 .landing-content h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: #adbac7;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(90deg, #05aa82, #1c8df0);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #05aa82;
+  // -webkit-text-fill-color: transparent;
+  // background: linear-gradient(90deg, #05aa82, #1c8df0);
+  // -webkit-background-clip: text;
+  // background-clip: text;
+}
+
+.landing-content h2 {
+  font-size: 4rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #05aa82;
 }
 
 .landing-content h4 {
@@ -189,6 +199,9 @@
   margin-top: 2rem;
 }
 
+.about-content a {
+  color: #986ee2;
+}
 // Blog Content
 
 .blog-content {
@@ -556,7 +569,11 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 2.8rem;
+    font-size: 5rem;
+  }
+  .landing-content h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 
   .contact-section-logo-item {
@@ -698,7 +715,11 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
+  }
+
+  .landing-content h2 {
+    font-size: 2.5rem;
   }
 
   .blog-content-featured-container-item {
@@ -796,7 +817,11 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+  }
+
+  .landing-content h2 {
+    font-size: 2.5rem;
   }
 
   .blog-content-featured-container-item {
@@ -882,7 +907,7 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 4.5rem;
+    font-size: 7rem;
   }
 
   .blog-content-featured-container-item {
@@ -961,7 +986,7 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 

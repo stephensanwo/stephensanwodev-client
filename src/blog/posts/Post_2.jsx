@@ -32,7 +32,7 @@ const Post_2 = ({content}) => {
 </Paragraph>
 <Paragraph>We will be using python version 3.8, and in the code above, we are creating a virtual environment for our python project, which will be named env. To activate the virtual environment, use the command below within the terminal</Paragraph>
 
-      <Paragraph>
+    
 
       <Paragraph>
 <CodeInline language = "bash">
@@ -89,6 +89,8 @@ This tutorial is focused on building a full stack chat application with an integ
 In the server root, create a folder called src, this will be the working folder for our server, then within the src folder create a model.py file, which will be the file we create requests to the GPT-J-GB generate API endpoint, as shown below.
 </Paragraph>
 
+      <Paragraph>
+    
       <Code language = {"py"}>
         {`def login():
     response = {"errors": {}, "data": {}, "token": {}}
@@ -108,6 +110,7 @@ In the server root, create a folder called src, this will be the working folder 
 
       </Code>
       </Paragraph>
+
       <Paragraph>
       One of the best ways to learn how to develop full stack applications is to build projects that cover the end to end development process, from designing the solution architecture, to building the API, developing the user interface, and finally deploying your application. This tutorial will take your through each step using a project based example. The topics we will cover include:
       </Paragraph>

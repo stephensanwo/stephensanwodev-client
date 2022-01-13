@@ -36,7 +36,7 @@ const Apps = () => {
             <h4>Top Projects</h4>
           </div>
           <div className="app-content-featured-container">
-            {apps_data.map((app_data, index) => (
+            {apps_data.slice(0, 5).map((app_data, index) => (
               <div className="app-content-featured-container-item">
                 <Card app_data={app_data} key={index} featured={true} />
               </div>

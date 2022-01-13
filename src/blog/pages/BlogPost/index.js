@@ -61,7 +61,7 @@ const BlogPost = (props) => {
     older_post_value = "Back Home";
   } else {
     older_post_link = "";
-    older_post_value = "Previous Post";
+    older_post_value = "Back";
   }
 
   document.title = `Stephen Sanwo - Blog - ${data.blog_posts[0].title}`;

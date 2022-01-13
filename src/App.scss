@@ -108,6 +108,9 @@ body {
   background-color: #1c2128;
 }
 
+//151922
+//0f1216
+
 // Loader
 .bx--loading__stroke {
   stroke: #768390;
@@ -188,6 +191,10 @@ span {
 }
 span.prismjs {
   color: #adbac7;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "IBM Plex Mono", sans-serif;
+  line-height: 1.5;
 }
 
 span.prismjs .token.punctuation,
@@ -217,9 +224,6 @@ span.prismjs .token.string {
 
 @media (min-width: 0px) and (max-width: 599px) {
   span.prismjs {
-    font-size: 0.7em;
-    font-weight: 400;
-    font-family: "IBM Plex Mono", sans-serif;
-    line-height: 1.5;
+    font-size: 0.5em;
   }
 }
