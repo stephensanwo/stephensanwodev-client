@@ -34,10 +34,10 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #05aa82;
-  // -webkit-text-fill-color: transparent;
-  // background: linear-gradient(90deg, #05aa82, #1c8df0);
-  // -webkit-background-clip: text;
-  // background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #05aa82, #1c8df0);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .landing-content h2 {
@@ -47,6 +47,10 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #05aa82;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #05aa82, #986ee2);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .landing-content h4 {
