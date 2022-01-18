@@ -11,13 +11,16 @@ const Post_3 = ({content}) => {
     <Fragment>
       <SubHeading id={content[0]}>Introduction</SubHeading>
       <Paragraph>
-      When developing software with python, a simplistic approach is to install python on your machine, install all your required libraries via the terminal, write all your code in a single .py file or jupyter notebook, and run your python program. This is a common approach for a lot of newbies and many people that work with python for analytics.
+      When developing software with python, a simplistic approach is to install python on your machine, install all your required libraries via the terminal, write all your code in a single .py file or jupyter notebook, and run your python program in the terminal. This is a common approach for a lot of newbies and many people transitioning from working with python for data analytics.
       </Paragraph>
       <Paragraph>
-      While this works, in complex software development projects, which could involve building a python library or an API, or software development kit, often times, you will be working with multiple files and multiple packages and dependencies. As a result of this, you will need to isolate your python development for that particular software.
+      While this works fine for simple python scripting projects, in complex software development projects, which could involve building a python library, an API, or software development kit, often times, you will be working with multiple files and multiple packages and dependencies. As a result of this, you will need to isolate your python development environment for that particular project. 
       </Paragraph>
       <Paragraph>
-      Consider this scenario, you are working on app A, using your system installed python and you pip install packageX version 1.0 to your global python program. Then you switch to another project B on your local machine, and you install the same packageX but version 2.0, which has some breaking changes between version 1.0 and 2.0. All of a sudden when you go back to run your project A, you get all sorts of errors, and your app does not run. How can you avoid this? Well you guessed...Virtual Environments.
+      Consider this scenario, you are working on app A, using your system installed python and you pip install packageX version 1.0 to your global python library. Then you switch to another project B on your local machine, and you install the same packageX but version 2.0, which has some breaking changes between version 1.0 and 2.0. All of a sudden when you go back to run your project A, you get all sorts of errors, and your app does not run. This is a practical scenario you can run into when building software with python, and to get around this, we use Virtual Environments. 
+      </Paragraph>
+      <Paragraph>
+      This tutorial will cover everything you need to know about virtual environments and how to set it up.
       </Paragraph>
 
 
