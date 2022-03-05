@@ -35,6 +35,7 @@ const Post_5 = ({content}) => {
       <Paragraph>
       You can think of environment variables as a dictionary, where the key is the environment variable name and the value is the environment variable value. Setting environment varies between operating systems.
       </Paragraph>
+      
       <Paragraph>
       What does this mean? When you activate a virtual environment for your project, your project essentially becomes its own self contained application, independent of the system installed python and its modules. Your new virtual environment has its own pip to install libraries, its own library folder, where new libraries are added, its own python interpreter for the python version you used to activate the environment.
       </Paragraph>
