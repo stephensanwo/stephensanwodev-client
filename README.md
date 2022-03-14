@@ -1,4 +1,4 @@
-# Frontend UI for stephensanwo.dev
+# Frontend User Interface for stephensanwo.dev
 
 ![Status](https://img.shields.io/website?down_message=Temporarily%20Down&style=for-the-badge&up_message=Live&url=https%3A%2F%2Fwww.stephensanwo.dev)
 #### Props
@@ -13,11 +13,10 @@
 - JavaScript
 - JSX
 - SCSS
-- CloudFlare & CloudFlare Pages
+- Cloudflare (SSL, DDoS) & Cloudflare Pages (Hosting, Cache, CDN, DNS)
 - AWS Cloudfront CDN and S3
 - React Helmet (SEO Optimization)
 - Framer Motion
-- IBM Carbon
 - StephenSanwoDotDev Design System
 
 #### Latest Blog Posts
