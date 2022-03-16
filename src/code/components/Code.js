@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import { ThemeModes } from "@atlaskit/theme/types";
-import GlobalTheme from "@atlaskit/theme/components";
-import { CodeBlock } from "@atlaskit/code";
-
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 const Code = (props) => {
-  const [mode, setMode] = useState("dark");
   return (
-    <GlobalTheme.Provider value={() => ({})}>
-      <CodeBlock
-        language={props.language}
-        text={props.children}
-        // showLineNumbers={false}
-        // highlight="11-15"
-      />
-    </GlobalTheme.Provider>
+    <SyntaxHighlighter
+      language={props.language}
+      style={atomOneDark}
+      showLineNumbers
+      customStyle={{
+        borderRadius: "6px",
+        backgroundColor: "#2128317a",
+        padding: "10px",
+      }}
+    >
+      {props.children}
+    </SyntaxHighlighter>
   );
 };
 

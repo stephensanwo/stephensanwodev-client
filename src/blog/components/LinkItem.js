@@ -6,8 +6,8 @@ const LinkItem = (props) => {
       <p
         style={{
           fontWeight: 400,
-          fontSize: "1em",
-          color: "#adbac7",
+          fontSize: "1.1em",
+          color: "#addec9",
           lineHeight: 2,
           marginBottom: "1rem",
         }}

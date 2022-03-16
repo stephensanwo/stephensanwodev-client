@@ -1,30 +1,21 @@
-import React, { useState } from "react";
-import { ThemeModes } from "@atlaskit/theme/types";
-import GlobalTheme from "@atlaskit/theme/components";
-import { CodeBlock } from "@atlaskit/code";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const CodeInline = (props) => {
-  const minWidth = props.children.length;
-  const [mode, setMode] = useState("dark");
+const Code = (props) => {
   return (
-    <span
-    // style={{
-    //   minWidth: minWidth * 8,
-    //   maxWidth: "100%",
-    //   margin: 0,
-    //   display: "flex",
-    // }}
+    <SyntaxHighlighter
+      language={props.language}
+      style={atomOneDark}
+      customStyle={{
+        borderRadius: "6px",
+        backgroundColor: "#2128317a",
+        padding: "1px",
+        paddingLeft: "10px",
+      }}
     >
-      <GlobalTheme.Provider value={() => ({})}>
-        <CodeBlock
-          language={props.language}
-          text={props.children}
-          showLineNumbers={false}
-          // highlight="11-15"
-        />
-      </GlobalTheme.Provider>
-    </span>
+      {props.children}
+    </SyntaxHighlighter>
   );
 };
 
-export default CodeInline;
+export default Code;

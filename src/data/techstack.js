@@ -13,12 +13,12 @@ export const tech_stack = [
   {
     category: "Programming Language",
     tools: ["Python", "Javascript", "Go", "TypeScript"],
-    logo: <Code24 fill="#986ee2" />,
+    logo: <Code24 fill="#addec9" />,
   },
   {
     category: "Web & Mobile Development",
     tools: ["React Js", "React Native", "HTML", "CSS", "Figma"],
-    logo: <Screen24 fill="#986ee2" />,
+    logo: <Screen24 fill="#addec9" />,
   },
   {
     category: "Distributed Software, APIs & Microservices",
@@ -32,7 +32,7 @@ export const tech_stack = [
       "GraphQL",
       "Events & Queues",
     ],
-    logo: <Api24 fill="#986ee2" />,
+    logo: <Api24 fill="#addec9" />,
   },
   {
     category: "Software Development",
@@ -42,7 +42,7 @@ export const tech_stack = [
       "Product Development",
       "Unit Testing",
     ],
-    logo: <CalendarSettings24 fill="#986ee2" />,
+    logo: <CalendarSettings24 fill="#addec9" />,
   },
 
   {
@@ -56,13 +56,13 @@ export const tech_stack = [
       "AWS S3",
       "Redis-Queue",
     ],
-    logo: <DataBase24 fill="#986ee2" />,
+    logo: <DataBase24 fill="#addec9" />,
   },
 
   {
     category: "AI & ML Development/Ops",
     tools: ["Tensorflow", "OpenCV", "HuggingFace"],
-    logo: <MachineLearningModel24 fill="#986ee2" />,
+    logo: <MachineLearningModel24 fill="#addec9" />,
   },
   {
     category: "DevOps & CI",
@@ -76,11 +76,11 @@ export const tech_stack = [
       "Git",
       "Bash",
     ],
-    logo: <TreeViewAlt24 fill="#986ee2" />,
+    logo: <TreeViewAlt24 fill="#addec9" />,
   },
   {
     category: "Cloud",
     tools: ["AWS", "Digital Ocean", "Cloudflare"],
-    logo: <Cloud24 fill="#986ee2" />,
+    logo: <Cloud24 fill="#addec9" />,
   },
 ];

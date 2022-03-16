@@ -1,11 +1,21 @@
-$nav-background: #1c2128;
-$text-color-light: #adbac7;
+$nav-background: #000;
+$text-color-light: #fff;
+
+/* Title Fonts */
+@font-face {
+  font-family: "Dev-Title";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./assets//fonts/Uber\ Move\ Medium.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/Uber\ Move\ Medium.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 // Text
 h1 {
   letter-spacing: normal;
-  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
-    "Arial", "sans-serif";
+  font-family: "Uber Move", sans-serif, "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
   color: #ffffff;
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
@@ -18,8 +28,8 @@ h1 {
 
 h2 {
   letter-spacing: normal;
-  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
-    "Arial", "sans-serif";
+  font-family: "Uber Move", sans-serif, "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
   font-weight: 800;
   color: black;
   -webkit-font-smoothing: antialiased;
@@ -31,8 +41,8 @@ h2 {
 }
 
 h4 {
-  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
-    "Arial", "sans-serif";
+  font-family: "Uber Move", sans-serif, "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
@@ -40,19 +50,19 @@ h4 {
   padding: 0 0;
   margin: 0 0;
   line-height: 1;
-  font-size: 1.1em;
-  color: #adbac7;
+  font-size: 1.2em;
+  color: #fff;
   // color: #b7bdc6;
   line-height: 1.5;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 400;
   letter-spacing: normal;
-  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
-    "Arial", "sans-serif";
-  color: #adbac7;
+  font-family: "Uber Move", sans-serif, "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #fff;
   // color: #eaecef;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
@@ -66,9 +76,9 @@ a {
   font-size: 1em;
   font-weight: 400;
   letter-spacing: normal;
-  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
-    "Arial", "sans-serif";
-  color: #adbac7;
+  font-family: "Uber Move", sans-serif, "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   text-align: left;
@@ -78,20 +88,20 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #539bf5;
+  color: #addec9;
   text-decoration: underline;
   cursor: pointer;
 }
 .header-link-highlight:hover {
-  color: #539bf5;
+  color: #addec9;
   text-decoration: underline;
   cursor: pointer;
 }
 
 small {
   letter-spacing: normal;
-  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
-    "Arial", "sans-serif";
+  font-family: "Uber Move", sans-serif, "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
   font-weight: 500;
   color: #999999;
   -webkit-font-smoothing: antialiased;
@@ -105,7 +115,7 @@ small {
 }
 
 body {
-  background-color: #1c2128;
+  background-color: #000;
 }
 
 //151922
@@ -123,17 +133,17 @@ span.prismjs {
   background-color: #212831;
   border: 1px solid #2b323d;
   border-radius: 6px;
-  // padding-left: 1rem;
-  // padding-top: 1rem;
-  // padding-bottom: 1rem;
-  // margin-top: 2rem;
-  // margin-bottom: 2rem;
-  // padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
 }
 
-span.prismjs code span {
-  background-color: #212831;
-}
+// span.prismjs code span {
+//   background-color: #212831;
+// }
 
 span.prismjs code:first-of-type {
   padding: 0px;
@@ -145,85 +155,65 @@ span.prismjs code:first-of-type {
   background-image: none;
 }
 
-span.prismjs.css-1vdujjq {
-  background-color: none;
-  background-color: #212831;
+.comment.linenumber.react-syntax-highlighter-line-number {
+  color: rgb(92, 99, 112);
+  font-size: 12px;
+  margin-right: 10px;
 }
 
-span.prismjs.css-10fl9lg {
-  background-color: none;
-  background-color: #212831;
-}
+// span.prismjs.css-1vdujjq {
+//   background-color: none;
+//   background-color: #212831;
+// }
 
-span.css-1vdujjq code:first-of-type {
-  background-image: none;
-}
+// span.prismjs.css-10fl9lg {
+//   background-color: none;
+//   background-color: #212831;
+// }
 
-span.css-10fl9lg code:first-of-type {
-  background-image: none;
-}
+// span.css-1vdujjq code:first-of-type {
+//   background-image: none;
+// }
 
-span.css-3yrc6a-CodeBlock {
-  background-color: none;
-  background-color: #212831;
-}
+// span.css-10fl9lg code:first-of-type {
+//   background-image: none;
+// }
 
-span.css-1vdujjq code:first-of-type {
-  background-image: none;
-}
+// span.css-3yrc6a-CodeBlock {
+//   background-color: none;
+//   background-color: #212831;
+// }
 
-span.css-3yrc6a-CodeBlock code:first-of-type {
-  background-image: none;
-}
+// span.css-1vdujjq code:first-of-type {
+//   background-image: none;
+// }
 
-span.css-1vdujjq {
-  font-size: 0.9em;
-  font-family: "IBM Plex Mono", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-}
+// span.css-3yrc6a-CodeBlock code:first-of-type {
+//   background-image: none;
+// }
+
+// // span.css-1vdujjq {
+// //   font-size: 1em;
+// //   // font-family: "IBM Plex Mono", sans-serif;
+// //   line-height: 1.5;
+// //   font-weight: 400;
+// // }
+
+// // span.css-10fl9lg {
+// //   font-size: 1em;
+// //   // font-family: "IBM Plex Mono", sans-serif;
+// //   line-height: 1.5;
+// //   font-weight: 400;
+// // }
+
 .token {
-  color: #adbac7;
+  color: #fff;
 }
 
 span {
-  color: #adbac7;
-}
-span.prismjs {
-  color: #adbac7;
-  font-size: 1em;
+  color: #fff;
+  font-size: 0.9em;
   font-weight: 400;
-  font-family: "IBM Plex Mono", sans-serif;
-  line-height: 1.5;
-}
-
-span.prismjs .token.punctuation,
-span.prismjs .token.number,
-span.prismjs .token.operator,
-span.prismjs .token.builtin,
-span.prismjs .token.boolean {
-  color: #adbac7;
-}
-
-span.prismjs .token.function {
-  color: #539bf5;
-}
-
-span.prismjs .token.maybe-class-name {
-  color: #986ee2;
-}
-
-span.prismjs .token.key,
-span.prismjs .token.keyword {
-  color: #b3d4ff;
-}
-
-span.prismjs .token.string {
-  color: #05aa82;
-}
-
-@media (min-width: 0px) and (max-width: 599px) {
-  span.prismjs {
-    font-size: 0.6em;
-  }
+  letter-spacing: normal;
+  font-family: "IBM Plex Mono";
 }

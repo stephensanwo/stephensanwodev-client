@@ -1,13 +1,12 @@
 // App Navbar
 .app-nav {
   height: 50px;
-  background: #1c2128;
+  background: #000;
   display: flex;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding-left: 100px;
-  border-bottom: 1px solid #2b323d;
   z-index: 1000;
   align-items: center;
 }
@@ -72,7 +71,7 @@
 
 .options-container:hover,
 .options-container:hover a {
-  color: #539bf5;
+  color: #7daba0;
 }
 
 // Switcher
@@ -107,7 +106,7 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: #1c2128;
+    background-color: #000;
   }
 
   .slider-menu-container {
@@ -126,7 +125,7 @@
   }
 
   .slider-item a {
-    color: #adbac7;
+    color: #fff;
     font-size: 1.2em;
     font-weight: 600;
     cursor: pointer;
@@ -134,7 +133,7 @@
   }
 
   .slider-item a:hover {
-    color: #539bf5;
+    color: #7daba0;
   }
 }
 
@@ -160,7 +159,7 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: #1c2128;
+    background-color: #000;
   }
 
   .slider-menu-container {
@@ -186,7 +185,7 @@
   }
 
   .slider-item a:hover {
-    color: #539bf5;
+    color: #7daba0;
   }
 }
 
@@ -211,7 +210,7 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: #1c2128;
+    background-color: #000;
   }
 
   .slider-menu-container {
@@ -237,6 +236,6 @@
   }
 
   .slider-item a:hover {
-    color: #539bf5;
+    color: #7daba0;
   }
 }

@@ -7,7 +7,7 @@ const ListItem = (props) => {
         style={{
           fontWeight: 400,
           fontSize: "1em",
-          color: "#adbac7",
+          color: "#addec9",
           lineHeight: 2,
           marginBottom: "0.5rem",
         }}

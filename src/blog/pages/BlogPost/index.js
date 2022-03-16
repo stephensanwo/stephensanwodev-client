@@ -35,7 +35,7 @@ const BlogPost = (props) => {
   );
 
   if (isLoading) {
-    return <Loading />;
+    return <Loading style={{ width: "32px", height: "32px" }} />;
   }
 
   if (error) {
@@ -97,7 +97,7 @@ const BlogPost = (props) => {
               all_data={data.blog_posts}
             />
             <Footer
-              blogData={data.featured_posts}
+              blogData={data.blog_posts}
               blogDataLoading={data.isLoading}
               setBlogFilter={context_data.setFilter}
               data_type={"blog"}

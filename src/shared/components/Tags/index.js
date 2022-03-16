@@ -13,7 +13,7 @@ const Tags = ({ title, color, type, app_title, style, icon }) => {
               fontFamily: "IBM Plex Sans",
               fontWeight: 500,
               fontSize: "0.8em",
-              color: "#768390",
+              color: "#addec9",
             }}
           >
             {title}
@@ -31,7 +31,7 @@ const Tags = ({ title, color, type, app_title, style, icon }) => {
               fontFamily: "IBM Plex Sans",
               fontWeight: 500,
               fontSize: "0.8em",
-              color: "#768390",
+              color: "#addec9",
             }}
           >
             {title}

@@ -9,8 +9,6 @@
 
 .home-content {
   flex-basis: 100%;
-  border-left: 1px solid #2b323d;
-  border-right: 1px solid #2b323d;
   padding: 5rem;
   padding-top: 10rem;
 }
@@ -28,29 +26,21 @@
 }
 
 .landing-content h1 {
-  font-size: 4rem;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 500;
+  font-size: 8rem;
+  font-family: "Dev-Title";
+  font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: #05aa82;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(90deg, #05aa82, #1c8df0);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #fff;
 }
 
 .landing-content h2 {
   font-size: 1.5rem;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Dev-Title", sans-serif;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: #05aa82;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(90deg, #05aa82, #986ee2);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #addec9;
 }
 
 .landing-content h4 {
@@ -62,10 +52,7 @@
 
 .contact-section {
   margin-top: 4rem;
-  border: 1px solid #2b323d;
   border-radius: 6px;
-  padding: 1rem;
-  max-width: 420px;
 }
 .contact-section-logo {
   display: flex;
@@ -80,18 +67,10 @@
   margin-right: 2rem;
 }
 
-.contact-section h4 {
-  font-size: 0.8rem;
-  font-family: "IBM Plex Sans", sans-serif;
-  color: #05aa82;
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
-}
-
 .contact-section-logo a {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Uber Move", sans-serif;
   font-size: 0.8rem;
-  color: #adbac7;
+  color: #afafaf;
   margin-left: 0.5rem;
 }
 
@@ -119,17 +98,17 @@
 }
 
 .section-title h4 {
-  //   color: #adbac7;
-  font-family: "IBM Plex Sans", sans-serif;
+  //   color: #fff;
+  font-family: "Uber Move", sans-serif;
   font-weight: 600;
-  color: #2b323d;
+  color: #fff;
   font-size: 2rem;
   margin-bottom: 0;
   margin-left: 2rem;
 }
 
 .section-divider-line {
-  border-top: 1px solid #2b323d;
+  border-top: 0.1px solid #addec9;
   width: 100%;
 }
 
@@ -138,14 +117,6 @@
 .about-content {
   margin-top: 4rem;
 }
-
-// .about-content h4 {
-//   font-size: 1em;
-//   font-family: "display-text-semibold";
-//   color: #adbac7;
-//   // margin-bottom: 1rem;
-//   line-height: 1.5;
-// }
 
 .about-content-experience {
   display: flex;
@@ -178,8 +149,8 @@
 
 .about-technologies-item-container {
   min-height: 65px;
-  border: 1px solid #2b323d;
-  border-radius: 5px;
+  // border: 1px solid #2b323d;
+  // border-radius: 5px;
   padding: 1em;
   // background-color: #1f242c;
 }
@@ -204,7 +175,7 @@
 }
 
 .about-content a {
-  color: #986ee2;
+  color: #addec9;
 }
 // Blog Content
 
@@ -228,9 +199,9 @@
 }
 
 .blog-content-featured-container-item {
-  display: flex;
-  margin-bottom: 4rem;
-  height: 170px;
+  // display: flex;
+  margin-bottom: 8rem;
+  // min-height: 200px;
 }
 
 .blog-content-featured-image {
@@ -269,11 +240,10 @@
 }
 
 .blog-content-featured-description {
-  flex-basis: 60%;
+  flex-basis: 100%;
   min-width: 200px;
-  height: 170px;
-  margin-left: 2rem;
-  //   background-color: blue;
+  margin-left: 0rem;
+  margin-top: 2rem;
 }
 
 .blog-content-featured img {
@@ -303,7 +273,7 @@
 }
 
 .see-all-container a {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Uber Move", sans-serif;
   font-weight: 800;
   font-size: 1em;
   margin-right: 0.5rem;
@@ -352,7 +322,7 @@
 }
 
 .blog-category-item h4:hover {
-  color: #539bf5;
+  color: #addec9;
 }
 
 // .blog-category-item:nth-child(3) {
@@ -431,10 +401,10 @@
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0rem;
-  font-family: "IBM Plex Sans", sans-serif, "Helvetica Neue", "Helvetica",
-    "Arial", "sans-serif";
+  font-family: "Uber Move", sans-serif, "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
 
-  color: #adbac7;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   text-align: left;
@@ -472,15 +442,12 @@
 // Footer
 
 .footer-container {
-  border-top: 1px solid #2b323d;
-  height: 80px;
+  height: 400px;
   padding-left: 100px;
   padding-right: 100px;
 }
 
 .footer-content {
-  border-left: 1px solid #2b323d;
-  border-right: 1px solid #2b323d;
   width: 100%;
   height: 100%;
   display: flex;
@@ -502,7 +469,7 @@
 }
 
 .footer-contact-section h4 {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Uber Move", sans-serif;
   font-size: 0.8rem;
   color: #539bf5;
   margin-right: 0.5rem;
@@ -519,7 +486,8 @@
     padding-right: 0px;
   }
   .footer-container {
-    height: 150px;
+    margin-top: 4rem;
+    height: 250px;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -573,7 +541,8 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+    line-height: 1;
   }
   .landing-content h2 {
     font-size: 1rem;
@@ -591,8 +560,8 @@
   }
   .blog-content-featured-container-item {
     display: block;
-    margin-bottom: 4rem;
-    height: 480px;
+    margin-bottom: 8rem;
+    // min-height: 400px;
   }
   .blog-content-featured-image {
     width: 100%;
@@ -667,6 +636,7 @@
   }
 
   .footer-container {
+    margin-top: 4rem;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -719,7 +689,8 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+    line-height: 1;
   }
 
   .landing-content h2 {
@@ -728,8 +699,8 @@
 
   .blog-content-featured-container-item {
     display: block;
-    margin-bottom: 4rem;
-    min-height: 420px;
+    margin-bottom: 8rem;
+    // min-height: 400px;
   }
   .blog-content-featured-image {
     width: 100%;
@@ -772,6 +743,7 @@
   .footer-container {
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 4rem;
   }
   .footer-content {
     border-left: none;
@@ -821,7 +793,8 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 1;
   }
 
   .landing-content h2 {
@@ -830,8 +803,8 @@
 
   .blog-content-featured-container-item {
     display: block;
-    margin-bottom: 4rem;
-    height: 420px;
+    margin-bottom: 8rem;
+    // min-height: 400px;
   }
   .blog-content-featured-image {
     width: 100%;
@@ -872,6 +845,7 @@
     padding-right: 0px;
   }
   .footer-container {
+    margin-top: 4rem;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -911,13 +885,14 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+    line-height: 1;
   }
 
   .blog-content-featured-container-item {
     display: block;
-    margin-bottom: 4rem;
-    height: 420px;
+    margin-bottom: 8rem;
+    // min-height: 400px;
   }
   .blog-content-featured-image {
     width: 100%;
@@ -951,6 +926,7 @@
   }
 
   .footer-container {
+    margin-top: 4rem;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -990,7 +966,8 @@
     padding-top: 100px;
   }
   .landing-content h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 
@@ -1003,6 +980,7 @@
   .footer-container {
     padding-left: 60px;
     padding-right: 60px;
+    margin-top: 4rem;
   }
   // .home-content {
   // }
@@ -1021,6 +999,7 @@
   .footer-container {
     padding-left: 80px;
     padding-right: 80px;
+    margin-top: 4rem;
   }
 
   // .home-content {

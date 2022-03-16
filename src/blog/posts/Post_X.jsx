@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
-import Code from "../components/Code";
+import Code from "../../code/components/Code";
 
 
 const Post_1 = ({content}) => {

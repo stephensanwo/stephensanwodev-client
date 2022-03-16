@@ -6,9 +6,8 @@ const Paragraph = (props) => {
       <p
         style={{
           fontWeight: 400,
-          fontSize: "1em",
-          color: "#adbac7",
-          lineHeight: 2,
+          fontSize: "1.1em",
+          lineHeight: 1.8,
           marginBottom: "2rem",
         }}
       >

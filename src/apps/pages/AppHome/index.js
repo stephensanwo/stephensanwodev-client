@@ -6,6 +6,7 @@ import Options from "./Options";
 import Footer from "../../../shared/components/Footer";
 import { Ideate } from "@carbon/pictograms-react";
 import { apps_data } from "../../../data/apps";
+import { Helmet } from "react-helmet";
 
 export const AppContext = React.createContext();
 
@@ -20,8 +21,6 @@ const AppHome = () => {
     data = apps_data.filter((item) => item.category.includes(filter));
   }
 
-  document.title = `Stephen Sanwo - Apps - ${filter}`;
-
   return (
     <AppContext.Provider
       value={{
@@ -30,6 +29,17 @@ const AppHome = () => {
         data,
       }}
     >
+      <Helmet>
+        <title>Stephen Sanwo Apps</title>
+        <meta
+          name="description"
+          content="Welcome to my Apps and Project Portfolio."
+        />
+        <meta
+          name="keywords"
+          content="OpenFlow, Software, API, AI Playground, Microservices"
+        />
+      </Helmet>
       <div className="app-home-container">
         <div className="app-home-sidenav">
           <SideNavOptions />
@@ -38,13 +48,13 @@ const AppHome = () => {
           <div className="app-home-content">
             <div className="app-home-content-items">
               <div style={{ display: "flex", alignItems: "center" }}>
-                <Ideate fill="#05aa82" />
+                <Ideate fill="#addec9" />
                 <div>
                   <h4
                     style={{
                       fontSize: "2rem",
                       fontWeight: 600,
-                      color: "#05aa82",
+                      color: "#addec9",
                       marginLeft: "2rem",
                     }}
                   >

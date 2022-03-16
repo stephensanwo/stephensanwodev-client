@@ -2,7 +2,8 @@ import React, { Fragment } from "react";
 import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
 import ListItem from "../components/ListItem";
-import CodeInline from "../components/CodeInline";
+
+import CodeInline from "../../code/components/CodeInline";
 import InlineLink from "../components/InlineLink";
 
 
@@ -78,9 +79,9 @@ const Post_3 = ({content}) => {
       <Paragraph>
         Like so
       <CodeInline language = "bash">
-        {`mkdir projectA
-cd projectA
-python3.8 -m venv env`}
+        {` ~ mkdir projectA
+ ~ cd projectA
+ ~ python3.8 -m venv env`}
       </CodeInline>   
       </Paragraph>
       <Paragraph>

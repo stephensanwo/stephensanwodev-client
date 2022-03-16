@@ -36,12 +36,15 @@ const Footer = ({
       {data_type === "app" ? (
         <div className="footer-category-content">
           <div
-            style={{ borderBottom: "1px solid #444c56", marginBottom: "1.5em" }}
+            style={{
+              borderBottom: "0.1px solid #addec9",
+              marginBottom: "1.5em",
+            }}
           >
             <h4
               style={{
                 fontSize: "1em",
-                color: "#adbac7",
+                color: "#fff",
                 marginBottom: "1em",
               }}
             >
@@ -68,10 +71,12 @@ const Footer = ({
               </h4>
             </div>
           ))}
-          <div style={{ borderBottom: "1px solid #444c56", marginTop: "4em" }}>
+          <div
+            style={{ borderBottom: "0.1px solid #addec9", marginTop: "4em" }}
+          >
             <h4
               style={{
-                color: "#adbac7",
+                color: "#fff",
                 marginBottom: "1em",
               }}
             >
@@ -107,12 +112,15 @@ const Footer = ({
       ) : data_type === "code" ? (
         <div className="footer-category-content">
           <div
-            style={{ borderBottom: "1px solid #444c56", marginBottom: "1.5em" }}
+            style={{
+              borderBottom: "0.1px solid #addec9",
+              marginBottom: "1.5em",
+            }}
           >
             <h4
               style={{
                 fontSize: "1em",
-                color: "#adbac7",
+                color: "#fff",
                 marginBottom: "1em",
               }}
             >
@@ -143,11 +151,14 @@ const Footer = ({
       ) : (
         <div className="footer-category-content">
           <div
-            style={{ borderBottom: "1px solid #444c56", marginBottom: "1.5em" }}
+            style={{
+              borderBottom: "0.1px solid #addec9",
+              marginBottom: "1.5em",
+            }}
           >
             <h4
               style={{
-                color: "#adbac7",
+                color: "#fff",
                 marginBottom: "1em",
               }}
             >
@@ -174,14 +185,16 @@ const Footer = ({
               </h4>
             </div>
           ))}
-          <div style={{ borderBottom: "1px solid #444c56", marginTop: "4em" }}>
+          <div
+            style={{ borderBottom: "0.1px solid #addec9", marginTop: "4em" }}
+          >
             <h4
               style={{
-                color: "#adbac7",
+                color: "#fff",
                 marginBottom: "1em",
               }}
             >
-              Top Blog Posts
+              Suggested Next Reads{" "}
             </h4>
           </div>
           {blogDataLoading ? (
@@ -192,7 +205,7 @@ const Footer = ({
           ) : (
             blogData.map((article, index) => (
               <div style={{ marginTop: "1.5rem" }} key={index}>
-                <Link to={`/blog/${article.post_id}`}>
+                <Link to={`/blog/${article.post_url}`}>
                   <h4
                     style={{
                       marginBottom: "0.4em",

@@ -22,14 +22,14 @@ const CodePostOptions = () => {
             <a
               style={{
                 fontWeight: 800,
-                color: "#986ee2",
+                color: "#addec9",
                 marginBottom: "2em",
                 display: "flex",
                 alignItems: "center",
               }}
               href={`${path}/code`}
             >
-              <ArrowLeft24 fill="#986ee2" style={{ marginRight: "0.5em" }} />{" "}
+              <ArrowLeft24 fill="#addec9" style={{ marginRight: "0.5em" }} />{" "}
               Code
             </a>
           </div>
@@ -40,7 +40,7 @@ const CodePostOptions = () => {
           <div>
             <h4
               style={{
-                color: "#adbac7",
+                color: "#fff",
                 marginBottom: "2em",
               }}
             >

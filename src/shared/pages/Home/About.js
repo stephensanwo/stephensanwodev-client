@@ -10,8 +10,8 @@ const About = () => {
       <div className="section-divider">
         <div className="section-title">
           <div style={{ display: "flex", alignItems: "center" }}>
-            <UserProfile fill="#986ee2" />
-            <h4 style={{ color: "#986ee2" }}>About Me</h4>
+            <UserProfile fill="#addec9" />
+            <h4 style={{ color: "#addec9" }}>About Me</h4>
           </div>
           <div></div>
         </div>
@@ -25,11 +25,13 @@ const About = () => {
           <div className="about-content-experience-container">
             <div>
               <p>
-                I am a full-stack software, and artificial intelligence
-                solutions developer, skilled in architecting data-driven
-                solutions in complex data-oriented environments, building and
-                deploying solutions that cut through the complexities of
-                business problems.
+                I am a Fullstack Software, and ML/AI Solutions Developer. I
+                focus on architecting data-driven software that solve domain
+                specific problems in complex data-oriented environments (i.e.
+                Financial Services Sector and Consumer Markets). I currently
+                lead an analytics solutions development team at KPMG Nigeria,
+                focused on developing and maintaining scalable analytics
+                solutions for clients.
               </p>
               <p style={{ marginTop: "1rem" }}>
                 I am also a certified robotics process automation (RPA) advanced
@@ -67,7 +69,7 @@ const About = () => {
                 </h4>
                 <small
                   style={{
-                    color: "#986ee2",
+                    color: "#addec9",
                   }}
                 >
                   Sep 2015 - Present
@@ -87,7 +89,7 @@ const About = () => {
                 </h4>
                 <small
                   style={{
-                    color: "#986ee2",
+                    color: "#addec9",
                   }}
                 >
                   October 2021 - Present

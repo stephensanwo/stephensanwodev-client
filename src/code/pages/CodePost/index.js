@@ -33,7 +33,7 @@ const CodePost = (props) => {
   );
 
   if (isLoading) {
-    return <Loading />;
+    return <Loading style={{ width: "32px", height: "32px" }} />;
   }
 
   if (error) {

@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.scss";
 import { Code32, Launch16, LogoPython32 } from "@carbon/icons-react";
 import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
@@ -16,7 +15,7 @@ const Card = ({ code_item, featured }) => {
               fontFamily: "IBM Plex Sans",
               fontWeight: "600",
               fontSize: "0.8em",
-              color: "#986ee2",
+              color: "#000",
               marginBottom: "0.6em",
             }}
           >
@@ -25,17 +24,18 @@ const Card = ({ code_item, featured }) => {
           <Link
             className="header-link-highlight"
             to={`/code/${code_item.code_url}`}
+            style={{ color: "#000" }}
           >
             {code_item.title}
           </Link>
         </div>
         <div>
           {code_item.category === "Python" ? (
-            <LogoPython32 fill="#986ee2" width="48px" height="48px" />
+            <LogoPython32 fill="#000" width="48px" height="48px" />
           ) : code_item.category === "JavaScript" ? (
-            <Javascript fill="#986ee2" width="48px" height="48px" />
+            <Javascript fill="#000" width="48px" height="48px" />
           ) : (
-            <Code32 fill="#986ee2" width="48px" height="48px" />
+            <Code32 fill="#000" width="48px" height="48px" />
           )}
         </div>
       </div>
@@ -43,10 +43,12 @@ const Card = ({ code_item, featured }) => {
         <p
           style={{
             marginBottom: "0.4em",
+            color: "#000",
           }}
         >
-          {`${code_item.description}`.slice(0, 100)}
-          {code_item.description.length > 100 ? "..." : ""}
+          {code_item.description}
+          {/* {`${code_item.description}`.slice(0, 100)}
+          {code_item.description.length > 100 ? "..." : ""} */}
         </p>
       </div>
       <div className="card-links card-links-code">
@@ -57,14 +59,14 @@ const Card = ({ code_item, featured }) => {
             width: "40%",
           }}
         >
-          <Launch16 color="#986ee2" />
+          <Launch16 color="#000" />
           <Link to={`/code/${code_item.code_url}`}>
             <h4
               style={{
                 fontFamily: "IBM Plex Sans",
                 fontWeight: 400,
                 fontSize: "0.8rem",
-                color: "#986ee2",
+                color: "#000",
                 marginTop: 0,
                 marginBottom: 0,
                 marginLeft: "0.5rem",
@@ -89,8 +91,7 @@ const Card = ({ code_item, featured }) => {
             color: "#768390",
           }}
         >
-          Created By: {code_item.author},{" "}
-          {moment(code_item.creation_date, "YYYYMMDD").fromNow()}
+          By: {code_item.author}
         </p>
       </div>
     </div>

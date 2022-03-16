@@ -8,7 +8,7 @@ const Options = () => {
   const { path } = useRouteMatch();
   return (
     <div className="blog-home-options-container">
-      <div style={{ borderBottom: "1px solid #2b323d" }}>
+      <div style={{ borderBottom: "0.1px solid #adbac7" }}>
         <h4
           style={{
             marginBottom: "1em",
