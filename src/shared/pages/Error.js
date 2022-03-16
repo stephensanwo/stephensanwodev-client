@@ -1,6 +1,5 @@
 import React from "react";
 import { FaceDissatisfied32 } from "@carbon/icons-react";
-import { Link } from "react-router-dom";
 
 const Error = () => {
   return (

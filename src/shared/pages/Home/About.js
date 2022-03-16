@@ -1,8 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { tech_stack } from "../../../data/techstack";
 import { UserProfile } from "@carbon/pictograms-react";
 import Tags from "../../components/Tags";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (

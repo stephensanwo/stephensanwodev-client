@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ArrowRight24 } from "@carbon/icons-react";
+
 import Card from "../../../shared/components/Card";
 import { AppContext } from ".";
 

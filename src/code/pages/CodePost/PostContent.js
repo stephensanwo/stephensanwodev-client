@@ -4,7 +4,6 @@ import Tags from "../../../shared/components/Tags";
 import "./style.scss";
 import Loader from "../../../shared/components/Loader";
 import { Link, Redirect, useHistory } from "react-router-dom";
-import moment from "moment";
 
 const PostContent = ({
   code_content,

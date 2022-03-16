@@ -4,7 +4,6 @@ import Tags from "../../../shared/components/Tags";
 import { Link, useRouteMatch } from "react-router-dom";
 import { Fragment } from "react/cjs/react.production.min";
 import { PostContext } from "../..";
-import moment from "moment";
 
 const FeaturedArticle = () => {
   const { path } = useRouteMatch();

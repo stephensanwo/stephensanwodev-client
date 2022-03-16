@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import SideNavOptions from "./SideNavOptions";
 import "./style.scss";
 import AppList from "./AppList";

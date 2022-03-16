@@ -1,10 +1,5 @@
-import React, { useState } from "react";
-import {
-  Launch16,
-  Copy16,
-  ArrowRight24,
-  ArrowRight16,
-} from "@carbon/icons-react";
+import React from "react";
+import { Launch16, ArrowRight24, ArrowRight16 } from "@carbon/icons-react";
 import { blog_categories } from "../../../data/blog";
 import { Devops } from "@carbon/pictograms-react";
 import Tags from "../../components/Tags";

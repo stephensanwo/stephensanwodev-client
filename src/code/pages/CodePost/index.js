@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect } from "react";
 import CodePostOptions from "./CodePostOptions";
 import PostContent from "./PostContent";
 import PostOptions from "./PostOptions";
@@ -26,7 +26,7 @@ const CodePost = (props) => {
     return data.code_posts;
   };
 
-  const { isLoading, status, error, data, isFetching } = useQuery(
+  const { isLoading, error, data, isFetching } = useQuery(
     ["code_item", code_url],
     () => getCode(),
     { keepPreviousData: false, refetchOnWindowFocus: false }
@@ -69,7 +69,6 @@ const CodePost = (props) => {
     return (seo_keywords = seo_keywords + tag + ", ");
   });
 
-  const meta_content = `${data[0].category} - ${data[0].title}`;
   return (
     <div className="blog-home-container">
       <Helmet>

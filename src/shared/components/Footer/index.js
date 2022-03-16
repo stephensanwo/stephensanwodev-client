@@ -11,7 +11,6 @@ import { code_categories_small } from "../../../data/code";
 import { app_categories_small } from "../../../data/apps";
 import { apps_data } from "../../../data/apps";
 import Loader from "../Loader";
-import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Footer = ({
@@ -22,8 +21,6 @@ const Footer = ({
   setCodeFilter,
   setAppFilter,
 }) => {
-  const { pathname } = useLocation();
-
   const Refocus = () => {
     window.scrollTo({
       top: 0,
