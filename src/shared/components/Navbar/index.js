@@ -44,7 +44,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             >
               <motion.div
                 className="options-container"
-                whileHover={{ borderBottom: "2px solid #539bf5" }}
+                whileHover={{ borderBottom: "2px solid #addec9" }}
                 transition={{ ease: "easeIn", duration: 0.2 }}
               >
                 <div className="options-text">
@@ -63,7 +63,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
             >
               <motion.div
                 className="options-container"
-                whileHover={{ borderBottom: "2px solid #539bf5" }}
+                whileHover={{ borderBottom: "2px solid #addec9" }}
                 transition={{ ease: "easeIn", duration: 0.2 }}
               >
                 <div className="options-text">
@@ -115,7 +115,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                 >
                   <Link to={"/blog"}>
                     {" "}
-                    <ArrowRight16 fill="#539bf5" />
+                    <ArrowRight16 fill="#addec9" />
                   </Link>
                 </div>
               </motion.div>
@@ -138,7 +138,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                 >
                   <Link to={"/apps"}>
                     {" "}
-                    <ArrowRight16 fill="#539bf5" />
+                    <ArrowRight16 fill="#addec9" />
                   </Link>
                 </div>
               </motion.div>
@@ -161,7 +161,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                 >
                   <Link to={"/code"}>
                     {" "}
-                    <ArrowRight16 fill="#539bf5" />
+                    <ArrowRight16 fill="#addec9" />
                   </Link>
                 </div>
               </motion.div>
@@ -194,7 +194,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ArrowRight16 fill="#539bf5" />
+                    <ArrowRight16 fill="#addec9" />
                   </a>
                 </div>
               </motion.div>
@@ -227,7 +227,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ArrowRight16 fill="#539bf5" />
+                    <ArrowRight16 fill="#addec9" />
                   </a>
                 </div>
               </motion.div>

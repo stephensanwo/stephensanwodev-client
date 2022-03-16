@@ -1,15 +1,13 @@
 import React from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const PostOptions = ({ all_posts, post_id }) => {
-  const { path } = useRouteMatch();
   return (
     <div className="blog-home-options-container">
-      <div style={{ borderBottom: "1px solid #444c56" }}>
+      <div style={{ borderBottom: "0.1px solid #addec9" }}>
         <h4
           style={{
-            color: "#adbac7",
-
+            color: "#fff",
             marginBottom: "1em",
           }}
         >

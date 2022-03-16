@@ -23,15 +23,13 @@ const BlogHome = () => {
     return <Redirect to="/error" />;
   }
 
-  document.title = `Stephen Sanwo - Blog - ${data.filter}`;
-
   return (
     <div className="blog-home-container">
       <Helmet>
-        <title>Stephen Sanwo - Blog</title>
+        <title>Stephen Sanwo Blog</title>
         <meta
           name="description"
-          content="Welcome to my Developer Blog. I write on Software and AI Development"
+          content="Welcome to my Developer Blog. I write about Software and AI Development"
         />
         <meta
           name="keywords"
@@ -45,12 +43,12 @@ const BlogHome = () => {
         <div className="blog-home-content">
           <div className="blog-home-content-items">
             <div style={{ display: "flex", alignItems: "center" }}>
-              <Devops fill="#539bf5" />
+              <Devops fill="#addec9" />
               <div>
                 <h4
                   style={{
                     fontSize: "2rem",
-                    color: "#539bf5",
+                    color: "#addec9",
                     fontWeight: 600,
                     marginLeft: "2rem",
                   }}
@@ -77,11 +75,6 @@ const BlogHome = () => {
             ) : (
               <FeaturedArticle />
             )}
-
-            <div
-              className="section-divider-line"
-              style={{ marginTop: "4rem", marginBottom: "6rem" }}
-            ></div>
 
             {data.isLoading ? (
               <div style={{ marginTop: "4rem" }}>

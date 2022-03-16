@@ -16,7 +16,10 @@ const FeaturedArticle = () => {
       {featured_post.length === 0 ? (
         <Fragment></Fragment>
       ) : (
-        <div className="blog-home-featured-container">
+        <div
+          className="blog-home-featured-container"
+          style={{ minHeight: "700px" }}
+        >
           <div className="blog-home-featured-image">
             <img src={featured_post[0].image_url} width="100%"></img>
           </div>
@@ -24,7 +27,7 @@ const FeaturedArticle = () => {
             <h4
               style={{
                 fontSize: "1em",
-                color: "#539bf5",
+                color: "#addec9",
                 marginBottom: "0.4em",
               }}
             >
@@ -38,8 +41,10 @@ const FeaturedArticle = () => {
                 }}
                 className="header-link-highlight"
               >
-                {`${featured_post[0].series_title}`.slice(0, 80)}
-                {featured_post[0].series_title.length > 80 ? "..." : ""}
+                {" "}
+                {featured_post[0].series_title}
+                {/* {`${featured_post[0].series_title}`.slice(0, 80)}
+                {featured_post[0].series_title.length > 80 ? "..." : ""} */}
               </h4>
             </Link>
             <div
@@ -56,14 +61,14 @@ const FeaturedArticle = () => {
                   color: "#768390",
                 }}
               >
-                Written By: {featured_post[0].author},{" "}
-                {moment(featured_post[0].creation_date, "YYYYMMDD").fromNow()}
+                By: {featured_post[0].author}
               </p>
             </div>
 
             <p>
-              {`${featured_post[0].description}`.slice(0, 200)}
-              {featured_post[0].description.length > 200 ? "..." : ""}
+              {featured_post[0].description}
+              {/* {`${featured_post[0].description}`.slice(0, 200)}
+              {featured_post[0].description.length > 200 ? "..." : ""} */}
             </p>
             <div className="blog-content-featured-tags">
               {featured_post[0].tags.map((tag_item, index) => (
@@ -84,13 +89,13 @@ const FeaturedArticle = () => {
                   alignItems: "center",
                 }}
               >
-                <Launch16 color="#539bf5" />
+                <Launch16 color="#addec9" />
                 <Link to={`/blog/${featured_post[0].post_url}`}>
                   <h4
                     style={{
                       fontWeight: 400,
                       fontSize: "0.8rem",
-                      color: "#539bf5",
+                      color: "#addec9",
                       marginLeft: "0.5rem",
                     }}
                   >

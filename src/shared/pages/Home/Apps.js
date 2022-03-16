@@ -11,20 +11,20 @@ const Apps = () => {
       <div className="section-divider">
         <div className="section-title">
           <div style={{ display: "flex", alignItems: "center" }}>
-            <Ideate fill="#05aa82" />
-            <h4 style={{ color: "#05aa82" }}>Projects</h4>
+            <Ideate fill="#addec9" />
+            <h4 style={{ color: "#addec9" }}>Projects</h4>
           </div>
           <div className="see-all-container">
             <Link
               style={{
-                color: "#05aa82",
+                color: "#addec9",
               }}
               to="/apps"
             >
               Discover
             </Link>
 
-            <ArrowRight24 fill="#05aa82" />
+            <ArrowRight24 fill="#addec9" />
           </div>
         </div>
         <div className="section-divider-line"></div>

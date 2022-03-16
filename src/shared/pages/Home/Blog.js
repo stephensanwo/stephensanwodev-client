@@ -18,7 +18,7 @@ const featured_articles = [
       "Build a full stack AI Chatbot with GPT, React, FastAPI, Redis & AWS",
     description:
       "One of the best ways to learn how to develop full stack applications is to build projects that cover the end to end development process, from designing the solution architecture, to building the API, developing the user interface, and finally deploying your application. This tutorial will take your through each step using a project based example.",
-    image_url: "https://ddxzec2p5v0iq.cloudfront.net/article.svg",
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/blog-image-design.svg",
     tags: [
       "Python",
       "GPT",
@@ -33,13 +33,13 @@ const featured_articles = [
   },
   {
     id: 2,
-    category: "Python",
-    title: "Build a full stack AI Chatbot Part II - GPT-J-6B Wrapper",
+    category: "Developer Guides",
+    title: "Getting Stuck on Coding Basics? Read this",
     description:
-      "In this section, we will focus on building a wrapper to communicate with the GPT-J-6B API, send prompts from a user to the API in a conversational format, and receive and transform responses for our chat application",
-    image_url: "https://ddxzec2p5v0iq.cloudfront.net/image2.jpg",
-    tags: ["Python", "Software Development"],
-    url: "https://www.stephensanwo.dev/blog/build-a-full-stack-ai-chatbot-part-ii-gpt-j-6b-wrapper",
+      "Yes! there is a coding tutorial purgatory, and many devs and data science enthusiasts are caught up in that cycle, a cycle of learning how to code but not being able to do anything tangible with what you have learnt. This is one of the reasons I started my blog, because I noticed that there are a lot of tutorials out there that focus on the basics, of programming, but not a lot of information on how to get you from those basics to building actual real life projects and solving real problems.",
+    image_url: "https://ddxzec2p5v0iq.cloudfront.net/blog-image-guide.svg",
+    tags: ["Developer", "Guides"],
+    url: "https://www.stephensanwo.dev/blog/getting-stuck-on-coding-basics-read-this",
   },
 ];
 
@@ -49,25 +49,25 @@ const Blog = () => {
       <div className="section-divider">
         <div className="section-title">
           <div style={{ display: "flex", alignItems: "center" }}>
-            <Devops fill="#539bf5" />
-            <h4 style={{ color: "#539bf5" }}>Blog</h4>
+            <Devops fill="#addec9" />
+            <h4 style={{ color: "#addec9" }}>Blog</h4>
           </div>
 
           <div className="see-all-container">
             <Link
               style={{
-                color: "#539bf5",
+                color: "#addec9",
               }}
               to="/blog"
             >
               Read All Posts
             </Link>
             <ArrowRight24
-              fill="#539bf5"
+              fill="#addec9"
               className="see-all-container-logo-large"
             />
             <ArrowRight16
-              fill="#539bf5"
+              fill="#addec9"
               className="see-all-container-logo-small"
             />
           </div>
@@ -82,14 +82,17 @@ const Blog = () => {
           <div className="blog-content-featured-container">
             {featured_articles.map((article, index) => (
               <div className="blog-content-featured-container-item">
-                <div className="blog-content-featured-image">
-                  <img src={article.image_url} width="100%"></img>
+                <div className="blog-home-featured-image">
+                  <img
+                    alt={article.title}
+                    src={article.image_url}
+                    width="100%"
+                  ></img>
                 </div>
                 <div className="blog-content-featured-description">
                   <h4
                     style={{
                       fontSize: "0.8rem",
-                      color: "#539bf5",
                       marginBottom: "0.6em",
                     }}
                   >
@@ -114,8 +117,8 @@ const Blog = () => {
                       marginBottom: "0.4em",
                     }}
                   >
-                    {`${article.description}`.slice(0, 120)}
-                    {article.description.length > 120 ? "..." : ""}
+                    {`${article.description}`.slice(0, 1200)}
+                    {article.description.length > 1200 ? "..." : ""}
                   </p>
                   <div className="blog-content-featured-tags">
                     {article.tags.map((tag, index) => (
@@ -136,7 +139,7 @@ const Blog = () => {
                         alignItems: "center",
                       }}
                     >
-                      <Launch16 color="#539bf5" />
+                      <Launch16 color="#addec9" />
                       <a
                         href={article.url}
                         target="_blank"
@@ -146,7 +149,7 @@ const Blog = () => {
                           style={{
                             fontSize: "0.8rem",
                             fontWeight: 400,
-                            color: "#539bf5",
+                            color: "#addec9",
                             marginLeft: "0.5rem",
                           }}
                         >

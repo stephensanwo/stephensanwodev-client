@@ -1,5 +1,4 @@
 import React, { useEffect, useContext } from "react";
-import "./style.scss";
 import { CodeSyntax } from "@carbon/pictograms-react";
 import CodeList from "./CodeList";
 import SideNavOptions from "./SideNavOptions";
@@ -20,12 +19,11 @@ const CodeHome = () => {
   if (data.error) {
     return <Redirect to="/error" />;
   }
-  document.title = `Stephen Sanwo - Code - ${data.filter}`;
 
   return (
     <div className="blog-home-container">
       <Helmet>
-        <title>Stephen Sanwo - Code</title>
+        <title>Stephen Sanwo Codeshare</title>
         <meta
           name="description"
           content="Welcome to my Developer Code Library. I write share Software and ML Code Snippets"
@@ -42,12 +40,12 @@ const CodeHome = () => {
         <div className="blog-home-content">
           <div className="blog-home-content-items">
             <div style={{ display: "flex", alignItems: "center" }}>
-              <CodeSyntax fill="#986ee2" />
+              <CodeSyntax fill="#addec9" />
               <div>
                 <h4
                   style={{
                     fontSize: "2rem",
-                    color: "#986ee2",
+                    color: "#addec9",
                     fontWeight: 600,
                     marginLeft: "2rem",
                   }}

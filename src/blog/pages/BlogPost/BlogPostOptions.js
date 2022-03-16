@@ -19,14 +19,14 @@ const BlogPostOptions = ({ post_data }) => {
               <a
                 style={{
                   fontWeight: 800,
-                  color: "#539bf5",
+                  color: "#addec9",
                   marginBottom: "2em",
                   display: "flex",
                   alignItems: "center",
                 }}
                 href={`${path}/blog`}
               >
-                <ArrowLeft24 fill="#539bf5" style={{ marginRight: "0.5em" }} />{" "}
+                <ArrowLeft24 fill="#addec9" style={{ marginRight: "0.5em" }} />{" "}
                 Blog
               </a>
             </div>
@@ -45,7 +45,7 @@ const BlogPostOptions = ({ post_data }) => {
               <div>
                 {post_data.content.map((blog_item, index) => (
                   <div key={index} className="blog-sidenav-category-item">
-                    <ArrowUpRight16 fill="#539bf5" />
+                    <ArrowUpRight16 fill="#addec9" />
                     <Link
                       to={content_id[index]}
                       spy={true}

@@ -4,7 +4,7 @@ const Image = (props) => {
   return (
     <Fragment>
       <div
-        className="blog-post-image"
+        className="blog-post-image-item"
         style={{
           marginBottom: "2rem",
         }}

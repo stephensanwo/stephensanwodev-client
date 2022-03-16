@@ -30,8 +30,8 @@ const PostContent = ({
       <div className="blog-post-container">
         <h4
           style={{
-            fontSize: "0.8em",
-            color: "#986ee2",
+            fontSize: "1em",
+            color: "#addec9",
             marginBottom: "1em",
           }}
         >
@@ -40,7 +40,7 @@ const PostContent = ({
         <h4
           style={{
             fontSize: "2rem",
-            color: "#adbac7",
+            color: "#fff",
             marginBottom: "1rem",
             marginTop: "1rem",
             lineHeight: 1.3,
@@ -72,29 +72,7 @@ const PostContent = ({
                 marginBottom: "0.5rem",
               }}
             >
-              {code_content.author}
-            </h4>
-
-            <h4
-              style={{
-                fontSize: "0.85em",
-                color: "#adbac7",
-                marginBottom: "1.5rem",
-                marginLeft: "0.5rem",
-                marginRight: "0.5rem",
-              }}
-            >
-              |
-            </h4>
-
-            <h4
-              style={{
-                fontSize: "0.85em",
-                color: "#adbac7",
-                marginBottom: "1.5rem",
-              }}
-            >
-              {moment(code_content.creation_date, "YYYYMMDD").fromNow()}
+              By: {code_content.author}
             </h4>
           </div>
         )}
@@ -105,7 +83,7 @@ const PostContent = ({
           ) : (
             <h2
               style={{
-                color: "#986ee2",
+                color: "#addec9",
                 fontSize: "1.2em",
                 marginBottom: "0.4em",
                 lineHeight: 1.5,
@@ -117,9 +95,9 @@ const PostContent = ({
 
           <p
             style={{
-              fontWeight: 600,
-              fontSize: "1em",
-              color: "#986ee2",
+              fontWeight: 400,
+              fontSize: "1.1em",
+              color: "#addec9",
               lineHeight: 1.6,
               marginBottom: "2rem",
             }}
@@ -164,12 +142,12 @@ const PostContent = ({
         <div className="next-previous-post">
           {older_post_value === "Back Home" ? (
             <div className="next-previous-item">
-              <ArrowLeft24 fill="#986ee2" />
+              <ArrowLeft24 fill="#addec9" />
               <Link
                 style={{
                   fontSize: "1em",
                   fontWeight: 800,
-                  color: "#986ee2",
+                  color: "#addec9",
                   marginLeft: "0.5rem",
                 }}
                 to={older_post_link}
@@ -179,12 +157,12 @@ const PostContent = ({
             </div>
           ) : (
             <div className="next-previous-item">
-              <ArrowLeft24 fill="#986ee2" />
+              <ArrowLeft24 fill="#addec9" />
               <a
                 style={{
                   fontSize: "1em",
                   fontWeight: 800,
-                  color: "#986ee2",
+                  color: "#addec9",
                   marginLeft: "0.5rem",
                 }}
                 onClick={history.goBack}
@@ -201,14 +179,14 @@ const PostContent = ({
                 style={{
                   fontSize: "1em",
                   fontWeight: 800,
-                  color: "#986ee2",
+                  color: "#addec9",
                   marginRight: "0.5rem",
                 }}
                 to={newer_post_link}
               >
                 {newer_post_value}
               </Link>
-              <ArrowRight24 fill="#986ee2" />
+              <ArrowRight24 fill="#addec9" />
             </div>
           ) : (
             <div className="next-previous-item">

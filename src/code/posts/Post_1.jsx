@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Paragraph from "../components/Paragraph";
+import Paragraph from "../../blog/components/Paragraph";
 import Code from "../components/Code";
 
 

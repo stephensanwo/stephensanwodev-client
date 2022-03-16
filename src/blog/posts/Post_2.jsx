@@ -1,13 +1,14 @@
 import React, { Fragment } from "react";
 import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
-import Code from "../components/Code";
+import Code from "../../code/components/Code";
 import Image from "../components/Image";
 import SubHeading4 from "../components/SubHeading4";
 import Video from "../components/Video";
 import ListItem from "../components/ListItem";
 import InlineLink from "../components/InlineLink";
-import CodeInline from "../components/CodeInline";
+import CodeInline from "../../code/components/CodeInline";
+
 
 
 const Post_2 = ({content}) => {

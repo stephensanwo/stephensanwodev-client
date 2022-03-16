@@ -17,13 +17,13 @@ const SideNavOptions = () => {
               style={{
                 fontSize: "1em",
                 fontWeight: 800,
-                color: "#986ee2",
+                color: "#addec9",
                 marginBottom: "2em",
                 display: "flex",
                 alignItems: "center",
               }}
             >
-              <ArrowLeft24 fill="#986ee2" style={{ marginRight: "0.5em" }} />{" "}
+              <ArrowLeft24 fill="#addec9" style={{ marginRight: "0.5em" }} />{" "}
               Home
             </Link>
           </div>
@@ -35,7 +35,7 @@ const SideNavOptions = () => {
           <div>
             <h4
               style={{
-                color: "#adbac7",
+                color: "#fff",
                 marginBottom: "2em",
               }}
             >

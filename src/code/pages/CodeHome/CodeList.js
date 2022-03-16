@@ -36,7 +36,7 @@ const CodeList = () => {
           style={{
             fontSize: "1em",
             fontWeight: 800,
-            color: "#986ee2",
+            color: "#addec9",
             marginRight: "0.5rem",
           }}
         >
@@ -47,7 +47,7 @@ const CodeList = () => {
             <InlineLoading width="24px" height="24px" />
           </span>
         ) : (
-          <ArrowRight24 fill="#986ee2" />
+          <ArrowRight24 fill="#addec9" />
         )}
       </div>
     </div>

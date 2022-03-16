@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { PostContext } from "../..";
 import { InlineLoading } from "carbon-components-react";
 import moment from "moment";
+import { Fragment } from "react/cjs/react.production.min";
 
 const ArticleList = () => {
   const data = useContext(PostContext);
@@ -14,9 +15,16 @@ const ArticleList = () => {
   };
 
   return (
-    <div style={{ marginTop: "4rem", marginBottom: "4rem" }}>
+    <Fragment>
       {data.data.data.blog_posts.length === 0 ? (
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "4rem",
+            marginBottom: "4rem",
+          }}
+        >
           <h4 style={{ textAlign: "center" }}>
             {data.isFetching
               ? ""
@@ -25,15 +33,19 @@ const ArticleList = () => {
         </div>
       ) : (
         data.data.data.blog_posts.map((article, index) => (
-          <div className="blog-home-articles-container" key={index}>
-            <div className="blog-home-articles-image">
-              <img src={article.image_url} width="100%"></img>
+          <div key={index} className="blog-home-featured-container">
+            <div className="blog-home-featured-image">
+              <img
+                alt={article.title}
+                src={article.image_url}
+                width="100%"
+              ></img>
             </div>
-            <div className="blog-home-articles-description">
+            <div className="blog-home-featured-description">
               <h4
                 style={{
                   fontSize: "0.8rem",
-                  color: "#539bf5",
+                  color: "#fff",
                   marginBottom: "0.6em",
                 }}
               >
@@ -46,8 +58,9 @@ const ArticleList = () => {
                   }}
                   className="header-link-highlight"
                 >
-                  {`${article.title}`.slice(0, 180)}
-                  {article.title.length > 180 ? "..." : ""}
+                  {article.title}
+                  {/* {`${article.title}`.slice(0, 180)}
+                  {article.title.length > 180 ? "..." : ""} */}
                 </h4>
               </Link>
               <div
@@ -64,8 +77,7 @@ const ArticleList = () => {
                     color: "#768390",
                   }}
                 >
-                  By: {article.author},{" "}
-                  {moment(article.creation_date, "YYYYMMDD").fromNow()}
+                  By: {article.author}
                 </p>
               </div>
               <p
@@ -73,8 +85,9 @@ const ArticleList = () => {
                   marginBottom: "0.4em",
                 }}
               >
-                {`${article.description}`.slice(0, 60)}
-                {article.description.length > 60 ? "..." : ""}
+                {article.description}
+                {/* {`${article.description}`.slice(0, 400)}
+                {article.description.length > 400 ? "..." : ""} */}
               </p>
               <div className="blog-content-featured-tags">
                 {article.tags.map((tag, index) => (
@@ -91,13 +104,13 @@ const ArticleList = () => {
                     alignItems: "center",
                   }}
                 >
-                  <Launch16 color="#539bf5" />
+                  <Launch16 color="#addec9" />
                   <Link to={`/blog/${article.post_url}`}>
                     <h4
                       style={{
                         fontWeight: 400,
                         fontSize: "0.8rem",
-                        color: "#539bf5",
+                        color: "#addec9",
                         marginLeft: "0.5rem",
                       }}
                     >
@@ -116,7 +129,7 @@ const ArticleList = () => {
           style={{
             fontSize: "1em",
             fontWeight: 800,
-            color: "#539bf5",
+            color: "#addec9",
             marginRight: "0.5rem",
           }}
         >
@@ -127,10 +140,10 @@ const ArticleList = () => {
             <InlineLoading width="24px" height="24px" />
           </span>
         ) : (
-          <ArrowRight24 fill="#539bf5" />
+          <ArrowRight24 fill="#addec9" />
         )}
       </div>
-    </div>
+    </Fragment>
   );
 };
 

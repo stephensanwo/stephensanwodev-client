@@ -20,33 +20,33 @@ export const blog_categories = [
   {
     id: 1,
     title: "APIs and Software Development",
-    logo: <Api_124 fill="#539bf5" />,
+    logo: <Api_124 fill="#addec9" />,
   },
   {
     id: 2,
     title: "AI and Deep Learning",
-    logo: <MachineLearningModel24 fill="#539bf5" />,
+    logo: <MachineLearningModel24 fill="#addec9" />,
   },
-  { id: 3, title: "Web Development", logo: <Wikis24 fill="#539bf5" /> },
+  { id: 3, title: "Web Development", logo: <Wikis24 fill="#addec9" /> },
   {
     id: 4,
     title: "Mobile Development",
-    logo: <Application24 fill="#539bf5" />,
+    logo: <Application24 fill="#addec9" />,
   },
   {
     id: 5,
     title: "Data Structures and Algorithms",
-    logo: <DataStructured24 fill="#539bf5" />,
+    logo: <DataStructured24 fill="#addec9" />,
   },
   {
     id: 6,
     title: "Blockchain Development",
-    logo: <Blockchain24 fill="#539bf5" />,
+    logo: <Blockchain24 fill="#addec9" />,
   },
   {
     id: 7,
     title: "Developer Guides",
-    logo: <Chat24 fill="#539bf5" />,
+    logo: <Chat24 fill="#addec9" />,
   },
 ];
 
@@ -54,38 +54,38 @@ export const blog_categories_small = [
   {
     id: 0,
     title: "All Categories",
-    logo: <Blog16 fill="#539bf5" />,
+    logo: <Blog16 fill="#addec9" />,
   },
   {
     id: 1,
     title: "APIs and Software Development",
-    logo: <Api_116 fill="#539bf5" />,
+    logo: <Api_116 fill="#addec9" />,
   },
   {
     id: 2,
     title: "AI and Deep Learning",
-    logo: <MachineLearningModel16 fill="#539bf5" />,
+    logo: <MachineLearningModel16 fill="#addec9" />,
   },
-  { id: 3, title: "Web Development", logo: <Wikis16 fill="#539bf5" /> },
+  { id: 3, title: "Web Development", logo: <Wikis16 fill="#addec9" /> },
   {
     id: 4,
     title: "Mobile Development",
-    logo: <Application16 fill="#539bf5" />,
+    logo: <Application16 fill="#addec9" />,
   },
   {
     id: 5,
     title: "Data Structures and Algorithms",
-    logo: <DataStructured16 fill="#539bf5" />,
+    logo: <DataStructured16 fill="#addec9" />,
   },
   {
     id: 6,
     title: "Blockchain Development",
-    logo: <Blockchain16 fill="#539bf5" />,
+    logo: <Blockchain16 fill="#addec9" />,
   },
   {
     id: 7,
     title: "Developer Guides",
-    logo: <Chat16 fill="#539bf5" />,
+    logo: <Chat16 fill="#addec9" />,
   },
 ];
 
