@@ -21,7 +21,7 @@ const Post_8 = () => {
     To solve this, you will need to specify origins to be allowed by FastAPI  as shown below
     </Paragraph>
 
-<Paragraph>
+
       <Code language = "py">
         {`from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -52,7 +52,7 @@ if __name__ == "__main__":
 
       </Code>
 
-  </Paragraph>
+
 
       </Fragment>
   );

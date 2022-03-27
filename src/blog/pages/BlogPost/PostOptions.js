@@ -14,7 +14,7 @@ const PostOptions = ({ all_posts, post_id }) => {
           Suggested Next Reads
         </h4>
       </div>
-      {all_posts.blog_posts.slice(Number(post_id)).map((article, index) => (
+      {all_posts.blog_posts.map((article, index) => (
         <div key={index} style={{ marginTop: "2rem" }}>
           <Link to={`${article.post_url}`}>
             <h4

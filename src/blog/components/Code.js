@@ -10,6 +10,8 @@ const Code = (props) => {
         borderRadius: "6px",
         backgroundColor: "#2128317a",
         padding: "10px",
+        lineHeight: "20px",
+        marginBottom: "2rem",
       }}
     >
       {props.children}

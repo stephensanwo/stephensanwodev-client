@@ -2,6 +2,9 @@ import React, { Fragment } from "react";
 import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
 import ListItem from "../components/ListItem";
+import CodeInline from "../components/CodeInline"
+import Code from "../components/Code";
+import InlineLink from "../components/InlineLink";
 
 
 const Post_10 = ({content}) => {
@@ -29,75 +32,105 @@ Other examples of common configuration items that are often passed to the applic
    
       <SubHeading id={content[1]}>How to Define Environment Variables</SubHeading>
       <Paragraph>
-      You can think of environment variables as a dictionary, where the key is the environment variable name and the value is the environment variable value. Setting environment varies between operating systems.
+      You can think of environment variables as a dictionary, where the key is the variable name and the value is the variable value. Setting the variables vary between operating systems. For example:
       </Paragraph>
+      <Paragraph>
+      On Mac terminal Bash:
+      </Paragraph>
+      <Paragraph>
+      <CodeInline language = "bash">
+        {` ~ export DB_PASSWORD=password123`}
+      </CodeInline>   
+      </Paragraph>
+      <Paragraph>
+      On Windows CMD:
+      </Paragraph>
+      <Paragraph>
+      <CodeInline language = "bash">
+        {` ~ set DB_PASSWORD=password123`}
+      </CodeInline>   
+      </Paragraph>
+      <Paragraph>
+      In your python program, you can set environment variables like so. (Note that you really should not do this, as it defeats the purpose of keeping the environment variables secure)
+      </Paragraph>
+
+      <Code language = "py">
+        {`import os
+os.environ[DB_PASSWORD] = password123`}
+      </Code>   
+
+
+      <SubHeading id={content[2]}>Using the Environment Variables</SubHeading>
+      <Paragraph>
+      To set and use the environment variables within your python code, we can use the os module. We can call the environ property to get the value of a particular variable, provided we know the name of the variable.</Paragraph> 
       
+      <Code language = "py">
+        {`import os
+
+# This will print out a dictionary of all variables and their values
+print(os.environ)
+
+# This will print out the value of the specific variable passed
+password =os.environ['DB_PASSWORD']
+
+# The method above will lead to a breaking error (KeyError) at run time if the environment variable is not present. If you want to avoid that,and get a None value returned if the variable does not exist, you can use the get method shown below
+
+password = os.environ.get('DB_PASSWORD')
+
+# You can also use the getenv method to achieve the same thing.
+password = os.getenv('DB_PASSWORD')
+        `}
+      </Code>   
+
+
+      <SubHeading id={content[3]}>Using .env files</SubHeading>
       <Paragraph>
-      What does this mean? When you activate a virtual environment for your project, your project essentially becomes its own self contained application, independent of the system installed python and its modules. Your new virtual environment has its own pip to install libraries, its own library folder, where new libraries are added, its own python interpreter for the python version you used to activate the environment.
-      </Paragraph>
-
-
-      <Paragraph>
-      You have made up your mind to learn to code, perhaps you plan to use this for some advanced analytics, build ML models to create intelligent solutions to problems within a space or industry, or you want to dive into software development, and build software, web apps, or even a website or blog. (If you have not properly articulated why you want to learn to code, you need to do that)
-      </Paragraph>
-
-    <Paragraph>
-    One of the first things you do is to go online to do some research on BASIC Python or attend a beginners bootcamp or perhaps you get someone to teach you some BASICS, the emphasis here is on basics.
-    </Paragraph>
-
-    <Paragraph>
-    Let’s assume you go with the online learning option on YouTube of coursera, you find a basic Python tutorial that has high ratings, and you start it, you learn basic stuff like defining a variable, learn how to define a function, printing your code results, etc. it seems cool, but not fun, and most importantly can get really boring very quickly for beginners, and you still can’t build an app or an ML model, then along the line, you take a break from learning, and after a couple of weeks, you come back to your basics, and find out you have forgotten how to define a function, then you watch the video again to re learn the basic steps and this cycle continues, without you actually achieving anything, and your resumee keeps saying “ML Enthusiast”.
-    </Paragraph>
-
-    <Paragraph>
-    Now, this is the first hurdle most people will face, a lot of people get stuck in learning the basics over and over again, without using that basics to work on real projects, the problem with this is that you will easily forget what you’ve learnt and keep having to re watch your basics tutorial over and over again. Some people jump from one basics tutorial to the other without actually trying to build projects, the key issue here is that the basics can only teach you the fundamentals of the language and will not likely cover all the details needed to build real world projects.
-    </Paragraph>
-
-      <SubHeading id={content[2]}>Building Projects</SubHeading>
-      <Paragraph>
-      Now how can you overcome this? Pretty simple, what I found that works for me when learning a language or framework is to not spend too much time learning the basics, find a very good course on the basics ensure that you have covered the fundamentals of the language and move on to building projects, you can search project based tutorials where you actually build sample projects and follow through the steps, this is a very good way to instill the fundamentals you just learnt.</Paragraph> 
-      
-      <Paragraph>You will forget some basic stuff you learnt, and that’s okay, but the fact that you’ve covered it and you know where to easily go for reference when you need to remember something about the basics. There are a lot of times I Google how to do basic things in Python or JavaScript, while working on projects, and that’s okay. Understanding how the language works and the syntax will help you understand the results suggested by Google or Stackoverflow, and you can easily use those results in your projects.
-      </Paragraph>
-
-    <Paragraph>
-    Developers sometimes make jokes about how they just copy and paste code from Stackoverflow, but the real truth is that they somehow know what to copy and where to paste it within their projects, because they understand the syntax and other key factors which we will cover shortly.  
-      </Paragraph>
-
-      <SubHeading id={content[3]}>Going Beyond Language Syntax</SubHeading>
-      <Paragraph>
-      One critical pitfall that gets people frustrated is the assumption that after learning the basics of a language you should be able to just build stuff. This is wrong in most cases except you are learning html and css. For a language like Python or Go there is a lot more studying you will need to do beyond the basics. 
+      The most efficient way and perhaps the best practice for when working with python is to use a .env file. A .env file is a text file that stores all your environment variables in one place and makes it easy for you to retrieve them any time. Using a .env file also helps you avoid the differences between the different platforms in handling environment variables. 
       </Paragraph>
 
       <Paragraph>
-      If you want to build  application backend in Python for example, you will have to read the documentation on a library like flask, understand how to implement it, understand the basics about APIs, databases etc and the various components required to build an api, many of this will take you outside just the basic language syntax, into several topics around web development or the specific area you are working on. It is important to note that understanding the basics of a language alone will not get you to a point where you can build complex projects.
+      To create a .env file, create a new file in your code editor and name it .env, without any extension. This is the same approach and format across all operating systems. You can then define a variable per line as show below:
       </Paragraph>
 
-  
-      <SubHeading id={content[4]}>Information Overload</SubHeading>
+      <Code language = "py">
+        {`DB_PASSWORD=password123
+DB_URL=sqlite:///mydb.sqlite`}
+      </Code>   
+
       <Paragraph>
-      So now, you want to build an app, the next billion dollar unicorn 🌚, or you want to build a machine learning model to rival GPT-3 🌚. You search for a tutorial on how to build an app, then you find a million and one resources and you get overwhelmed. This is another issue people face when trying to advance from the basics. 
+      To use these variables within your python code, you will need to install a library called python-dotenv. In your terminal run the code below:
+      </Paragraph>
+
+      <Paragraph>
+      <CodeInline language = "bash">
+        {` ~ pip install python-dotenv`}
+      </CodeInline>   
+      </Paragraph>
+
+      <Paragraph>
+      Within your python main file in your project root, you can then call a load_dotenv function that will load the .env file automatically if the .env file is within the root too. Note that you would have to provide the path to the .env file if it is not within the root of your project.
+      </Paragraph>
+      <Paragraph>
+      To call the environment variables, you have to initialize the load_dotenv method from the dotenv library. Then you can access the variables you created in the .env file using the os module as shown below.
+      </Paragraph>
+
+      <Code language = "py">
+        {`import os
+from dotenv import load_dotenv
+load_dotenv()
+password = os.environ.get('DB_PASSWORD')`}
+      </Code>  
+
+      <Paragraph>
+      While working with .env files, you would typically store secret variables such as database credentials, API Keys and Secrets, etc. It is important that the .env file is not shared with the public, or with your version control (git, github). To avoid mistakenly sharing the .env file on a public git repository, the standard practice is to have a .gitignore file in your project root, and add .env within the .gitignore file, which will then be ignored by version control.
+      </Paragraph>
+      <SubHeading id={content[4]}>Conclusion</SubHeading>
+      <Paragraph>
+      In this article, we have walked through what an environment variable is, why it is important when developing modular python projects, and how to create and consume them. We have also walked through the best practice in handling environment variables by using a .env file and python-dotenv library.
 </Paragraph>
-
-
-
 <Paragraph>
-With the basics, it’s easy to find one good tutorial and stick to it, but when trying to build actual real world projects, you will soon find out that there Is an overwhelming number of options to choose from and it can get confusing really fast.
+  Edit this article on <InlineLink link = {"https://github.com/stephensanwo/stephensanwodev-client/blob/master/src/blog/posts/Post_10.jsx"}>Github</InlineLink>
 </Paragraph>
-
-<Paragraph>
-Take for example, you have learnt the basics of JavaScript and you have built simple projects and are ready to build more complex projects,  you will soon find out that there is a ton of JavaScript frameworks, there is now a confusion on whether to use React or Vue or Angular or Svelte or the million other frameworks, or you have been learning Python and you are stuck between learning flask or django or fastapi. 
-</Paragraph>
-
-<Paragraph>
-There is really no easy way out of information overload, because as long as you are connected to the internet, you will keep getting that new tutorial newsletter, or youtube recommendation etc. What is required is a commitment to focus on one project at a time and get as much information as you need to complete that project, and resist the urge to just check out every new tutorial that is recommended to you.
-</Paragraph>
-
-<SubHeading id={content[5]}>Focus on Problem Solving</SubHeading>
-
-
-<Paragraph>
-My advice really is that beginners should focus more on the problem solving than on syntax or frameworks, you will never know every syntax of a language, and as long as you understand the basic concepts, you can always google stuff. For Frameworks, my advice is really to pick up an easy one for a start, i.e. Vue with JavaScript for Frontend Development, or FastAPI with Python for Backend Development, and as you progress, you will soon realise what works for you and what doesn't, and you can always switch to some other framework along the line.</Paragraph>
 
     </Fragment>
   );

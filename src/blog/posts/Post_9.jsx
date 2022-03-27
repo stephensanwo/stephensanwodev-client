@@ -16,7 +16,7 @@ const Post_9 = () => {
 Note: The entire app must be wrapped in QueryClientProvider for react-query to work. this will typically be done at root level in react, i.e App.js or index.js
     </Paragraph>
 
-<Paragraph>
+
       <Code language = "js">
         {`import React, { Fragment, useState } from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
@@ -78,7 +78,7 @@ export default SampleComponent;
 
       </Code>
 
-  </Paragraph>
+
 
       </Fragment>
   );

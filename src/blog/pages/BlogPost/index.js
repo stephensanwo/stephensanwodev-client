@@ -42,6 +42,7 @@ const BlogPost = (props) => {
     return <Redirect to="/error" />;
   }
 
+  console.log(data);
   let newer_post_link;
   let newer_post_value;
 

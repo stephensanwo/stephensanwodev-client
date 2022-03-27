@@ -3,6 +3,7 @@ import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
 import ListItem from "../components/ListItem";
 import InlineLink from "../components/InlineLink"
+import Image from "../components/Image";
 
 
 const Post_11 = ({content}) => {
@@ -59,15 +60,24 @@ const Post_11 = ({content}) => {
     From a business owner point of view, you have the flexibility to go beyond a preset workflow logic set by the developer and construct your own logic.
     </Paragraph>
 
-      <SubHeading id={content[2]}>How it Works </SubHeading>
+  
+
+      <SubHeading id={content[2]}>How it Works</SubHeading>
       <Paragraph>
       OpenFlow is a collection of worfklows that solve an analytics problem or automates a process. The basic unit of a flow is the node and you can have infinite nodes in a flow. </Paragraph> 
       <Paragraph>Nodes are essentially functions that take an input and generate an output. The output is either passed on to a subsequent node, multiple subsequent nodes, or as a final output. A node can also either be a component node or a code node.
       </Paragraph>
 
+      <Image>
+      https://ddxzec2p5v0iq.cloudfront.net/flow-studio.png
+      </Image>
+
     <Paragraph>
     A component node is a function has been pre built and tested by a contributor and it provides a simple user interface to interact with it. You have little or no flexibility with component nodes. For example, grouping a data frame can be a component node, if all the required variables are converted to input dialogs or a simple key-value input.  
       </Paragraph>
+      <Image>
+      https://ddxzec2p5v0iq.cloudfront.net/node-designer.png
+      </Image>
       <Paragraph>
       Nodes communicate with each other through the edges. nodes will always run in a sequential order except a node is called directly and it does not depend on an output from another node.
       </Paragraph>
@@ -75,7 +85,7 @@ const Post_11 = ({content}) => {
       Selecting a node opens up an actions pane, the configuration of the actions pane will vary depending on if the node is a component node or a code node. Component nodes will have a user interface for inputs, the code nodes however will have a code interface with more flexibility to control and alter the underlying code directly.
       </Paragraph>
 
-      <SubHeading id={content[3]}>Software Architecture </SubHeading>
+      <SubHeading id={content[3]}>Architecture</SubHeading>
       <Paragraph>
       At a high level the user will interact with OpenFlow through the client built in React (TypeScript), with IBM Carbon as the design system. 
       </Paragraph>
@@ -97,8 +107,6 @@ const Post_11 = ({content}) => {
       <Paragraph>
       To contribute, check out the github repository at  <InlineLink link = {"https://github.com/stephensanwo/openflow"}>https://github.com/stephensanwo/openflow</InlineLink> 
 </Paragraph>
-
-
 
 
     </Fragment>

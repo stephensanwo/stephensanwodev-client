@@ -43,13 +43,13 @@ const About = () => {
                 >
                   blog.stephensanwo.dev
                 </a>{" "}
-                and I share code snippets at{" "}
+                and I share publish my AI/ML apps at{" "}
                 <a
-                  href="https://codeshare.stephensanwo.dev"
+                  href="https://ai.stephensanwo.dev"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  codeshare.stephensanwo.dev
+                  ai.stephensanwo.dev
                 </a>
               </p>
             </div>

@@ -142,29 +142,6 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
               <motion.div
                 initial={{ x: "-100px" }}
                 animate={{ x: "0", speed: "100ms" }}
-                transition={{ ease: "easeInOut", duration: 0.6 }}
-                exit={{ display: "none", speed: "10000ms" }}
-                className="slider-item"
-              >
-                <div
-                  style={{ display: "flex", alignItems: "center" }}
-                  onClick={() => setIsNavOpen("closed")}
-                >
-                  <Link to={"/code"}>Code Share</Link>
-                </div>
-                <div
-                  onClick={() => setIsNavOpen("closed")}
-                  className="see-all-container"
-                >
-                  <Link to={"/code"}>
-                    {" "}
-                    <ArrowRight16 fill="#addec9" />
-                  </Link>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ x: "-100px" }}
-                animate={{ x: "0", speed: "100ms" }}
                 transition={{ ease: "easeInOut", duration: 0.7 }}
                 exit={{ display: "none", speed: "10000ms" }}
                 className="slider-item"
