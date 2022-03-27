@@ -28,7 +28,6 @@
 
 .blog-post-image {
   //   min-width: 200px;
-  overflow: hidden;
   min-height: 400px;
   background-image: linear-gradient(
     to right,
@@ -123,7 +122,7 @@
 
   .blog-post-image {
     width: 100%;
-    min-height: 250px;
+    min-height: 150px;
   }
 
   .blog-post-detail {

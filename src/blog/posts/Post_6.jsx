@@ -9,7 +9,7 @@ const Post_6 = () => {
   return (
     <Fragment>
       <Paragraph>
-      The code snippet helps setup base logging for your applications in python. 
+      This code snippet helps setup base logging for your applications in python. 
         <ListItem>
         Logging Format helps set the format of your logs
         </ListItem>
@@ -45,7 +45,6 @@ const Post_6 = () => {
       <strong>CRITICAL: </strong> A serious error, indicating that the program itself may be unable to continue running
       </ListItem>
       </Paragraph>
-     
       <Code language = "py">
         {`import logging
 

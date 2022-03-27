@@ -33,7 +33,6 @@ Basic FastAPI setup with Uvicorn
 <Paragraph>
 Run programatically with python api.py assuming your entry point is named api.py. Going to localhost:1234/ will display "Success"
 </Paragraph>
-<Paragraph>
       <Code language = "py">
         {`from fastapi import FastAPI
 import uvicorn
@@ -50,7 +49,7 @@ if __name__ == "__main__":
 
       </Code>
 
-  </Paragraph>
+
 
   <SubHeading4>
       FastAPI setup with workers and Gunicorn
