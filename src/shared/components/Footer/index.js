@@ -7,7 +7,6 @@ import {
 } from "@carbon/icons-react";
 import "./style.scss";
 import { blog_categories_small } from "../../../data/blog";
-import { code_categories_small } from "../../../data/code";
 import { app_categories_small } from "../../../data/apps";
 import { apps_data } from "../../../data/apps";
 import Loader from "../Loader";
@@ -103,45 +102,6 @@ const Footer = ({
                 {`${apps.desc}`.slice(0, 160)}
                 {apps.desc.length > 160 ? "..." : ""}
               </p>
-            </div>
-          ))}
-        </div>
-      ) : data_type === "code" ? (
-        <div className="footer-category-content">
-          <div
-            style={{
-              borderBottom: "0.1px solid #addec9",
-              marginBottom: "1.5em",
-            }}
-          >
-            <h4
-              style={{
-                fontSize: "1em",
-                color: "#fff",
-                marginBottom: "1em",
-              }}
-            >
-              Topics
-            </h4>
-          </div>
-          {code_categories_small.map((app_item) => (
-            <div
-              className="blog-sidenav-category-item"
-              onClick={(e) => {
-                setCodeFilter(e.target.innerText);
-                Refocus();
-              }}
-            >
-              {app_item.logo}
-              <h4
-                style={{
-                  marginLeft: "1rem",
-                  fontSize: "0.8rem",
-                }}
-                className="header-link-highlight"
-              >
-                {app_item.title}
-              </h4>
             </div>
           ))}
         </div>

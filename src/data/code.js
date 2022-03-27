@@ -35,24 +35,3 @@ export const code_categories_small = [
     logo: <Code16 fill="#addec9" />,
   },
 ];
-
-export const code_data = [
-  {
-    code_id: "1",
-    title: "Object Oriented Programming Examples I",
-    category: "Python",
-    desc: "In this tutorial, which is the first of the Object Oriented Programming Series, I will explain in detail what OOP is, why you should use it in your software development projects. Note that we will be using PseudoCode to explain the concepts in this part I, this is important for us to learn the concepts before going into writing code. If you are familiar with the basic concepts, please skip to Part II",
-    tags: ["Python", "OOP"],
-    author: "Stephen Sanwo",
-    date: "2020-June-20",
-  },
-  {
-    code_id: "2",
-    title: "Object Oriented Programming Examples II",
-    category: "JavaScript",
-    desc: "In this tutorial, which is the first of the Object Oriented Programming Series, I will explain in detail what OOP is, why you should use it in your software development projects. Note that we will be using PseudoCode to explain the concepts in this part I, this is important for us to learn the concepts before going into writing code. If you are familiar with the basic concepts, please skip to Part II",
-    tags: ["JavaScript"],
-    date: "2020-June-20",
-    author: "Stephen Sanwo",
-  },
-];

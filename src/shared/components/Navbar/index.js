@@ -32,9 +32,6 @@ const Navbar = ({ isNavOpen, setIsNavOpen }) => {
           <div className="nav-action-3">
             <Options data={{ name: "Apps", link: "/apps" }} />
           </div>
-          <div className="nav-action-4">
-            <Options data={{ name: "Code Share", link: "/code" }} />
-          </div>
           <div className="nav-action-5">
             <a
               href="https://github.com/stephensanwo"

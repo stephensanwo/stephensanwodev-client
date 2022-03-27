@@ -49,9 +49,6 @@ const Error = () => {
             <a style={{ fontSize: "1em", fontWeight: 800 }} href="/blog">
               Go to Blog
             </a>
-            <a style={{ fontSize: "1em", fontWeight: 800 }} href="/code">
-              Go to Code Snippets
-            </a>
 
             <a style={{ fontSize: "1em", fontWeight: 800 }} href="/apps">
               Go to Apps
