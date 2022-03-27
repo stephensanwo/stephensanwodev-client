@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./shared/pages/Home";
 import Blog from "./blog";
 import Apps from "./apps";
-import Code from "./code";
 import Error from "./shared/pages/Error";
 import Helmet from "react-helmet";
 
