@@ -11,6 +11,7 @@ const Code = (props) => {
         backgroundColor: "#2128317a",
         padding: "10px",
         lineHeight: "20px",
+        marginBottom: "2rem",
       }}
     >
       {props.children}

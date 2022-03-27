@@ -23,7 +23,7 @@ export const apps_data = [
     desc: "OpenFlow is a  low-code open-souce analytics automation workflow, where developers, analysts, and business owners can collaborate to automate analytics workflows seamlessly",
     logo: <FlowChart fill="#000" width="48px" height="48px" />,
     built_with: ["React", "Go", "Redis", "PostgreSQL", "Cadence", "IBM Carbon"],
-    app_url: "https://github.com/stephensanwo/openflow",
+    app_url: "http://stephensanwo.github.io/openflow/openflow/index.html",
     repo_url: "https://github.com/stephensanwo/openflow",
     category: ["Web APIs", "Web Apps"],
   },
