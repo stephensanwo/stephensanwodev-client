@@ -1,5 +1,4 @@
 import React from "react";
-import { top_articles } from "../../../data/tmp_blog";
 import { apps_data } from "../../../data/apps";
 
 const Options = () => {

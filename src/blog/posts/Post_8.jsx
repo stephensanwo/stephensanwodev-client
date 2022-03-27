@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import Paragraph from "../../blog/components//Paragraph";
+import Paragraph from "../../blog/components/Paragraph";
 import Code from "../components/Code";
 import InlineLink from "../../blog/components/InlineLink"
 
 
 
-const Post_4 = () => {
+const Post_8 = () => {
 
   return (
     <Fragment>
@@ -58,4 +58,4 @@ if __name__ == "__main__":
   );
 };
 
-export default Post_4;
+export default Post_8;

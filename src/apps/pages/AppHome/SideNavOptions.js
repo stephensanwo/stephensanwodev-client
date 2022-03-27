@@ -1,16 +1,10 @@
 import React, { Fragment, useContext } from "react";
 import { ArrowLeft24 } from "@carbon/icons-react";
-import {
-  app_categories_small,
-  app_filters,
-  app_sort,
-} from "../../../data/apps";
-import Tags from "../../../shared/components/Tags";
-import { useRouteMatch, Link } from "react-router-dom";
+import { app_categories_small } from "../../../data/apps";
+import { Link } from "react-router-dom";
 import { AppContext } from ".";
 
 const SideNavOptions = () => {
-  const { path } = useRouteMatch();
   const data = useContext(AppContext);
   return (
     <Fragment>

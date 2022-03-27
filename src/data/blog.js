@@ -14,6 +14,7 @@ import {
   Blog16,
   Chat24,
   Chat16,
+  Code16,
 } from "@carbon/icons-react";
 
 export const blog_categories = [
@@ -84,6 +85,11 @@ export const blog_categories_small = [
   },
   {
     id: 7,
+    title: "Code Snippet",
+    logo: <Code16 fill="#addec9" />,
+  },
+  {
+    id: 8,
     title: "Developer Guides",
     logo: <Chat16 fill="#addec9" />,
   },

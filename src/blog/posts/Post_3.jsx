@@ -3,7 +3,7 @@ import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
 import ListItem from "../components/ListItem";
 
-import CodeInline from "../../code/components/CodeInline";
+import CodeInline from "../components/CodeInline";
 import InlineLink from "../components/InlineLink";
 
 

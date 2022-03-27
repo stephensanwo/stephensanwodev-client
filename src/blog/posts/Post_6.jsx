@@ -4,7 +4,7 @@ import Code from "../components/Code";
 import ListItem from "../../blog/components/ListItem"
 
 
-const Post_2 = () => {
+const Post_6 = () => {
 
   return (
     <Fragment>
@@ -75,4 +75,4 @@ def logging_test():
   );
 };
 
-export default Post_2;
+export default Post_6;

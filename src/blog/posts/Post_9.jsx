@@ -4,7 +4,7 @@ import Code from "../components/Code";
 
 
 
-const Post_5 = () => {
+const Post_9 = () => {
 
   return (
     <Fragment>
@@ -84,4 +84,4 @@ export default SampleComponent;
   );
 };
 
-export default Post_5;
+export default Post_9;

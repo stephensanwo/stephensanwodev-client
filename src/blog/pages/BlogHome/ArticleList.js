@@ -4,7 +4,6 @@ import Tags from "../../../shared/components/Tags";
 import { Link } from "react-router-dom";
 import { PostContext } from "../..";
 import { InlineLoading } from "carbon-components-react";
-import moment from "moment";
 import { Fragment } from "react/cjs/react.production.min";
 
 const ArticleList = () => {

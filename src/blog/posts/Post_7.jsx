@@ -6,7 +6,7 @@ import ListItem from "../../blog/components/ListItem"
 import CodeInline from "../components/CodeInline";
 
 
-const Post_3 = () => {
+const Post_7 = () => {
 
   return (
     <Fragment>
@@ -123,4 +123,4 @@ if __name__ == "__main__":
   );
 };
 
-export default Post_3;
+export default Post_7;

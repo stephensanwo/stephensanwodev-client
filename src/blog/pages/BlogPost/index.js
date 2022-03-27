@@ -28,7 +28,7 @@ const BlogPost = (props) => {
     return data;
   };
 
-  const { isLoading, status, error, data, isFetching } = useQuery(
+  const { isLoading, error, data, isFetching } = useQuery(
     ["post_item", post_url],
     () => getPost(),
     { keepPreviousData: false, refetchOnWindowFocus: false }
@@ -71,7 +71,7 @@ const BlogPost = (props) => {
     return (seo_keywords = seo_keywords + tag + ", ");
   });
 
-  const meta_content = `${data.blog_posts[0].category} - ${data.blog_posts[0].title}`;
+  // const meta_content = `${data.blog_posts[0].category} - ${data.blog_posts[0].title}`;
 
   return (
     <div className="blog-home-container">

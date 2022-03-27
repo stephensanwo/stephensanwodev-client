@@ -1,11 +1,6 @@
 import React, { Fragment, useContext } from "react";
 import { ArrowLeft24 } from "@carbon/icons-react";
-import {
-  blog_categories_small,
-  blog_filters,
-  blog_sort,
-} from "../../../data/blog";
-import Tags from "../../../shared/components/Tags";
+import { blog_categories_small } from "../../../data/blog";
 import { Link } from "react-router-dom";
 import { PostContext } from "../..";
 

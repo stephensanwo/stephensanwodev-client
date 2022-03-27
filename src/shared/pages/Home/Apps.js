@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight24, Code24 } from "@carbon/icons-react";
+import { ArrowRight24 } from "@carbon/icons-react";
 import { apps_data, app_categories_small } from "../../../data/apps";
 import { Ideate } from "@carbon/pictograms-react";
 import Card from "../../components/Card";

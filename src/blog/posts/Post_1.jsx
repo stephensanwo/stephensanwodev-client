@@ -7,47 +7,48 @@ import ListItem from "../components/ListItem";
 import InlineLink from "../components/InlineLink";
 
 
+
+
 const Post_1 = ({content}) => {
 
   return (
     <Fragment>
       <SubHeading id={content[0]}>Introduction - What we will be building</SubHeading>
       <Paragraph>
-      Building and deploying a working a full stack application is no small feat, there are lots of factors to consider, you will have to handle the front-end and back-end parts of your application by yourself. This involves thinking about the application architecture, and making decisions that will be critical to the success of your project, such as; what languages to use, what platform to deploy on, are you going to deploy a containerised software on a server, or make use of server-less functions to handle the back-end, do you intend to use third-party APIs to handle complex parts of your application, like authentication or payments?, where do you store the data? added to all that, you'll also need to think about the user interface, design and usability of your application and much more. This is why complex large applications require a multifunctional and team, collaborating to build the app. 
+       Building and deploying a working a full stack application is no small feat, there are lots of factors to consider, you will have to handle the front-end and back-end parts of your application by yourself. This involves thinking about the application architecture, and making decisions that will be critical to the success of your project, such as; what languages to use, what platform to deploy on, are you going to deploy a containerised software on a server, or make use of server-less functions to handle the back-end, do you intend to use third-party APIs to handle complex parts of your application, like authentication or payments?, where do you store the data? added to all that, you'll also need to think about the user interface, design and usability of your application and much more. This is why complex large applications require a multifunctional and team, collaborating to build the app. 
       </Paragraph>
       <Paragraph>
       One of the best ways to learn how to develop full stack applications is to build projects that cover the end to end development process, from designing the solution architecture, to building the API, developing the user interface, and finally deploying your application. This tutorial will take your through each step using a project based example. The topics we will cover include:
       </Paragraph>
       <Paragraph>
         <ListItem >
-          <InlineLink link = {"www.stephensanwo.dev/blog/2"}>
+          <InlineLink link = {"https://www.stephensanwo.dev/blog/build-a-full-stack-ai-chatbot-part-ii-gpt-j-6b-wrapper"}>
         Building a wrapper to communicate a third party API
           </InlineLink>
         </ListItem>
         <ListItem> 
-         <InlineLink link = {"www.stephensanwo.dev/blog/3"}>
+
         Building web-sockets for real-time chat application
-          </InlineLink>
         </ListItem>
         <ListItem> 
-          <InlineLink link = {"www.stephensanwo.dev/blog/4"}>
+         
           Server-side caching with Redis
-          </InlineLink>
+         
         </ListItem>
         <ListItem> 
-          <InlineLink link = {"www.stephensanwo.dev/blog/5"}>
+         
           Building a chat user interface with React
-          </InlineLink>
+         
         </ListItem>
         <ListItem> 
-          <InlineLink link = {"www.stephensanwo.dev/blog/6"}>
+         
           Container using your application with Docker
-          </InlineLink>
+         
         </ListItem>
         <ListItem> 
-          <InlineLink link = {"www.stephensanwo.dev/blog/7"}>
+         
           Deploying your application Backend to Digital Ocean
-          </InlineLink>
+         
         </ListItem>
       </Paragraph>
       <SubHeading4>

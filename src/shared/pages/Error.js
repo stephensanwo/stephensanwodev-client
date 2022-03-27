@@ -1,6 +1,5 @@
 import React from "react";
 import { FaceDissatisfied32 } from "@carbon/icons-react";
-import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
@@ -49,9 +48,6 @@ const Error = () => {
             </a>
             <a style={{ fontSize: "1em", fontWeight: 800 }} href="/blog">
               Go to Blog
-            </a>
-            <a style={{ fontSize: "1em", fontWeight: 800 }} href="/code">
-              Go to Code Snippets
             </a>
 
             <a style={{ fontSize: "1em", fontWeight: 800 }} href="/apps">

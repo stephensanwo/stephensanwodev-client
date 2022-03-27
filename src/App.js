@@ -38,9 +38,6 @@ function App() {
         <Route path="/apps">
           <Apps isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </Route>
-        <Route path="/code">
-          <Code isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-        </Route>
         <Route path="/error">
           <Error />
         </Route>
