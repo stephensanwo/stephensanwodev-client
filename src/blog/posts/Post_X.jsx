@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
-import Code from "../../code/components/Code";
 
 
 const Post_1 = ({content}) => {
@@ -38,24 +37,7 @@ const Post_1 = ({content}) => {
         writing basic scripts to building complex multi-module softwares, or
         even building reusable python packages for the PyPi index."
       </Paragraph>
-      <Code>
-        {`def login():
-    response = {"errors": {}, "data": {}, "token": {}}
-
-    req = request.get_json()
-    email = req["email"]
-    password = req["password"]
-
-    errors, valid = validateLoginInput(
-        email, password)
-
-    if not valid:
-        response["errors"] = errors
-        return make_response(jsonify(response), 400)
-
-    return make_response(jsonify(response), 200)`}
-
-      </Code>
+    
       <Paragraph>
         Many people get introduced to Python firstly as a scripting language, I
         first started out doing analytics with python, and the nature of those
