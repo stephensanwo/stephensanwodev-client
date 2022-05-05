@@ -11,7 +11,13 @@ const Post_11 = ({content}) => {
     <Fragment>
       <SubHeading id={content[0]}>Introduction</SubHeading>
       <Paragraph>
-      OpenFlow is an open source low-code analytics automation workflow, that provides a seamless platform for developers to deploy modular functions that can be re-used by other developers, analysts and non-coders for automated analytics and robotic process automation (RPA).
+      OpenFlow is an open source low-code analytics automation workflow,
+              that decouples monolithic analytics projects into re-usable
+              functional components that can be chained together to solve a
+              problem. It provides a seamless platform for developers to deploy
+              modular functions that can be re-used by other developers,
+              analysts and non-coders for automated analytics and robotic
+              process automation (RPA).
       </Paragraph>
       <Paragraph>
       OpenFlow attempts to improve the collaboration between business process owners (who are typically non-coders), and developers, by providing an infrastructure where developers can share pre-written functions, targeted at solving specific use cases, which consumers can then mix and match while building their workflows using a simple user interface.
@@ -86,6 +92,10 @@ const Post_11 = ({content}) => {
       </Paragraph>
 
       <SubHeading id={content[3]}>Architecture</SubHeading>
+      <Image>
+      https://ddxzec2p5v0iq.cloudfront.net/architecture.drawio.svg
+      </Image>
+      
       <Paragraph>
       At a high level the user will interact with OpenFlow through the client built in React (TypeScript), with IBM Carbon as the design system. 
       </Paragraph>
