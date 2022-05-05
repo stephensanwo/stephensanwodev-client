@@ -4,8 +4,7 @@
 #### Props
 
 - Blog **[blog.stephensanwo.dev](https://blog.stephensanwo.dev)**
-- Code Share **[codeshare.stephensanwo.dev](https://codeshare.stephensanwo.dev)**
-- My Projets **[projects](https://www.stephensanwo.dev/app)**
+- My Projets **[projects](https://www.stephensanwo.dev/apps)**
 
 #### Built With
 
