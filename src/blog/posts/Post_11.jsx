@@ -11,7 +11,7 @@ const Post_11 = ({content}) => {
     <Fragment>
       <SubHeading id={content[0]}>Introduction</SubHeading>
       <Paragraph>
-      OpenFlow is an open source low-code analytics automation workflow,
+      Open Workflow is an open source low-code analytics automation workflow,
               that decouples monolithic analytics projects into re-usable
               functional components that can be chained together to solve a
               problem. It provides a seamless platform for developers to deploy
@@ -20,9 +20,14 @@ const Post_11 = ({content}) => {
               process automation (RPA).
       </Paragraph>
       <Paragraph>
-      OpenFlow attempts to improve the collaboration between business process owners (who are typically non-coders), and developers, by providing an infrastructure where developers can share pre-written functions, targeted at solving specific use cases, which consumers can then mix and match while building their workflows using a simple user interface.
+      Open Workflow improves the collaboration between
+              business process owners (who are typically non-coders), and
+              developers, by providing an infrastructure where developers can
+              share pre-written functions, targeted at solving specific use
+              cases, which consumers can then mix and match while building their
+              workflows using a simple user interface.
       </Paragraph>
-      <SubHeading id={content[1]}>Why OpenFlow?</SubHeading>
+      <SubHeading id={content[1]}>Why Open Workflow?</SubHeading>
       <Paragraph>
       Having worked in analytics and automation for some really complex use cases, Multilayered analytics can become complex and tedious quickly. A useful approach will be to break down the analytics into modular functions that can be called anytime. These functions may be built by you or some other person, but the very basic principle is that the function will take an input of a range of data structures and return an output. These functions can then be mixed and matched in multiple ways to create a workflow that solves a specific problem.
       </Paragraph>   
@@ -52,7 +57,7 @@ const Post_11 = ({content}) => {
     </Paragraph>
 
     <Paragraph>
-    With OpenFlow, developers can create re-usable functions, and wrap them with a simple user interface, where consumers can easily provide the variables required by those functions, and chain these functions together a s part of a larger workflow. For example, the reconciliation workflow will have 4 functions for each step, two of which are not necessarily related to a reconciliation procedure itself (extracting data from source systems and sending reports to an email address).
+    With Open Workflow, developers can create re-usable functions, and wrap them with a simple user interface, where consumers can easily provide the variables required by those functions, and chain these functions together a s part of a larger workflow. For example, the reconciliation workflow will have 4 functions for each step, two of which are not necessarily related to a reconciliation procedure itself (extracting data from source systems and sending reports to an email address).
     </Paragraph>
 
     <Paragraph>
@@ -60,7 +65,7 @@ const Post_11 = ({content}) => {
     </Paragraph>
 
     <Paragraph>
-    From a developer point of view, you wouldn’t need to provide an API or use a tool like streamlit for every application you want some users to consume. You can embed your functions in OpenFlow and mix and match the logic for your workflow as you wish. 
+    From a developer point of view, you wouldn’t need to provide an API or use a tool like streamlit for every application you want some users to consume. You can embed your functions in Open Workflow and mix and match the logic for your workflow as you wish. 
     </Paragraph>
     <Paragraph>
     From a business owner point of view, you have the flexibility to go beyond a preset workflow logic set by the developer and construct your own logic.
@@ -70,7 +75,7 @@ const Post_11 = ({content}) => {
 
       <SubHeading id={content[2]}>How it Works</SubHeading>
       <Paragraph>
-      OpenFlow is a collection of worfklows that solve an analytics problem or automates a process. The basic unit of a flow is the node and you can have infinite nodes in a flow. </Paragraph> 
+      Open Workflow is a collection of worfklows that solve an analytics problem or automates a process. The basic unit of a flow is the node and you can have infinite nodes in a flow. </Paragraph> 
       <Paragraph>Nodes are essentially functions that take an input and generate an output. The output is either passed on to a subsequent node, multiple subsequent nodes, or as a final output. A node can also either be a component node or a code node.
       </Paragraph>
 
@@ -97,7 +102,7 @@ const Post_11 = ({content}) => {
       </Image>
       
       <Paragraph>
-      At a high level the user will interact with OpenFlow through the client built in React (TypeScript), with IBM Carbon as the design system. 
+      At a high level the user will interact with Open Workflow through the client built in React (TypeScript), with IBM Carbon as the design system. 
       </Paragraph>
 
       <Paragraph>
@@ -115,7 +120,7 @@ const Post_11 = ({content}) => {
   
       <SubHeading id={content[4]}>Contribute</SubHeading>
       <Paragraph>
-      To contribute, check out the github repository at  <InlineLink link = {"https://github.com/stephensanwo/openflow"}>https://github.com/stephensanwo/openflow</InlineLink> 
+      To contribute, check out the github repository at  <InlineLink link = {"https://github.com/stephensanwo/open-workflow"}>https://github.com/stephensanwo/open-workflow</InlineLink> 
 </Paragraph>
 
 
